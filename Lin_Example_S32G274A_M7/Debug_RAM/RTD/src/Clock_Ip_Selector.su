@@ -1,0 +1,13 @@
+Clock_Ip_Selector.c:188:13:Clock_Ip_CallbackSelectorEmpty	0	static
+Clock_Ip_Selector.c:196:13:Clock_Ip_ResetCgmXCscCssClkswSwip	8	static
+Clock_Ip_Selector.c:292:13:Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip	0	static
+Clock_Ip_Selector.c:396:13:Clock_Ip_SetCgmXCscCssCsGrip	40	static
+Clock_Ip_Selector.c:305:13:Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip	40	static
+Clock_Ip_Selector.c:209:13:Clock_Ip_SetCgmXCscCssClkswSwip	40	static
+Clock_Ip_Selector.c:390:13:Clock_Ip_ResetCgmXCscCssCsGrip	0	static
+Clock_Ip_Selector.c:499:6:Clock_Ip_ConfigureResetGenCtrl1	0	static
+Clock_Ip_Selector.c:458:13:Clock_Ip_ResetGenctrl1Ctrl	0	static
+Clock_Ip_Selector.c:505:6:Clock_Ip_ConfigureSetGenCtrl1	0	static
+Clock_Ip_Selector.c:466:13:Clock_Ip_SetGenctrl1Ctrl	0	static
+Clock_Ip_Selector.c:513:6:Clock_Ip_SetRtcRtccClksel_TrustedCall	0	static
+Clock_Ip_Selector.c:482:13:Clock_Ip_SetRtcRtccClksel	0	static

@@ -1,0 +1,11 @@
+Callgraph clone;sys_m7_cache_clean;9;../Project_Settings/Startup_Code/system.c;572;20;sys_m7_cache_disable;8;../Project_Settings/Startup_Code/system.c;561;20;inlining to
+Callgraph removal;sys_m7_cache_clean;9;../Project_Settings/Startup_Code/system.c;572;20
+Callgraph clone;SystemWfiConfig;10;../Project_Settings/Startup_Code/system.c;608;6;SystemWfiConfig.part.0;12;../Project_Settings/Startup_Code/system.c;608;6;part
+Callgraph clone;sys_m7_cache_init;7;../Project_Settings/Startup_Code/system.c;524;13;SystemInit;6;../Project_Settings/Startup_Code/system.c;396;6;inlining to
+Callgraph clone;sys_m7_cache_disable;8;../Project_Settings/Startup_Code/system.c;561;20;SystemInit;6;../Project_Settings/Startup_Code/system.c;396;6;inlining to
+Callgraph removal;sys_m7_cache_disable;8;../Project_Settings/Startup_Code/system.c;561;20
+Callgraph removal;sys_m7_cache_init;7;../Project_Settings/Startup_Code/system.c;524;13
+Callgraph clone;Sys_GetCoreID;5;../Project_Settings/Startup_Code/system.c;336;7;SystemInit;6;../Project_Settings/Startup_Code/system.c;396;6;inlining to
+Callgraph removal;Sys_GetCoreID;13;../Project_Settings/Startup_Code/system.c;336;7
+Callgraph clone;SystemWfiConfig.part.0;12;../Project_Settings/Startup_Code/system.c;608;6;SystemWfiConfig;10;../Project_Settings/Startup_Code/system.c;608;6;inlining to
+Callgraph removal;SystemWfiConfig.part.0;12;../Project_Settings/Startup_Code/system.c;608;6

@@ -1,0 +1,286 @@
+IPA function summary for LinIf_LinErrorIndication/5 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_TxConfirmation/4 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_RxIndication/3 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_HeaderIndication/2 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_CheckWakeup/1 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_WakeupConfirmation/0 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Flattening functions:
+Overall time estimate: 12.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in LinIf_LinErrorIndication/5.
+Enqueueing calls in LinIf_TxConfirmation/4.
+Enqueueing calls in LinIf_RxIndication/3.
+Enqueueing calls in LinIf_HeaderIndication/2.
+Enqueueing calls in LinIf_CheckWakeup/1.
+Enqueueing calls in LinIf_WakeupConfirmation/0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 12.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+IPA function summary for LinIf_LinErrorIndication/5 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_TxConfirmation/4 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_RxIndication/3 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_HeaderIndication/2 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_CheckWakeup/1 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for LinIf_WakeupConfirmation/0 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+Symbol table:
+
+LinIf_LinErrorIndication/5 (LinIf_LinErrorIndication) @04fb57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/4 (LinIf_TxConfirmation) @04fb52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/3 (LinIf_RxIndication) @04fb5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/2 (LinIf_HeaderIndication) @04fb5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_CheckWakeup/1 (LinIf_CheckWakeup) @04fb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_WakeupConfirmation/0 (LinIf_WakeupConfirmation) @04fb5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+;; Function LinIf_WakeupConfirmation (LinIf_WakeupConfirmation, funcdef_no=0, decl_uid=5817, cgraph_uid=1, symbol_order=0)
+
+LinIf_WakeupConfirmation (EcuM_WakeupSourceType WakeupSource)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function LinIf_CheckWakeup (LinIf_CheckWakeup, funcdef_no=1, decl_uid=5815, cgraph_uid=2, symbol_order=1)
+
+LinIf_CheckWakeup (EcuM_WakeupSourceType WakeupSource)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+
+;; Function LinIf_HeaderIndication (LinIf_HeaderIndication, funcdef_no=2, decl_uid=5820, cgraph_uid=3, symbol_order=2)
+
+LinIf_HeaderIndication (NetworkHandleType Channel, struct Lin_PduType * PduPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+
+;; Function LinIf_RxIndication (LinIf_RxIndication, funcdef_no=3, decl_uid=5823, cgraph_uid=4, symbol_order=3)
+
+LinIf_RxIndication (NetworkHandleType Channel, uint8 * Lin_SduPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function LinIf_TxConfirmation (LinIf_TxConfirmation, funcdef_no=4, decl_uid=5825, cgraph_uid=5, symbol_order=4)
+
+LinIf_TxConfirmation (NetworkHandleType Channel)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function LinIf_LinErrorIndication (LinIf_LinErrorIndication, funcdef_no=5, decl_uid=5828, cgraph_uid=6, symbol_order=5)
+
+LinIf_LinErrorIndication (NetworkHandleType Channel, Lin_SlaveErrorType ErrorStatus)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

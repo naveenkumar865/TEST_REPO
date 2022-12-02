@@ -1,0 +1,935 @@
+
+IPA constant propagation start:
+
+IPA structures before propagation:
+
+Jump functions:
+  Jump functions of caller  LinIf_LinErrorIndication/24:
+  Jump functions of caller  LinIf_HeaderIndication/23:
+  Jump functions of caller  LinIf_RxIndication/22:
+  Jump functions of caller  LinIf_TxConfirmation/21:
+  Jump functions of caller  Linflexd_Lin_Ip_GotoIdleState/20:
+  Jump functions of caller  Linflexd_Lin_Ip_SendWakeupSignal/19:
+  Jump functions of caller  Linflexd_Lin_Ip_GetStatus/18:
+  Jump functions of caller  Linflexd_Lin_Ip_SendFrame/17:
+  Jump functions of caller  Linflexd_Lin_Ip_AbortTransferData/16:
+  Jump functions of caller  Linflexd_Lin_Ip_GoToSleepMode/15:
+  Jump functions of caller  Linflexd_Lin_Ip_Init/14:
+  Jump functions of caller  Linflexd_Lin_Ip_CheckWakeup/13:
+  Jump functions of caller  Lin_Ipw_Callback/12:
+    callsite  Lin_Ipw_Callback/12 -> Lin_Ipw_ErrorCallback/3 : 
+       param 0: PASS THROUGH: 0, op nop_expr
+         value: 0x0, mask: 0xff
+         Unknown VR
+       param 1: UNKNOWN
+         value: 0x0, mask: 0xffffffff
+         Unknown VR
+  Jump functions of caller  Lin_Ipw_WakeUpInternal/11:
+  Jump functions of caller  Lin_Ipw_WakeUp/10:
+  Jump functions of caller  Lin_Ipw_HardwareGetStatus/9:
+  Jump functions of caller  Lin_Ipw_GoToSleepInternal/8:
+  Jump functions of caller  Lin_Ipw_GoToSleep/7:
+  Jump functions of caller  Lin_Ipw_SendFrame/6:
+  Jump functions of caller  Lin_Ipw_InitChannel/5:
+  Jump functions of caller  Lin_Ipw_CheckWakeup/4:
+  Jump functions of caller  Lin_Ipw_ErrorCallback/3:
+
+ Propagating constants:
+
+Not considering Lin_Ipw_Callback for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_WakeUpInternal for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_WakeUp for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_HardwareGetStatus for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_GoToSleepInternal for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_GoToSleep for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_SendFrame for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_InitChannel for cloning; -fipa-cp-clone disabled.
+Not considering Lin_Ipw_CheckWakeup for cloning; -fipa-cp-clone disabled.
+
+overall_size: 232, max_new_size: 11001
+
+IPA lattices after all propagation:
+
+Lattices:
+  Node: Lin_Ipw_Callback/12:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+    param [1]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_WakeUpInternal/11:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_WakeUp/10:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_HardwareGetStatus/9:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+    param [1]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_GoToSleepInternal/8:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_GoToSleep/7:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_SendFrame/6:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+    param [1]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_InitChannel/5:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+    param [1]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_CheckWakeup/4:
+    param [0]: BOTTOM
+         ctxs: BOTTOM
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS BOTTOM
+  Node: Lin_Ipw_ErrorCallback/3:
+    param [0]: VARIABLE
+         ctxs: VARIABLE
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS VARIABLE
+    param [1]: VARIABLE
+         ctxs: VARIABLE
+         Bits unusable (BOTTOM)
+         VARYING
+        AGGS VARIABLE
+
+IPA decision stage:
+
+
+IPA constant propagation end
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+CSWTCH.8/25 (CSWTCH.8) @05cd8558
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: Lin_Ipw_HardwareGetStatus/9 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 (153393880 (estimated locally),0.14 per call) Lin_Ipw_ErrorCallback/3 (153393880 (estimated locally),0.14 per call) Lin_Ipw_ErrorCallback/3 (153393880 (estimated locally),0.14 per call) Lin_Ipw_ErrorCallback/3 (153378541 (estimated locally),0.14 per call) Lin_Ipw_ErrorCallback/3 (153393880 (estimated locally),0.14 per call) Lin_Ipw_ErrorCallback/3 (153393880 (estimated locally),0.14 per call) 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (214748364 (estimated locally),0.20 per call) 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (43465069 (estimated locally),0.04 per call) 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (43465069 (estimated locally),0.04 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUpInternal/11 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUp/10 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_HardwareGetStatus/9 (354334802 (estimated locally),0.33 per call) Lin_Ipw_ErrorCallback/3 (1073435133 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (214748364 (estimated locally),0.20 per call) Lin_Ipw_GoToSleep/7 (134217728 (estimated locally),0.65 per call) Lin_Ipw_SendFrame/6 (230317621 (estimated locally),0.21 per call) 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_GoToSleepInternal/8 (1073741823 (estimated locally),1.00 per call) Lin_Ipw_GoToSleep/7 (206488813 (estimated locally),1.00 per call) Lin_Ipw_SendFrame/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (217325345 (estimated locally),0.20 per call) Lin_Ipw_GoToSleepInternal/8 (512926468 (estimated locally),0.48 per call) Lin_Ipw_InitChannel/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_InitChannel/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_CheckWakeup/4 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_au8HwMapping/0 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 (217325345 (estimated locally),0.20 per call) Linflexd_Lin_Ip_SendFrame/17 (214748364 (estimated locally),0.20 per call) LinIf_HeaderIndication/23 (214748364 (estimated locally),0.20 per call) Lin_Ipw_ErrorCallback/3 (43465069 (estimated locally),0.04 per call) LinIf_RxIndication/22 (43465069 (estimated locally),0.04 per call) LinIf_TxConfirmation/21 (43465069 (estimated locally),0.04 per call) 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GotoIdleState/20 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendWakeupSignal/19 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)CSWTCH.8/25 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetStatus/18 (354334802 (estimated locally),0.33 per call) 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 (512926468 (estimated locally),0.48 per call) Linflexd_Lin_Ip_AbortTransferData/16 (1073741823 (estimated locally),1.00 per call) 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:206488813 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 (134217728 (estimated locally),0.65 per call) Linflexd_Lin_Ip_AbortTransferData/16 (206488813 (estimated locally),1.00 per call) 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 (230317621 (estimated locally),0.21 per call) Linflexd_Lin_Ip_AbortTransferData/16 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_au8HwMapping/0 (write)Lin_Ipw_apChannelsConfig/1 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_Init/14 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CheckWakeup/13 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_ErrorCallback/3 (Lin_Ipw_ErrorCallback) @05b21700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Lin_Ipw_au8HwMapping/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073435133 (estimated locally) body local optimize_size
+  Called by: Lin_Ipw_Callback/12 (43465069 (estimated locally),0.04 per call) 
+  Calls: LinIf_LinErrorIndication/24 (153393880 (estimated locally),0.14 per call) LinIf_LinErrorIndication/24 (153393880 (estimated locally),0.14 per call) LinIf_LinErrorIndication/24 (153393880 (estimated locally),0.14 per call) LinIf_LinErrorIndication/24 (153378541 (estimated locally),0.14 per call) LinIf_LinErrorIndication/24 (153393880 (estimated locally),0.14 per call) LinIf_LinErrorIndication/24 (153393880 (estimated locally),0.14 per call) Linflexd_Lin_Ip_GetStatus/18 (1073435133 (estimated locally),1.00 per call) 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: Lin_Ipw_GoToSleep/7 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_GoToSleepInternal/8 (write)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (write)
+  Availability: available
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Lin_Ipw_WakeUp/10 (read)Lin_Ipw_WakeUpInternal/11 (read)Lin_Ipw_CheckWakeup/4 (read)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_GoToSleep/7 (read)Lin_Ipw_GoToSleepInternal/8 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)
+  Availability: available
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_ErrorCallback/3 (read)Lin_Ipw_Callback/12 (read)
+  Availability: available
+  Varpool flags:
+
+;; Function Lin_Ipw_CheckWakeup (Lin_Ipw_CheckWakeup, funcdef_no=1, decl_uid=5764, cgraph_uid=2, symbol_order=4)
+
+Modification phase of node Lin_Ipw_CheckWakeup/4
+Lin_Ipw_CheckWakeup (const uint8 Channel)
+{
+  const struct Lin_HwConfigType * ChannelConfigPtr;
+  boolean IsWakeup;
+  Std_ReturnType RetVal;
+  int _1;
+  unsigned char _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_5(D);
+  ChannelConfigPtr_7 = Lin_Ipw_apChannelsConfig[_1];
+  # DEBUG ChannelConfigPtr => ChannelConfigPtr_7
+  # DEBUG BEGIN_STMT
+  _2 = ChannelConfigPtr_7->LinHwChannel;
+  _3 = (long unsigned int) _2;
+  IsWakeup_9 = Linflexd_Lin_Ip_CheckWakeup (_3);
+  # DEBUG IsWakeup => IsWakeup_9
+  # DEBUG BEGIN_STMT
+  if (IsWakeup_9 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+
+  <bb 4> [local count: 1073741824]:
+  # RetVal_4 = PHI <1(2), 0(3)>
+  # DEBUG RetVal => RetVal_4
+  # DEBUG BEGIN_STMT
+  return RetVal_4;
+
+}
+
+
+
+;; Function Lin_Ipw_InitChannel (Lin_Ipw_InitChannel, funcdef_no=2, decl_uid=5767, cgraph_uid=3, symbol_order=5)
+
+Modification phase of node Lin_Ipw_InitChannel/5
+Lin_Ipw_InitChannel (const uint8 Channel, const struct Lin_HwConfigType * ChannelConfigPtr)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * TempPointer;
+  uint8 HwUnit;
+  int _1;
+  int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  HwUnit_5 = ChannelConfigPtr_4(D)->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_5
+  # DEBUG BEGIN_STMT
+  _1 = (int) HwUnit_5;
+  Lin_Ipw_au8HwMapping[_1] = Channel_6(D);
+  # DEBUG BEGIN_STMT
+  _2 = (int) Channel_6(D);
+  Lin_Ipw_apChannelsConfig[_2] = ChannelConfigPtr_4(D);
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempPointer_9 = ChannelConfigPtr_4(D)->LinFlexdConfig;
+  # DEBUG TempPointer => TempPointer_9
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Init (HwUnit_5, TempPointer_9);
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_2] ={v} 5;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_GoToSleepMode (HwUnit_5);
+  return;
+
+}
+
+
+
+;; Function Lin_Ipw_SendFrame (Lin_Ipw_SendFrame, funcdef_no=3, decl_uid=5770, cgraph_uid=4, symbol_order=6)
+
+Modification phase of node Lin_Ipw_SendFrame/6
+Lin_Ipw_SendFrame (const uint8 Channel, const struct Lin_PduType * PduInfoPtr)
+{
+  uint8 HwUnit;
+  Std_ReturnType TempReturn;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  <unnamed type> _3;
+  unsigned char _4;
+  unsigned char _5;
+  <unnamed type> _6;
+  <unnamed type> _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_10(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_12 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_12
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_AbortTransferData (HwUnit_12);
+  if (_3 == 0)
+    goto <bb 3>; [65.00%]
+  else
+    goto <bb 11>; [35.00%]
+
+  <bb 3> [local count: 697932186]:
+  # DEBUG BEGIN_STMT
+  _4 = PduInfoPtr_14(D)->Dl;
+  _5 = _4 + 255;
+  if (_5 <= 7)
+    goto <bb 4>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 4> [local count: 230317621]:
+  # DEBUG BEGIN_STMT
+  _6 = Linflexd_Lin_Ip_SendFrame (HwUnit_12, PduInfoPtr_14(D));
+  if (_6 == 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 5> [local count: 115158811]:
+  # DEBUG BEGIN_STMT
+  _7 = PduInfoPtr_14(D)->Drc;
+  if (_7 == 1)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 7>; [66.00%]
+
+  <bb 6> [local count: 39153996]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_1] ={v} 2;
+  goto <bb 11>; [100.00%]
+
+  <bb 7> [local count: 76004815]:
+  # DEBUG BEGIN_STMT
+  if (_7 == 0)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 8> [local count: 38002407]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_1] ={v} 1;
+  goto <bb 11>; [100.00%]
+
+  <bb 9> [local count: 38002407]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_1] ={v} 3;
+
+  <bb 11> [local count: 1073741824]:
+  # TempReturn_8 = PHI <0(8), 2(2), 1(3), 1(4), 0(6), 0(9)>
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  return TempReturn_8;
+
+}
+
+
+
+;; Function Lin_Ipw_GoToSleep (Lin_Ipw_GoToSleep, funcdef_no=4, decl_uid=5772, cgraph_uid=5, symbol_order=7)
+
+Modification phase of node Lin_Ipw_GoToSleep/7
+Lin_Ipw_GoToSleep (const uint8 Channel)
+{
+  uint8 SleepDataField[8];
+  struct Linflexd_Lin_Ip_PduType SleepFrame;
+  uint8 Idx;
+  uint8 HwUnit;
+  Std_ReturnType TempReturn;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  <unnamed type> _3;
+  int _4;
+  <unnamed type> _5;
+
+  <bb 2> [local count: 206488813]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_10(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_12 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_12
+  # DEBUG BEGIN_STMT
+  # DEBUG Idx => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_AbortTransferData (HwUnit_12);
+  if (_3 == 0)
+    goto <bb 3>; [65.00%]
+  else
+    goto <bb 8>; [35.00%]
+
+  <bb 3> [local count: 134217728]:
+  # DEBUG BEGIN_STMT
+  SleepFrame.Dl = 8;
+  # DEBUG BEGIN_STMT
+  SleepFrame.Drc = 0;
+  # DEBUG BEGIN_STMT
+  SleepFrame.Cs = 1;
+  # DEBUG BEGIN_STMT
+  SleepFrame.Pid = 60;
+  # DEBUG BEGIN_STMT
+  SleepFrame.SduPtr = &SleepDataField;
+  # DEBUG BEGIN_STMT
+  SleepDataField[0] = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG Idx => 1
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 939524096]:
+  # DEBUG BEGIN_STMT
+  _4 = (int) Idx_7;
+  SleepDataField[_4] = 255;
+  # DEBUG BEGIN_STMT
+  Idx_23 = Idx_7 + 1;
+  # DEBUG Idx => Idx_23
+
+  <bb 5> [local count: 1073741824]:
+  # Idx_7 = PHI <1(3), Idx_23(4)>
+  # DEBUG Idx => Idx_7
+  # DEBUG BEGIN_STMT
+  if (Idx_7 != 8)
+    goto <bb 4>; [87.50%]
+  else
+    goto <bb 6>; [12.50%]
+
+  <bb 6> [local count: 134217728]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_1] ={v} 4;
+  # DEBUG BEGIN_STMT
+  _5 = Linflexd_Lin_Ip_SendFrame (HwUnit_12, &SleepFrame);
+  if (_5 == 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 67108864]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 8> [local count: 206488813]:
+  # TempReturn_6 = PHI <0(7), 2(2), 1(6)>
+  # DEBUG TempReturn => TempReturn_6
+  # DEBUG BEGIN_STMT
+  SleepFrame ={v} {CLOBBER};
+  SleepDataField ={v} {CLOBBER};
+  return TempReturn_6;
+
+}
+
+
+
+;; Function Lin_Ipw_GoToSleepInternal (Lin_Ipw_GoToSleepInternal, funcdef_no=5, decl_uid=5777, cgraph_uid=6, symbol_order=8)
+
+Modification phase of node Lin_Ipw_GoToSleepInternal/8
+Lin_Ipw_GoToSleepInternal (const uint8 Channel)
+{
+  uint8 HwUnit;
+  Std_ReturnType TempReturn;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  <unnamed type> _3;
+  <unnamed type> _4;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_9 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_9
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_AbortTransferData (HwUnit_9);
+  if (_3 == 0)
+    goto <bb 3>; [47.77%]
+  else
+    goto <bb 5>; [52.23%]
+
+  <bb 3> [local count: 512926468]:
+  # DEBUG BEGIN_STMT
+  _4 = Linflexd_Lin_Ip_GoToSleepMode (HwUnit_9);
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 256463234]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_1] ={v} 5;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_5 = PHI <1(3), 2(2), 0(4)>
+  # DEBUG TempReturn => TempReturn_5
+  # DEBUG BEGIN_STMT
+  return TempReturn_5;
+
+}
+
+
+
+;; Function Lin_Ipw_HardwareGetStatus (Lin_Ipw_HardwareGetStatus, funcdef_no=6, decl_uid=5775, cgraph_uid=7, symbol_order=9)
+
+Modification phase of node Lin_Ipw_HardwareGetStatus/9
+Lin_Ipw_HardwareGetStatus (const uint8 Channel, uint8 * * LinSduPtr)
+{
+  Linflexd_Lin_Ip_TransferStatusType TransferState;
+  uint8 HwUnit;
+  Lin_StatusType ReturnStatus;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  unsigned int _3;
+  <unnamed type> _5;
+  <unnamed type> _8;
+  unsigned char _16;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ReturnStatus => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_9(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_11 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_11
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 = _2->LinNodeType;
+  if (_5 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 6>; [67.00%]
+
+  <bb 3> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  TransferState_14 = Linflexd_Lin_Ip_GetStatus (HwUnit_11, LinSduPtr_12(D));
+  # DEBUG TransferState => TransferState_14
+  # DEBUG BEGIN_STMT
+  _3 = TransferState_14 + 4294967295;
+  if (_3 <= 12)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 4> [local count: 177167401]:
+<L20>:
+  ReturnStatus_15 = 0;
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 177167401]:
+<L21>:
+  _16 = CSWTCH.8[_3];
+  _8 = (<unnamed type>) _16;
+  ReturnStatus_4 = _8;
+
+  <bb 6> [local count: 1073741824]:
+  # ReturnStatus_6 = PHI <0(2), ReturnStatus_4(5), ReturnStatus_15(4)>
+<L22>:
+<L19>:
+  # DEBUG ReturnStatus => ReturnStatus_6
+  # DEBUG BEGIN_STMT
+  return ReturnStatus_6;
+
+}
+
+
+
+;; Function Lin_Ipw_WakeUp (Lin_Ipw_WakeUp, funcdef_no=7, decl_uid=5779, cgraph_uid=8, symbol_order=10)
+
+Modification phase of node Lin_Ipw_WakeUp/10
+Lin_Ipw_WakeUp (const uint8 Channel)
+{
+  uint8 HwUnit;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_3(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_5 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_5
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_SendWakeupSignal (HwUnit_5);
+  return;
+
+}
+
+
+
+;; Function Lin_Ipw_WakeUpInternal (Lin_Ipw_WakeUpInternal, funcdef_no=8, decl_uid=5781, cgraph_uid=9, symbol_order=11)
+
+Modification phase of node Lin_Ipw_WakeUpInternal/11
+Lin_Ipw_WakeUpInternal (const uint8 Channel)
+{
+  uint8 HwUnit;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_3(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_5 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_5
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_GotoIdleState (HwUnit_5);
+  return;
+
+}
+
+
+
+;; Function Lin_Ipw_Callback (Lin_Ipw_Callback, funcdef_no=9, decl_uid=5811, cgraph_uid=10, symbol_order=12)
+
+Modification phase of node Lin_Ipw_Callback/12
+Lin_Ipw_Callback (const uint8 Instance, const struct Linflexd_Lin_Ip_StateStructType * LinflexdStateStruct)
+{
+  Std_ReturnType TempReturn;
+  uint8 Channel;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  const struct Lin_HwConfigType * _4;
+  <unnamed type> _5;
+  int _6;
+  const struct Lin_HwConfigType * _7;
+  <unnamed type> _8;
+  struct Linflexd_Lin_Ip_PduType * _9;
+  uint8 * _10;
+  int _11;
+  const struct Lin_HwConfigType * _12;
+  <unnamed type> _13;
+  <unnamed type> _14;
+  struct Linflexd_Lin_Ip_PduType * _15;
+  struct Linflexd_Lin_Ip_PduType * _16;
+  struct Linflexd_Lin_Ip_PduType * _17;
+  int _18;
+  unsigned char _19;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_23(D);
+  Channel_25 = Lin_Ipw_au8HwMapping[_1];
+  # DEBUG Channel => Channel_25
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinflexdStateStruct_26(D)->CurrentEventId;
+  switch (_2) <default: <L24> [20.00%], case 3: <L15> [20.00%], case 7 ... 10: <L7> [20.00%], case 11: <L0> [20.00%], case 12: <L3> [20.00%], case 13 ... 14: <L7> [20.00%]>
+
+  <bb 3> [local count: 214748364]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_25;
+  _4 = Lin_Ipw_apChannelsConfig[_3];
+  _5 = _4->LinNodeType;
+  if (_5 == 1)
+    goto <bb 4>; [20.24%]
+  else
+    goto <bb 12>; [79.76%]
+
+  <bb 4> [local count: 43465069]:
+  # DEBUG BEGIN_STMT
+  LinIf_TxConfirmation (Channel_25);
+  goto <bb 12>; [100.00%]
+
+  <bb 5> [local count: 214748364]:
+<L3>:
+  # DEBUG BEGIN_STMT
+  _6 = (int) Channel_25;
+  _7 = Lin_Ipw_apChannelsConfig[_6];
+  _8 = _7->LinNodeType;
+  if (_8 == 1)
+    goto <bb 6>; [20.24%]
+  else
+    goto <bb 12>; [79.76%]
+
+  <bb 6> [local count: 43465069]:
+  # DEBUG BEGIN_STMT
+  _9 = LinflexdStateStruct_26(D)->SlavePduInfoPtr;
+  _10 = _9->SduPtr;
+  LinIf_RxIndication (Channel_25, _10);
+  goto <bb 12>; [100.00%]
+
+  <bb 7> [local count: 214748364]:
+<L7>:
+  # DEBUG BEGIN_STMT
+  _11 = (int) Channel_25;
+  _12 = Lin_Ipw_apChannelsConfig[_11];
+  _13 = _12->LinNodeType;
+  if (_13 == 1)
+    goto <bb 8>; [20.24%]
+  else
+    goto <bb 12>; [79.76%]
+
+  <bb 8> [local count: 43465069]:
+  # DEBUG BEGIN_STMT
+  _14 ={v} LinflexdStateStruct_26(D)->CurrentEventId;
+  Lin_Ipw_ErrorCallback (Instance_23(D), _14);
+  goto <bb 12>; [100.00%]
+
+  <bb 9> [local count: 214748364]:
+<L15>:
+  # DEBUG BEGIN_STMT
+  _15 = LinflexdStateStruct_26(D)->SlavePduInfoPtr;
+  TempReturn_30 = LinIf_HeaderIndication (Channel_25, _15);
+  # DEBUG TempReturn => TempReturn_30
+  # DEBUG BEGIN_STMT
+  if (TempReturn_30 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 107374182]:
+  # DEBUG BEGIN_STMT
+  _16 = LinflexdStateStruct_26(D)->SlavePduInfoPtr;
+  _16->Drc = 2;
+  # DEBUG BEGIN_STMT
+  _16->Dl = 1;
+
+  <bb 11> [local count: 214748364]:
+  # DEBUG BEGIN_STMT
+  _17 = LinflexdStateStruct_26(D)->SlavePduInfoPtr;
+  Linflexd_Lin_Ip_SendFrame (Instance_23(D), _17);
+  # DEBUG BEGIN_STMT
+
+  <bb 12> [local count: 1073741824]:
+<L24>:
+  # DEBUG BEGIN_STMT
+  _18 = (int) Channel_25;
+  _19 ={v} Lin_Ipw_au8TransmitHeaderCommand[_18];
+  if (_19 == 4)
+    goto <bb 13>; [20.24%]
+  else
+    goto <bb 14>; [79.76%]
+
+  <bb 13> [local count: 217325345]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_GoToSleepMode (Instance_23(D));
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_au8TransmitHeaderCommand[_18] ={v} 5;
+
+  <bb 14> [local count: 1073741824]:
+  return;
+
+}
+
+

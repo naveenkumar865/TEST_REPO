@@ -1,0 +1,3 @@
+Linflexd_Lin_Ip_Irq.c:133:1:LIN_LINFLEXD0_IRQHandler	8	static
+Linflexd_Lin_Ip_Irq.c:141:1:LIN_LINFLEXD1_IRQHandler	8	static
+Linflexd_Lin_Ip_Irq.c:149:1:LIN_LINFLEXD2_IRQHandler	8	static

@@ -1,0 +1,669 @@
+IntCtrl_Ip_GenerateDirectedCpuInterrupt (IRQn_Type eIrqNumber, IntCtrl_Ip_IrqTargetType eCpuTarget)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged (eIrqNumber_2(D), eCpuTarget_3(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_GetDirectedCpuInterrupt (IRQn_Type eIrqNumber)
+{
+  long unsigned int _1;
+  boolean _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = IntCtrl_Ip_GetDirectedCpuInterruptPrivileged (eIrqNumber_3(D));
+  _5 = _1 != 0;
+  return _5;
+
+}
+
+
+IntCtrl_Ip_ClearDirectedCpuInterrupt (IRQn_Type eIrqNumber)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_SetTargetCores (IRQn_Type eIrqNumber, uint8 u8TargetCores)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_SetTargetCoresPrivileged (eIrqNumber_2(D), u8TargetCores_3(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_ClearPending (IRQn_Type eIrqNumber)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_ClearPendingPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_GetPriority (IRQn_Type eIrqNumber)
+{
+  uint8 _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _4 = IntCtrl_Ip_GetPriorityPrivileged (eIrqNumber_2(D));
+  return _4;
+
+}
+
+
+IntCtrl_Ip_SetPriority (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_SetPriorityPrivileged (eIrqNumber_2(D), u8Priority_3(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_DisableIrq (IRQn_Type eIrqNumber)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_DisableIrqPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_EnableIrq (IRQn_Type eIrqNumber)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_EnableIrqPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_InstallHandler (IRQn_Type eIrqNumber, void (*IntCtrl_Ip_IrqHandlerType) (void) pfNewHandler, void (*IntCtrl_Ip_IrqHandlerType) (void) * const pfOldHandler)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_InstallHandlerPrivileged (eIrqNumber_2(D), pfNewHandler_3(D), pfOldHandler_4(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_ConfigIrqRouting (const struct IntCtrl_Ip_GlobalRouteConfigType * routeConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _1;
+  long unsigned int _2;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _3;
+  <unnamed type> _4;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _5;
+  long unsigned int _6;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _7;
+  unsigned char _8;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _9;
+  long unsigned int _10;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _11;
+  <unnamed type> _12;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _13;
+  long unsigned int _14;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _15;
+  void (*<T4ed>) (void) _16;
+  long unsigned int _17;
+  IntCtrl_Ip_StatusType _23;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  irqIdx_20 = 0;
+  # DEBUG irqIdx => irqIdx_20
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = routeConfig_22(D)->aIrqConfig;
+  _2 = irqIdx_18 * 12;
+  _3 = _1 + _2;
+  _4 = _3->eIrqNumber;
+  _5 = routeConfig_22(D)->aIrqConfig;
+  _6 = irqIdx_18 * 12;
+  _7 = _5 + _6;
+  _8 = _7->u8TargetCores;
+  IntCtrl_Ip_SetTargetCores (_4, _8);
+  # DEBUG BEGIN_STMT
+  _9 = routeConfig_22(D)->aIrqConfig;
+  _10 = irqIdx_18 * 12;
+  _11 = _9 + _10;
+  _12 = _11->eIrqNumber;
+  _13 = routeConfig_22(D)->aIrqConfig;
+  _14 = irqIdx_18 * 12;
+  _15 = _13 + _14;
+  _16 = _15->pfHandler;
+  IntCtrl_Ip_InstallHandler (_12, _16, 0B);
+  # DEBUG BEGIN_STMT
+  irqIdx_26 = irqIdx_18 + 1;
+  # DEBUG irqIdx => irqIdx_26
+
+  <bb 4> :
+  # irqIdx_18 = PHI <irqIdx_20(2), irqIdx_26(3)>
+  # DEBUG irqIdx => irqIdx_18
+  # DEBUG BEGIN_STMT
+  _17 = routeConfig_22(D)->u32ConfigIrqCount;
+  if (irqIdx_18 < _17)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _23 = 0;
+  return _23;
+
+}
+
+
+IntCtrl_Ip_Init (const struct IntCtrl_Ip_CtrlConfigType * pIntCtrlCtrlConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_IrqConfigType * _1;
+  long unsigned int _2;
+  const struct IntCtrl_Ip_IrqConfigType * _3;
+  <unnamed type> _4;
+  const struct IntCtrl_Ip_IrqConfigType * _5;
+  long unsigned int _6;
+  const struct IntCtrl_Ip_IrqConfigType * _7;
+  <unnamed type> _8;
+  const struct IntCtrl_Ip_IrqConfigType * _9;
+  long unsigned int _10;
+  const struct IntCtrl_Ip_IrqConfigType * _11;
+  unsigned char _12;
+  const struct IntCtrl_Ip_IrqConfigType * _13;
+  long unsigned int _14;
+  const struct IntCtrl_Ip_IrqConfigType * _15;
+  _Bool _16;
+  const struct IntCtrl_Ip_IrqConfigType * _17;
+  long unsigned int _18;
+  const struct IntCtrl_Ip_IrqConfigType * _19;
+  <unnamed type> _20;
+  const struct IntCtrl_Ip_IrqConfigType * _21;
+  long unsigned int _22;
+  const struct IntCtrl_Ip_IrqConfigType * _23;
+  <unnamed type> _24;
+  long unsigned int _25;
+  IntCtrl_Ip_StatusType _32;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  irqIdx_29 = 0;
+  # DEBUG irqIdx => irqIdx_29
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = pIntCtrlCtrlConfig_31(D)->aIrqConfig;
+  _2 = irqIdx_26 * 8;
+  _3 = _1 + _2;
+  _4 = _3->eIrqNumber;
+  IntCtrl_Ip_ClearPending (_4);
+  # DEBUG BEGIN_STMT
+  _5 = pIntCtrlCtrlConfig_31(D)->aIrqConfig;
+  _6 = irqIdx_26 * 8;
+  _7 = _5 + _6;
+  _8 = _7->eIrqNumber;
+  _9 = pIntCtrlCtrlConfig_31(D)->aIrqConfig;
+  _10 = irqIdx_26 * 8;
+  _11 = _9 + _10;
+  _12 = _11->u8IrqPriority;
+  IntCtrl_Ip_SetPriority (_8, _12);
+  # DEBUG BEGIN_STMT
+  _13 = pIntCtrlCtrlConfig_31(D)->aIrqConfig;
+  _14 = irqIdx_26 * 8;
+  _15 = _13 + _14;
+  _16 = _15->bIrqEnabled;
+  if (_16 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _17 = pIntCtrlCtrlConfig_31(D)->aIrqConfig;
+  _18 = irqIdx_26 * 8;
+  _19 = _17 + _18;
+  _20 = _19->eIrqNumber;
+  IntCtrl_Ip_EnableIrq (_20);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _21 = pIntCtrlCtrlConfig_31(D)->aIrqConfig;
+  _22 = irqIdx_26 * 8;
+  _23 = _21 + _22;
+  _24 = _23->eIrqNumber;
+  IntCtrl_Ip_DisableIrq (_24);
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  irqIdx_37 = irqIdx_26 + 1;
+  # DEBUG irqIdx => irqIdx_37
+
+  <bb 7> :
+  # irqIdx_26 = PHI <irqIdx_29(2), irqIdx_37(6)>
+  # DEBUG irqIdx => irqIdx_26
+  # DEBUG BEGIN_STMT
+  _25 = pIntCtrlCtrlConfig_31(D)->u32ConfigIrqCount;
+  if (irqIdx_26 < _25)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _32 = 0;
+  return _32;
+
+}
+
+
+IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged (IRQn_Type eIrqNumber, IntCtrl_Ip_IrqTargetType eCpuTarget)
+{
+  uint32 target;
+  uint32 core;
+  uint32 irqId;
+  long unsigned int eIrqNumber.13_1;
+  struct MSCM_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  volatile struct MSCM_IRCPnIRx_Type * _5;
+  struct MSCM_Type * _6;
+  long unsigned int _7;
+  volatile struct MSCM_IRCPnIRx_Type * _8;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  eIrqNumber.13_1 = (long unsigned int) eIrqNumber_14(D);
+  irqId_15 = eIrqNumber.13_1 + 4294967295;
+  # DEBUG irqId => irqId_15
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (eCpuTarget_16(D) == -1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  core_21 = 0;
+  # DEBUG core => core_21
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 = 1075412992B;
+  _3 ={v} _2->CPXNUM;
+  _4 = _3 & 255;
+  if (core_9 != _4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _5 = 1075413504B;
+  _5->IRCPnIRx[core_9][irqId_15].IGR ={v} 1;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  core_23 = core_9 + 1;
+  # DEBUG core => core_23
+
+  <bb 7> :
+  # core_9 = PHI <core_21(3), core_23(6)>
+  # DEBUG core => core_9
+  # DEBUG BEGIN_STMT
+  if (core_9 <= 6)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  if (eCpuTarget_16(D) == -2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _6 = 1075412992B;
+  _7 ={v} _6->CPXNUM;
+  target_19 = _7 & 255;
+  # DEBUG target => target_19
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  target_17 = (uint32) eCpuTarget_16(D);
+  # DEBUG target => target_17
+
+  <bb 11> :
+  # target_10 = PHI <target_19(9), target_17(10)>
+  # DEBUG target => target_10
+  # DEBUG BEGIN_STMT
+  _8 = 1075413504B;
+  _8->IRCPnIRx[target_10][irqId_15].IGR ={v} 1;
+
+  <bb 12> :
+  return;
+
+}
+
+
+IntCtrl_Ip_GetDirectedCpuInterruptPrivileged (IRQn_Type eIrqNumber)
+{
+  uint32 irqId;
+  uint32 currentCpu;
+  struct MSCM_Type * _1;
+  long unsigned int _2;
+  long unsigned int eIrqNumber.12_3;
+  volatile struct MSCM_IRCPnIRx_Type * _4;
+  long unsigned int _5;
+  _Bool _6;
+  uint32 _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1075412992B;
+  _2 ={v} _1->CPXNUM;
+  currentCpu_8 = _2 & 255;
+  # DEBUG currentCpu => currentCpu_8
+  # DEBUG BEGIN_STMT
+  eIrqNumber.12_3 = (long unsigned int) eIrqNumber_9(D);
+  irqId_10 = eIrqNumber.12_3 + 4294967295;
+  # DEBUG irqId => irqId_10
+  # DEBUG BEGIN_STMT
+  _4 = 1075413504B;
+  _5 ={v} _4->IRCPnIRx[currentCpu_8][irqId_10].IntStatusR;
+  _6 = _5 != 0;
+  _11 = (uint32) _6;
+  return _11;
+
+}
+
+
+IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged (IRQn_Type eIrqNumber)
+{
+  uint32 irqId;
+  uint32 currentCpu;
+  struct MSCM_Type * _1;
+  long unsigned int _2;
+  long unsigned int eIrqNumber.11_3;
+  volatile struct MSCM_IRCPnIRx_Type * _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1075412992B;
+  _2 ={v} _1->CPXNUM;
+  currentCpu_6 = _2 & 255;
+  # DEBUG currentCpu => currentCpu_6
+  # DEBUG BEGIN_STMT
+  eIrqNumber.11_3 = (long unsigned int) eIrqNumber_7(D);
+  irqId_8 = eIrqNumber.11_3 + 4294967295;
+  # DEBUG irqId => irqId_8
+  # DEBUG BEGIN_STMT
+  _4 = 1075413504B;
+  _4->IRCPnIRx[currentCpu_6][irqId_8].IntStatusR ={v} 127;
+  return;
+
+}
+
+
+IntCtrl_Ip_SetTargetCoresPrivileged (IRQn_Type eIrqNumber, uint8 u8TargetCores)
+{
+  _Bool _1;
+  short unsigned int _2;
+  struct MSCM_Type * _3;
+  short unsigned int _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = u8TargetCores_5(D) <= 15;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = (short unsigned int) u8TargetCores_5(D);
+  _3 = 1075412992B;
+  _4 = _2 & 15;
+  _3->IRSPRC[eIrqNumber_8(D)] ={v} _4;
+  return;
+
+}
+
+
+IntCtrl_Ip_ClearPendingPrivileged (IRQn_Type eIrqNumber)
+{
+  long unsigned int eIrqNumber.8_1;
+  long unsigned int _2;
+  struct S32_NVIC_Type * _3;
+  long unsigned int eIrqNumber.9_4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  eIrqNumber.8_1 = (long unsigned int) eIrqNumber_7(D);
+  _2 = eIrqNumber.8_1 & 31;
+  _3 = 3758153728B;
+  eIrqNumber.9_4 = (long unsigned int) eIrqNumber_7(D);
+  _5 = eIrqNumber.9_4 >> 5;
+  _6 = 1 << _2;
+  _3->ICPR[_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_GetPriorityPrivileged (IRQn_Type eIrqNumber)
+{
+  uint8 shift;
+  uint8 priority;
+  struct S32_NVIC_Type * _1;
+  long unsigned int eIrqNumber.7_2;
+  unsigned char _3;
+  int _4;
+  int _5;
+  int _6;
+  uint8 _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  shift_7 = 4;
+  # DEBUG shift => shift_7
+  # DEBUG BEGIN_STMT
+  _1 = 3758153728B;
+  eIrqNumber.7_2 = (long unsigned int) eIrqNumber_8(D);
+  _3 ={v} _1->IP[eIrqNumber.7_2];
+  _4 = (int) _3;
+  _5 = (int) shift_7;
+  _6 = _4 >> _5;
+  priority_10 = (uint8) _6;
+  # DEBUG priority => priority_10
+  # DEBUG BEGIN_STMT
+  _11 = priority_10;
+  return _11;
+
+}
+
+
+IntCtrl_Ip_SetPriorityPrivileged (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  uint8 shift;
+  long unsigned int _1;
+  int _2;
+  long unsigned int _3;
+  struct S32_NVIC_Type * _4;
+  long unsigned int eIrqNumber.6_5;
+  unsigned char _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  shift_7 = 4;
+  # DEBUG shift => shift_7
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) u8Priority_8(D);
+  _2 = (int) shift_7;
+  _3 = _1 << _2;
+  _4 = 3758153728B;
+  eIrqNumber.6_5 = (long unsigned int) eIrqNumber_9(D);
+  _6 = (unsigned char) _3;
+  _4->IP[eIrqNumber.6_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_DisableIrqPrivileged (IRQn_Type eIrqNumber)
+{
+  long unsigned int eIrqNumber.4_1;
+  long unsigned int _2;
+  struct S32_NVIC_Type * _3;
+  long unsigned int eIrqNumber.5_4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  eIrqNumber.4_1 = (long unsigned int) eIrqNumber_7(D);
+  _2 = eIrqNumber.4_1 & 31;
+  _3 = 3758153728B;
+  eIrqNumber.5_4 = (long unsigned int) eIrqNumber_7(D);
+  _5 = eIrqNumber.5_4 >> 5;
+  _6 = 1 << _2;
+  _3->ICER[_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_EnableIrqPrivileged (IRQn_Type eIrqNumber)
+{
+  long unsigned int eIrqNumber.2_1;
+  long unsigned int _2;
+  struct S32_NVIC_Type * _3;
+  long unsigned int eIrqNumber.3_4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  eIrqNumber.2_1 = (long unsigned int) eIrqNumber_7(D);
+  _2 = eIrqNumber.2_1 & 31;
+  _3 = 3758153728B;
+  eIrqNumber.3_4 = (long unsigned int) eIrqNumber_7(D);
+  _5 = eIrqNumber.3_4 >> 5;
+  _6 = 1 << _2;
+  _3->ISER[_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_InstallHandlerPrivileged (IRQn_Type eIrqNumber, void (*IntCtrl_Ip_IrqHandlerType) (void) pfNewHandler, void (*IntCtrl_Ip_IrqHandlerType) (void) * const pfOldHandler)
+{
+  void (*IntCtrl_Ip_IrqHandlerType) (void) * pVectorRam;
+  struct S32_SCB_Type * _1;
+  long unsigned int _2;
+  sizetype eIrqNumber.0_3;
+  sizetype _4;
+  sizetype _5;
+  void (*IntCtrl_Ip_IrqHandlerType) (void) * _6;
+  void (*<T4ed>) (void) _7;
+  sizetype eIrqNumber.1_8;
+  sizetype _9;
+  sizetype _10;
+  void (*IntCtrl_Ip_IrqHandlerType) (void) * _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 3758153728B;
+  _2 ={v} _1->VTOR;
+  pVectorRam_14 = (void (*IntCtrl_Ip_IrqHandlerType) (void) *) _2;
+  # DEBUG pVectorRam => pVectorRam_14
+  # DEBUG BEGIN_STMT
+  if (pfOldHandler_15(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  eIrqNumber.0_3 = (sizetype) eIrqNumber_16(D);
+  _4 = eIrqNumber.0_3 + 16;
+  _5 = _4 * 4;
+  _6 = pVectorRam_14 + _5;
+  _7 = *_6;
+  *pfOldHandler_15(D) = _7;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  eIrqNumber.1_8 = (sizetype) eIrqNumber_16(D);
+  _9 = eIrqNumber.1_8 + 16;
+  _10 = _9 * 4;
+  _11 = pVectorRam_14 + _10;
+  *_11 = pfNewHandler_18(D);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  _Bool x.10_1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  x.10_1 ={v} x;
+  if (x.10_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("BKPT #0");
+  # DEBUG BEGIN_STMT
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

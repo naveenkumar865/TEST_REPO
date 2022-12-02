@@ -1,0 +1,9 @@
+Lin_Ipw.c:382:16:Lin_Ipw_CheckWakeup	8	static
+Lin_Ipw.c:409:6:Lin_Ipw_InitChannel	16	static
+Lin_Ipw.c:449:16:Lin_Ipw_SendFrame	16	static
+Lin_Ipw.c:518:16:Lin_Ipw_GoToSleep	48	static
+Lin_Ipw.c:574:16:Lin_Ipw_GoToSleepInternal	16	static
+Lin_Ipw.c:633:16:Lin_Ipw_HardwareGetStatus	8	static
+Lin_Ipw.c:703:6:Lin_Ipw_WakeUp	0	static
+Lin_Ipw.c:720:6:Lin_Ipw_WakeUpInternal	0	static
+Lin_Ipw.c:729:6:Lin_Ipw_Callback	24	static

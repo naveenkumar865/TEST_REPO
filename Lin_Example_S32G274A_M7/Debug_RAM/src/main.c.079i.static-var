@@ -1,0 +1,378 @@
+callgraph:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (1073741824 (estimated locally),160.62 per call) 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (114863532 (estimated locally),17.18 per call) 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (114863532 (estimated locally),17.18 per call) 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (114863532 (estimated locally),17.18 per call) 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (60774361 (estimated locally),9.09 per call) 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: linSdu.7625/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:6685180 (estimated locally) body only_called_at_startup executed_once optimize_size
+  Called by: 
+  Calls: Exit_Example/1 (inlined) (6685179 (estimated locally),1.00 per call) Lin_GetStatus/18 (1073741824 (estimated locally),160.62 per call) Lin_SendFrame/17 (114863532 (estimated locally),17.18 per call) Lin_CheckWakeup/16 (114863532 (estimated locally),17.18 per call) Lin_WakeupInternal/15 (114863532 (estimated locally),17.18 per call) Lin_Init/14 (6685180 (estimated locally),1.00 per call) OsIf_Init/13 (6685180 (estimated locally),1.00 per call) Platform_Init/12 (6685180 (estimated locally),1.00 per call) Mcu_SetMode/11 (6685180 (estimated locally),1.00 per call) Mcu_DistributePllClock/10 (6685180 (estimated locally),1.00 per call) Mcu_GetPllStatus/9 (60774361 (estimated locally),9.09 per call) Mcu_InitClock/8 (6685180 (estimated locally),1.00 per call) Mcu_Init/7 (6685180 (estimated locally),1.00 per call) Port_Init/6 (6685180 (estimated locally),1.00 per call) 
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Exit_Example/1 is inline copy in main/4
+  Availability: local
+  Function flags: count:6685179 (estimated locally) body local nonfreeing_fn executed_once optimize_size
+  Called by: main/4 (inlined) (6685179 (estimated locally),1.00 per call) 
+  Calls: 
+Clearing variable flags:
+
+Function name:main/4:
+  locals read: 
+  locals written: 
+Function name:Exit_Example/1:
+  locals read: 
+  locals written: 
+
+ ordered call graph: reduced
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b83f20
+  References: linSdu.7625/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:6685180 (estimated locally) body only_called_at_startup executed_once optimize_size
+  Called by: 
+  Calls: Exit_Example/1 (inlined) (6685179 (estimated locally),1.00 per call) Lin_GetStatus/18 (1073741824 (estimated locally),160.62 per call) Lin_SendFrame/17 (114863532 (estimated locally),17.18 per call) Lin_CheckWakeup/16 (114863532 (estimated locally),17.18 per call) Lin_WakeupInternal/15 (114863532 (estimated locally),17.18 per call) Lin_Init/14 (6685180 (estimated locally),1.00 per call) OsIf_Init/13 (6685180 (estimated locally),1.00 per call) Platform_Init/12 (6685180 (estimated locally),1.00 per call) Mcu_SetMode/11 (6685180 (estimated locally),1.00 per call) Mcu_DistributePllClock/10 (6685180 (estimated locally),1.00 per call) Mcu_GetPllStatus/9 (60774361 (estimated locally),9.09 per call) Mcu_InitClock/8 (6685180 (estimated locally),1.00 per call) Mcu_Init/7 (6685180 (estimated locally),1.00 per call) Port_Init/6 (6685180 (estimated locally),1.00 per call) 
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @05b84160
+  References: 
+  Referring: 
+  Function Exit_Example/1 is inline copy in main/4
+  Availability: local
+  Function flags: count:6685179 (estimated locally) body local nonfreeing_fn executed_once optimize_size
+  Called by: main/4 (inlined) (6685179 (estimated locally),1.00 per call) 
+  Calls: 
+
+
+Function name:Exit_Example/1:
+    locals read: 
+    locals written: 
+  globals read: 
+  globals written: 
+
+Function name:main/4:
+    locals read: 
+    locals written: 
+  globals read: ALL
+  globals written: ALL
+main ()
+{
+  volatile Std_ReturnType wakeUpEvent;
+  uint8 Channel_Index;
+  volatile uint8 T_result;
+  uint8 * linSduPtr;
+  struct Lin_PduType linFrame;
+  volatile uint32 TimeOut;
+  volatile Lin_StatusType T_LinStatus;
+  static uint8 linSdu[8] = "\x00\x00\x00\x00\x00\x00\x00";
+  <unnamed type> _1;
+  unsigned char _2;
+  <unnamed type> _3;
+  <unnamed type> T_LinStatus.0_4;
+  long unsigned int TimeOut.1_5;
+  long unsigned int _6;
+  <unnamed type> T_LinStatus.3_7;
+  unsigned char T_result.4_8;
+  unsigned char _9;
+  unsigned char wakeUpEvent.7_10;
+  unsigned char T_result.8_11;
+  _Bool _12;
+  int iftmp.6_14;
+
+  <bb 2> [local count: 6685180]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Index_frame => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  linSduPtr = &linSdu;
+  # DEBUG BEGIN_STMT
+  T_result ={v} 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG Channel_Index => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Port_Init (0B);
+  # DEBUG BEGIN_STMT
+  Mcu_Init (0B);
+  # DEBUG BEGIN_STMT
+  Mcu_InitClock (0);
+  # DEBUG BEGIN_STMT
+
+  <bb 3> [local count: 60774361]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 19>; [89.00%]
+  else
+    goto <bb 4>; [11.00%]
+
+  <bb 19> [local count: 54089181]:
+  goto <bb 3>; [100.00%]
+
+  <bb 4> [local count: 6685180]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Mcu_DistributePllClock ();
+  # DEBUG BEGIN_STMT
+  Mcu_SetMode (0);
+  # DEBUG BEGIN_STMT
+  Platform_Init (0B);
+  # DEBUG BEGIN_STMT
+  OsIf_Init (0B);
+  # DEBUG BEGIN_STMT
+  Lin_Init (0B);
+  # DEBUG BEGIN_STMT
+  # DEBUG Channel_Index => 0
+  goto <bb 11>; [100.00%]
+
+  <bb 5> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  Lin_WakeupInternal (0);
+  # DEBUG BEGIN_STMT
+  _2 = Lin_CheckWakeup (0);
+  wakeUpEvent ={v} _2;
+  # DEBUG BEGIN_STMT
+  linFrame = T_Lin_Frame[0];
+  # DEBUG BEGIN_STMT
+  Lin_SendFrame (0, &linFrame);
+  # DEBUG BEGIN_STMT
+  TimeOut ={v} 1600000;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = Lin_GetStatus (0, &linSduPtr);
+  T_LinStatus ={v} _3;
+  # DEBUG BEGIN_STMT
+  T_LinStatus.0_4 ={v} T_LinStatus;
+  if (T_LinStatus.0_4 != 1)
+    goto <bb 7>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 7> [local count: 1014686025]:
+  TimeOut.1_5 ={v} TimeOut;
+  _6 = TimeOut.1_5 + 4294967295;
+  TimeOut ={v} _6;
+  if (TimeOut.1_5 != 0)
+    goto <bb 18>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 18> [local count: 958878293]:
+  goto <bb 6>; [100.00%]
+
+  <bb 8> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  T_LinStatus.3_7 ={v} T_LinStatus;
+  if (T_LinStatus.3_7 == 1)
+    goto <bb 9>; [67.00%]
+  else
+    goto <bb 17>; [33.00%]
+
+  <bb 17> [local count: 37904966]:
+  goto <bb 16>; [100.00%]
+
+  <bb 9> [local count: 76958566]:
+  # DEBUG BEGIN_STMT
+  T_result.4_8 ={v} T_result;
+  _9 = T_result.4_8 + 1;
+  T_result ={v} _9;
+
+  <bb 11> [local count: 83643746]:
+  # Channel_Index_18 = PHI <0(4), 1(9)>
+
+  <bb 16> [local count: 121548711]:
+  # Channel_Index_13 = PHI <Channel_Index_18(11), 1(17)>
+  # DEBUG Channel_Index => Channel_Index_13
+  # DEBUG BEGIN_STMT
+  if (Channel_Index_13 == 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 12>; [5.50%]
+
+  <bb 12> [local count: 6685179]:
+  # DEBUG BEGIN_STMT
+  wakeUpEvent.7_10 ={v} wakeUpEvent;
+  if (wakeUpEvent.7_10 == 0)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 13> [local count: 3342590]:
+  T_result.8_11 ={v} T_result;
+  if (T_result.8_11 == 1)
+    goto <bb 15>; [34.00%]
+  else
+    goto <bb 14>; [66.00%]
+
+  <bb 14> [local count: 5548699]:
+
+  <bb 15> [local count: 6685179]:
+  # iftmp.6_14 = PHI <1(13), 0(14)>
+  _12 = (_Bool) iftmp.6_14;
+  Exit_Example (_12);
+  # DEBUG BEGIN_STMT
+  linFrame ={v} {CLOBBER};
+  linSduPtr ={v} {CLOBBER};
+  return 0;
+
+}
+
+
+Exit_Example (boolean result)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG testResultBasePtr => 877658112B
+  # DEBUG BEGIN_STMT
+  if (result_2(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  MEM[(volatile uint8 *)877658112B] ={v} 90;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  MEM[(volatile uint8 *)877658112B] ={v} 51;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+

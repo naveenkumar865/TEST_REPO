@@ -1,0 +1,12 @@
+Clock_Ip_Monitor.c:188:13:Clock_Ip_ClockMonitorEmpty	0	static
+Clock_Ip_Monitor.c:194:13:Clock_Ip_ClockMonitorEmpty_Disable	0	static
+Clock_Ip_Monitor.c:206:31:Clock_Ip_ClockMonitorEmpty_GetStatus	0	static
+Clock_Ip_Monitor.c:431:13:Clock_Ip_ClearStatusCmuFcFceRefCntLfrefHfref	0	static
+Clock_Ip_Monitor.c:445:31:Clock_Ip_GetStatusCmuFcFceRefCntLfrefHfref	0	static
+Clock_Ip_Monitor.c:484:13:Clock_Ip_EnableCmuFcFceRefCntLfrefHfref	0	static
+Clock_Ip_Monitor.c:214:13:Clock_Ip_DisableCmuFcFceRefCntLfrefHfref	32	static
+Clock_Ip_Monitor.c:284:13:Clock_Ip_ResetCmuFcFceRefCntLfrefHfref	0	static
+Clock_Ip_Monitor.c:289:13:Clock_Ip_SetCmuFcFceRefCntLfrefHfref	24	static
+Clock_Ip_Monitor.c:200:13:Clock_Ip_ClockMonitorEmpty_ClearStatus	0	static
+Clock_Ip_Monitor.c:530:8:Clock_Ip_CMU_GetInterruptStatus	0	static
+Clock_Ip_Monitor.c:548:6:Clock_Ip_CMU_ClockFailInt	32	static

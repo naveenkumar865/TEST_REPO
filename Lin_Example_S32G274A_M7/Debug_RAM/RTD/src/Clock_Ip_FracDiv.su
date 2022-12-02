@@ -1,0 +1,5 @@
+Clock_Ip_FracDiv.c:139:13:Clock_Ip_CallbackFracDivEmpty	0	static
+Clock_Ip_FracDiv.c:145:31:Clock_Ip_CallbackFracDivEmptyComplete	0	static
+Clock_Ip_FracDiv.c:153:13:Clock_Ip_ResetDfsMfiMfn	0	static
+Clock_Ip_FracDiv.c:162:13:Clock_Ip_SetDfsMfiMfn	8	static
+Clock_Ip_FracDiv.c:185:31:Clock_Ip_CompleteDfsMfiMfn	40	static

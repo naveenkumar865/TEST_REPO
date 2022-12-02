@@ -1,0 +1,22 @@
+Callgraph clone;Power_Ip_MC_ME_ConfigurePartitionClock;6;../RTD/src/Power_Ip_MC_ME.c;335;13;Power_Ip_MC_ME_ConfigurePartitionClock.part.0;20;../RTD/src/Power_Ip_MC_ME.c;335;13;part
+Callgraph clone;Power_Ip_MC_ME_ConfigurePartitionOutputSafe;7;../RTD/src/Power_Ip_MC_ME.c;386;13;Power_Ip_MC_ME_ConfigurePartitionOutputSafe.part.0;21;../RTD/src/Power_Ip_MC_ME.c;386;13;part
+Callgraph clone;Power_Ip_MC_ME_TriggerModeUpdate;2;../RTD/src/Power_Ip_MC_ME.c;254;20;Power_Ip_MC_ME_SocTriggerResetEvent;16;../RTD/src/Power_Ip_MC_ME.c;834;6;inlining to
+Callgraph clone;Power_Ip_MC_ME_TriggerCofbUpdate;4;../RTD/src/Power_Ip_MC_ME.c;293;20;Power_Ip_MC_ME_ConfigureCOFB;8;../RTD/src/Power_Ip_MC_ME.c;439;13;inlining to
+Callgraph clone;Power_Ip_MC_ME_TriggerCoreUpdate;5;../RTD/src/Power_Ip_MC_ME.c;314;20;Power_Ip_MC_ME_ConfigureCorePartition1;10;../RTD/src/Power_Ip_MC_ME.c;572;13;inlining to
+Callgraph clone;Power_Ip_MC_ME_TriggerPartitionUpdate;3;../RTD/src/Power_Ip_MC_ME.c;272;20;Power_Ip_MC_ME_ConfigurePartitionClock;6;../RTD/src/Power_Ip_MC_ME.c;335;13;inlining to
+Callgraph clone;Power_Ip_MC_ME_TriggerPartitionUpdate;3;../RTD/src/Power_Ip_MC_ME.c;272;20;Power_Ip_MC_ME_ConfigurePartitionOutputSafe;7;../RTD/src/Power_Ip_MC_ME.c;386;13;inlining to
+Callgraph clone;Power_Ip_MC_ME_TriggerCoreUpdate;5;../RTD/src/Power_Ip_MC_ME.c;314;20;Power_Ip_MC_ME_ConfigureCore;9;../RTD/src/Power_Ip_MC_ME.c;495;13;inlining to
+Callgraph clone;Power_Ip_MC_ME_ConfigureCOFB;8;../RTD/src/Power_Ip_MC_ME.c;439;13;Power_Ip_MC_ME_ConfigCoreCOFBClock;11;../RTD/src/Power_Ip_MC_ME.c;642;6;inlining to
+Callgraph clone;Power_Ip_MC_ME_ConfigurePartitionClock.part.0;20;../RTD/src/Power_Ip_MC_ME.c;335;13;Power_Ip_MC_ME_ConfigurePartitionClock;6;../RTD/src/Power_Ip_MC_ME.c;335;13;inlining to
+Callgraph removal;Power_Ip_MC_ME_ConfigurePartitionOutputSafe.part.0;21;../RTD/src/Power_Ip_MC_ME.c;386;13
+Callgraph clone;Power_Ip_MC_ME_ConfigurePartitionClock.part.0;20;../RTD/src/Power_Ip_MC_ME.c;335;13;Power_Ip_MC_ME_ConfigurePartitionOutputSafe;7;../RTD/src/Power_Ip_MC_ME.c;386;13;inlining to
+Callgraph clone;Power_Ip_MC_ME_ConfigureCore;9;../RTD/src/Power_Ip_MC_ME.c;495;13;Power_Ip_MC_ME_ConfigCoreCOFBClock;11;../RTD/src/Power_Ip_MC_ME.c;642;6;inlining to
+Callgraph clone;Power_Ip_MC_ME_ConfigureCorePartition1;10;../RTD/src/Power_Ip_MC_ME.c;572;13;Power_Ip_MC_ME_ConfigCoreCOFBClock;11;../RTD/src/Power_Ip_MC_ME.c;642;6;inlining to
+Callgraph removal;Power_Ip_MC_ME_TriggerPartitionUpdate;3;../RTD/src/Power_Ip_MC_ME.c;272;20
+Callgraph removal;Power_Ip_MC_ME_ConfigurePartitionClock.part.0;20;../RTD/src/Power_Ip_MC_ME.c;335;13
+Callgraph removal;Power_Ip_MC_ME_ConfigureCOFB;8;../RTD/src/Power_Ip_MC_ME.c;439;13
+Callgraph removal;Power_Ip_MC_ME_TriggerCofbUpdate;4;../RTD/src/Power_Ip_MC_ME.c;293;20
+Callgraph removal;Power_Ip_MC_ME_ConfigureCore;9;../RTD/src/Power_Ip_MC_ME.c;495;13
+Callgraph removal;Power_Ip_MC_ME_TriggerCoreUpdate;5;../RTD/src/Power_Ip_MC_ME.c;314;20
+Callgraph removal;Power_Ip_MC_ME_ConfigureCorePartition1;10;../RTD/src/Power_Ip_MC_ME.c;572;13
+Callgraph removal;Power_Ip_MC_ME_TriggerModeUpdate;2;../RTD/src/Power_Ip_MC_ME.c;254;20

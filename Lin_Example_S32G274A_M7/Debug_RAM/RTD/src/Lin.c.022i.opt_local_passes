@@ -1,0 +1,680 @@
+Lin_WakeupInternal (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  int _3;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = Lin_CommonCheckingChannel (Channel_7(D), 11);
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  if (TempReturn_9 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 != 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  TempReturn_13 = 1;
+  # DEBUG TempReturn => TempReturn_13
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_WakeUpInternal (Channel_7(D));
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_7(D);
+  Lin_au8LinChStatus[_3] = 3;
+  # DEBUG BEGIN_STMT
+  TempReturn_12 = 0;
+  # DEBUG TempReturn => TempReturn_12
+
+  <bb 6> :
+  # TempReturn_4 = PHI <TempReturn_9(2), TempReturn_13(4), TempReturn_12(5)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  _14 = TempReturn_4;
+  return _14;
+
+}
+
+
+Lin_Wakeup (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  int _3;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = Lin_CommonCheckingChannel (Channel_7(D), 7);
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  if (TempReturn_9 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 != 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  TempReturn_13 = 1;
+  # DEBUG TempReturn => TempReturn_13
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_WakeUp (Channel_7(D));
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_7(D);
+  Lin_au8LinChStatus[_3] = 3;
+  # DEBUG BEGIN_STMT
+  TempReturn_12 = 0;
+  # DEBUG TempReturn => TempReturn_12
+
+  <bb 6> :
+  # TempReturn_4 = PHI <TempReturn_9(2), TempReturn_13(4), TempReturn_12(5)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  _14 = TempReturn_4;
+  return _14;
+
+}
+
+
+Lin_SendFrame (uint8 Channel, const struct Lin_PduType * PduInfoPtr)
+{
+  Std_ReturnType TempReturn;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_7 = Lin_ChkParamFuncSendFrame (Channel_4(D), PduInfoPtr_5(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = Lin_Ipw_SendFrame (Channel_4(D), PduInfoPtr_5(D));
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  if (TempReturn_9 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = 1;
+  # DEBUG TempReturn => TempReturn_10
+
+  <bb 5> :
+  # TempReturn_1 = PHI <TempReturn_7(2), TempReturn_9(3), TempReturn_10(4)>
+  # DEBUG TempReturn => TempReturn_1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _11 = TempReturn_1;
+  return _11;
+
+}
+
+
+Lin_GoToSleepInternal (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  int _3;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = Lin_CommonCheckingChannel (Channel_7(D), 9);
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  if (TempReturn_9 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  TempReturn_11 = Lin_Ipw_GoToSleepInternal (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_11
+  # DEBUG BEGIN_STMT
+  if (TempReturn_11 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_13 = 1;
+  # DEBUG TempReturn => TempReturn_13
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_7(D);
+  Lin_au8LinChStatus[_3] = 2;
+
+  <bb 7> :
+  # TempReturn_4 = PHI <TempReturn_9(2), TempReturn_9(3), TempReturn_13(5), TempReturn_11(6)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  _14 = TempReturn_4;
+  return _14;
+
+}
+
+
+Lin_GoToSleep (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  int _3;
+  Std_ReturnType _15;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = Lin_CommonCheckingChannel (Channel_8(D), 6);
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  if (TempReturn_10 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_8(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  TempReturn_12 = Lin_Ipw_GoToSleep (Channel_8(D));
+  # DEBUG TempReturn => TempReturn_12
+  # DEBUG BEGIN_STMT
+  if (TempReturn_12 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_13 = 1;
+  # DEBUG TempReturn => TempReturn_13
+
+  <bb 6> :
+  # TempReturn_4 = PHI <TempReturn_12(4), TempReturn_13(5)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_8(D);
+  Lin_au8LinChStatus[_3] = 1;
+
+  <bb 7> :
+  # TempReturn_5 = PHI <TempReturn_10(2), TempReturn_10(3), TempReturn_4(6)>
+  # DEBUG TempReturn => TempReturn_5
+  # DEBUG BEGIN_STMT
+  _15 = TempReturn_5;
+  return _15;
+
+}
+
+
+Lin_GetStatus (uint8 Channel, uint8 * * Lin_SduPtr)
+{
+  uint8 Lin_ChannelState;
+  Lin_StatusType TempReturn;
+  Std_ReturnType CheckChannel;
+  int _1;
+  int _2;
+  int _3;
+  Lin_StatusType _20;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_6 = 0;
+  # DEBUG TempReturn => TempReturn_6
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  CheckChannel_10 = Lin_CommonCheckingChannel (Channel_8(D), 8);
+  # DEBUG CheckChannel => CheckChannel_10
+  # DEBUG BEGIN_STMT
+  if (CheckChannel_10 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  if (Lin_SduPtr_11(D) == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  TempReturn_19 = 0;
+  # DEBUG TempReturn => TempReturn_19
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_8(D);
+  Lin_ChannelState_12 = Lin_au8LinChStatus[_1];
+  # DEBUG Lin_ChannelState => Lin_ChannelState_12
+  # DEBUG BEGIN_STMT
+  _2 = (int) Lin_ChannelState_12;
+  switch (_2) <default: <L7> [INV], case 1: <L5> [INV], case 2: <L4> [INV], case 3: <L6> [INV]>
+
+  <bb 6> :
+<L4>:
+  # DEBUG BEGIN_STMT
+  TempReturn_15 = 10;
+  # DEBUG TempReturn => TempReturn_15
+  # DEBUG BEGIN_STMT
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_8(D);
+  Lin_au8LinChStatus[_3] = 2;
+  # DEBUG BEGIN_STMT
+  TempReturn_17 = 10;
+  # DEBUG TempReturn => TempReturn_17
+  # DEBUG BEGIN_STMT
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  TempReturn_14 = Lin_Ipw_HardwareGetStatus (Channel_8(D), Lin_SduPtr_11(D));
+  # DEBUG TempReturn => TempReturn_14
+  # DEBUG BEGIN_STMT
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  TempReturn_18 = 0;
+  # DEBUG TempReturn => TempReturn_18
+  # DEBUG BEGIN_STMT
+
+  <bb 10> :
+  # TempReturn_4 = PHI <TempReturn_6(2), TempReturn_19(4), TempReturn_15(6), TempReturn_17(7), TempReturn_14(8), TempReturn_18(9)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  _20 = TempReturn_4;
+  return _20;
+
+}
+
+
+Lin_CheckWakeup (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  Std_ReturnType _13;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = Lin_CommonCheckingChannel (Channel_8(D), 10);
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  if (TempReturn_10 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  TempReturn_11 = 0;
+  # DEBUG TempReturn => TempReturn_11
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_8(D);
+  _2 = Lin_au8LinChStatus[_1];
+  _3 = _2 + 255;
+  if (_3 <= 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = Lin_Ipw_CheckWakeup (Channel_8(D));
+  # DEBUG BEGIN_STMT
+
+  <bb 5> :
+  # TempReturn_5 = PHI <TempReturn_10(2), TempReturn_11(3), TempReturn_11(4)>
+  # DEBUG TempReturn => TempReturn_5
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _13 = TempReturn_5;
+  return _13;
+
+}
+
+
+Lin_Init (const struct Lin_ConfigType * Config)
+{
+  uint32 CoreId;
+  const struct Lin_ConfigType * _1;
+  const struct Lin_ConfigType * _2;
+  long unsigned int _3;
+  const struct Lin_ConfigType * _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CoreId_6 = 0;
+  # DEBUG CoreId => CoreId_6
+  # DEBUG BEGIN_STMT
+  if (Config_7(D) != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Lin_PBCfgVariantPredefined[CoreId_6];
+  if (_1 == 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _2 = Lin_PBCfgVariantPredefined[CoreId_6];
+  _3 = _2->PartitionCoreId;
+  if (CoreId_6 != _3)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _4 = Lin_PBCfgVariantPredefined[CoreId_6];
+  Lin_apConfigPtr[CoreId_6] = _4;
+  # DEBUG BEGIN_STMT
+  Lin_InitImplementation ();
+  # DEBUG BEGIN_STMT
+  Lin_au8LinDrvStatus[CoreId_6] = 2;
+
+  <bb 6> :
+  return;
+
+}
+
+
+Lin_ChkParamFuncSendFrame (const uint8 Channel, const struct Lin_PduType * const PduInfoPtr)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_7 = Lin_CommonCheckingChannel (Channel_5(D), 4);
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  if (PduInfoPtr_8(D) == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = 1;
+  # DEBUG TempReturn => TempReturn_10
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_5(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = 1;
+  # DEBUG TempReturn => TempReturn_9
+
+  <bb 7> :
+  # TempReturn_3 = PHI <TempReturn_7(2), TempReturn_10(4), TempReturn_7(5), TempReturn_9(6)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  _11 = TempReturn_3;
+  return _11;
+
+}
+
+
+Lin_CommonCheckingChannel (const uint8 Channel, const uint8 FunctionalId)
+{
+  uint32 CoreId;
+  Std_ReturnType TempReturn;
+  unsigned char _1;
+  int _2;
+  const struct Lin_ChannelConfigType * _3;
+  _Bool _4;
+  _Bool _5;
+  int _6;
+  const struct Lin_ChannelConfigType * _7;
+  long unsigned int _8;
+  Std_ReturnType _15;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = 1;
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  CoreId_11 = 0;
+  # DEBUG CoreId => CoreId_11
+  # DEBUG BEGIN_STMT
+  _1 = Lin_au8LinDrvStatus[CoreId_11];
+  if (_1 != 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  if (Channel_13(D) != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = (int) Channel_13(D);
+  _3 = Lin_apChannelConfigPtr[_2];
+  _4 = _3->AllocatedPartition;
+  _5 = ~_4;
+  if (_5 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _6 = (int) Channel_13(D);
+  _7 = Lin_apChannelConfigPtr[_6];
+  _8 = _7->ChannelCoreId;
+  if (CoreId_11 != _8)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  TempReturn_14 = 0;
+  # DEBUG TempReturn => TempReturn_14
+
+  <bb 7> :
+  # TempReturn_9 = PHI <TempReturn_10(2), TempReturn_10(3), TempReturn_10(4), TempReturn_10(5), TempReturn_14(6)>
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  _15 = TempReturn_9;
+  return _15;
+
+}
+
+
+Lin_InitImplementation ()
+{
+  uint32 CoreId;
+  uint8 Lin_ChLoop;
+  const struct Lin_ConfigType * _1;
+  int _2;
+  const struct Lin_ChannelConfigType * _3;
+  _Bool _4;
+  const struct Lin_ConfigType * _5;
+  int _6;
+  const struct Lin_ChannelConfigType * _7;
+  long unsigned int _8;
+  const struct Lin_ConfigType * _9;
+  int _10;
+  int _11;
+  const struct Lin_ChannelConfigType * _12;
+  int _13;
+  const struct Lin_ChannelConfigType * _14;
+  const struct Lin_HwConfigType * _15;
+  int _16;
+  unsigned char Lin_ChLoop.0_17;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  CoreId_21 = 0;
+  # DEBUG CoreId => CoreId_21
+  # DEBUG BEGIN_STMT
+  Lin_ChLoop_22 = 0;
+  # DEBUG Lin_ChLoop => Lin_ChLoop_22
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Lin_apConfigPtr[CoreId_21];
+  _2 = (int) Lin_ChLoop_18;
+  _3 = _1->Lin_ChannelPtr[_2];
+  _4 = _3->AllocatedPartition;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = Lin_apConfigPtr[CoreId_21];
+  _6 = (int) Lin_ChLoop_18;
+  _7 = _5->Lin_ChannelPtr[_6];
+  _8 = _7->ChannelCoreId;
+  if (CoreId_21 == _8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _9 = Lin_apConfigPtr[CoreId_21];
+  _10 = (int) Lin_ChLoop_18;
+  _11 = (int) Lin_ChLoop_18;
+  _12 = _9->Lin_ChannelPtr[_10];
+  Lin_apChannelConfigPtr[_11] = _12;
+  # DEBUG BEGIN_STMT
+  _13 = (int) Lin_ChLoop_18;
+  _14 = Lin_apChannelConfigPtr[_13];
+  _15 = _14->ChannelConfigPtr;
+  Lin_Ipw_InitChannel (Lin_ChLoop_18, _15);
+  # DEBUG BEGIN_STMT
+  _16 = (int) Lin_ChLoop_18;
+  Lin_au8LinChStatus[_16] = 2;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Lin_ChLoop.0_17 = Lin_ChLoop_18;
+  Lin_ChLoop_27 = Lin_ChLoop.0_17 + 1;
+  # DEBUG Lin_ChLoop => Lin_ChLoop_27
+
+  <bb 7> :
+  # Lin_ChLoop_18 = PHI <Lin_ChLoop_22(2), Lin_ChLoop_27(6)>
+  # DEBUG Lin_ChLoop => Lin_ChLoop_18
+  # DEBUG BEGIN_STMT
+  if (Lin_ChLoop_18 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+

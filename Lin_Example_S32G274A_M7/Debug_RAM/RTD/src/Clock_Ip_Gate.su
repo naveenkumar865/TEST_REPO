@@ -1,0 +1,4 @@
+Clock_Ip_Gate.c:141:13:Clock_Ip_ClockSetGateEmpty	0	static
+Clock_Ip_Gate.c:146:13:Clock_Ip_ClockUpdateGateEmpty	0	static
+Clock_Ip_Gate.c:154:13:Clock_Ip_ClockSetGateMcMePartitionCollectionClockRequest	40	static
+Clock_Ip_Gate.c:229:13:Clock_Ip_ClockUpdateGateMcMePartitionCollectionClockRequest	16	static

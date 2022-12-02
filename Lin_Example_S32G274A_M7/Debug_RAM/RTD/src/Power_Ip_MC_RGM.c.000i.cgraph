@@ -1,0 +1,1205 @@
+Trivially needed symbols: Power_Ip_MC_RGM_GetResetRawValue Power_Ip_MC_RGM_GetResetReason Power_Ip_MC_RGM_DisableResetDomain Power_Ip_MC_RGM_EnableResetDomain Power_Ip_MC_RGM_CheckModeConfig Power_Ip_MC_RGM_ModeConfig Power_Ip_MC_RGM_ResetInit
+
+
+Initial Symbol table:
+
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f17b60
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 Power_Ip_MC_RGM_CheckResetReason/18 Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_CheckResetReason/18 
+Power_Ip_MC_RGM_CheckResetReason/18 (Power_Ip_MC_RGM_CheckResetReason) @05f17380
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f17b60
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f17700
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_AssertDomainReset/7 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f17000
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ReleaseDomainReset/6 Power_Ip_MC_RGM_ConfigureResetDomainController/8 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05e96b60
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05e96620
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureCore/11 Power_Ip_MC_RGM_ConfigureCOFB/9 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05e960e0
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_CheckConfigureCore/12 (Power_Ip_MC_RGM_CheckConfigureCore) @05e96a80
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e96b60
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCore/11 (Power_Ip_MC_RGM_ConfigureCore) @05e967e0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e96620
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_CheckConfigureCOFB/10 (Power_Ip_MC_RGM_CheckConfigureCOFB) @05e96540
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e96a80
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCOFB/9 (Power_Ip_MC_RGM_ConfigureCOFB) @05e962a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e967e0
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e8bd20
+  References: Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_AssertDomainReset/7 (Power_Ip_MC_RGM_AssertDomainReset) @05e8b540
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f17700
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 
+  Calls: 
+Power_Ip_MC_RGM_ReleaseDomainReset/6 (Power_Ip_MC_RGM_ReleaseDomainReset) @05e8bd20
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f17000
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f17380
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e960e0
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_ResetInit/13 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_pxRdc/3 (Power_Ip_pxRdc) @05e8a090
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e8bd20
+  References: 
+  Referring: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_pxMC_RGM/2 (Power_Ip_pxMC_RGM) @05e8a000
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e8b7e0
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_CheckConfigureCOFB/10 (read)Power_Ip_MC_RGM_CheckConfigureCore/12 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e8a000
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (write)Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e8ba80
+  References: 
+  Referring: Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 Power_Ip_MC_RGM_CheckResetReason/18 Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_CheckResetReason/18 
+Power_Ip_MC_RGM_CheckResetReason/18 (Power_Ip_MC_RGM_CheckResetReason) @05f17380
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_AssertDomainReset/7 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ReleaseDomainReset/6 Power_Ip_MC_RGM_ConfigureResetDomainController/8 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureCore/11 Power_Ip_MC_RGM_ConfigureCOFB/9 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_CheckConfigureCore/12 (Power_Ip_MC_RGM_CheckConfigureCore) @05e96a80
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCore/11 (Power_Ip_MC_RGM_ConfigureCore) @05e967e0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_CheckConfigureCOFB/10 (Power_Ip_MC_RGM_CheckConfigureCOFB) @05e96540
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCOFB/9 (Power_Ip_MC_RGM_ConfigureCOFB) @05e962a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_AssertDomainReset/7 (Power_Ip_MC_RGM_AssertDomainReset) @05e8b540
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 
+  Calls: 
+Power_Ip_MC_RGM_ReleaseDomainReset/6 (Power_Ip_MC_RGM_ReleaseDomainReset) @05e8bd20
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_ResetInit/13 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_pxRdc/3 (Power_Ip_pxRdc) @05e8a090
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_pxMC_RGM/2 (Power_Ip_pxMC_RGM) @05e8a000
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_CheckConfigureCOFB/10 (read)Power_Ip_MC_RGM_CheckConfigureCore/12 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (write)Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 Power_Ip_MC_RGM_CheckResetReason/18 Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_CheckResetReason/18 
+Power_Ip_MC_RGM_CheckResetReason/18 (Power_Ip_MC_RGM_CheckResetReason) @05f17380
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_AssertDomainReset/7 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ReleaseDomainReset/6 Power_Ip_MC_RGM_ConfigureResetDomainController/8 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureCore/11 Power_Ip_MC_RGM_ConfigureCOFB/9 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_CheckConfigureCore/12 (Power_Ip_MC_RGM_CheckConfigureCore) @05e96a80
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCore/11 (Power_Ip_MC_RGM_ConfigureCore) @05e967e0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_CheckConfigureCOFB/10 (Power_Ip_MC_RGM_CheckConfigureCOFB) @05e96540
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCOFB/9 (Power_Ip_MC_RGM_ConfigureCOFB) @05e962a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_AssertDomainReset/7 (Power_Ip_MC_RGM_AssertDomainReset) @05e8b540
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 
+  Calls: 
+Power_Ip_MC_RGM_ReleaseDomainReset/6 (Power_Ip_MC_RGM_ReleaseDomainReset) @05e8bd20
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_ResetInit/13 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_pxRdc/3 (Power_Ip_pxRdc) @05e8a090
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_pxMC_RGM/2 (Power_Ip_pxMC_RGM) @05e8a000
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_CheckConfigureCOFB/10 (read)Power_Ip_MC_RGM_CheckConfigureCore/12 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (write)Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 Power_Ip_MC_RGM_CheckResetReason/18 Power_Ip_MC_RGM_ClearDesResetFlags/5 Power_Ip_MC_RGM_CheckResetReason/18 
+Power_Ip_MC_RGM_CheckResetReason/18 (Power_Ip_MC_RGM_CheckResetReason) @05f17380
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureResetDomainController/8 Power_Ip_MC_RGM_AssertDomainReset/7 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ReleaseDomainReset/6 Power_Ip_MC_RGM_ConfigureResetDomainController/8 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_CheckConfigureCore/12 Power_Ip_MC_RGM_CheckConfigureCOFB/10 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureCore/11 Power_Ip_MC_RGM_ConfigureCOFB/9 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 
+Power_Ip_MC_RGM_CheckConfigureCore/12 (Power_Ip_MC_RGM_CheckConfigureCore) @05e96a80
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCore/11 (Power_Ip_MC_RGM_ConfigureCore) @05e967e0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_CheckConfigureCOFB/10 (Power_Ip_MC_RGM_CheckConfigureCOFB) @05e96540
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ConfigureCOFB/9 (Power_Ip_MC_RGM_ConfigureCOFB) @05e962a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_AssertDomainReset/7 (Power_Ip_MC_RGM_AssertDomainReset) @05e8b540
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 
+  Calls: 
+Power_Ip_MC_RGM_ReleaseDomainReset/6 (Power_Ip_MC_RGM_ReleaseDomainReset) @05e8bd20
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_EnableResetDomain/16 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 Power_Ip_MC_RGM_GetResetReason/19 Power_Ip_MC_RGM_ResetInit/13 
+  Calls: Power_Ip_ReportPowerErrors/23 Power_Ip_TimeoutExpired/22 Power_Ip_StartTimeout/21 
+Power_Ip_pxRdc/3 (Power_Ip_pxRdc) @05e8a090
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_pxMC_RGM/2 (Power_Ip_pxMC_RGM) @05e8a000
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_CheckConfigureCOFB/10 (read)Power_Ip_MC_RGM_CheckConfigureCore/12 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (write)Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Power_Ip_MC_RGM_ClearFesResetFlags.part.0/27 (Power_Ip_MC_RGM_ClearFesResetFlags.part.0) @060ae380
+  Type: function definition analyzed
+  Visibility: artificial
+  next sharing asm name: 24
+  References: 
+  Referring: 
+  Function Power_Ip_MC_RGM_ClearFesResetFlags.part.0/27 is inline copy in Power_Ip_MC_RGM_ClearDesResetFlags/5
+  Clone of Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24
+  Availability: local
+  Function flags: count:37904965 (estimated locally) first_run:1 body local icf_merged split_part optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 (inlined) (37904965 (estimated locally),0.11 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (37904965 (estimated locally),0.11 per call) 
+Power_Ip_MC_RGM_CheckResetReason/26 (Power_Ip_MC_RGM_CheckResetReason) @05e39620
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 18
+  References: 
+  Referring: 
+  Function Power_Ip_MC_RGM_CheckResetReason/26 is inline copy in Power_Ip_MC_RGM_GetResetReason/19
+  Clone of Power_Ip_MC_RGM_CheckResetReason/18
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (Power_Ip_MC_RGM_ClearFesResetFlags.part.0) @05e39540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  previous sharing asm name: 27
+  References: 
+  Referring: 
+  Function Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 is inline copy in Power_Ip_MC_RGM_ClearFesResetFlags/4
+  Availability: local
+  Function flags: count:37904965 (estimated locally) first_run:1 body local icf_merged split_part optimize_size
+  Called by: Power_Ip_MC_RGM_ClearFesResetFlags/4 (inlined) (37904965 (estimated locally),0.11 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (37904965 (estimated locally),0.11 per call) 
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearFesResetFlags.part.0/27 (37904965 (estimated locally),0.11 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (37904965 (estimated locally),0.33 per call) Power_Ip_MC_RGM_CheckConfigureCore/12 (104068129 (estimated locally),0.95 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (104068130 (estimated locally),0.95 per call) Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (37904965 (estimated locally),0.11 per call) 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 (1073741824 (estimated locally),3.08 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (1073741824 (estimated locally),9.35 per call) Power_Ip_MC_RGM_CheckConfigureCore/12 (2947959514 (estimated locally),26.96 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (2947959551 (estimated locally),26.96 per call) Power_Ip_MC_RGM_ClearFesResetFlags/4 (1073741824 (estimated locally),3.08 per call) 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (114863532 (estimated locally),1.00 per call) Power_Ip_MC_RGM_CheckConfigureCore/12 (315357970 (estimated locally),2.88 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (315357974 (estimated locally),2.88 per call) Power_Ip_MC_RGM_ClearFesResetFlags/4 (114863532 (estimated locally),0.33 per call) 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:65068756 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags/5 (32534377 (estimated locally),0.50 per call) Power_Ip_MC_RGM_ClearFesResetFlags/4 (32534377 (estimated locally),0.50 per call) 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 (536870913 (estimated locally),0.50 per call) Power_Ip_MC_RGM_CheckResetReason/18 (inlined) (177167401 (estimated locally),0.17 per call) Power_Ip_MC_RGM_ClearDesResetFlags/5 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_RGM_CheckResetReason/26 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_RGM_CheckResetReason/18 (Power_Ip_MC_RGM_CheckResetReason) @05f17380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 26
+  References: 
+  Referring: 
+  Function Power_Ip_MC_RGM_CheckResetReason/18 is inline copy in Power_Ip_MC_RGM_GetResetReason/19
+  Availability: local
+  Function flags: count:177167401 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 (inlined) (177167401 (estimated locally),0.17 per call) 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (35433480 (estimated locally),0.16 per call) Power_Ip_MC_RGM_AssertDomainReset/7 (inlined) (35433480 (estimated locally),0.16 per call) 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ReleaseDomainReset/6 (inlined) (35433480 (estimated locally),0.16 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (35433480 (estimated locally),0.16 per call) 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_CheckConfigureCore/12 (inlined) (315357970 (estimated locally),2.88 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (inlined) (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureCore/11 (inlined) (315357970 (estimated locally),2.88 per call) Power_Ip_MC_RGM_ConfigureCOFB/9 (inlined) (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 (354334802 (estimated locally),0.33 per call) 
+Power_Ip_MC_RGM_CheckConfigureCore/12 (Power_Ip_MC_RGM_CheckConfigureCore) @05e96a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function Power_Ip_MC_RGM_CheckConfigureCore/12 is inline copy in Power_Ip_MC_RGM_CheckModeConfig/15
+  Availability: local
+  Function flags: count:315357970 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 (inlined) (315357970 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (104068129 (estimated locally),0.95 per call) Power_Ip_TimeoutExpired/22 (2947959514 (estimated locally),26.96 per call) Power_Ip_StartTimeout/21 (315357970 (estimated locally),2.88 per call) 
+Power_Ip_MC_RGM_ConfigureCore/11 (Power_Ip_MC_RGM_ConfigureCore) @05e967e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function Power_Ip_MC_RGM_ConfigureCore/11 is inline copy in Power_Ip_MC_RGM_ModeConfig/14
+  Availability: local
+  Function flags: count:315357970 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 (inlined) (315357970 (estimated locally),2.88 per call) 
+  Calls: 
+Power_Ip_MC_RGM_CheckConfigureCOFB/10 (Power_Ip_MC_RGM_CheckConfigureCOFB) @05e96540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function Power_Ip_MC_RGM_CheckConfigureCOFB/10 is inline copy in Power_Ip_MC_RGM_CheckModeConfig/15
+  Availability: local
+  Function flags: count:315357974 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 (inlined) (315357974 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (104068130 (estimated locally),0.95 per call) Power_Ip_TimeoutExpired/22 (2947959551 (estimated locally),26.96 per call) Power_Ip_StartTimeout/21 (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_RGM_ConfigureCOFB/9 (Power_Ip_MC_RGM_ConfigureCOFB) @05e962a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function Power_Ip_MC_RGM_ConfigureCOFB/9 is inline copy in Power_Ip_MC_RGM_ModeConfig/14
+  Availability: local
+  Function flags: count:315357974 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 (inlined) (315357974 (estimated locally),2.88 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 (35433480 (estimated locally),0.16 per call) Power_Ip_MC_RGM_EnableResetDomain/16 (35433480 (estimated locally),0.16 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (37904965 (estimated locally),0.33 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),9.35 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),1.00 per call) 
+Power_Ip_MC_RGM_AssertDomainReset/7 (Power_Ip_MC_RGM_AssertDomainReset) @05e8b540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function Power_Ip_MC_RGM_AssertDomainReset/7 is inline copy in Power_Ip_MC_RGM_DisableResetDomain/17
+  Availability: local
+  Function flags: count:35433480 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 (inlined) (35433480 (estimated locally),0.16 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ReleaseDomainReset/6 (Power_Ip_MC_RGM_ReleaseDomainReset) @05e8bd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Function Power_Ip_MC_RGM_ReleaseDomainReset/6 is inline copy in Power_Ip_MC_RGM_EnableResetDomain/16
+  Availability: local
+  Function flags: count:35433480 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_RGM_EnableResetDomain/16 (inlined) (35433480 (estimated locally),0.16 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 (32534377 (estimated locally),0.50 per call) Power_Ip_MC_RGM_GetResetReason/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags.part.0/27 (inlined) (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),0.33 per call) 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 (32534377 (estimated locally),0.50 per call) Power_Ip_MC_RGM_GetResetReason/19 (536870913 (estimated locally),0.50 per call) Power_Ip_MC_RGM_ResetInit/13 (354334802 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (inlined) (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),0.33 per call) 
+Power_Ip_pxRdc/3 (Power_Ip_pxRdc) @05e8a090
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+Power_Ip_pxMC_RGM/2 (Power_Ip_pxMC_RGM) @05e8a000
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_CheckConfigureCOFB/10 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_CheckConfigureCore/12 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (write)Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: available
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_ConfigureResetDomainController:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_ClearFesResetFlags:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_ClearDesResetFlags:0
+updating call of Power_Ip_MC_RGM_ClearDesResetFlags/5 -> Power_Ip_MC_RGM_ClearFesResetFlags.part.0/27: Power_Ip_MC_RGM_ClearDesResetFlags.part.0 ();
+  updated to:Power_Ip_MC_RGM_ClearFesResetFlags.part.0 ();
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_ResetInit:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_ModeConfig:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_CheckModeConfig:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_EnableResetDomain:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_DisableResetDomain:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_GetResetReason:0
+Time profile order in expand_all_functions:Power_Ip_MC_RGM_GetResetRawValue:0
+Trivially needed variables: Power_Ip_u32FesResetStatus Power_Ip_u32DesResetStatus
+Removing variables: Power_Ip_pxRdc Power_Ip_pxMC_RGM
+
+Final Symbol table:
+
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:65068756 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @05dfcf30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

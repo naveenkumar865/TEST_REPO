@@ -1,0 +1,171 @@
+
+Marking local functions: Platform_Ipw_InitIntCtrl
+
+
+Marking externally visible functions: Platform_Ipw_InitNonCore Platform_Ipw_Init
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+IntCtrl_Ip_InstallHandler/10 (IntCtrl_Ip_InstallHandler) @05e06a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 
+  Calls: 
+IntCtrl_Ip_SetTargetCores/9 (IntCtrl_Ip_SetTargetCores) @05e069a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 
+  Calls: 
+IntCtrl_Ip_Init/8 (IntCtrl_Ip_Init) @05e067e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitIntCtrl/5 
+  Calls: 
+Platform_Ipw_InitNonCore/7 (Platform_Ipw_InitNonCore) @05e061c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/10 IntCtrl_Ip_SetTargetCores/9 
+Platform_Ipw_Init/6 (Platform_Ipw_Init) @05dade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_InitIntCtrl/5 
+Platform_Ipw_InitIntCtrl/5 (Platform_Ipw_InitIntCtrl) @05dadd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Platform_Ipw_Init/6 
+  Calls: IntCtrl_Ip_Init/8 
+Platform_Ipw_InitNonCore (const struct Platform_Ipw_NonCoreConfigType * pConfig)
+{
+  uint32 irqIdx;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pConfig->pIntRouteConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  irqIdx = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = pConfig->pIntRouteConfig;
+  _3 = _2->aIrqConfig;
+  _4 = irqIdx * 12;
+  _5 = _3 + _4;
+  _6 = _5->eIrqNumber;
+  _7 = pConfig->pIntRouteConfig;
+  _8 = _7->aIrqConfig;
+  _9 = irqIdx * 12;
+  _10 = _8 + _9;
+  _11 = _10->u8TargetCores;
+  IntCtrl_Ip_SetTargetCores (_6, _11);
+  # DEBUG BEGIN_STMT
+  _12 = pConfig->pIntRouteConfig;
+  _13 = _12->aIrqConfig;
+  _14 = irqIdx * 12;
+  _15 = _13 + _14;
+  _16 = _15->eIrqNumber;
+  _17 = pConfig->pIntRouteConfig;
+  _18 = _17->aIrqConfig;
+  _19 = irqIdx * 12;
+  _20 = _18 + _19;
+  _21 = _20->pfHandler;
+  IntCtrl_Ip_InstallHandler (_16, _21, 0B);
+  # DEBUG BEGIN_STMT
+  irqIdx = irqIdx + 1;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _22 = pConfig->pIntRouteConfig;
+  _23 = _22->u32ConfigIrqCount;
+  if (irqIdx < _23)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  return;
+
+}
+
+
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  Std_ReturnType ret;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ret = 0;
+  # DEBUG BEGIN_STMT
+  _1 = pConfig->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _2 = pConfig->pIntCtrlConfig;
+  ret = Platform_Ipw_InitIntCtrl (_2);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Platform_Ipw_InitIntCtrl (const struct IntCtrl_Ip_CtrlConfigType * pIntCtrlCtrlConfig)
+{
+  Std_ReturnType D.6067;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_Init (pIntCtrlCtrlConfig);
+  # DEBUG BEGIN_STMT
+  D.6067 = 0;
+  return D.6067;
+
+}
+
+

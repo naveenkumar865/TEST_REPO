@@ -1,0 +1,366 @@
+
+
+ local analysis of LinIf_LinErrorIndication
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of LinIf_TxConfirmation
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of LinIf_RxIndication
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of LinIf_HeaderIndication
+   scanning: return 0;
+Function is locally const.
+
+
+ local analysis of LinIf_CheckWakeup
+   scanning: return 0;
+Function is locally const.
+
+
+ local analysis of LinIf_WakeupConfirmation
+   scanning: return;
+Function is locally const.
+callgraph:
+
+LinIf_LinErrorIndication/5 (LinIf_LinErrorIndication) @04fb57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74858
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/4 (LinIf_TxConfirmation) @04fb52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74758
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/3 (LinIf_RxIndication) @04fb5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b749d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/2 (LinIf_HeaderIndication) @04fb5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74798
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_CheckWakeup/1 (LinIf_CheckWakeup) @04fb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b747d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_WakeupConfirmation/0 (LinIf_WakeupConfirmation) @04fb5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b747f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+LinIf_LinErrorIndication/5 (LinIf_LinErrorIndication) @04fb57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74858
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/4 (LinIf_TxConfirmation) @04fb52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74758
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/3 (LinIf_RxIndication) @04fb5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b749d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/2 (LinIf_HeaderIndication) @04fb5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74798
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_CheckWakeup/1 (LinIf_CheckWakeup) @04fb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b747d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_WakeupConfirmation/0 (LinIf_WakeupConfirmation) @04fb5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b747f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+LinIf_LinErrorIndication: malloc_bottom
+LinIf_TxConfirmation: malloc_bottom
+LinIf_RxIndication: malloc_bottom
+LinIf_HeaderIndication: malloc_bottom
+LinIf_CheckWakeup: malloc_bottom
+LinIf_WakeupConfirmation: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+LinIf_LinErrorIndication: malloc_bottom
+LinIf_TxConfirmation: malloc_bottom
+LinIf_RxIndication: malloc_bottom
+LinIf_HeaderIndication: malloc_bottom
+LinIf_CheckWakeup: malloc_bottom
+LinIf_WakeupConfirmation: malloc_bottom
+callgraph:
+
+LinIf_LinErrorIndication/5 (LinIf_LinErrorIndication) @04fb57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74798
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/4 (LinIf_TxConfirmation) @04fb52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b747f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/3 (LinIf_RxIndication) @04fb5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74858
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/2 (LinIf_HeaderIndication) @04fb5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74818
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_CheckWakeup/1 (LinIf_CheckWakeup) @04fb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74998
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_WakeupConfirmation/0 (LinIf_WakeupConfirmation) @04fb5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74958
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+LinIf_LinErrorIndication/5 (LinIf_LinErrorIndication) @04fb57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74798
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/4 (LinIf_TxConfirmation) @04fb52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b747f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/3 (LinIf_RxIndication) @04fb5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74858
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/2 (LinIf_HeaderIndication) @04fb5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74818
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_CheckWakeup/1 (LinIf_CheckWakeup) @04fb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74998
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+LinIf_WakeupConfirmation/0 (LinIf_WakeupConfirmation) @04fb5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04b74958
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+Function found not to call free: LinIf_WakeupConfirmation
+Function found not to call free: LinIf_CheckWakeup
+Function found not to call free: LinIf_HeaderIndication
+Function found not to call free: LinIf_RxIndication
+Function found not to call free: LinIf_TxConfirmation
+Function found not to call free: LinIf_LinErrorIndication
+LinIf_LinErrorIndication (NetworkHandleType Channel, Lin_SlaveErrorType ErrorStatus)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_TxConfirmation (NetworkHandleType Channel)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_RxIndication (NetworkHandleType Channel, uint8 * Lin_SduPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_HeaderIndication (NetworkHandleType Channel, struct Lin_PduType * PduPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+LinIf_CheckWakeup (EcuM_WakeupSourceType WakeupSource)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+LinIf_WakeupConfirmation (EcuM_WakeupSourceType WakeupSource)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

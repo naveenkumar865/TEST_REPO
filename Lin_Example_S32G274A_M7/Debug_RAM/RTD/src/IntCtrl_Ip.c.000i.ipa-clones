@@ -1,0 +1,12 @@
+Callgraph clone;IntCtrl_Ip_SetPriorityPrivileged;4;../RTD/src/IntCtrl_Ip.c;306;6;IntCtrl_Ip_SetPriority;16;../RTD/src/IntCtrl_Ip.c;733;6;inlining to
+Callgraph clone;IntCtrl_Ip_GetPriorityPrivileged;5;../RTD/src/IntCtrl_Ip.c;348;7;IntCtrl_Ip_GetPriority;17;../RTD/src/IntCtrl_Ip.c;743;7;inlining to
+Callgraph clone;IntCtrl_Ip_DisableIrq;15;../RTD/src/IntCtrl_Ip.c;723;6;IntCtrl_Ip_Init;11;../RTD/src/IntCtrl_Ip.c;636;23;inlining to
+Callgraph clone;IntCtrl_Ip_EnableIrq;14;../RTD/src/IntCtrl_Ip.c;713;6;IntCtrl_Ip_Init;11;../RTD/src/IntCtrl_Ip.c;636;23;inlining to
+Callgraph clone;IntCtrl_Ip_SetPriority;16;../RTD/src/IntCtrl_Ip.c;733;6;IntCtrl_Ip_Init;11;../RTD/src/IntCtrl_Ip.c;636;23;inlining to
+Callgraph clone;IntCtrl_Ip_ClearPending;18;../RTD/src/IntCtrl_Ip.c;753;6;IntCtrl_Ip_Init;11;../RTD/src/IntCtrl_Ip.c;636;23;inlining to
+Callgraph clone;IntCtrl_Ip_InstallHandler;13;../RTD/src/IntCtrl_Ip.c;701;6;IntCtrl_Ip_ConfigIrqRouting;12;../RTD/src/IntCtrl_Ip.c;673;23;inlining to
+Callgraph clone;IntCtrl_Ip_SetTargetCores;19;../RTD/src/IntCtrl_Ip.c;818;6;IntCtrl_Ip_ConfigIrqRouting;12;../RTD/src/IntCtrl_Ip.c;673;23;inlining to
+Callgraph clone;IntCtrl_Ip_GetPriority;17;../RTD/src/IntCtrl_Ip.c;743;7;IntCtrl_Ip_GetPriorityPrivileged;5;../RTD/src/IntCtrl_Ip.c;348;7;inlining to
+Callgraph clone;IntCtrl_Ip_SetPriority;16;../RTD/src/IntCtrl_Ip.c;733;6;IntCtrl_Ip_SetPriorityPrivileged;4;../RTD/src/IntCtrl_Ip.c;306;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32XX_2022_03/SW32_RTD_4_4_3_0_2_D2203/Base_TS_T40D11M30I2R0/include/Devassert.h;85;20;IntCtrl_Ip_SetTargetCoresPrivileged;7;../RTD/src/IntCtrl_Ip.c;522;6;inlining to
+Callgraph removal;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32XX_2022_03/SW32_RTD_4_4_3_0_2_D2203/Base_TS_T40D11M30I2R0/include/Devassert.h;85;20

@@ -1,0 +1,96 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: LIN_LINFLEXD2_IRQHandler LIN_LINFLEXD1_IRQHandler LIN_LINFLEXD0_IRQHandler
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Linflexd_Lin_Ip_Error_IRQHandler/4 (Linflexd_Lin_Ip_Error_IRQHandler) @05b8ed20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: LIN_LINFLEXD2_IRQHandler/2 LIN_LINFLEXD1_IRQHandler/1 LIN_LINFLEXD0_IRQHandler/0 
+  Calls: 
+Linflexd_Lin_Ip_TxRx_IRQHandler/3 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05b8ec40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: LIN_LINFLEXD2_IRQHandler/2 LIN_LINFLEXD1_IRQHandler/1 LIN_LINFLEXD0_IRQHandler/0 
+  Calls: 
+LIN_LINFLEXD2_IRQHandler/2 (LIN_LINFLEXD2_IRQHandler) @05b8e7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 Linflexd_Lin_Ip_TxRx_IRQHandler/3 
+LIN_LINFLEXD1_IRQHandler/1 (LIN_LINFLEXD1_IRQHandler) @05b8e540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 Linflexd_Lin_Ip_TxRx_IRQHandler/3 
+LIN_LINFLEXD0_IRQHandler/0 (LIN_LINFLEXD0_IRQHandler) @05b8e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 Linflexd_Lin_Ip_TxRx_IRQHandler/3 
+LIN_LINFLEXD2_IRQHandler ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (2);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (2);
+  return;
+
+}
+
+
+LIN_LINFLEXD1_IRQHandler ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (1);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (1);
+  return;
+
+}
+
+
+LIN_LINFLEXD0_IRQHandler ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (0);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (0);
+  return;
+
+}
+
+

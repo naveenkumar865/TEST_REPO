@@ -1,0 +1,133 @@
+Platform_Ipw_InitNonCore (const struct Platform_Ipw_NonCoreConfigType * pConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _1;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _2;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _3;
+  long unsigned int _4;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _5;
+  <unnamed type> _6;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _7;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _8;
+  long unsigned int _9;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _10;
+  unsigned char _11;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _12;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _13;
+  long unsigned int _14;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _15;
+  <unnamed type> _16;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _17;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _18;
+  long unsigned int _19;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _20;
+  void (*<T4f8>) (void) _21;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _22;
+  long unsigned int _23;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_28(D)->pIntRouteConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  irqIdx_29 = 0;
+  # DEBUG irqIdx => irqIdx_29
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = pConfig_28(D)->pIntRouteConfig;
+  _3 = _2->aIrqConfig;
+  _4 = irqIdx_24 * 12;
+  _5 = _3 + _4;
+  _6 = _5->eIrqNumber;
+  _7 = pConfig_28(D)->pIntRouteConfig;
+  _8 = _7->aIrqConfig;
+  _9 = irqIdx_24 * 12;
+  _10 = _8 + _9;
+  _11 = _10->u8TargetCores;
+  IntCtrl_Ip_SetTargetCores (_6, _11);
+  # DEBUG BEGIN_STMT
+  _12 = pConfig_28(D)->pIntRouteConfig;
+  _13 = _12->aIrqConfig;
+  _14 = irqIdx_24 * 12;
+  _15 = _13 + _14;
+  _16 = _15->eIrqNumber;
+  _17 = pConfig_28(D)->pIntRouteConfig;
+  _18 = _17->aIrqConfig;
+  _19 = irqIdx_24 * 12;
+  _20 = _18 + _19;
+  _21 = _20->pfHandler;
+  IntCtrl_Ip_InstallHandler (_16, _21, 0B);
+  # DEBUG BEGIN_STMT
+  irqIdx_32 = irqIdx_24 + 1;
+  # DEBUG irqIdx => irqIdx_32
+
+  <bb 5> :
+  # irqIdx_24 = PHI <irqIdx_29(3), irqIdx_32(4)>
+  # DEBUG irqIdx => irqIdx_24
+  # DEBUG BEGIN_STMT
+  _22 = pConfig_28(D)->pIntRouteConfig;
+  _23 = _22->u32ConfigIrqCount;
+  if (irqIdx_24 < _23)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  return;
+
+}
+
+
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  Std_ReturnType ret;
+  const struct IntCtrl_Ip_CtrlConfigType * _1;
+  const struct IntCtrl_Ip_CtrlConfigType * _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ret_4 = 0;
+  # DEBUG ret => ret_4
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_6(D)->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _2 = pConfig_6(D)->pIntCtrlConfig;
+  ret_8 = Platform_Ipw_InitIntCtrl (_2);
+  # DEBUG ret => ret_8
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Platform_Ipw_InitIntCtrl (const struct IntCtrl_Ip_CtrlConfigType * pIntCtrlCtrlConfig)
+{
+  Std_ReturnType _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_Init (pIntCtrlCtrlConfig_2(D));
+  # DEBUG BEGIN_STMT
+  _4 = 0;
+  return _4;
+
+}
+
+

@@ -1,0 +1,313 @@
+
+
+ local analysis of Platform_Ipw_InitNonCore
+   scanning: _1 = pConfig_18(D)->pIntRouteConfig;
+    Indirect ref read is not const
+  scanning: if (_1 != 0B)
+  scanning: _2 = _12->aIrqConfig;
+    Indirect ref read is not const
+  scanning: _3 = irqIdx_14 * 12;
+  scanning: _4 = _2 + _3;
+  scanning: _5 = _4->eIrqNumber;
+    Indirect ref read is not const
+  scanning: _6 = _4->u8TargetCores;
+    Indirect ref read is not const
+  scanning: IntCtrl_Ip_SetTargetCores (_5, _6);
+  scanning: _7 = pConfig_18(D)->pIntRouteConfig;
+    Indirect ref read is not const
+  scanning: _8 = _7->aIrqConfig;
+    Indirect ref read is not const
+  scanning: _9 = _8 + _3;
+  scanning: _10 = _9->eIrqNumber;
+    Indirect ref read is not const
+  scanning: _11 = _9->pfHandler;
+    Indirect ref read is not const
+  scanning: IntCtrl_Ip_InstallHandler (_10, _11, 0B);
+  scanning: irqIdx_21 = irqIdx_14 + 1;
+  scanning: _12 = pConfig_18(D)->pIntRouteConfig;
+    Indirect ref read is not const
+  scanning: _13 = _12->u32ConfigIrqCount;
+    Indirect ref read is not const
+  scanning: if (_13 > irqIdx_14)
+  scanning: return;
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 6 3 4 5
+;;
+;; Loop 1
+;;  header 4, latch 3
+;;  depth 1, outer 0
+;;  nodes: 4 3
+;; 2 succs { 6 5 }
+;; 6 succs { 4 }
+;; 3 succs { 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 1 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally pure.
+
+
+ local analysis of Platform_Ipw_Init
+   scanning: _1 = pConfig_4(D)->pIntCtrlConfig;
+    Indirect ref read is not const
+  scanning: if (_1 != 0B)
+  scanning: IntCtrl_Ip_Init (_1);
+  scanning: return;
+Function is locally pure.
+callgraph:
+
+IntCtrl_Ip_InstallHandler/10 (IntCtrl_Ip_InstallHandler) @05e06a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 (955630225 (estimated locally),5.66 per call) 
+  Calls: 
+IntCtrl_Ip_SetTargetCores/9 (IntCtrl_Ip_SetTargetCores) @05e069a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 (955630225 (estimated locally),5.66 per call) 
+  Calls: 
+IntCtrl_Ip_Init/8 (IntCtrl_Ip_Init) @05e067e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_Init/6 (574129754 (estimated locally),0.53 per call) 
+  Calls: 
+Platform_Ipw_InitNonCore/7 (Platform_Ipw_InitNonCore) @05e061c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4a68
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:168730857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/10 (955630225 (estimated locally),5.66 per call) IntCtrl_Ip_SetTargetCores/9 (955630225 (estimated locally),5.66 per call) 
+Platform_Ipw_Init/6 (Platform_Ipw_Init) @05dade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4ba8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/8 (574129754 (estimated locally),0.53 per call) 
+
+
+ ordered call graph: reduced for nothrow
+Platform_Ipw_InitNonCore/7 (Platform_Ipw_InitNonCore) @05e061c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4a68
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:168730857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/10 (955630225 (estimated locally),5.66 per call) IntCtrl_Ip_SetTargetCores/9 (955630225 (estimated locally),5.66 per call) 
+Platform_Ipw_Init/6 (Platform_Ipw_Init) @05dade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4ba8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/8 (574129754 (estimated locally),0.53 per call) 
+
+
+
+MALLOC LATTICE Initial:
+Platform_Ipw_InitNonCore: malloc_bottom
+Platform_Ipw_Init: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Platform_Ipw_InitNonCore: malloc_bottom
+Platform_Ipw_Init: malloc_bottom
+callgraph:
+
+IntCtrl_Ip_InstallHandler/10 (IntCtrl_Ip_InstallHandler) @05e06a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 (955630225 (estimated locally),5.66 per call) 
+  Calls: 
+IntCtrl_Ip_SetTargetCores/9 (IntCtrl_Ip_SetTargetCores) @05e069a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 (955630225 (estimated locally),5.66 per call) 
+  Calls: 
+IntCtrl_Ip_Init/8 (IntCtrl_Ip_Init) @05e067e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_Init/6 (574129754 (estimated locally),0.53 per call) 
+  Calls: 
+Platform_Ipw_InitNonCore/7 (Platform_Ipw_InitNonCore) @05e061c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4a68
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:168730857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/10 (955630225 (estimated locally),5.66 per call) IntCtrl_Ip_SetTargetCores/9 (955630225 (estimated locally),5.66 per call) 
+Platform_Ipw_Init/6 (Platform_Ipw_Init) @05dade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4ba8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/8 (574129754 (estimated locally),0.53 per call) 
+
+
+ ordered call graph: reduced
+Platform_Ipw_InitNonCore/7 (Platform_Ipw_InitNonCore) @05e061c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4a68
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:168730857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/10 (955630225 (estimated locally),5.66 per call) IntCtrl_Ip_SetTargetCores/9 (955630225 (estimated locally),5.66 per call) 
+Platform_Ipw_Init/6 (Platform_Ipw_Init) @05dade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @032b4ba8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/8 (574129754 (estimated locally),0.53 per call) 
+
+Platform_Ipw_InitNonCore (const struct Platform_Ipw_NonCoreConfigType * pConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _1;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _2;
+  long unsigned int _3;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _4;
+  <unnamed type> _5;
+  unsigned char _6;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _7;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _8;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _9;
+  <unnamed type> _10;
+  void (*<T4f8>) (void) _11;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _12;
+  long unsigned int _13;
+
+  <bb 2> [local count: 168730857]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_18(D)->pIntRouteConfig;
+  if (_1 != 0B)
+    goto <bb 6>; [70.00%]
+  else
+    goto <bb 5>; [30.00%]
+
+  <bb 6> [local count: 118111600]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _2 = _12->aIrqConfig;
+  _3 = irqIdx_14 * 12;
+  _4 = _2 + _3;
+  _5 = _4->eIrqNumber;
+  _6 = _4->u8TargetCores;
+  IntCtrl_Ip_SetTargetCores (_5, _6);
+  # DEBUG BEGIN_STMT
+  _7 = pConfig_18(D)->pIntRouteConfig;
+  _8 = _7->aIrqConfig;
+  _9 = _8 + _3;
+  _10 = _9->eIrqNumber;
+  _11 = _9->pfHandler;
+  IntCtrl_Ip_InstallHandler (_10, _11, 0B);
+  # DEBUG BEGIN_STMT
+  irqIdx_21 = irqIdx_14 + 1;
+  # DEBUG irqIdx => irqIdx_21
+
+  <bb 4> [local count: 1073741824]:
+  # irqIdx_14 = PHI <irqIdx_21(3), 0(6)>
+  # DEBUG irqIdx => irqIdx_14
+  # DEBUG BEGIN_STMT
+  _12 = pConfig_18(D)->pIntRouteConfig;
+  _13 = _12->u32ConfigIrqCount;
+  if (_13 > irqIdx_14)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 168730858]:
+  return;
+
+}
+
+
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  const struct IntCtrl_Ip_CtrlConfigType * _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_4(D)->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 4>; [46.53%]
+
+  <bb 3> [local count: 574129754]:
+  # DEBUG BEGIN_STMT
+  # DEBUG pIntCtrlCtrlConfig => _1
+  # DEBUG INLINE_ENTRY Platform_Ipw_InitIntCtrl
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_Init (_1);
+  # DEBUG BEGIN_STMT
+  # DEBUG pIntCtrlCtrlConfig => NULL
+  # DEBUG ret => 0
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

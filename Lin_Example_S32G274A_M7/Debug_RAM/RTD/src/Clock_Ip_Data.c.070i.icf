@@ -1,0 +1,51 @@
+Dump after hash based groups
+Congruence classes: 28 (unique hash values: 28), with total: 29 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 27 classes
+[2]: 1 classes
+
+
+Dump after WPA based types groups
+Congruence classes: 28 (unique hash values: 28), with total: 29 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 27 classes
+[2]: 1 classes
+
+
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 28 (unique hash values: 28), with total: 29 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 27 classes
+[2]: 1 classes
+
+
+Init called for 2 items (6.90%).
+Dump after full equality comparison of groups
+Congruence classes: 28 (unique hash values: 28), with total: 29 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 27 classes
+[2]: 1 classes
+
+
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 28 (unique hash values: 28), with total: 29 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 27 classes
+[2]: 1 classes
+
+
+
+Item count: 29
+Congruent classes before: 28, after: 28
+Average class size before: 1.04, after: 1.04
+Average non-singular class size: 2.00, count: 1
+Equal symbols: 1
+Fraction of visited symbols: 3.45%
+
+Semantic equality hit:Clock_Ip_au8DividerTriggerCallbackIndex->Clock_Ip_au8IrcoscCallbackIndex
+Assembler symbol names:Clock_Ip_au8DividerTriggerCallbackIndex->Clock_Ip_au8IrcoscCallbackIndex
+Not unifying; address of original may be compared.
+

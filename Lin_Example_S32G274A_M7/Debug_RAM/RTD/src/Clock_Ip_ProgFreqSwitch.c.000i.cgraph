@@ -1,0 +1,450 @@
+Trivially needed symbols: Clock_Ip_axPcfsCallbacks
+
+
+Initial Symbol table:
+
+PcfsRate/8 (PcfsRate) @05e7b558
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e7b480
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+AMax/7 (AMax) @05e7b510
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e7b558
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_GetConfiguredFrequencyValue/6 (Clock_Ip_GetConfiguredFrequencyValue) @05f2d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 
+  Calls: 
+Hash/5 (Hash) @05e7b480
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05f218c0
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apxCgmPcfs/4 (Clock_Ip_apxCgmPcfs) @05e7b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/3 (Clock_Ip_au8ClockFeatures) @05e7b3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/2 (Clock_Ip_axPcfsCallbacks) @05f22b88
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (addr)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (Clock_Ip_CgmXPcfsSdurDivcDiveDivs) @05f21700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @05f218c0
+  References: Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_apxCgmPcfs/4 (read)Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash/5 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash/5 (write)AMax/7 (read)PcfsRate/8 (read)AMax/7 (read)PcfsRate/8 (read)AMax/7 (read)PcfsRate/8 (read)
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/6 
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (Clock_Ip_ProgressiveFrequencyClockSwitchEmpty) @05f218c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @01733ea0
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+PcfsRate/8 (PcfsRate) @05e7b558
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+AMax/7 (AMax) @05e7b510
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_GetConfiguredFrequencyValue/6 (Clock_Ip_GetConfiguredFrequencyValue) @05f2d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 
+  Calls: 
+Hash/5 (Hash) @05e7b480
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apxCgmPcfs/4 (Clock_Ip_apxCgmPcfs) @05e7b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/3 (Clock_Ip_au8ClockFeatures) @05e7b3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/2 (Clock_Ip_axPcfsCallbacks) @05f22b88
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (addr)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (Clock_Ip_CgmXPcfsSdurDivcDiveDivs) @05f21700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_apxCgmPcfs/4 (read)Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash/5 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash/5 (write)AMax/7 (read)PcfsRate/8 (read)AMax/7 (read)PcfsRate/8 (read)AMax/7 (read)PcfsRate/8 (read)
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/6 
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (Clock_Ip_ProgressiveFrequencyClockSwitchEmpty) @05f218c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+PcfsRate.6562/8 (PcfsRate) @05e7b558
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+AMax.6561/7 (AMax) @05e7b510
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_GetConfiguredFrequencyValue/6 (Clock_Ip_GetConfiguredFrequencyValue) @05f2d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 
+  Calls: 
+Hash.6563/5 (Hash) @05e7b480
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apxCgmPcfs/4 (Clock_Ip_apxCgmPcfs) @05e7b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/3 (Clock_Ip_au8ClockFeatures) @05e7b3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/2 (Clock_Ip_axPcfsCallbacks) @05f22b88
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (addr)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (Clock_Ip_CgmXPcfsSdurDivcDiveDivs) @05f21700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_apxCgmPcfs/4 (read)Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash.6563/5 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash.6563/5 (write)AMax.6561/7 (read)PcfsRate.6562/8 (read)AMax.6561/7 (read)PcfsRate.6562/8 (read)AMax.6561/7 (read)PcfsRate.6562/8 (read)
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/6 
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (Clock_Ip_ProgressiveFrequencyClockSwitchEmpty) @05f218c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+PcfsRate.6562/8 (PcfsRate) @05e7b558
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+AMax.6561/7 (AMax) @05e7b510
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_GetConfiguredFrequencyValue/6 (Clock_Ip_GetConfiguredFrequencyValue) @05f2d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 
+  Calls: 
+Hash.6563/5 (Hash) @05e7b480
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apxCgmPcfs/4 (Clock_Ip_apxCgmPcfs) @05e7b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/3 (Clock_Ip_au8ClockFeatures) @05e7b3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/2 (Clock_Ip_axPcfsCallbacks) @05f22b88
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (addr)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (Clock_Ip_CgmXPcfsSdurDivcDiveDivs) @05f21700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_apxCgmPcfs/4 (read)Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash.6563/5 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash.6563/5 (write)AMax.6561/7 (read)PcfsRate.6562/8 (read)AMax.6561/7 (read)PcfsRate.6562/8 (read)AMax.6561/7 (read)PcfsRate.6562/8 (read)
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/6 
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (Clock_Ip_ProgressiveFrequencyClockSwitchEmpty) @05f218c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+PcfsRate.6562/8 (PcfsRate) @05e7b558
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+AMax.6561/7 (AMax) @05e7b510
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+Clock_Ip_GetConfiguredFrequencyValue/6 (Clock_Ip_GetConfiguredFrequencyValue) @05f2d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (118111599 (estimated locally),0.49 per call) 
+  Calls: 
+Hash.6563/5 (Hash) @05e7b480
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (write)
+  Availability: available
+  Varpool flags: used-by-single-function
+Clock_Ip_apxCgmPcfs/4 (Clock_Ip_apxCgmPcfs) @05e7b438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/3 (Clock_Ip_au8ClockFeatures) @05e7b3f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/2 (Clock_Ip_axPcfsCallbacks) @05f22b88
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (addr)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (Clock_Ip_CgmXPcfsSdurDivcDiveDivs) @05f21700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/3 (read)Clock_Ip_apxCgmPcfs/4 (read)Clock_Ip_au8ClockFeatures/3 (read)Hash.6563/5 (read)Hash.6563/5 (write)AMax.6561/7 (read)PcfsRate.6562/8 (read)
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Availability: available
+  Function flags: count:241635841 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/6 (118111599 (estimated locally),0.49 per call) 
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (Clock_Ip_ProgressiveFrequencyClockSwitchEmpty) @05f218c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:Clock_Ip_ProgressiveFrequencyClockSwitchEmpty:0
+Time profile order in expand_all_functions:Clock_Ip_CgmXPcfsSdurDivcDiveDivs:0
+Trivially needed variables: Hash.6563 Clock_Ip_axPcfsCallbacks
+Removing variables: PcfsRate.6562 AMax.6561
+
+Final Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/6 (Clock_Ip_GetConfiguredFrequencyValue) @05f2d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Hash.6563/5 (Hash) @05e7b480
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: used-by-single-function
+Clock_Ip_apxCgmPcfs/4 (Clock_Ip_apxCgmPcfs) @05e7b438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/3 (Clock_Ip_au8ClockFeatures) @05e7b3f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/2 (Clock_Ip_axPcfsCallbacks) @05f22b88
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @05e7b480
+  References: Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (addr)Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs/1 (Clock_Ip_CgmXPcfsSdurDivcDiveDivs) @05f21700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Availability: available
+  Function flags: count:241635841 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty/0 (Clock_Ip_ProgressiveFrequencyClockSwitchEmpty) @05f218c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axPcfsCallbacks/2 (addr)
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

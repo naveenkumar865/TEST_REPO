@@ -1,0 +1,9 @@
+Mcu_Ipw.c:661:6:ClockNotificationsCallback	0	static
+Mcu_Ipw.c:317:6:Mcu_Ipw_Init	8	static
+Mcu_Ipw.c:400:6:Mcu_Ipw_InitClock	0	static
+Mcu_Ipw.c:418:6:Mcu_Ipw_DistributePllClock	0	static
+Mcu_Ipw.c:440:19:Mcu_Ipw_GetPllStatus	8	static
+Mcu_Ipw.c:501:6:Mcu_Ipw_SetMode	0	static
+Mcu_Ipw.c:544:15:Mcu_Ipw_GetResetReason	0	static
+Mcu_Ipw.c:565:18:Mcu_Ipw_GetResetRawValue	0	static
+Mcu_Ipw.c:808:6:Mcu_Ipw_SleepOnExit	0	static

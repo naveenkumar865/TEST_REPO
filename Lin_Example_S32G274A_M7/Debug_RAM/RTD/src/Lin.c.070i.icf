@@ -1,0 +1,630 @@
+Parsed function:Lin_CommonCheckingChannel.isra.0.part.0
+Parsed function:Lin_CommonCheckingChannel.isra.0
+Parsed function:Lin_WakeupInternal
+Parsed function:Lin_Wakeup
+Parsed function:Lin_SendFrame
+Parsed function:Lin_GoToSleepInternal
+Parsed function:Lin_GoToSleep
+Parsed function:Lin_GetStatus
+Parsed function:Lin_CheckWakeup
+Parsed function:Lin_Init
+Parsed function:Lin_ChkParamFuncSendFrame
+Parsed function:Lin_InitImplementation
+Dump after hash based groups
+Congruence classes: 11 (unique hash values: 11), with total: 12 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 10 classes
+[2]: 1 classes
+
+
+Dump after WPA based types groups
+Congruence classes: 12 (unique hash values: 11), with total: 12 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 12 classes
+
+
+Worklist has been filled with: 4
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 12 (unique hash values: 11), with total: 12 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 12 classes
+
+
+Init called for 0 items (0.00%).
+Dump after full equality comparison of groups
+Congruence classes: 12 (unique hash values: 11), with total: 12 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 12 classes
+
+
+Worklist has been filled with: 4
+Address reference subdivision created: 0 new classes.
+Congruence classes: 12 (unique hash values: 11), with total: 12 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 12 classes
+
+
+
+Item count: 12
+Congruent classes before: 12, after: 12
+Average class size before: 1.00, after: 1.00
+Average non-singular class size: 0.00, count: 0
+Equal symbols: 0
+Fraction of visited symbols: 0.00%
+
+Lin_CommonCheckingChannel.isra.0.part.0 ()
+{
+  uint32 CoreId;
+  Std_ReturnType TempReturn;
+  const uint8 FunctionalId;
+  const uint8 Channel;
+  const struct Lin_ChannelConfigType * _1;
+  _Bool _2;
+  long unsigned int _3;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG D#3 s=> Channel
+  # DEBUG Channel => D#3
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Lin_apChannelConfigPtr[0];
+  _2 = _1->AllocatedPartition;
+  if (_2 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _3 = _1->ChannelCoreId;
+  if (_3 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_4 = PHI <1(2), 1(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  return TempReturn_4;
+
+}
+
+
+Lin_CommonCheckingChannel.isra.0 (const uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  unsigned char _1;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG FunctionalId s=> FunctionalId
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  _1 = Lin_au8LinDrvStatus[0];
+  if (_1 != 2)
+    goto <bb 5>; [66.00%]
+  else
+    goto <bb 3>; [34.00%]
+
+  <bb 3> [local count: 365072220]:
+  # DEBUG BEGIN_STMT
+  if (Channel_2(D) != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 4> [local count: 182536110]:
+  # DEBUG D#2 => Channel_2(D)
+  TempReturn_5 = Lin_CommonCheckingChannel.isra.0.part.0 ();
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_3 = PHI <1(2), 1(3), TempReturn_5(4)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+Lin_WakeupInternal (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 11
+  TempReturn_7 = Lin_CommonCheckingChannel.isra.0 (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 != 2)
+    goto <bb 5>; [79.76%]
+  else
+    goto <bb 4>; [20.24%]
+
+  <bb 4> [local count: 143434728]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_WakeUpInternal (Channel_6(D));
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 3;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_7(2), 1(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+Lin_Wakeup (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 7
+  TempReturn_7 = Lin_CommonCheckingChannel.isra.0 (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 != 2)
+    goto <bb 5>; [79.76%]
+  else
+    goto <bb 4>; [20.24%]
+
+  <bb 4> [local count: 143434728]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_WakeUp (Channel_6(D));
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 3;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_7(2), 1(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+Lin_SendFrame (uint8 Channel, const struct Lin_PduType * PduInfoPtr)
+{
+  Std_ReturnType TempReturn;
+  unsigned char _9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempReturn_6 = Lin_ChkParamFuncSendFrame (Channel_4(D), PduInfoPtr_5(D));
+  # DEBUG TempReturn => TempReturn_6
+  # DEBUG BEGIN_STMT
+  if (TempReturn_6 == 1)
+    goto <bb 4>; [51.12%]
+  else
+    goto <bb 3>; [48.88%]
+
+  <bb 3> [local count: 524845004]:
+  # DEBUG BEGIN_STMT
+  TempReturn_8 = Lin_Ipw_SendFrame (Channel_4(D), PduInfoPtr_5(D));
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  _9 = MIN_EXPR <1, TempReturn_8>;
+
+  <bb 4> [local count: 1073741824]:
+  # TempReturn_1 = PHI <TempReturn_6(2), _9(3)>
+  # DEBUG TempReturn => TempReturn_1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return TempReturn_1;
+
+}
+
+
+Lin_GoToSleepInternal (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 9
+  TempReturn_7 = Lin_CommonCheckingChannel.isra.0 (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 6>; [51.12%]
+  else
+    goto <bb 4>; [48.88%]
+
+  <bb 4> [local count: 346397703]:
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = Lin_Ipw_GoToSleepInternal (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  if (TempReturn_9 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 5> [local count: 173198851]:
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 2;
+
+  <bb 6> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_7(2), TempReturn_7(3), 1(4), 0(5)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+Lin_GoToSleep (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 6
+  TempReturn_8 = Lin_CommonCheckingChannel.isra.0 (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  if (TempReturn_8 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669604]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 5>; [51.12%]
+  else
+    goto <bb 4>; [48.88%]
+
+  <bb 4> [local count: 346397702]:
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = Lin_Ipw_GoToSleep (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  TempReturn_3 = MIN_EXPR <1, TempReturn_10>;
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 1;
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_4 = PHI <TempReturn_8(2), TempReturn_8(3), TempReturn_3(4)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  return TempReturn_4;
+
+}
+
+
+Lin_GetStatus (uint8 Channel, uint8 * * Lin_SduPtr)
+{
+  uint8 Lin_ChannelState;
+  Lin_StatusType TempReturn;
+  Std_ReturnType CheckChannel;
+  int _1;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 8
+  CheckChannel_6 = Lin_CommonCheckingChannel.isra.0 (Channel_5(D));
+  # DEBUG CheckChannel => CheckChannel_6
+  # DEBUG BEGIN_STMT
+  if (CheckChannel_6 == 1)
+    goto <bb 8>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669604]:
+  # DEBUG BEGIN_STMT
+  if (Lin_SduPtr_7(D) == 0B)
+    goto <bb 8>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 4> [local count: 496068722]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_5(D);
+  Lin_ChannelState_8 = Lin_au8LinChStatus[_1];
+  # DEBUG Lin_ChannelState => Lin_ChannelState_8
+  # DEBUG BEGIN_STMT
+  switch (Lin_ChannelState_8) <default: <L7> [25.00%], case 1: <L5> [25.00%], case 2: <L12> [25.00%], case 3: <L6> [25.00%]>
+
+  <bb 5> [local count: 124017180]:
+<L5>:
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 2;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 10
+  # DEBUG BEGIN_STMT
+  goto <bb 8>; [100.00%]
+
+  <bb 6> [local count: 124017180]:
+<L6>:
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = Lin_Ipw_HardwareGetStatus (Channel_5(D), Lin_SduPtr_7(D));
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  goto <bb 8>; [100.00%]
+
+  <bb 7> [local count: 124017180]:
+<L7>:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+  # DEBUG BEGIN_STMT
+
+  <bb 8> [local count: 1073741824]:
+  # TempReturn_2 = PHI <0(2), 0(3), 10(4), 10(5), TempReturn_10(6), 0(7)>
+<L12>:
+  # DEBUG TempReturn => TempReturn_2
+  # DEBUG BEGIN_STMT
+  return TempReturn_2;
+
+}
+
+
+Lin_CheckWakeup (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 10
+  TempReturn_8 = Lin_CommonCheckingChannel.isra.0 (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  if (TempReturn_8 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  _3 = _2 + 255;
+  if (_3 <= 1)
+    goto <bb 4>; [25.50%]
+  else
+    goto <bb 5>; [74.50%]
+
+  <bb 4> [local count: 180710749]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_CheckWakeup (Channel_7(D));
+  # DEBUG BEGIN_STMT
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_4 = PHI <TempReturn_8(2), 0(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return TempReturn_4;
+
+}
+
+
+Lin_Init (const struct Lin_ConfigType * Config)
+{
+  const struct Lin_ConfigType * _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  if (Config_4(D) != 0B)
+    goto <bb 6>; [70.00%]
+  else
+    goto <bb 3>; [30.00%]
+
+  <bb 3> [local count: 322122547]:
+  # DEBUG BEGIN_STMT
+  _1 = Lin_PBCfgVariantPredefined[0];
+  if (_1 == 0B)
+    goto <bb 6>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 4> [local count: 225485783]:
+  _2 = _1->PartitionCoreId;
+  if (_2 != 0)
+    goto <bb 6>; [67.00%]
+  else
+    goto <bb 5>; [33.00%]
+
+  <bb 5> [local count: 74410308]:
+  # DEBUG BEGIN_STMT
+  Lin_apConfigPtr[0] = _1;
+  # DEBUG BEGIN_STMT
+  Lin_InitImplementation ();
+  # DEBUG BEGIN_STMT
+  Lin_au8LinDrvStatus[0] = 2;
+
+  <bb 6> [local count: 1073741824]:
+  return;
+
+}
+
+
+Lin_ChkParamFuncSendFrame (const uint8 Channel, const struct Lin_PduType * const PduInfoPtr)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 4
+  TempReturn_6 = Lin_CommonCheckingChannel.isra.0 (Channel_5(D));
+  # DEBUG TempReturn => TempReturn_6
+  # DEBUG BEGIN_STMT
+  if (TempReturn_6 == 1)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  if (PduInfoPtr_7(D) == 0B)
+    goto <bb 6>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 4> [local count: 496068723]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_5(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 6>; [66.00%]
+
+  <bb 5> [local count: 168663366]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+
+  <bb 6> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_6(2), 1(3), TempReturn_6(4), 1(5)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+Lin_InitImplementation ()
+{
+  uint8 Lin_ChLoop;
+  const struct Lin_ConfigType * _1;
+  const struct Lin_ChannelConfigType * _3;
+  _Bool _4;
+  long unsigned int _6;
+  const struct Lin_HwConfigType * _7;
+
+  <bb 2> [local count: 59055799]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG Lin_ChLoop => 0
+  goto <bb 7>; [100.00%]
+
+  <bb 3> [local count: 1014686024]:
+  # DEBUG BEGIN_STMT
+  _1 = Lin_apConfigPtr[0];
+  _3 = _1->Lin_ChannelPtr[0];
+  _4 = _3->AllocatedPartition;
+  if (_4 != 0)
+    goto <bb 4>; [67.00%]
+  else
+    goto <bb 12>; [33.00%]
+
+  <bb 12> [local count: 334846388]:
+  goto <bb 9>; [100.00%]
+
+  <bb 4> [local count: 679839635]:
+  _6 = _3->ChannelCoreId;
+  if (_6 == 0)
+    goto <bb 5>; [5.50%]
+  else
+    goto <bb 11>; [94.50%]
+
+  <bb 11> [local count: 642448455]:
+  goto <bb 10>; [100.00%]
+
+  <bb 5> [local count: 37391180]:
+  # DEBUG BEGIN_STMT
+  Lin_apChannelConfigPtr[0] = _3;
+  # DEBUG BEGIN_STMT
+  _7 = _3->ChannelConfigPtr;
+  Lin_Ipw_InitChannel (0, _7);
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[0] = 2;
+
+  <bb 7> [local count: 96446979]:
+  # Lin_ChLoop_15 = PHI <0(2), 1(5)>
+
+  <bb 10> [local count: 738895437]:
+  # Lin_ChLoop_9 = PHI <Lin_ChLoop_15(7), 1(11)>
+
+  <bb 9> [local count: 1073741824]:
+  # Lin_ChLoop_8 = PHI <Lin_ChLoop_9(10), 1(12)>
+  # DEBUG Lin_ChLoop => Lin_ChLoop_8
+  # DEBUG BEGIN_STMT
+  if (Lin_ChLoop_8 == 0)
+    goto <bb 3>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 8> [local count: 59055800]:
+  return;
+
+}
+
+

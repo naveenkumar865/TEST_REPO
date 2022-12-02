@@ -1,0 +1,921 @@
+Trivially needed symbols: main T_Lin_Frame T_Lin_Data
+
+
+Initial Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+linSdu/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @01733ea0
+  References: 
+  Referring: main/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: linSdu/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Exit_Example/1 Lin_GetStatus/18 Lin_SendFrame/17 Lin_CheckWakeup/16 Lin_WakeupInternal/15 Lin_Init/14 OsIf_Init/13 Platform_Init/12 Mcu_SetMode/11 Mcu_DistributePllClock/10 Mcu_GetPllStatus/9 Mcu_InitClock/8 Mcu_Init/7 Port_Init/6 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @065ad700
+  References: T_Lin_Data/2 (addr)
+  Referring: main/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @065a86c0
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility:
+  Aux: @08d21510
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: main/4 
+  Calls: 
+DevAssert/0 (DevAssert) @05d5a380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+linSdu/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: main/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: public
+  References: linSdu/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Exit_Example/1 Lin_GetStatus/18 Lin_SendFrame/17 Lin_CheckWakeup/16 Lin_WakeupInternal/15 Lin_Init/14 OsIf_Init/13 Platform_Init/12 Mcu_SetMode/11 Mcu_DistributePllClock/10 Mcu_GetPllStatus/9 Mcu_InitClock/8 Mcu_Init/7 Port_Init/6 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: public
+  References: T_Lin_Data/2 (addr)
+  Referring: main/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: main/4 
+  Calls: 
+
+
+Initial Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+linSdu.7625/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: main/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: public
+  References: linSdu.7625/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Exit_Example/1 Lin_GetStatus/18 Lin_SendFrame/17 Lin_CheckWakeup/16 Lin_WakeupInternal/15 Lin_Init/14 OsIf_Init/13 Platform_Init/12 Mcu_SetMode/11 Mcu_DistributePllClock/10 Mcu_GetPllStatus/9 Mcu_InitClock/8 Mcu_Init/7 Port_Init/6 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: public
+  References: T_Lin_Data/2 (addr)
+  Referring: main/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: main/4 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+linSdu.7625/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: main/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: public
+  References: linSdu.7625/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Exit_Example/1 Lin_GetStatus/18 Lin_SendFrame/17 Lin_CheckWakeup/16 Lin_WakeupInternal/15 Lin_Init/14 OsIf_Init/13 Platform_Init/12 Mcu_SetMode/11 Mcu_DistributePllClock/10 Mcu_GetPllStatus/9 Mcu_InitClock/8 Mcu_Init/7 Port_Init/6 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: public
+  References: T_Lin_Data/2 (addr)
+  Referring: main/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: main/4 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (1073741824 (estimated locally),160.62 per call) 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (114863532 (estimated locally),17.18 per call) 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (114863532 (estimated locally),17.18 per call) 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (114863532 (estimated locally),17.18 per call) 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (60774361 (estimated locally),9.09 per call) 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 (6685180 (estimated locally),1.00 per call) 
+  Calls: 
+linSdu.7625/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: main/4 (addr)
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: linSdu.7625/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:6685180 (estimated locally) body only_called_at_startup executed_once optimize_size
+  Called by: 
+  Calls: Exit_Example/1 (inlined) (6685179 (estimated locally),1.00 per call) Lin_GetStatus/18 (1073741824 (estimated locally),160.62 per call) Lin_SendFrame/17 (114863532 (estimated locally),17.18 per call) Lin_CheckWakeup/16 (114863532 (estimated locally),17.18 per call) Lin_WakeupInternal/15 (114863532 (estimated locally),17.18 per call) Lin_Init/14 (6685180 (estimated locally),1.00 per call) OsIf_Init/13 (6685180 (estimated locally),1.00 per call) Platform_Init/12 (6685180 (estimated locally),1.00 per call) Mcu_SetMode/11 (6685180 (estimated locally),1.00 per call) Mcu_DistributePllClock/10 (6685180 (estimated locally),1.00 per call) Mcu_GetPllStatus/9 (60774361 (estimated locally),9.09 per call) Mcu_InitClock/8 (6685180 (estimated locally),1.00 per call) Mcu_Init/7 (6685180 (estimated locally),1.00 per call) Port_Init/6 (6685180 (estimated locally),1.00 per call) 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: T_Lin_Data/2 (addr)
+  Referring: main/4 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: available
+  Varpool flags: initialized
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Exit_Example/1 is inline copy in main/4
+  Availability: local
+  Function flags: count:6685179 (estimated locally) body local nonfreeing_fn executed_once optimize_size
+  Called by: main/4 (inlined) (6685179 (estimated locally),1.00 per call) 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:main:0
+Trivially needed variables: linSdu.7625 T_Lin_Frame T_Lin_Data
+Removing variables:
+
+Final Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+linSdu.7625/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:6685180 (estimated locally) only_called_at_startup executed_once optimize_size
+  Called by: 
+  Calls: 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @08d21510
+  References: T_Lin_Data/2 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @065a86c0
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: available
+  Varpool flags: initialized

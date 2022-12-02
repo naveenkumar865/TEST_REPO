@@ -1,0 +1,2378 @@
+Trivially needed symbols: Linflexd_Lin_Ip_Error_IRQHandler Linflexd_Lin_Ip_TxRx_IRQHandler Linflexd_Lin_Ip_SendFrame Linflexd_Lin_Ip_SendWakeupSignal Linflexd_Lin_Ip_GotoIdleState Linflexd_Lin_Ip_GoToSleepMode Linflexd_Lin_Ip_GetStatus Linflexd_Lin_Ip_GetCurrentNodeState Linflexd_Lin_Ip_AbortTransferData Linflexd_Lin_Ip_Deinit Linflexd_Lin_Ip_Init Linflexd_Lin_Ip_axStateStructure Linflexd_Lin_Ip_apxBases
+
+
+Initial Symbol table:
+
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired/7 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05e6fb60
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 Linflexd_Lin_Ip_CalculatePid/17 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05e6b7e0
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05e648c0
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 Linflexd_Lin_Ip_GotoIdleState/25 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d58ee0
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d58a80
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d58540
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 Linflexd_Lin_Ip_CopyData/16 Linflexd_Lin_Ip_GetNoEventStatus/12 Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d4cd20
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d4c540
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d4c000
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05d4cc40
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 Linflexd_Lin_Ip_StateTimeoutMode/8 Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 Linflexd_Lin_Ip_StateTimeoutMode/8 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05d4cd20
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 Linflexd_Lin_Ip_GetCurrentNodeState/22 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e0fc40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05c2aee0
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_CompleteTransfer/15 Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e6fb60
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: Linflexd_Lin_Ip_CopyData/16 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01733ea0
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 
+   Indirect call
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01733ea0
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05e0fd20
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05d58540
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05d4cc40
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05c21c40
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05c2ac40
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 Linflexd_Lin_Ip_GoToSleepMode/24 Linflexd_Lin_Ip_Init/19 Linflexd_Lin_Ip_Init/19 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05c2ac40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_GetElapsed/32 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05c219a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_MicrosToTicks/31 OsIf_GetCounter/30 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05c25e00
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05c0a3a8
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @05d4c9a0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05d4c1c0
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05e0c000
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @05c0a288
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired/7 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 Linflexd_Lin_Ip_CalculatePid/17 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 Linflexd_Lin_Ip_GotoIdleState/25 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 Linflexd_Lin_Ip_CopyData/16 Linflexd_Lin_Ip_GetNoEventStatus/12 Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 Linflexd_Lin_Ip_StateTimeoutMode/8 Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 Linflexd_Lin_Ip_StateTimeoutMode/8 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 Linflexd_Lin_Ip_GetCurrentNodeState/22 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_CompleteTransfer/15 Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: Linflexd_Lin_Ip_CopyData/16 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 
+   Indirect call
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 Linflexd_Lin_Ip_GoToSleepMode/24 Linflexd_Lin_Ip_Init/19 Linflexd_Lin_Ip_Init/19 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_GetElapsed/32 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_MicrosToTicks/31 OsIf_GetCounter/30 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired/7 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 Linflexd_Lin_Ip_CalculatePid/17 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 Linflexd_Lin_Ip_GotoIdleState/25 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 Linflexd_Lin_Ip_CopyData/16 Linflexd_Lin_Ip_GetNoEventStatus/12 Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 Linflexd_Lin_Ip_StateTimeoutMode/8 Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 Linflexd_Lin_Ip_StateTimeoutMode/8 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 Linflexd_Lin_Ip_GetCurrentNodeState/22 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_CompleteTransfer/15 Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: Linflexd_Lin_Ip_CopyData/16 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 
+   Indirect call
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 Linflexd_Lin_Ip_GoToSleepMode/24 Linflexd_Lin_Ip_Init/19 Linflexd_Lin_Ip_Init/19 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_GetElapsed/32 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_MicrosToTicks/31 OsIf_GetCounter/30 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired/7 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 Linflexd_Lin_Ip_CalculatePid/17 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 Linflexd_Lin_Ip_GotoIdleState/25 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 Linflexd_Lin_Ip_CopyData/16 Linflexd_Lin_Ip_GetNoEventStatus/12 Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 Linflexd_Lin_Ip_StateTimeoutMode/8 Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 Linflexd_Lin_Ip_StateTimeoutMode/8 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 Linflexd_Lin_Ip_GetCurrentNodeState/22 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_CompleteTransfer/15 Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: Linflexd_Lin_Ip_CopyData/16 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 
+   Indirect call
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility:
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 Linflexd_Lin_Ip_GoToSleepMode/24 Linflexd_Lin_Ip_Init/19 Linflexd_Lin_Ip_Init/19 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_GetElapsed/32 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_MicrosToTicks/31 OsIf_GetCounter/30 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Linflexd_Lin_Ip_StartTimeout.constprop.0/48 (Linflexd_Lin_Ip_StartTimeout.constprop) @06138540
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 46
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_StartTimeout.constprop/48 is inline copy in Linflexd_Lin_Ip_StateTimeoutMode/8
+  Clone of Linflexd_Lin_Ip_StartTimeout.constprop.0/46
+  Availability: local
+  Function flags: count:114863532 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_StateTimeoutMode/8 (inlined) (114863532 (estimated locally),1.00 per call) 
+  Calls: OsIf_MicrosToTicks/31 (114863532 (estimated locally),1.00 per call) OsIf_GetCounter/30 (114863532 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_TimeoutExpired.constprop.0/47 (Linflexd_Lin_Ip_TimeoutExpired.constprop) @06138460
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 45
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_TimeoutExpired.constprop/47 is inline copy in Linflexd_Lin_Ip_StateTimeoutMode/8
+  Clone of Linflexd_Lin_Ip_TimeoutExpired.constprop.0/45
+  Availability: local
+  Function flags: count:1014686025 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_StateTimeoutMode/8 (inlined) (1014686025 (estimated locally),8.83 per call) 
+  Calls: OsIf_GetElapsed/32 (1014686025 (estimated locally),8.83 per call) 
+Linflexd_Lin_Ip_StartTimeout.constprop.0/46 (Linflexd_Lin_Ip_StartTimeout.constprop) @061380e0
+  Type: function definition analyzed
+  Visibility:
+  previous sharing asm name: 48
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_StartTimeout.constprop/46 is inline copy in Linflexd_Lin_Ip_AbortTransferData/21
+  Clone of Linflexd_Lin_Ip_StartTimeout/6
+  Availability: local
+  Function flags: count:114863532 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (inlined) (114863532 (estimated locally),0.33 per call) 
+  Calls: OsIf_GetCounter/30 (114863532 (estimated locally),0.33 per call) OsIf_MicrosToTicks/31 (114863532 (estimated locally),0.33 per call) 
+Linflexd_Lin_Ip_TimeoutExpired.constprop.0/45 (Linflexd_Lin_Ip_TimeoutExpired.constprop) @05ffce00
+  Type: function definition analyzed
+  Visibility:
+  previous sharing asm name: 47
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_TimeoutExpired.constprop/45 is inline copy in Linflexd_Lin_Ip_AbortTransferData/21
+  Clone of Linflexd_Lin_Ip_TimeoutExpired/7
+  Availability: local
+  Function flags: count:1014686025 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (inlined) (1014686025 (estimated locally),2.92 per call) 
+  Calls: OsIf_GetElapsed/32 (1014686025 (estimated locally),2.92 per call) 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (46976205 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (46976205 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 (238585434 (estimated locally),0.43 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 (238585434 (estimated locally),0.43 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 (46616287 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 (46616287 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 (354334802 (estimated locally),0.33 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 (354334802 (estimated locally),0.33 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (37904965 (estimated locally),0.11 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (37904965 (estimated locally),0.11 per call) 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired.constprop/47 (1014686025 (estimated locally),8.83 per call) Linflexd_Lin_Ip_TimeoutExpired.constprop/45 (1014686025 (estimated locally),2.92 per call) 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout.constprop/48 (114863532 (estimated locally),1.00 per call) Linflexd_Lin_Ip_StartTimeout.constprop/46 (114863532 (estimated locally),0.33 per call) 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout.constprop/48 (114863532 (estimated locally),1.00 per call) Linflexd_Lin_Ip_StartTimeout.constprop/46 (114863532 (estimated locally),0.33 per call) 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 (inlined) (124017181 (estimated locally),0.12 per call) 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 (inlined) (46976205 (estimated locally),0.04 per call) SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (46976205 (estimated locally),0.04 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (46976205 (estimated locally),0.04 per call) Linflexd_Lin_Ip_CalculatePid/17 (inlined) (46976205 (estimated locally),0.04 per call) 
+   Indirect call(16441672 (estimated locally),0.02 per call) 
+   Indirect call(65766687 (estimated locally),0.06 per call) 
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:556143199 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (238585434 (estimated locally),0.43 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (238585434 (estimated locally),0.43 per call) 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (46616287 (estimated locally),0.04 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (46616287 (estimated locally),0.04 per call) Linflexd_Lin_Ip_GotoIdleState/25 (141261474 (estimated locally),0.13 per call) 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 (141261474 (estimated locally),0.13 per call) 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (354334802 (estimated locally),0.33 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (354334802 (estimated locally),0.33 per call) 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (inlined) (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_CopyData/16 (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_GetNoEventStatus/12 (inlined) (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:348071309 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (37904965 (estimated locally),0.11 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (37904965 (estimated locally),0.11 per call) Linflexd_Lin_Ip_TimeoutExpired.constprop/45 (inlined) (1014686025 (estimated locally),2.92 per call) Linflexd_Lin_Ip_StartTimeout.constprop/46 (inlined) (114863532 (estimated locally),0.33 per call) 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (inlined) (116930485 (estimated locally),0.11 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (inlined) (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073527120 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_GetCurrentNodeState/22 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_CalculatePid/17 is inline copy in Linflexd_Lin_Ip_TxRx_IRQHandler/28
+  Availability: local
+  Function flags: count:46976205 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (inlined) (46976205 (estimated locally),0.04 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:429496726 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_CompleteTransfer/15 (7751074 (estimated locally),0.01 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_CompleteTransfer/15 is inline copy in Linflexd_Lin_Ip_TxRx_IRQHandler/28
+  Availability: local
+  Function flags: count:46976205 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (inlined) (46976205 (estimated locally),0.04 per call) 
+  Calls: Linflexd_Lin_Ip_CopyData/16 (7751074 (estimated locally),0.01 per call) 
+   Indirect call(8220836 (estimated locally),0.01 per call) 
+   Indirect call(16441672 (estimated locally),0.02 per call) 
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_ErrorsHandler/14 is inline copy in Linflexd_Lin_Ip_Error_IRQHandler/29
+  Availability: local
+  Function flags: count:124017181 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 (inlined) (124017181 (estimated locally),0.12 per call) 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (inlined) (5115709 (estimated locally),0.00 per call) 
+   Indirect call(85021529 (estimated locally),0.08 per call) 
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_ReceiveErrorsHandler/13 is inline copy in Linflexd_Lin_Ip_Error_IRQHandler/29
+  Availability: local
+  Function flags: count:5115709 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 (inlined) (5115709 (estimated locally),0.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_GetNoEventStatus/12 is inline copy in Linflexd_Lin_Ip_GetStatus/23
+  Availability: local
+  Function flags: count:97603132 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (inlined) (97603132 (estimated locally),0.09 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 is inline copy in Linflexd_Lin_Ip_GetStatus/23
+  Availability: local
+  Function flags: count:97603132 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (inlined) (97603132 (estimated locally),0.09 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 is inline copy in Linflexd_Lin_Ip_Init/19
+  Availability: local
+  Function flags: count:116930485 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 (inlined) (116930485 (estimated locally),0.11 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 is inline copy in Linflexd_Lin_Ip_Init/19
+  Availability: local
+  Function flags: count:354334802 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 (inlined) (354334802 (estimated locally),0.33 per call) 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_GoToSleepMode/24 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_Init/19 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_Init/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired.constprop/47 (inlined) (1014686025 (estimated locally),8.83 per call) Linflexd_Lin_Ip_StartTimeout.constprop/48 (inlined) (114863532 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: available
+  Varpool flags: used-by-single-function
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+cloning Linflexd_Lin_Ip_StartTimeout to Linflexd_Lin_Ip_StartTimeout.constprop
+   replace map:  -> 65535(replace); -> 0(replace);
+   args_to_skip: 2, 3
+   combined_args_to_skip:2, 3
+Linflexd_Lin_Ip_StartTimeout (uint32 * StartTimeOut, uint32 * TimeoutTicksOut, uint32 TimeoutUs, OsIf_CounterType OsifCounter)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_GetCounter (OsifCounter_4(D));
+  *StartTimeOut_6(D) = _1;
+  # DEBUG BEGIN_STMT
+  _2 = OsIf_MicrosToTicks (TimeoutUs_8(D), OsifCounter_4(D));
+  *TimeoutTicksOut_10(D) = _2;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_StartTimeout.constprop (uint32 * StartTimeOut, uint32 * TimeoutTicksOut)
+{
+  uint32 TimeoutUs;
+  OsIf_CounterType OsifCounter;
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG OsifCounter => 0
+  # DEBUG TimeoutUs => 65535
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_GetCounter (0);
+  *StartTimeOut_2(D) = _1;
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_MicrosToTicks (65535, 0);
+  *TimeoutTicksOut_4(D) = _3;
+  return;
+
+}
+
+
+cloning Linflexd_Lin_Ip_TimeoutExpired to Linflexd_Lin_Ip_TimeoutExpired.constprop
+   replace map:  -> 0(replace);
+   args_to_skip: 3
+   combined_args_to_skip:3
+Linflexd_Lin_Ip_TimeoutExpired (uint32 * StartTime, uint32 * ElapsedTicks, uint32 TimeoutTicks, OsIf_CounterType OsifCounter)
+{
+  uint32 CurrentElapsedTicks;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  CurrentElapsedTicks_7 = OsIf_GetElapsed (StartTime_4(D), OsifCounter_5(D));
+  # DEBUG CurrentElapsedTicks => CurrentElapsedTicks_7
+  # DEBUG BEGIN_STMT
+  _1 = *ElapsedTicks_8(D);
+  _2 = _1 + CurrentElapsedTicks_7;
+  *ElapsedTicks_8(D) = _2;
+  # DEBUG BEGIN_STMT
+  _11 = _2 >= TimeoutTicks_10(D);
+  return _11;
+
+}
+
+
+Linflexd_Lin_Ip_TimeoutExpired.constprop (uint32 * StartTime, uint32 * ElapsedTicks, uint32 TimeoutTicks)
+{
+  uint32 CurrentElapsedTicks;
+  OsIf_CounterType OsifCounter;
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG OsifCounter => 0
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  CurrentElapsedTicks_2 = OsIf_GetElapsed (StartTime_1(D), 0);
+  # DEBUG CurrentElapsedTicks => CurrentElapsedTicks_2
+  # DEBUG BEGIN_STMT
+  _4 = *ElapsedTicks_3(D);
+  _5 = CurrentElapsedTicks_2 + _4;
+  *ElapsedTicks_3(D) = _5;
+  # DEBUG BEGIN_STMT
+  _7 = _5 >= TimeoutTicks_6(D);
+  return _7;
+
+}
+
+
+Materialization Call site updates done.
+
+Reclaiming functions: Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_CopyData:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_UpdateCurrentNodeState:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_StateTimeoutMode:0
+updating call of Linflexd_Lin_Ip_StateTimeoutMode/8 -> Linflexd_Lin_Ip_TimeoutExpired.constprop/47: _6 = Linflexd_Lin_Ip_TimeoutExpired (&StartTime, &ElapsedTicks, TimeoutTicks.0_5, 0);
+ combined args to skip: 3
+  updated to:_6 = Linflexd_Lin_Ip_TimeoutExpired.constprop (&StartTime, &ElapsedTicks, TimeoutTicks.0_5);
+updating call of Linflexd_Lin_Ip_StateTimeoutMode/8 -> Linflexd_Lin_Ip_StartTimeout.constprop/48: Linflexd_Lin_Ip_StartTimeout (&StartTime, &TimeoutTicks, 65535, 0);
+ combined args to skip: 2, 3
+  updated to:Linflexd_Lin_Ip_StartTimeout.constprop (&StartTime, &TimeoutTicks);
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_Init:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_Deinit:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_AbortTransferData:0
+updating call of Linflexd_Lin_Ip_AbortTransferData/21 -> Linflexd_Lin_Ip_TimeoutExpired.constprop/45: _9 = Linflexd_Lin_Ip_TimeoutExpired (&StartTime, &ElapsedTicks, TimeoutTicks.2_8, 0);
+ combined args to skip: 3
+  updated to:_9 = Linflexd_Lin_Ip_TimeoutExpired.constprop (&StartTime, &ElapsedTicks, TimeoutTicks.2_8);
+updating call of Linflexd_Lin_Ip_AbortTransferData/21 -> Linflexd_Lin_Ip_StartTimeout.constprop/46: Linflexd_Lin_Ip_StartTimeout (&StartTime, &TimeoutTicks, 65535, 0);
+ combined args to skip: 2, 3
+  updated to:Linflexd_Lin_Ip_StartTimeout.constprop (&StartTime, &TimeoutTicks);
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_GetCurrentNodeState:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_GetStatus:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_GoToSleepMode:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_GotoIdleState:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_SendWakeupSignal:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_SendFrame:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_TxRx_IRQHandler:0
+Time profile order in expand_all_functions:Linflexd_Lin_Ip_Error_IRQHandler:0
+Trivially needed variables: Linflexd_Lin_Ip_apxStateStructureArray Linflexd_Lin_Ip_apUserConfigs Linflexd_Lin_Ip_axStateStructure Linflexd_Lin_Ip_anPduInfo Linflexd_Lin_Ip_au8SduBuffer Linflexd_Lin_Ip_apxBases
+Removing variables:
+
+Final Symbol table:
+
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:556143199 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:348071309 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073527120 (estimated locally) local nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:429496726 (estimated locally) local nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @05c0a3a8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @05c0a318
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @05c0a288
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: used-by-single-function
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @05c0a240
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @05c0a1b0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

@@ -1,0 +1,135 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: LinIf_LinErrorIndication LinIf_TxConfirmation LinIf_RxIndication LinIf_HeaderIndication LinIf_CheckWakeup LinIf_WakeupConfirmation
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+LinIf_LinErrorIndication/5 (LinIf_LinErrorIndication) @04fb57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/4 (LinIf_TxConfirmation) @04fb52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/3 (LinIf_RxIndication) @04fb5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/2 (LinIf_HeaderIndication) @04fb5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+LinIf_CheckWakeup/1 (LinIf_CheckWakeup) @04fb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+LinIf_WakeupConfirmation/0 (LinIf_WakeupConfirmation) @04fb5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+LinIf_LinErrorIndication (NetworkHandleType Channel, Lin_SlaveErrorType ErrorStatus)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_TxConfirmation (NetworkHandleType Channel)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_RxIndication (NetworkHandleType Channel, uint8 * Lin_SduPtr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_HeaderIndication (NetworkHandleType Channel, struct Lin_PduType * PduPtr)
+{
+  Std_ReturnType D.5910;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  D.5910 = 0;
+  return D.5910;
+
+}
+
+
+LinIf_CheckWakeup (EcuM_WakeupSourceType WakeupSource)
+{
+  Std_ReturnType D.5908;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  D.5908 = 0;
+  return D.5908;
+
+}
+
+
+LinIf_WakeupConfirmation (EcuM_WakeupSourceType WakeupSource)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

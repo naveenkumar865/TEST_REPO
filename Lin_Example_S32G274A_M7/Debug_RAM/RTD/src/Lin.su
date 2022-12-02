@@ -1,0 +1,9 @@
+Lin.c:245:23:Lin_CommonCheckingChannel.isra.0	0	static
+Lin.c:395:6:Lin_Init	8	static
+Lin.c:498:16:Lin_CheckWakeup	8	static
+Lin.c:574:16:Lin_GetStatus	8	static
+Lin.c:651:16:Lin_GoToSleep	16	static
+Lin.c:749:16:Lin_GoToSleepInternal	16	static
+Lin.c:857:16:Lin_SendFrame	8	static
+Lin.c:947:16:Lin_Wakeup	16	static
+Lin.c:1005:16:Lin_WakeupInternal	16	static

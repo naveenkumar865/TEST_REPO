@@ -1,0 +1,2694 @@
+
+Marking local functions: Linflexd_Lin_Ip_UpdateCurrentNodeState Linflexd_Lin_Ip_CalculatePid Linflexd_Lin_Ip_CopyData Linflexd_Lin_Ip_CompleteTransfer Linflexd_Lin_Ip_ErrorsHandler Linflexd_Lin_Ip_ReceiveErrorsHandler Linflexd_Lin_Ip_GetNoEventStatus Linflexd_Lin_Ip_GetTimeoutErrorStatus Linflexd_Lin_Ip_SetUpRegisterInNormalMode Linflexd_Lin_Ip_SetUpRegisterInInitMode Linflexd_Lin_Ip_StateTimeoutMode Linflexd_Lin_Ip_TimeoutExpired Linflexd_Lin_Ip_StartTimeout
+
+
+Marking externally visible functions: Linflexd_Lin_Ip_Error_IRQHandler Linflexd_Lin_Ip_TxRx_IRQHandler Linflexd_Lin_Ip_SendFrame Linflexd_Lin_Ip_SendWakeupSignal Linflexd_Lin_Ip_GotoIdleState Linflexd_Lin_Ip_GoToSleepMode Linflexd_Lin_Ip_GetStatus Linflexd_Lin_Ip_GetCurrentNodeState Linflexd_Lin_Ip_AbortTransferData Linflexd_Lin_Ip_Deinit Linflexd_Lin_Ip_Init
+
+
+Marking externally visible variables: Linflexd_Lin_Ip_axStateStructure Linflexd_Lin_Ip_apxBases
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired/7 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout/6 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 Linflexd_Lin_Ip_CalculatePid/17 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 Linflexd_Lin_Ip_GotoIdleState/25 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 Linflexd_Lin_Ip_StateTimeoutMode/8 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 Linflexd_Lin_Ip_CopyData/16 Linflexd_Lin_Ip_GetNoEventStatus/12 Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 Linflexd_Lin_Ip_StateTimeoutMode/8 Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 Linflexd_Lin_Ip_StateTimeoutMode/8 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 Linflexd_Lin_Ip_GetCurrentNodeState/22 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_CompleteTransfer/15 Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 
+  Calls: Linflexd_Lin_Ip_CopyData/16 
+   Indirect call
+   Indirect call
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 
+   Indirect call
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 Linflexd_Lin_Ip_GoToSleepMode/24 Linflexd_Lin_Ip_Init/19 Linflexd_Lin_Ip_Init/19 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired/7 Linflexd_Lin_Ip_StartTimeout/6 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_GetElapsed/32 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 Linflexd_Lin_Ip_StateTimeoutMode/8 
+  Calls: OsIf_MicrosToTicks/31 OsIf_GetCounter/30 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Linflexd_Lin_Ip_Error_IRQHandler (const uint32 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  uint32 LinSyncErrorStatus;
+  uint32 ErrorFlag;
+  long unsigned int D.6368;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[Instance];
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  if (LinCurrentState != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  _1 = LinCurrentState->CurrentNodeState;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  ErrorFlag = Base->LINESR;
+  # DEBUG BEGIN_STMT
+  LinSyncErrorStatus = ErrorFlag & 3584;
+  # DEBUG BEGIN_STMT
+  if (LinSyncErrorStatus != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  ErrorFlag = ErrorFlag | 2048;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  D.6368 = Base->LINIER;
+  ErrorFlag = D.6368 & ErrorFlag;
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag & 2048;
+  if (_2 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  ErrorFlag = ErrorFlag & 4294965247;
+  # DEBUG BEGIN_STMT
+  ErrorFlag = ErrorFlag | LinSyncErrorStatus;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  if (ErrorFlag != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_ErrorsHandler (Instance, ErrorFlag);
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 65408;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 65408;
+
+  <bb 12> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_TxRx_IRQHandler (const uint32 Instance)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  uint8 Pid;
+  uint32 StatusFlag;
+  long unsigned int D.6326;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  StatusFlag = 0;
+  # DEBUG BEGIN_STMT
+  Pid = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[Instance];
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  if (LinCurrentState != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 3> :
+  _1 = LinCurrentState->CurrentNodeState;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  LinUserConfig = Linflexd_Lin_Ip_apUserConfigs[Instance];
+  # DEBUG BEGIN_STMT
+  _2 = &Linflexd_Lin_Ip_anPduInfo[Instance];
+  LinCurrentState->SlavePduInfoPtr = _2;
+  # DEBUG BEGIN_STMT
+  StatusFlag = Base->LINIER;
+  # DEBUG BEGIN_STMT
+  D.6326 = Base->LINSR;
+  StatusFlag = D.6326 & StatusFlag;
+  # DEBUG BEGIN_STMT
+  if (StatusFlag != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _3 = StatusFlag & 32;
+  if (_3 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _4 = Base->LINIER;
+  _5 = _4 & 4294967263;
+  Base->LINIER = _5;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 1;
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig->Callback;
+  if (_6 != 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _7 = LinUserConfig->Callback;
+  _8 = (unsigned char) Instance;
+  _7 (_8, LinCurrentState);
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 32;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 2;
+  goto <bb 17>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _9 = StatusFlag & 1;
+  if (_9 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 3;
+  # DEBUG BEGIN_STMT
+  _10 = Base->BIDR;
+  _11 = _10 & 63;
+  Pid = Linflexd_Lin_Ip_CalculatePid (_11);
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  _12 = LinCurrentState->SlavePduInfoPtr;
+  _12->Pid = Pid;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig->NodeFunction;
+  _14 = ~_13;
+  if (_14 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _15 = LinUserConfig->Callback;
+  if (_15 != 0B)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _16 = LinUserConfig->Callback;
+  _17 = (unsigned char) Instance;
+  _16 (_17, LinCurrentState);
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 1;
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_CompleteTransfer (Instance, StatusFlag);
+  goto <bb 17>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 807;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 807;
+
+  <bb 17> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_SendFrame (const uint8 Instance, const struct Linflexd_Lin_Ip_PduType * PduInfoPtr)
+{
+  uint8 DataLength;
+  uint8 Loop;
+  uint32 Temp;
+  uint32 RegVal;
+  boolean CheckSleepMode;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  Linflexd_Lin_Ip_StatusType D.6320;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RegVal = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  LinUserConfig = Linflexd_Lin_Ip_apUserConfigs[_2];
+  # DEBUG BEGIN_STMT
+  _3 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_3];
+  # DEBUG BEGIN_STMT
+  _4 = LinCurrentState->CurrentNodeState;
+  CheckSleepMode = _4 == 1;
+  # DEBUG BEGIN_STMT
+  if (CheckSleepMode != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  goto <bb 38>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 = LinCurrentState->IsBusBusy;
+  if (_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal = 2;
+  goto <bb 38>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 0;
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 512;
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 1;
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 256;
+  # DEBUG BEGIN_STMT
+  Base->BDRL = 0;
+  # DEBUG BEGIN_STMT
+  Base->BDRM = 0;
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig->NodeFunction;
+  if (_6 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Loop = 0;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _7 = (int) Instance;
+  _8 = (int) Loop;
+  Linflexd_Lin_Ip_au8SduBuffer[_7][_8] = 0;
+  # DEBUG BEGIN_STMT
+  Loop.6_9 = Loop;
+  Loop = Loop.6_9 + 1;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (Loop <= 7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _10 = PduInfoPtr->Dl;
+  DataLength = _10 + 255;
+  # DEBUG BEGIN_STMT
+  _11 = (long unsigned int) DataLength;
+  _12 = _11 << 10;
+  _13 = _12 & 7168;
+  RegVal = RegVal | _13;
+  # DEBUG BEGIN_STMT
+  _14 = PduInfoPtr->Pid;
+  _15 = (long unsigned int) _14;
+  _16 = _15 & 63;
+  RegVal = RegVal | _16;
+  # DEBUG BEGIN_STMT
+  _17 = PduInfoPtr->Cs;
+  if (_17 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  RegVal = RegVal | 256;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  RegVal = RegVal & 4294967039;
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Base->BIDR = RegVal;
+  # DEBUG BEGIN_STMT
+  _18 = PduInfoPtr->Drc;
+  if (_18 == 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _19 = PduInfoPtr->Dl;
+  if (_19 <= 4)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  RegVal = 0;
+  # DEBUG BEGIN_STMT
+  Loop = 0;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _20 = PduInfoPtr->SduPtr;
+  _21 = (sizetype) Loop;
+  _22 = _20 + _21;
+  _23 = *_22;
+  Temp = (uint32) _23;
+  # DEBUG BEGIN_STMT
+  _24 = Temp & 255;
+  _25 = (int) Loop;
+  _26 = _25 * 8;
+  _27 = _24 << _26;
+  RegVal = RegVal | _27;
+  # DEBUG BEGIN_STMT
+  Loop.7_28 = Loop;
+  Loop = Loop.7_28 + 1;
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  _29 = PduInfoPtr->Dl;
+  if (Loop < _29)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  Base->BDRL = RegVal;
+  goto <bb 26>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  RegVal = 0;
+  # DEBUG BEGIN_STMT
+  Loop = 0;
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  _30 = PduInfoPtr->SduPtr;
+  _31 = (sizetype) Loop;
+  _32 = _30 + _31;
+  _33 = *_32;
+  Temp = (uint32) _33;
+  # DEBUG BEGIN_STMT
+  _34 = Temp & 255;
+  _35 = (int) Loop;
+  _36 = _35 * 8;
+  _37 = _34 << _36;
+  RegVal = RegVal | _37;
+  # DEBUG BEGIN_STMT
+  Loop.8_38 = Loop;
+  Loop = Loop.8_38 + 1;
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  if (Loop <= 3)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  Base->BDRL = RegVal;
+  # DEBUG BEGIN_STMT
+  RegVal = 0;
+  # DEBUG BEGIN_STMT
+  Loop = 4;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  # DEBUG BEGIN_STMT
+  _39 = PduInfoPtr->SduPtr;
+  _40 = (sizetype) Loop;
+  _41 = _39 + _40;
+  _42 = *_41;
+  Temp = (uint32) _42;
+  # DEBUG BEGIN_STMT
+  _43 = Temp & 255;
+  _44 = (unsigned int) Loop;
+  _45 = _44 + 4294967292;
+  _46 = _45 * 8;
+  _47 = _43 << _46;
+  RegVal = RegVal | _47;
+  # DEBUG BEGIN_STMT
+  Loop.9_48 = Loop;
+  Loop = Loop.9_48 + 1;
+
+  <bb 24> :
+  # DEBUG BEGIN_STMT
+  _49 = PduInfoPtr->Dl;
+  if (Loop < _49)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 25> :
+  # DEBUG BEGIN_STMT
+  Base->BDRM = RegVal;
+
+  <bb 26> :
+  # DEBUG BEGIN_STMT
+  RegVal = 512;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->FrameCommand = 1;
+  goto <bb 31>; [INV]
+
+  <bb 27> :
+  # DEBUG BEGIN_STMT
+  _50 = PduInfoPtr->Drc;
+  if (_50 == 1)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+  # DEBUG BEGIN_STMT
+  RegVal = 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->FrameCommand = 2;
+  goto <bb 31>; [INV]
+
+  <bb 29> :
+  # DEBUG BEGIN_STMT
+  _51 = PduInfoPtr->Drc;
+  if (_51 == 2)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 30> :
+  # DEBUG BEGIN_STMT
+  _52 = Base->LINCR2;
+  _53 = _52 | 2048;
+  Base->LINCR2 = _53;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->FrameCommand = 3;
+
+  <bb 31> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _54 = Base->BIDR;
+  _55 = RegVal | _54;
+  Base->BIDR = _55;
+  # DEBUG BEGIN_STMT
+  _56 = LinUserConfig->NodeFunction;
+  if (_56 != 0)
+    goto <bb 32>; [INV]
+  else
+    goto <bb 33>; [INV]
+
+  <bb 32> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 3;
+  # DEBUG BEGIN_STMT
+  RegVal = 256;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 1;
+  goto <bb 37>; [INV]
+
+  <bb 33> :
+  # DEBUG BEGIN_STMT
+  _57 = PduInfoPtr->Drc;
+  if (_57 == 0)
+    goto <bb 34>; [INV]
+  else
+    goto <bb 35>; [INV]
+
+  <bb 34> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 9;
+  # DEBUG BEGIN_STMT
+  RegVal = 1024;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 1;
+  goto <bb 37>; [INV]
+
+  <bb 35> :
+  # DEBUG BEGIN_STMT
+  _58 = PduInfoPtr->Drc;
+  if (_58 == 1)
+    goto <bb 36>; [INV]
+  else
+    goto <bb 37>; [INV]
+
+  <bb 36> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 7;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 1;
+
+  <bb 37> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06 ();
+  # DEBUG BEGIN_STMT
+  _59 = Base->LINCR2;
+  _60 = RegVal | _59;
+  Base->LINCR2 = _60;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06 ();
+
+  <bb 38> :
+  # DEBUG BEGIN_STMT
+  D.6320 = RetVal;
+  return D.6320;
+
+}
+
+
+Linflexd_Lin_Ip_SendWakeupSignal (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_StatusType D.6286;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG BEGIN_STMT
+  _3 = LinCurrentState->IsBusBusy;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = LinCurrentState->CurrentNodeState;
+  if (_5 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_GotoIdleState (Instance);
+  # DEBUG BEGIN_STMT
+  if (RetVal == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05 ();
+  # DEBUG BEGIN_STMT
+  _6 = Base->LINCR2;
+  _7 = _6 & 4294966783;
+  Base->LINCR2 = _7;
+  # DEBUG BEGIN_STMT
+  _8 = Base->LINCR2;
+  _9 = _8 | 4096;
+  Base->LINCR2 = _9;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05 ();
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  RetVal = 2;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  D.6286 = RetVal;
+  return D.6286;
+
+}
+
+
+Linflexd_Lin_Ip_GotoIdleState (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_StatusType D.6275;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 32;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  _3 = Base->LINCR1;
+  _4 = _3 & 4294967293;
+  Base->LINCR1 = _4;
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_StateTimeoutMode (Instance, 2);
+  # DEBUG BEGIN_STMT
+  if (RetVal == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = Base->LINIER;
+  _6 = _5 & 4294967263;
+  Base->LINIER = _6;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 2;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->FrameCommand = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  D.6275 = RetVal;
+  return D.6275;
+
+}
+
+
+Linflexd_Lin_Ip_GoToSleepMode (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_StatusType D.6270;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG BEGIN_STMT
+  _3 = LinCurrentState->IsBusBusy;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 32;
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 512;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  _4 = (int) Instance;
+  _5 = Linflexd_Lin_Ip_apUserConfigs[_4];
+  _6 = _5->WakeupDetectSupport;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _7 = Base->LINIER;
+  _8 = _7 | 32;
+  Base->LINIER = _8;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _9 = Base->LINCR1;
+  _10 = _9 | 2;
+  Base->LINCR1 = _10;
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_StateTimeoutMode (Instance, 0);
+  # DEBUG BEGIN_STMT
+  if (RetVal == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 1;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->FrameCommand = 0;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03 ();
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  D.6270 = RetVal;
+  return D.6270;
+
+}
+
+
+Linflexd_Lin_Ip_GetStatus (const uint8 Instance, uint8 * * Buffer)
+{
+  uint32 Linsr;
+  const struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_NodeStateType CurrentNodeState;
+  Linflexd_Lin_Ip_EventIdType CurrentEventId;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  Linflexd_Lin_Ip_TransferStatusType D.6241;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Linsr = 0;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  CurrentEventId = LinCurrentState->CurrentEventId;
+  # DEBUG BEGIN_STMT
+  _2 = (long unsigned int) Instance;
+  Linflexd_Lin_Ip_UpdateCurrentNodeState (_2);
+  # DEBUG BEGIN_STMT
+  CurrentNodeState = LinCurrentState->CurrentNodeState;
+  # DEBUG BEGIN_STMT
+  _3 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_3];
+  # DEBUG BEGIN_STMT
+  Linsr = Base->LINSR;
+  # DEBUG BEGIN_STMT
+  switch (CurrentEventId) <default: <L22> [INV], case 0 ... 1: <L0> [INV], case 3: <L2> [INV], case 7: <L4> [INV], case 8: <L5> [INV], case 9: <L9> [INV], case 10: <L14> [INV], case 11: <L15> [INV], case 12: <L16> [INV], case 13: <L17> [INV], case 14: <L18> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_GetNoEventStatus (Instance);
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 4> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  RetVal = 9;
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 5> :
+<L4>:
+  # DEBUG BEGIN_STMT
+  RetVal = 7;
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 6> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  _4 = Linsr & 256;
+  if (_4 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  RetVal = 7;
+  goto <bb 17>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  RetVal = 11;
+  goto <bb 17>; [INV]
+
+  <bb 9> :
+<L9>:
+  # DEBUG BEGIN_STMT
+  switch (CurrentNodeState) <default: <L22> [INV], case 3: <L10> [INV], case 9: <L11> [INV]>
+
+  <bb 10> :
+<L10>:
+  # DEBUG BEGIN_STMT
+  RetVal = 3;
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 11> :
+<L11>:
+  # DEBUG BEGIN_STMT
+  RetVal = 4;
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 12> :
+<L14>:
+  # DEBUG BEGIN_STMT
+  RetVal = 7;
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 13> :
+<L15>:
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+<L16>:
+  # DEBUG BEGIN_STMT
+  RetVal = 5;
+  # DEBUG BEGIN_STMT
+  _5 = (int) Instance;
+  _6 = &Linflexd_Lin_Ip_au8SduBuffer[_5];
+  *Buffer = _6;
+  # DEBUG BEGIN_STMT
+  _7 = (long unsigned int) Instance;
+  _8 = (int) Instance;
+  _9 = &Linflexd_Lin_Ip_au8SduBuffer[_8];
+  Linflexd_Lin_Ip_CopyData (_7, _9);
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 15> :
+<L17>:
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_GetTimeoutErrorStatus (Instance);
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+<L18>:
+  # DEBUG BEGIN_STMT
+  RetVal = 11;
+  # DEBUG BEGIN_STMT
+
+  <bb 17> :
+<L22>:
+  # DEBUG BEGIN_STMT
+  D.6241 = RetVal;
+  return D.6241;
+
+}
+
+
+Linflexd_Lin_Ip_GetCurrentNodeState (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_NodeStateType D.6229;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance;
+  Linflexd_Lin_Ip_UpdateCurrentNodeState (_1);
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG BEGIN_STMT
+  D.6229 = LinCurrentState->CurrentNodeState;
+  return D.6229;
+
+}
+
+
+Linflexd_Lin_Ip_AbortTransferData (const uint8 Instance)
+{
+  volatile uint32 TestFlag;
+  uint32 ElapsedTicks;
+  uint32 StartTime;
+  uint32 TimeoutTicks;
+  struct LINFLEXD_Type * Base;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  Linflexd_Lin_Ip_StatusType D.6226;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ElapsedTicks = 0;
+  # DEBUG BEGIN_STMT
+  TestFlag = 512;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG BEGIN_STMT
+  _3 = LinCurrentState->IsBusBusy;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 = Base->LINCR2;
+  _5 = _4 | 512;
+  Base->LINCR2 = _5;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_StartTimeout (&StartTime, &TimeoutTicks, 65535, 0);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _6 = Base->LINCR2;
+  _7 = _6 & 512;
+  TestFlag.1_8 = TestFlag;
+  if (_7 != TestFlag.1_8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.2_9 = TimeoutTicks;
+  _10 = Linflexd_Lin_Ip_TimeoutExpired (&StartTime, &ElapsedTicks, TimeoutTicks.2_9, 0);
+  _11 = ~_10;
+  if (_11 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  if (RetVal == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02 ();
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 0;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02 ();
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  D.6226 = RetVal;
+  TimeoutTicks = {CLOBBER};
+  StartTime = {CLOBBER};
+  ElapsedTicks = {CLOBBER};
+  return D.6226;
+
+}
+
+
+Linflexd_Lin_Ip_Deinit (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_StatusType D.6216;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG BEGIN_STMT
+  _3 = LinCurrentState->IsBusBusy;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base->LINIER = 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 0;
+  # DEBUG BEGIN_STMT
+  _5 = (int) Instance;
+  Linflexd_Lin_Ip_apxStateStructureArray[_5] = 0B;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  D.6216 = RetVal;
+  return D.6216;
+
+}
+
+
+Linflexd_Lin_Ip_Init (const uint8 Instance, const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * CrtStateStruct;
+  struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_StatusType D.6196;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  _3 = LinUserConfig->StateStructPtr;
+  Linflexd_Lin_Ip_apxStateStructureArray[_2] = _3;
+  # DEBUG BEGIN_STMT
+  _4 = (int) Instance;
+  CrtStateStruct = Linflexd_Lin_Ip_apxStateStructureArray[_4];
+  # DEBUG BEGIN_STMT
+  CrtStateStruct->CurrentNodeState = 0;
+  # DEBUG BEGIN_STMT
+  _5 = (int) Instance;
+  Linflexd_Lin_Ip_apUserConfigs[_5] = LinUserConfig;
+  # DEBUG BEGIN_STMT
+  _6 = Base->LINCR1;
+  _7 = _6 | 1;
+  Base->LINCR1 = _7;
+  # DEBUG BEGIN_STMT
+  _8 = Base->LINCR1;
+  _9 = _8 & 4294967293;
+  Base->LINCR1 = _9;
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_StateTimeoutMode (Instance, 1);
+  # DEBUG BEGIN_STMT
+  if (RetVal == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_SetUpRegisterInInitMode (Instance);
+  # DEBUG BEGIN_STMT
+  _10 = Base->LINCR1;
+  _11 = _10 & 4294967294;
+  Base->LINCR1 = _11;
+  # DEBUG BEGIN_STMT
+  RetVal = Linflexd_Lin_Ip_StateTimeoutMode (Instance, 2);
+  # DEBUG BEGIN_STMT
+  if (RetVal == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_SetUpRegisterInNormalMode (Instance);
+  # DEBUG BEGIN_STMT
+  CrtStateStruct->IsBusBusy = 0;
+  # DEBUG BEGIN_STMT
+  CrtStateStruct->CurrentNodeState = 2;
+  # DEBUG BEGIN_STMT
+  CrtStateStruct->FrameCommand = 0;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.6196 = RetVal;
+  return D.6196;
+
+}
+
+
+Linflexd_Lin_Ip_UpdateCurrentNodeState (const uint32 Instance)
+{
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  const struct LINFLEXD_Type * Base;
+  uint8 LinState;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[Instance];
+  # DEBUG BEGIN_STMT
+  _1 = Base->LINSR;
+  _2 = _1 >> 12;
+  _3 = (unsigned char) _2;
+  LinState = _3 & 15;
+  # DEBUG BEGIN_STMT
+  _4 = (int) LinState;
+  switch (_4) <default: <L18> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3 ... 6: <L3> [INV], case 7 ... 9: <L10> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  _5 = Base->LINCR1;
+  _6 = _5 & 16;
+  if (_6 == 16)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 3;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 4;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+<L10>:
+  # DEBUG BEGIN_STMT
+  _7 = Base->BIDR;
+  _8 = _7 & 512;
+  if (_8 == 512)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 9;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 7;
+
+  <bb 12> :
+<L18>:
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_CalculatePid (uint32 ReceptFrameID)
+{
+  uint32 Temp2;
+  uint32 Temp1;
+  uint8 D.6346;
+  long unsigned int iftmp.10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Temp1 = ReceptFrameID;
+  # DEBUG BEGIN_STMT
+  Temp2 = ReceptFrameID;
+  # DEBUG BEGIN_STMT
+  _1 = Temp2 >> 1;
+  _2 = Temp2 >> 3;
+  _3 = _1 ^ _2;
+  _4 = Temp2 >> 4;
+  _5 = _3 ^ _4;
+  _6 = Temp2 >> 5;
+  _7 = _5 ^ _6;
+  _8 = _7 & 1;
+  if (_8 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.10 = 128;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.10 = 0;
+
+  <bb 5> :
+  Temp1 = iftmp.10 | Temp1;
+  # DEBUG BEGIN_STMT
+  _9 = Temp2 >> 1;
+  _10 = Temp2 ^ _9;
+  _11 = Temp2 >> 2;
+  _12 = _10 ^ _11;
+  _13 = Temp2 >> 4;
+  _14 = _12 ^ _13;
+  _15 = _14 << 6;
+  _16 = _15 & 64;
+  Temp1 = Temp1 | _16;
+  # DEBUG BEGIN_STMT
+  D.6346 = (uint8) Temp1;
+  return D.6346;
+
+}
+
+
+Linflexd_Lin_Ip_CopyData (const uint32 Instance, uint8 * Buffer)
+{
+  struct LINFLEXD_Type * Base;
+  uint8 Loop;
+  uint8 DataLength;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  _1 = Base->BIDR;
+  _2 = _1 >> 10;
+  _3 = (unsigned char) _2;
+  _4 = _3 & 7;
+  DataLength = _4 + 1;
+  # DEBUG BEGIN_STMT
+  if (DataLength <= 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Loop = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 = Base->BDRL;
+  _6 = (unsigned int) Loop;
+  _7 = _6 * 8;
+  _8 = _5 >> _7;
+  _9 = (sizetype) Loop;
+  _10 = Buffer + _9;
+  _11 = (unsigned char) _8;
+  *_10 = _11;
+  # DEBUG BEGIN_STMT
+  Loop.3_12 = Loop;
+  Loop = Loop.3_12 + 1;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  if (Loop < DataLength)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (DataLength > 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Loop = 0;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _13 = Base->BDRL;
+  _14 = (unsigned int) Loop;
+  _15 = _14 * 8;
+  _16 = _13 >> _15;
+  _17 = (sizetype) Loop;
+  _18 = Buffer + _17;
+  _19 = (unsigned char) _16;
+  *_18 = _19;
+  # DEBUG BEGIN_STMT
+  Loop.4_20 = Loop;
+  Loop = Loop.4_20 + 1;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (Loop <= 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Loop = 4;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _21 = Base->BDRM;
+  _22 = (unsigned int) Loop;
+  _23 = _22 + 4294967292;
+  _24 = _23 * 8;
+  _25 = _21 >> _24;
+  _26 = (sizetype) Loop;
+  _27 = Buffer + _26;
+  _28 = (unsigned char) _25;
+  *_27 = _28;
+  # DEBUG BEGIN_STMT
+  Loop.5_29 = Loop;
+  Loop = Loop.5_29 + 1;
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  if (Loop < DataLength)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 512;
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 256;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_CompleteTransfer (const uint32 Instance, uint32 StatusFlag)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[Instance];
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  LinUserConfig = Linflexd_Lin_Ip_apUserConfigs[Instance];
+  # DEBUG BEGIN_STMT
+  _1 = StatusFlag & 4;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 4;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 12;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 8;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 0;
+  # DEBUG BEGIN_STMT
+  _2 = LinUserConfig->NodeFunction;
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = LinCurrentState->SlavePduInfoPtr;
+  _5 = _4->SduPtr;
+  Linflexd_Lin_Ip_CopyData (Instance, _5);
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig->Callback;
+  if (_6 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _7 = LinUserConfig->Callback;
+  _8 = (unsigned char) Instance;
+  _7 (_8, LinCurrentState);
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _9 = Base->LINESR;
+  _10 = _9 & 1;
+  if (_10 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 1;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _11 = StatusFlag & 2;
+  if (_11 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 2;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 11;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentNodeState = 10;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 0;
+  # DEBUG BEGIN_STMT
+  _12 = LinUserConfig->Callback;
+  if (_12 != 0B)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig->Callback;
+  _14 = (unsigned char) Instance;
+  _13 (_14, LinCurrentState);
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 39;
+
+  <bb 13> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_ErrorsHandler (const uint32 Instance, uint32 ErrorFlag)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  boolean IsErrorAvailable;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable = 1;
+  # DEBUG BEGIN_STMT
+  LinUserConfig = Linflexd_Lin_Ip_apUserConfigs[Instance];
+  # DEBUG BEGIN_STMT
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[Instance];
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  _1 = ErrorFlag & 1024;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 1024;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 14;
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag & 2048;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 2048;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 14;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _3 = ErrorFlag & 512;
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 512;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 14;
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _4 = ErrorFlag & 8192;
+  if (_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 8192;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 9;
+  # DEBUG BEGIN_STMT
+  _5 = Base->LINCR2;
+  _6 = _5 | 512;
+  Base->LINCR2 = _6;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable = Linflexd_Lin_Ip_ReceiveErrorsHandler (Instance, ErrorFlag);
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  if (IsErrorAvailable != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState->IsBusBusy = 0;
+  # DEBUG BEGIN_STMT
+  _7 = LinUserConfig->Callback;
+  if (_7 != 0B)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  _8 = LinUserConfig->Callback;
+  _9 = (unsigned char) Instance;
+  _8 (_9, LinCurrentState);
+
+  <bb 14> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_ReceiveErrorsHandler (const uint32 Instance, uint32 ErrorFlag)
+{
+  boolean IsErrorAvailable;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  boolean D.6402;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable = 1;
+  # DEBUG BEGIN_STMT
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[Instance];
+  # DEBUG BEGIN_STMT
+  Base = Linflexd_Lin_Ip_apxBases[Instance];
+  # DEBUG BEGIN_STMT
+  _1 = ErrorFlag & 128;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 128;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 7;
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag & 4096;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 4096;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 10;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _3 = ErrorFlag & 256;
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 256;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 8;
+  # DEBUG BEGIN_STMT
+  Base->LINSR = 256;
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _4 = ErrorFlag & 16384;
+  if (_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 16384;
+  # DEBUG BEGIN_STMT
+  _5 = Base->LINSR;
+  LinCurrentState->LinState = _5;
+  # DEBUG BEGIN_STMT
+  _6 = Base->LINCR1;
+  _7 = _6 | 2;
+  Base->LINCR1 = _7;
+  # DEBUG BEGIN_STMT
+  _8 = Base->LINCR1;
+  _9 = _8 & 4294967293;
+  Base->LINCR1 = _9;
+  # DEBUG BEGIN_STMT
+  LinCurrentState->CurrentEventId = 13;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Base->LINESR = 32640;
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable = 0;
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  D.6402 = IsErrorAvailable;
+  return D.6402;
+
+}
+
+
+Linflexd_Lin_Ip_GetNoEventStatus (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_NodeStateType CurrentNodeState;
+  uint32 Linsr;
+  const struct LINFLEXD_Type * Base;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  Linflexd_Lin_Ip_TransferStatusType D.6248;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Linsr = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG BEGIN_STMT
+  Linsr = Base->LINSR;
+  # DEBUG BEGIN_STMT
+  CurrentNodeState = LinCurrentState->CurrentNodeState;
+  # DEBUG BEGIN_STMT
+  switch (CurrentNodeState) <default: <L17> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L6> [INV], case 4: <L7> [INV], case 7: <L8> [INV], case 9: <L12> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  RetVal = 13;
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  _3 = LinCurrentState->FrameCommand;
+  _4 = (int) _3;
+  switch (_4) <default: <L17> [INV], case 0: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  RetVal = 12;
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  RetVal = 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  RetVal = 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  RetVal = 10;
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+<L8>:
+  # DEBUG BEGIN_STMT
+  _5 = Linsr & 256;
+  if (_5 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  RetVal = 6;
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  RetVal = 8;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L12>:
+  # DEBUG BEGIN_STMT
+  RetVal = 2;
+  # DEBUG BEGIN_STMT
+
+  <bb 13> :
+<L17>:
+  # DEBUG BEGIN_STMT
+  D.6248 = RetVal;
+  return D.6248;
+
+}
+
+
+Linflexd_Lin_Ip_GetTimeoutErrorStatus (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  Linflexd_Lin_Ip_TransferStatusType D.6259;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  LinCurrentState = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG BEGIN_STMT
+  _2 = LinCurrentState->LinState;
+  _3 = _2 >> 12;
+  _4 = _3 & 15;
+  switch (_4) <default: <L13> [INV], case 3 ... 5: <L0> [INV], case 6 ... 9: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  RetVal = 11;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  _5 = LinCurrentState->LinState;
+  _6 = _5 & 256;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal = 7;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  RetVal = 8;
+
+  <bb 7> :
+<L13>:
+  # DEBUG BEGIN_STMT
+  D.6259 = RetVal;
+  return D.6259;
+
+}
+
+
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  uint32 RegValue;
+  struct LINFLEXD_Type * Base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RegValue = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  LinUserConfig = Linflexd_Lin_Ip_apUserConfigs[_2];
+  # DEBUG BEGIN_STMT
+  RegValue = Base->LINIER;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 12672;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 6;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294934423;
+  # DEBUG BEGIN_STMT
+  _3 = LinUserConfig->NodeFunction;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294967294;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294965247;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 1;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 2048;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 16384;
+  # DEBUG BEGIN_STMT
+  Base->LINIER = RegValue;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_SetUpRegisterInInitMode (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  uint32 RegValue;
+  struct LINFLEXD_Type * Base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RegValue = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance;
+  LinUserConfig = Linflexd_Lin_Ip_apUserConfigs[_2];
+  # DEBUG BEGIN_STMT
+  _3 = Base->UARTCR;
+  _4 = _3 & 4294967294;
+  Base->UARTCR = _4;
+  # DEBUG BEGIN_STMT
+  _5 = Base->GCR;
+  _6 = _5 & 4294967293;
+  Base->GCR = _6;
+  # DEBUG BEGIN_STMT
+  _7 = Base->GCR;
+  _8 = LinUserConfig->StopBitsCount;
+  _9 = (long unsigned int) _8;
+  _10 = _9 << 1;
+  _11 = _10 & 2;
+  _12 = _7 | _11;
+  Base->GCR = _12;
+  # DEBUG BEGIN_STMT
+  RegValue = Base->LINCR1;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 65536;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294946779;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294963455;
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig->NodeFunction;
+  if (_13 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 16;
+  # DEBUG BEGIN_STMT
+  _14 = LinUserConfig->BreakLength;
+  _15 = (long unsigned int) _14;
+  _16 = _15 << 8;
+  _17 = _16 & 3840;
+  RegValue = RegValue | _17;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294967279;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294967287;
+  # DEBUG BEGIN_STMT
+  _18 = LinUserConfig->SlaveSyncBreakLength;
+  _19 = (long unsigned int) _18;
+  _20 = _19 << 3;
+  _21 = _20 & 8;
+  RegValue = RegValue | _21;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294934527;
+  # DEBUG BEGIN_STMT
+  _22 = LinUserConfig->CsCalDisable;
+  _23 = (long unsigned int) _22;
+  _24 = _23 << 15;
+  _25 = _24 & 65535;
+  RegValue = RegValue | _25;
+  # DEBUG BEGIN_STMT
+  Base->LINCR1 = RegValue;
+  # DEBUG BEGIN_STMT
+  _26 = LinUserConfig->BaudrateRegValue;
+  _27 = _26 & 15;
+  Base->LINFBRR = _27;
+  # DEBUG BEGIN_STMT
+  _28 = LinUserConfig->BaudrateRegValue;
+  _29 = _28 >> 8;
+  _30 = _29 & 1048575;
+  Base->LINIBRR = _30;
+  # DEBUG BEGIN_STMT
+  _31 = Base->LINTCSR;
+  _32 = _31 & 4294965759;
+  Base->LINTCSR = _32;
+  # DEBUG BEGIN_STMT
+  _33 = LinUserConfig->ResponseTimeout;
+  _34 = (long unsigned int) _33;
+  _35 = _34 << 8;
+  _36 = _35 & 3840;
+  Base->LINTOCR = _36;
+  # DEBUG BEGIN_STMT
+  _37 = LinUserConfig->NodeFunction;
+  _38 = ~_37;
+  if (_38 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _39 = Base->LINTOCR;
+  _40 = LinUserConfig->HeaderTimeout;
+  _41 = (long unsigned int) _40;
+  _42 = _41 & 127;
+  _43 = _39 | _42;
+  Base->LINTOCR = _43;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  RegValue = Base->LINCR2;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 32768;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294942719;
+  # DEBUG BEGIN_STMT
+  Base->LINCR2 = RegValue;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_StateTimeoutMode (const uint8 Instance, uint32 TestFlag)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  const struct LINFLEXD_Type * Base;
+  uint32 ElapsedTicks;
+  uint32 TimeoutTicks;
+  uint32 StartTime;
+  Linflexd_Lin_Ip_StatusType D.6205;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ElapsedTicks = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal = 3;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance;
+  Base = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_StartTimeout (&StartTime, &TimeoutTicks, 65535, 0);
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 = Base->LINSR;
+  _3 = _2 >> 12;
+  _4 = _3 & 15;
+  if (TestFlag == _4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal = 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_5 = TimeoutTicks;
+  _6 = Linflexd_Lin_Ip_TimeoutExpired (&StartTime, &ElapsedTicks, TimeoutTicks.0_5, 0);
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  D.6205 = RetVal;
+  StartTime = {CLOBBER};
+  TimeoutTicks = {CLOBBER};
+  ElapsedTicks = {CLOBBER};
+  return D.6205;
+
+}
+
+
+Linflexd_Lin_Ip_TimeoutExpired (uint32 * StartTime, uint32 * ElapsedTicks, uint32 TimeoutTicks, OsIf_CounterType OsifCounter)
+{
+  uint32 CurrentElapsedTicks;
+  boolean D.6208;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CurrentElapsedTicks = OsIf_GetElapsed (StartTime, OsifCounter);
+  # DEBUG BEGIN_STMT
+  _1 = *ElapsedTicks;
+  _2 = CurrentElapsedTicks + _1;
+  *ElapsedTicks = _2;
+  # DEBUG BEGIN_STMT
+  _3 = *ElapsedTicks;
+  D.6208 = TimeoutTicks <= _3;
+  return D.6208;
+
+}
+
+
+Linflexd_Lin_Ip_StartTimeout (uint32 * StartTimeOut, uint32 * TimeoutTicksOut, uint32 TimeoutUs, OsIf_CounterType OsifCounter)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_GetCounter (OsifCounter);
+  *StartTimeOut = _1;
+  # DEBUG BEGIN_STMT
+  _2 = OsIf_MicrosToTicks (TimeoutUs, OsifCounter);
+  *TimeoutTicksOut = _2;
+  return;
+
+}
+
+

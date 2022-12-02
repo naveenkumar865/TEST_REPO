@@ -1,0 +1,237 @@
+
+
+ local analysis of LIN_LINFLEXD2_IRQHandler
+   scanning: Linflexd_Lin_Ip_TxRx_IRQHandler (2);
+  scanning: Linflexd_Lin_Ip_Error_IRQHandler (2);
+  scanning: return;
+Function is locally const.
+
+
+ local analysis of LIN_LINFLEXD1_IRQHandler
+   scanning: Linflexd_Lin_Ip_TxRx_IRQHandler (1);
+  scanning: Linflexd_Lin_Ip_Error_IRQHandler (1);
+  scanning: return;
+Function is locally const.
+
+
+ local analysis of LIN_LINFLEXD0_IRQHandler
+   scanning: Linflexd_Lin_Ip_TxRx_IRQHandler (0);
+  scanning: Linflexd_Lin_Ip_Error_IRQHandler (0);
+  scanning: return;
+Function is locally const.
+callgraph:
+
+Linflexd_Lin_Ip_Error_IRQHandler/4 (Linflexd_Lin_Ip_Error_IRQHandler) @05b8ed20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: LIN_LINFLEXD2_IRQHandler/2 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD1_IRQHandler/1 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD0_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_TxRx_IRQHandler/3 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05b8ec40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: LIN_LINFLEXD2_IRQHandler/2 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD1_IRQHandler/1 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD0_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+LIN_LINFLEXD2_IRQHandler/2 (LIN_LINFLEXD2_IRQHandler) @05b8e7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784db0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD1_IRQHandler/1 (LIN_LINFLEXD1_IRQHandler) @05b8e540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784f10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD0_IRQHandler/0 (LIN_LINFLEXD0_IRQHandler) @05b8e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784dd0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced for nothrow
+LIN_LINFLEXD2_IRQHandler/2 (LIN_LINFLEXD2_IRQHandler) @05b8e7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784db0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD1_IRQHandler/1 (LIN_LINFLEXD1_IRQHandler) @05b8e540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784f10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD0_IRQHandler/0 (LIN_LINFLEXD0_IRQHandler) @05b8e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784dd0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+
+
+
+MALLOC LATTICE Initial:
+LIN_LINFLEXD2_IRQHandler: malloc_bottom
+LIN_LINFLEXD1_IRQHandler: malloc_bottom
+LIN_LINFLEXD0_IRQHandler: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+LIN_LINFLEXD2_IRQHandler: malloc_bottom
+LIN_LINFLEXD1_IRQHandler: malloc_bottom
+LIN_LINFLEXD0_IRQHandler: malloc_bottom
+callgraph:
+
+Linflexd_Lin_Ip_Error_IRQHandler/4 (Linflexd_Lin_Ip_Error_IRQHandler) @05b8ed20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: LIN_LINFLEXD2_IRQHandler/2 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD1_IRQHandler/1 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD0_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_TxRx_IRQHandler/3 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05b8ec40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: LIN_LINFLEXD2_IRQHandler/2 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD1_IRQHandler/1 (1073741824 (estimated locally),1.00 per call) LIN_LINFLEXD0_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+LIN_LINFLEXD2_IRQHandler/2 (LIN_LINFLEXD2_IRQHandler) @05b8e7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784dd0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD1_IRQHandler/1 (LIN_LINFLEXD1_IRQHandler) @05b8e540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784e10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD0_IRQHandler/0 (LIN_LINFLEXD0_IRQHandler) @05b8e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784ed0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced
+LIN_LINFLEXD2_IRQHandler/2 (LIN_LINFLEXD2_IRQHandler) @05b8e7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784dd0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD1_IRQHandler/1 (LIN_LINFLEXD1_IRQHandler) @05b8e540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784e10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+LIN_LINFLEXD0_IRQHandler/0 (LIN_LINFLEXD0_IRQHandler) @05b8e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05784ed0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_Error_IRQHandler/4 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_TxRx_IRQHandler/3 (1073741824 (estimated locally),1.00 per call) 
+
+LIN_LINFLEXD2_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (2);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (2);
+  return;
+
+}
+
+
+LIN_LINFLEXD1_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (1);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (1);
+  return;
+
+}
+
+
+LIN_LINFLEXD0_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (0);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (0);
+  return;
+
+}
+
+

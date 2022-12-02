@@ -1,0 +1,8 @@
+Siul2_Port_Ip.c:239:13:Siul2_Port_Ip_PinInit	16	static
+Siul2_Port_Ip.c:486:30:Siul2_Port_Ip_Init	16	static
+Siul2_Port_Ip.c:518:6:Siul2_Port_Ip_SetPullSel	16	static
+Siul2_Port_Ip.c:592:6:Siul2_Port_Ip_SetOutputBuffer	24	static
+Siul2_Port_Ip.c:624:6:Siul2_Port_Ip_SetInputBuffer	24	static
+Siul2_Port_Ip.c:684:6:Siul2_Port_Ip_SetPinDirection	16	static
+Siul2_Port_Ip.c:730:8:Siul2_Port_Ip_RevertPinConfiguration	24	static
+Siul2_Port_Ip.c:801:6:Siul2_Port_Ip_GetPinConfiguration	20	static

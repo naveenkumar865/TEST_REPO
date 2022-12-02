@@ -1,0 +1,10 @@
+Power_Ip_MC_RGM.c:333:13:Power_Ip_MC_RGM_ConfigureResetDomainController	32	static
+Power_Ip_MC_RGM.c:250:13:Power_Ip_MC_RGM_ClearFesResetFlags	32	static
+Power_Ip_MC_RGM.c:291:13:Power_Ip_MC_RGM_ClearDesResetFlags	32	static
+Power_Ip_MC_RGM.c:508:6:Power_Ip_MC_RGM_ResetInit	16	static
+Power_Ip_MC_RGM.c:580:6:Power_Ip_MC_RGM_ModeConfig	20	static
+Power_Ip_MC_RGM.c:621:6:Power_Ip_MC_RGM_CheckModeConfig	72	static
+Power_Ip_MC_RGM.c:662:6:Power_Ip_MC_RGM_EnableResetDomain	24	static
+Power_Ip_MC_RGM.c:700:6:Power_Ip_MC_RGM_DisableResetDomain	16	static
+Power_Ip_MC_RGM.c:812:20:Power_Ip_MC_RGM_GetResetReason	24	static
+Power_Ip_MC_RGM.c:876:23:Power_Ip_MC_RGM_GetResetRawValue	24	static

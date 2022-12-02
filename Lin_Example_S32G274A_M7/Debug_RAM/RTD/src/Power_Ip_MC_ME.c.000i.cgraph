@@ -1,0 +1,1042 @@
+Trivially needed symbols: Power_Ip_MC_ME_SocTriggerResetEvent Power_Ip_MC_ME_DisablePartitionOutputSafe Power_Ip_MC_ME_EnablePartitionOutputSafe Power_Ip_MC_ME_DisablePartitionClock Power_Ip_MC_ME_EnablePartitionClock Power_Ip_MC_ME_ConfigCoreCOFBClock
+
+
+Initial Symbol table:
+
+Power_Ip_ReportPowerErrors/19 (Power_Ip_ReportPowerErrors) @05f20700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_TimeoutExpired/18 (Power_Ip_TimeoutExpired) @05f20620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_StartTimeout/17 (Power_Ip_StartTimeout) @05f20540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/16 (Power_Ip_MC_ME_SocTriggerResetEvent) @05f0ed20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_TriggerModeUpdate/2 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05f0e2a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f0ed20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05f0eee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f0e2a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @05f0ec40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f0eee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05f0e9a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f0ec40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05f0e700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f0e9a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+Power_Ip_MC_ME_ConfigureCorePartition1/10 (Power_Ip_MC_ME_ConfigureCorePartition1) @05f0e460
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e9a0
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 
+Power_Ip_MC_ME_ConfigureCore/9 (Power_Ip_MC_ME_ConfigureCore) @05f0e1c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e460
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 
+Power_Ip_MC_ME_ConfigureCOFB/8 (Power_Ip_MC_ME_ConfigureCOFB) @05f04ee0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e1c0
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (Power_Ip_MC_ME_ConfigurePartitionOutputSafe) @05f049a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e2a0
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionOutputSafe/15 Power_Ip_MC_ME_EnablePartitionOutputSafe/14 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @05f04380
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0ec40
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionClock/13 Power_Ip_MC_ME_EnablePartitionClock/12 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_TriggerCoreUpdate/5 (Power_Ip_MC_ME_TriggerCoreUpdate) @05f04e00
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e460
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerCofbUpdate/4 (Power_Ip_MC_ME_TriggerCofbUpdate) @05f04b60
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e1c0
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerPartitionUpdate/3 (Power_Ip_MC_ME_TriggerPartitionUpdate) @05f048c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0ec40
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerModeUpdate/2 (Power_Ip_MC_ME_TriggerModeUpdate) @05f04620
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01733ea0
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_SocTriggerResetEvent/16 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @05f042a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05f0e1c0
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_TriggerModeUpdate/2 Power_Ip_MC_ME_TriggerPartitionUpdate/3 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+  Calls: 
+Power_Ip_pxMC_ME/0 (Power_Ip_pxMC_ME) @05e33ea0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05f04b60
+  References: 
+  Referring: Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_TriggerModeUpdate/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Power_Ip_ReportPowerErrors/19 (Power_Ip_ReportPowerErrors) @05f20700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_TimeoutExpired/18 (Power_Ip_TimeoutExpired) @05f20620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_StartTimeout/17 (Power_Ip_StartTimeout) @05f20540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/16 (Power_Ip_MC_ME_SocTriggerResetEvent) @05f0ed20
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_TriggerModeUpdate/2 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05f0e2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05f0eee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @05f0ec40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05f0e9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05f0e700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+Power_Ip_MC_ME_ConfigureCorePartition1/10 (Power_Ip_MC_ME_ConfigureCorePartition1) @05f0e460
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 
+Power_Ip_MC_ME_ConfigureCore/9 (Power_Ip_MC_ME_ConfigureCore) @05f0e1c0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 
+Power_Ip_MC_ME_ConfigureCOFB/8 (Power_Ip_MC_ME_ConfigureCOFB) @05f04ee0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (Power_Ip_MC_ME_ConfigurePartitionOutputSafe) @05f049a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionOutputSafe/15 Power_Ip_MC_ME_EnablePartitionOutputSafe/14 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @05f04380
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionClock/13 Power_Ip_MC_ME_EnablePartitionClock/12 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_TriggerCoreUpdate/5 (Power_Ip_MC_ME_TriggerCoreUpdate) @05f04e00
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerCofbUpdate/4 (Power_Ip_MC_ME_TriggerCofbUpdate) @05f04b60
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerPartitionUpdate/3 (Power_Ip_MC_ME_TriggerPartitionUpdate) @05f048c0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerModeUpdate/2 (Power_Ip_MC_ME_TriggerModeUpdate) @05f04620
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_SocTriggerResetEvent/16 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @05f042a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_TriggerModeUpdate/2 Power_Ip_MC_ME_TriggerPartitionUpdate/3 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+  Calls: 
+Power_Ip_pxMC_ME/0 (Power_Ip_pxMC_ME) @05e33ea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_TriggerModeUpdate/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+Power_Ip_ReportPowerErrors/19 (Power_Ip_ReportPowerErrors) @05f20700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_TimeoutExpired/18 (Power_Ip_TimeoutExpired) @05f20620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_StartTimeout/17 (Power_Ip_StartTimeout) @05f20540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/16 (Power_Ip_MC_ME_SocTriggerResetEvent) @05f0ed20
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_TriggerModeUpdate/2 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05f0e2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05f0eee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @05f0ec40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05f0e9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05f0e700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+Power_Ip_MC_ME_ConfigureCorePartition1/10 (Power_Ip_MC_ME_ConfigureCorePartition1) @05f0e460
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 
+Power_Ip_MC_ME_ConfigureCore/9 (Power_Ip_MC_ME_ConfigureCore) @05f0e1c0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 
+Power_Ip_MC_ME_ConfigureCOFB/8 (Power_Ip_MC_ME_ConfigureCOFB) @05f04ee0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (Power_Ip_MC_ME_ConfigurePartitionOutputSafe) @05f049a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionOutputSafe/15 Power_Ip_MC_ME_EnablePartitionOutputSafe/14 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @05f04380
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionClock/13 Power_Ip_MC_ME_EnablePartitionClock/12 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_TriggerCoreUpdate/5 (Power_Ip_MC_ME_TriggerCoreUpdate) @05f04e00
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerCofbUpdate/4 (Power_Ip_MC_ME_TriggerCofbUpdate) @05f04b60
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerPartitionUpdate/3 (Power_Ip_MC_ME_TriggerPartitionUpdate) @05f048c0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerModeUpdate/2 (Power_Ip_MC_ME_TriggerModeUpdate) @05f04620
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_SocTriggerResetEvent/16 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @05f042a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_TriggerModeUpdate/2 Power_Ip_MC_ME_TriggerPartitionUpdate/3 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+  Calls: 
+Power_Ip_pxMC_ME/0 (Power_Ip_pxMC_ME) @05e33ea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_TriggerModeUpdate/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Power_Ip_ReportPowerErrors/19 (Power_Ip_ReportPowerErrors) @05f20700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_TimeoutExpired/18 (Power_Ip_TimeoutExpired) @05f20620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_StartTimeout/17 (Power_Ip_StartTimeout) @05f20540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/16 (Power_Ip_MC_ME_SocTriggerResetEvent) @05f0ed20
+  Type: function definition analyzed
+  Visibility: public
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_TriggerModeUpdate/2 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05f0e2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05f0eee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @05f0ec40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05f0e9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05f0e700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 Power_Ip_MC_ME_ConfigureCOFB/8 
+Power_Ip_MC_ME_ConfigureCorePartition1/10 (Power_Ip_MC_ME_ConfigureCorePartition1) @05f0e460
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 
+Power_Ip_MC_ME_ConfigureCore/9 (Power_Ip_MC_ME_ConfigureCore) @05f0e1c0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 
+Power_Ip_MC_ME_ConfigureCOFB/8 (Power_Ip_MC_ME_ConfigureCOFB) @05f04ee0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (Power_Ip_MC_ME_ConfigurePartitionOutputSafe) @05f049a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionOutputSafe/15 Power_Ip_MC_ME_EnablePartitionOutputSafe/14 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @05f04380
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionClock/13 Power_Ip_MC_ME_EnablePartitionClock/12 
+  Calls: Power_Ip_ReportPowerErrors/19 Power_Ip_TimeoutExpired/18 Power_Ip_StartTimeout/17 Power_Ip_MC_ME_TriggerPartitionUpdate/3 
+Power_Ip_MC_ME_TriggerCoreUpdate/5 (Power_Ip_MC_ME_TriggerCoreUpdate) @05f04e00
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCorePartition1/10 Power_Ip_MC_ME_ConfigureCore/9 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerCofbUpdate/4 (Power_Ip_MC_ME_TriggerCofbUpdate) @05f04b60
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCOFB/8 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerPartitionUpdate/3 (Power_Ip_MC_ME_TriggerPartitionUpdate) @05f048c0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 Power_Ip_MC_ME_ConfigurePartitionClock/6 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_TriggerModeUpdate/2 (Power_Ip_MC_ME_TriggerModeUpdate) @05f04620
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_SocTriggerResetEvent/16 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @05f042a0
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Power_Ip_MC_ME_TriggerModeUpdate/2 Power_Ip_MC_ME_TriggerPartitionUpdate/3 Power_Ip_MC_ME_TriggerCoreUpdate/5 Power_Ip_MC_ME_TriggerCofbUpdate/4 
+  Calls: 
+Power_Ip_pxMC_ME/0 (Power_Ip_pxMC_ME) @05e33ea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_TriggerModeUpdate/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Power_Ip_MC_ME_ConfigurePartitionClock.part.0/24 (Power_Ip_MC_ME_ConfigurePartitionClock.part.0) @060177e0
+  Type: function definition analyzed
+  Visibility: artificial
+  next sharing asm name: 20
+  References: 
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigurePartitionClock.part.0/24 is inline copy in Power_Ip_MC_ME_ConfigurePartitionClock/6
+  Clone of Power_Ip_MC_ME_ConfigurePartitionClock.part.0/20
+  Availability: local
+  Function flags: count:37904965 (estimated locally) first_run:1 body local icf_merged split_part optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock/6 (inlined) (37904965 (estimated locally),0.11 per call) 
+  Calls: Power_Ip_ReportPowerErrors/19 (37904965 (estimated locally),0.11 per call) 
+Power_Ip_MC_ME_TriggerPartitionUpdate/23 (Power_Ip_MC_ME_TriggerPartitionUpdate) @060f4a80
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 3
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerPartitionUpdate/23 is inline copy in Power_Ip_MC_ME_ConfigurePartitionClock/6
+  Clone of Power_Ip_MC_ME_TriggerPartitionUpdate/3
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock/6 (inlined) (114863532 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (114863532 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_TriggerCoreUpdate/22 (Power_Ip_MC_ME_TriggerCoreUpdate) @060f4620
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 5
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerCoreUpdate/22 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/11
+  Clone of Power_Ip_MC_ME_TriggerCoreUpdate/5
+  Availability: local
+  Function flags: count:28145068 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCorePartition1/10 (inlined) (28145068 (estimated locally),0.26 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (28145068 (estimated locally),0.26 per call) 
+Power_Ip_MC_ME_ConfigurePartitionClock.part.0/20 (Power_Ip_MC_ME_ConfigurePartitionClock.part.0) @06017a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  previous sharing asm name: 24
+  References: 
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigurePartitionClock.part.0/20 is inline copy in Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7
+  Availability: local
+  Function flags: count:37904965 (estimated locally) first_run:1 body local icf_merged split_part optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (inlined) (37904965 (estimated locally),0.11 per call) 
+  Calls: Power_Ip_ReportPowerErrors/19 (37904965 (estimated locally),0.11 per call) 
+Power_Ip_ReportPowerErrors/19 (Power_Ip_ReportPowerErrors) @05f20700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock.part.0/24 (37904965 (estimated locally),0.11 per call) Power_Ip_MC_ME_ConfigurePartitionClock.part.0/20 (37904965 (estimated locally),0.11 per call) Power_Ip_MC_ME_ConfigureCorePartition1/10 (9287872 (estimated locally),0.08 per call) Power_Ip_MC_ME_ConfigureCore/9 (22666038 (estimated locally),0.21 per call) Power_Ip_MC_ME_ConfigureCore/9 (34342482 (estimated locally),0.31 per call) Power_Ip_MC_ME_ConfigureCOFB/8 (50868502 (estimated locally),0.47 per call) 
+  Calls: 
+Power_Ip_TimeoutExpired/18 (Power_Ip_TimeoutExpired) @05f20620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (1073741824 (estimated locally),3.08 per call) Power_Ip_MC_ME_ConfigurePartitionClock/6 (1073741824 (estimated locally),3.08 per call) Power_Ip_MC_ME_ConfigureCorePartition1/10 (263099490 (estimated locally),2.41 per call) Power_Ip_MC_ME_ConfigureCore/9 (642065581 (estimated locally),5.87 per call) Power_Ip_MC_ME_ConfigureCore/9 (972826640 (estimated locally),8.90 per call) Power_Ip_MC_ME_ConfigureCOFB/8 (1440962630 (estimated locally),13.18 per call) 
+  Calls: 
+Power_Ip_StartTimeout/17 (Power_Ip_StartTimeout) @05f20540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_ME_ConfigurePartitionClock/6 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_ME_ConfigureCorePartition1/10 (28145068 (estimated locally),0.26 per call) Power_Ip_MC_ME_ConfigureCore/9 (68684966 (estimated locally),0.63 per call) Power_Ip_MC_ME_ConfigureCore/9 (104068130 (estimated locally),0.95 per call) Power_Ip_MC_ME_ConfigureCOFB/8 (154146978 (estimated locally),1.41 per call) 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/16 (Power_Ip_MC_ME_SocTriggerResetEvent) @05f0ed20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_TriggerModeUpdate/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05f0e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (70866960 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05f0eee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (70866960 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @05f0ec40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 (70866960 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05f0e9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 (70866960 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05f0e700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigureCorePartition1/10 (inlined) (50457275 (estimated locally),0.46 per call) Power_Ip_MC_ME_ConfigureCore/9 (inlined) (315357970 (estimated locally),2.88 per call) Power_Ip_MC_ME_ConfigureCOFB/8 (inlined) (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_ME_ConfigureCorePartition1/10 (Power_Ip_MC_ME_ConfigureCorePartition1) @05f0e460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigureCorePartition1/10 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/11
+  Availability: local
+  Function flags: count:50457275 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (inlined) (50457275 (estimated locally),0.46 per call) 
+  Calls: Power_Ip_ReportPowerErrors/19 (9287872 (estimated locally),0.08 per call) Power_Ip_TimeoutExpired/18 (263099490 (estimated locally),2.41 per call) Power_Ip_StartTimeout/17 (28145068 (estimated locally),0.26 per call) Power_Ip_MC_ME_TriggerCoreUpdate/22 (inlined) (28145068 (estimated locally),0.26 per call) 
+Power_Ip_MC_ME_ConfigureCore/9 (Power_Ip_MC_ME_ConfigureCore) @05f0e1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigureCore/9 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/11
+  Availability: local
+  Function flags: count:315357970 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (inlined) (315357970 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_ReportPowerErrors/19 (22666038 (estimated locally),0.21 per call) Power_Ip_TimeoutExpired/18 (642065581 (estimated locally),5.87 per call) Power_Ip_StartTimeout/17 (68684966 (estimated locally),0.63 per call) Power_Ip_MC_ME_TriggerCoreUpdate/5 (inlined) (68684966 (estimated locally),0.63 per call) Power_Ip_ReportPowerErrors/19 (34342482 (estimated locally),0.31 per call) Power_Ip_TimeoutExpired/18 (972826640 (estimated locally),8.90 per call) Power_Ip_StartTimeout/17 (104068130 (estimated locally),0.95 per call) 
+Power_Ip_MC_ME_ConfigureCOFB/8 (Power_Ip_MC_ME_ConfigureCOFB) @05f04ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigureCOFB/8 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/11
+  Availability: local
+  Function flags: count:315357974 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (inlined) (315357974 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_ReportPowerErrors/19 (50868502 (estimated locally),0.47 per call) Power_Ip_TimeoutExpired/18 (1440962630 (estimated locally),13.18 per call) Power_Ip_StartTimeout/17 (154146978 (estimated locally),1.41 per call) Power_Ip_MC_ME_TriggerCofbUpdate/4 (inlined) (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (Power_Ip_MC_ME_ConfigurePartitionOutputSafe) @05f049a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (70866960 (estimated locally),0.33 per call) Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (70866960 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock.part.0/20 (inlined) (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/18 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/17 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerPartitionUpdate/3 (inlined) (114863532 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @05f04380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionClock/13 (70866960 (estimated locally),0.33 per call) Power_Ip_MC_ME_EnablePartitionClock/12 (70866960 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock.part.0/24 (inlined) (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/18 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/17 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerPartitionUpdate/23 (inlined) (114863532 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_TriggerCoreUpdate/5 (Power_Ip_MC_ME_TriggerCoreUpdate) @05f04e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 22
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerCoreUpdate/5 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/11
+  Availability: local
+  Function flags: count:68684966 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCore/9 (inlined) (68684966 (estimated locally),0.63 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (68684966 (estimated locally),0.63 per call) 
+Power_Ip_MC_ME_TriggerCofbUpdate/4 (Power_Ip_MC_ME_TriggerCofbUpdate) @05f04b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerCofbUpdate/4 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/11
+  Availability: local
+  Function flags: count:315357974 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCOFB/8 (inlined) (315357974 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_ME_TriggerPartitionUpdate/3 (Power_Ip_MC_ME_TriggerPartitionUpdate) @05f048c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 23
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerPartitionUpdate/3 is inline copy in Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (inlined) (114863532 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (114863532 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_TriggerModeUpdate/2 (Power_Ip_MC_ME_TriggerModeUpdate) @05f04620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerModeUpdate/2 is inline copy in Power_Ip_MC_ME_SocTriggerResetEvent/16
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_SocTriggerResetEvent/16 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @05f042a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Power_Ip_MC_ME_TriggerPartitionUpdate/23 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerCoreUpdate/22 (28145068 (estimated locally),0.26 per call) Power_Ip_MC_ME_TriggerCoreUpdate/5 (68684966 (estimated locally),0.63 per call) Power_Ip_MC_ME_TriggerCofbUpdate/4 (315357974 (estimated locally),2.88 per call) Power_Ip_MC_ME_TriggerPartitionUpdate/3 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerModeUpdate/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_pxMC_ME/0 (Power_Ip_pxMC_ME) @05e33ea0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_TriggerCofbUpdate/4 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_TriggerModeUpdate/2 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (read)Power_Ip_MC_ME_ConfigurePartitionClock/6 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_TriggerCoreUpdate/5 (read)Power_Ip_MC_ME_ConfigureCorePartition1/10 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/3 (read)Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_ConfigureCOFB/8 (read)Power_Ip_MC_ME_WriteControlKeys/1 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_ConfigureCore/9 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_SocTriggerResetEvent/16 (read)Power_Ip_MC_ME_TriggerCoreUpdate/22 (read)Power_Ip_MC_ME_TriggerPartitionUpdate/23 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:Power_Ip_MC_ME_WriteControlKeys:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_ConfigurePartitionOutputSafe:0
+updating call of Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 -> Power_Ip_MC_ME_ConfigurePartitionClock.part.0/20: Power_Ip_MC_ME_ConfigurePartitionOutputSafe.part.0 ();
+  updated to:Power_Ip_MC_ME_ConfigurePartitionClock.part.0 ();
+Time profile order in expand_all_functions:Power_Ip_MC_ME_ConfigurePartitionClock:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_ConfigCoreCOFBClock:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_EnablePartitionClock:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_DisablePartitionClock:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_EnablePartitionOutputSafe:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_DisablePartitionOutputSafe:0
+Time profile order in expand_all_functions:Power_Ip_MC_ME_SocTriggerResetEvent:0
+Trivially needed variables:
+Removing variables: Power_Ip_pxMC_ME
+
+Final Symbol table:
+
+Power_Ip_ReportPowerErrors/19 (Power_Ip_ReportPowerErrors) @05f20700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_TimeoutExpired/18 (Power_Ip_TimeoutExpired) @05f20620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_StartTimeout/17 (Power_Ip_StartTimeout) @05f20540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/16 (Power_Ip_MC_ME_SocTriggerResetEvent) @05f0ed20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/15 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05f0e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/14 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05f0eee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @05f0ec40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05f0e9a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/11 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05f0e700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_ConfigurePartitionOutputSafe/7 (Power_Ip_MC_ME_ConfigurePartitionOutputSafe) @05f049a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @05f04380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @05f042a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

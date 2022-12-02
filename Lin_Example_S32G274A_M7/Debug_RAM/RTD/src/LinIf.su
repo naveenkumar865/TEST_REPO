@@ -1,0 +1,6 @@
+LinIf.c:191:6:LinIf_WakeupConfirmation	0	static
+LinIf.c:208:16:LinIf_CheckWakeup	0	static
+LinIf.c:235:16:LinIf_HeaderIndication	0	static
+LinIf.c:257:6:LinIf_RxIndication	0	static
+LinIf.c:275:6:LinIf_TxConfirmation	0	static
+LinIf.c:293:6:LinIf_LinErrorIndication	0	static

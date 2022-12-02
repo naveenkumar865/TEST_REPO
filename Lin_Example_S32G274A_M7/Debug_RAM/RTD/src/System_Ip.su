@@ -1,0 +1,4 @@
+System_Ip.c:203:7:System_Ip_SetAhbSlavePriority	0	static
+System_Ip.c:224:6:System_Ip_ConfigIrq	8	static
+System_Ip.c:243:6:System_Ip_ClearWriteAbortFlag	0	static
+System_Ip.c:262:8:System_Ip_GetPlatformRevision	0	static

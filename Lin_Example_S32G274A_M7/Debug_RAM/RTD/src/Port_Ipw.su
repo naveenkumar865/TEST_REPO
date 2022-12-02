@@ -1,0 +1,6 @@
+Port_Ipw.c:771:6:Port_Ipw_Init	24	static
+Port_Ipw.c:872:16:Port_Ipw_SetPinDirection	16	static
+Port_Ipw.c:1044:6:Port_Ipw_SetGpioDirChangeability	24	static
+Port_Ipw.c:1092:6:Port_Ipw_SetGpioPadOutput	8	static
+Port_Ipw.c:964:16:Port_Ipw_SetPinMode	32	static
+Port_Ipw.c:1126:6:Port_Ipw_RefreshPortDirection	20	static

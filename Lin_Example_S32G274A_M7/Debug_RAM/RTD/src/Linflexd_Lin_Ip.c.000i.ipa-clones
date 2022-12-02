@@ -1,0 +1,26 @@
+Callgraph clone;Linflexd_Lin_Ip_TimeoutExpired;7;../RTD/src/Linflexd_Lin_Ip.c;232;16;Linflexd_Lin_Ip_TimeoutExpired.constprop.0;45;../RTD/src/Linflexd_Lin_Ip.c;232;16;constprop
+Callgraph clone;Linflexd_Lin_Ip_StartTimeout;6;../RTD/src/Linflexd_Lin_Ip.c;220;13;Linflexd_Lin_Ip_StartTimeout.constprop.0;46;../RTD/src/Linflexd_Lin_Ip.c;220;13;constprop
+Callgraph clone;Linflexd_Lin_Ip_TimeoutExpired.constprop.0;45;../RTD/src/Linflexd_Lin_Ip.c;232;16;Linflexd_Lin_Ip_StateTimeoutMode;8;../RTD/src/Linflexd_Lin_Ip.c;245;35;inlining to
+Callgraph clone;Linflexd_Lin_Ip_TimeoutExpired.constprop.0;45;../RTD/src/Linflexd_Lin_Ip.c;232;16;Linflexd_Lin_Ip_AbortTransferData;21;../RTD/src/Linflexd_Lin_Ip.c;1134;28;inlining to
+Callgraph clone;Linflexd_Lin_Ip_StartTimeout.constprop.0;46;../RTD/src/Linflexd_Lin_Ip.c;220;13;Linflexd_Lin_Ip_StateTimeoutMode;8;../RTD/src/Linflexd_Lin_Ip.c;245;35;inlining to
+Callgraph clone;Linflexd_Lin_Ip_StartTimeout.constprop.0;46;../RTD/src/Linflexd_Lin_Ip.c;220;13;Linflexd_Lin_Ip_AbortTransferData;21;../RTD/src/Linflexd_Lin_Ip.c;1134;28;inlining to
+Callgraph clone;Linflexd_Lin_Ip_SetUpRegisterInNormalMode;10;../RTD/src/Linflexd_Lin_Ip.c;396;13;Linflexd_Lin_Ip_Init;19;../RTD/src/Linflexd_Lin_Ip.c;1007;28;inlining to
+Callgraph clone;Linflexd_Lin_Ip_GetTimeoutErrorStatus;11;../RTD/src/Linflexd_Lin_Ip.c;483;44;Linflexd_Lin_Ip_GetStatus;23;../RTD/src/Linflexd_Lin_Ip.c;1240;36;inlining to
+Callgraph clone;Linflexd_Lin_Ip_SetUpRegisterInInitMode;9;../RTD/src/Linflexd_Lin_Ip.c;275;13;Linflexd_Lin_Ip_Init;19;../RTD/src/Linflexd_Lin_Ip.c;1007;28;inlining to
+Callgraph clone;Linflexd_Lin_Ip_GetNoEventStatus;12;../RTD/src/Linflexd_Lin_Ip.c;530;44;Linflexd_Lin_Ip_GetStatus;23;../RTD/src/Linflexd_Lin_Ip.c;1240;36;inlining to
+Callgraph clone;Linflexd_Lin_Ip_ErrorsHandler;14;../RTD/src/Linflexd_Lin_Ip.c;691;14;Linflexd_Lin_Ip_Error_IRQHandler;29;../RTD/src/Linflexd_Lin_Ip.c;1873;6;inlining to
+Callgraph clone;Linflexd_Lin_Ip_CalculatePid;17;../RTD/src/Linflexd_Lin_Ip.c;876;14;Linflexd_Lin_Ip_TxRx_IRQHandler;28;../RTD/src/Linflexd_Lin_Ip.c;1767;6;inlining to
+Callgraph clone;Linflexd_Lin_Ip_CompleteTransfer;15;../RTD/src/Linflexd_Lin_Ip.c;758;14;Linflexd_Lin_Ip_TxRx_IRQHandler;28;../RTD/src/Linflexd_Lin_Ip.c;1767;6;inlining to
+Callgraph clone;Linflexd_Lin_Ip_ReceiveErrorsHandler;13;../RTD/src/Linflexd_Lin_Ip.c;601;17;Linflexd_Lin_Ip_Error_IRQHandler;29;../RTD/src/Linflexd_Lin_Ip.c;1873;6;inlining to
+Callgraph removal;Linflexd_Lin_Ip_TimeoutExpired;7;../RTD/src/Linflexd_Lin_Ip.c;232;16
+Callgraph removal;Linflexd_Lin_Ip_StartTimeout;6;../RTD/src/Linflexd_Lin_Ip.c;220;13
+Callgraph removal;Linflexd_Lin_Ip_SetUpRegisterInInitMode;9;../RTD/src/Linflexd_Lin_Ip.c;275;13
+Callgraph removal;Linflexd_Lin_Ip_SetUpRegisterInNormalMode;10;../RTD/src/Linflexd_Lin_Ip.c;396;13
+Callgraph removal;Linflexd_Lin_Ip_StartTimeout.constprop.0;46;../RTD/src/Linflexd_Lin_Ip.c;220;13
+Callgraph removal;Linflexd_Lin_Ip_TimeoutExpired.constprop.0;45;../RTD/src/Linflexd_Lin_Ip.c;232;16
+Callgraph removal;Linflexd_Lin_Ip_GetNoEventStatus;12;../RTD/src/Linflexd_Lin_Ip.c;530;44
+Callgraph removal;Linflexd_Lin_Ip_GetTimeoutErrorStatus;11;../RTD/src/Linflexd_Lin_Ip.c;483;44
+Callgraph removal;Linflexd_Lin_Ip_CalculatePid;17;../RTD/src/Linflexd_Lin_Ip.c;876;14
+Callgraph removal;Linflexd_Lin_Ip_CompleteTransfer;15;../RTD/src/Linflexd_Lin_Ip.c;758;14
+Callgraph removal;Linflexd_Lin_Ip_ErrorsHandler;14;../RTD/src/Linflexd_Lin_Ip.c;691;14
+Callgraph removal;Linflexd_Lin_Ip_ReceiveErrorsHandler;13;../RTD/src/Linflexd_Lin_Ip.c;601;17

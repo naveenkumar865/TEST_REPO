@@ -1,0 +1,15 @@
+Clock_Ip.c:190:13:Clock_Ip_NotificatonsEmptyCallback	0	static
+Clock_Ip.c:678:6:Clock_Ip_InitClock	40	static
+Clock_Ip.c:900:24:Clock_Ip_GetPllStatus	32	static
+Clock_Ip.c:961:6:Clock_Ip_DistributePll	24	static
+Clock_Ip.c:611:21:Clock_Ip_Init	8	static
+Clock_Ip.c:1021:6:Clock_Ip_DisableClockMonitor	0	static
+Clock_Ip.c:1037:24:Clock_Ip_GetClockMonitorStatus	0	static
+Clock_Ip.c:1052:6:Clock_Ip_ClearClockMonitorStatus	0	static
+Clock_Ip.c:1090:6:Clock_Ip_InstallNotificationsCallback	0	static
+Clock_Ip.c:1104:6:Clock_Ip_DisableModuleClock	0	static
+Clock_Ip.c:1120:6:Clock_Ip_EnableModuleClock	0	static
+Clock_Ip.c:1258:6:Clock_Ip_ReportClockErrors	0	static
+Clock_Ip.c:1269:6:Clock_Ip_StartTimeout	24	static
+Clock_Ip.c:1285:9:Clock_Ip_TimeoutExpired	16	static
+Clock_Ip.c:1296:8:Clock_Ip_GetConfiguredFrequencyValue	12	static

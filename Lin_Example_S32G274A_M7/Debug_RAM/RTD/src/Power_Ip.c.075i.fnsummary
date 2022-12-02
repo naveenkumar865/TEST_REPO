@@ -1,0 +1,617 @@
+
+Analyzing function: Power_Ip_ConfigPartCoreCofbReset.isra.0/25
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 3 2
+;; 3 succs { 2 }
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_ConfigPartCoreCofbReset.isra.0
+
+IPA function summary for Power_Ip_ConfigPartCoreCofbReset.isra.0/25 inlinable
+  global time:     26.000000
+  self size:       9
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.500000, time:0.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+    Power_Ip_MC_RGM_CheckModeConfig/20 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_RGM_ModeConfig/19 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_InstallNotificationsCallback/7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_InstallNotificationsCallback
+
+IPA function summary for Power_Ip_InstallNotificationsCallback/7 inlinable
+  global time:     3.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Analyzing function: Power_Ip_Init/6
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_Init
+
+IPA function summary for Power_Ip_Init/6 inlinable
+  global time:     26.000000
+  self size:       9
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.500000, time:0.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+    Power_Ip_PMC_PowerInit/24 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_RGM_ResetInit/23 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_GetResetRawValue/5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_GetResetRawValue
+
+IPA function summary for Power_Ip_GetResetRawValue/5 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_GetResetRawValue/22 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_GetResetReason/4
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_GetResetReason
+
+IPA function summary for Power_Ip_GetResetReason/4 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_GetResetReason/21 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_SetMode/3
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7
+;; 2 succs { 3 4 }
+;; 3 succs { 7 }
+;; 4 succs { 5 7 }
+;; 5 succs { 7 6 }
+;; 6 succs { 7 }
+;; 7 succs { 1 }
+
+Analyzing function body size: Power_Ip_SetMode
+
+IPA function summary for Power_Ip_SetMode/3 inlinable
+  global time:     22.560439
+  self size:       17
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:2.000000, time:1.490000,  executed if:(op0[ref offset: 32] > 1),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 32] > 1)
+    size:2.000000, time:0.301576,  executed if:(op0[ref offset: 32] == 3) && (op0[ref offset: 32] > 1)
+  calls:
+    Power_Ip_CortexM_WarmReset/11 function body not available
+      loop depth: 0 freq:0.03 size: 1 time: 10 predicate: (op0[ref offset: 32] == 3) && (op0[ref offset: 32] > 1)
+    Power_Ip_MSCM_GetPersonality/10 function body not available
+      loop depth: 0 freq:0.15 size: 2 time: 11 predicate: (op0[ref offset: 32] == 3) && (op0[ref offset: 32] > 1)
+    Power_Ip_MC_ME_SocTriggerResetEvent/9 function body not available
+      loop depth: 0 freq:0.25 size: 2 time: 11 predicate: (op0[ref offset: 32] <= 1)
+    Power_Ip_OnOffPartCoreCofb/2 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_OnOffPartCoreCofb/2
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_OnOffPartCoreCofb
+
+IPA function summary for Power_Ip_OnOffPartCoreCofb/2 inlinable
+  global time:     97.000000
+  self size:       26
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:6.000000, time:5.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 96] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 96] changed)
+  calls:
+    Power_Ip_MC_ME_EnablePartitionOutputSafe/18 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_ME_DisablePartitionClock/17 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_RGM_DisableResetDomain/16 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_ConfigPartCoreCofbReset.isra.0/25 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 2 time: 11callee size: 4 stack: 0
+    Power_Ip_MC_ME_ConfigCoreCOFBClock/15 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_ME_DisablePartitionOutputSafe/14 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_RGM_EnableResetDomain/13 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_ME_EnablePartitionClock/12 function body not available
+      loop depth: 0 freq:1.00 size: 2 time: 11
+
+Symbol table:
+
+Power_Ip_ConfigPartCoreCofbReset.isra.0/25 (Power_Ip_ConfigPartCoreCofbReset.isra.0) @05eb32a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_RGM_CheckModeConfig/20 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_RGM_ModeConfig/19 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_PMC_PowerInit/24 (Power_Ip_PMC_PowerInit) @05eaec40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_Init/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ResetInit/23 (Power_Ip_MC_RGM_ResetInit) @05eaeb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_Init/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/22 (Power_Ip_MC_RGM_GetResetRawValue) @05eae9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_GetResetRawValue/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_GetResetReason/21 (Power_Ip_MC_RGM_GetResetReason) @05eae7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_GetResetReason/4 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_CheckModeConfig/20 (Power_Ip_MC_RGM_CheckModeConfig) @05eae620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_ConfigPartCoreCofbReset.isra.0/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ModeConfig/19 (Power_Ip_MC_RGM_ModeConfig) @05eae540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_ConfigPartCoreCofbReset.isra.0/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_ME_EnablePartitionOutputSafe/18 (Power_Ip_MC_ME_EnablePartitionOutputSafe) @05eae380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_ME_DisablePartitionClock/17 (Power_Ip_MC_ME_DisablePartitionClock) @05eae2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/16 (Power_Ip_MC_RGM_DisableResetDomain) @05eae1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/15 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @05eae0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_ME_DisablePartitionOutputSafe/14 (Power_Ip_MC_ME_DisablePartitionOutputSafe) @05eae000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_EnableResetDomain/13 (Power_Ip_MC_RGM_EnableResetDomain) @05e44620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_ME_EnablePartitionClock/12 (Power_Ip_MC_ME_EnablePartitionClock) @05e44380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_CortexM_WarmReset/11 (Power_Ip_CortexM_WarmReset) @05e44ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/3 (32770054 (estimated locally),0.03 per call) 
+  Calls: 
+Power_Ip_MSCM_GetPersonality/10 (Power_Ip_MSCM_GetPersonality) @05e44e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/3 (161907382 (estimated locally),0.15 per call) 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/9 (Power_Ip_MC_ME_SocTriggerResetEvent) @05e44d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/3 (273804165 (estimated locally),0.25 per call) 
+  Calls: 
+Power_Ip_ReportPowerErrorsEmptyCallback/8 (Power_Ip_ReportPowerErrorsEmptyCallback) @05e448c0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: Power_Ip_pfReportErrorsCallback/0 (addr)
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_InstallNotificationsCallback/7 (Power_Ip_InstallNotificationsCallback) @05e447e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pfReportErrorsCallback/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_Init/6 (Power_Ip_Init) @05e44540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_PMC_PowerInit/24 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_RGM_ResetInit/23 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_GetResetRawValue/5 (Power_Ip_GetResetRawValue) @05e442a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_GetResetRawValue/22 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_GetResetReason/4 (Power_Ip_GetResetReason) @05e44000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_GetResetReason/21 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_SetMode/3 (Power_Ip_SetMode) @05e3bc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_CortexM_WarmReset/11 (32770054 (estimated locally),0.03 per call) Power_Ip_MSCM_GetPersonality/10 (161907382 (estimated locally),0.15 per call) Power_Ip_MC_ME_SocTriggerResetEvent/9 (273804165 (estimated locally),0.25 per call) Power_Ip_OnOffPartCoreCofb/2 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_OnOffPartCoreCofb/2 (Power_Ip_OnOffPartCoreCofb) @05e3be00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_SetMode/3 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_ME_EnablePartitionOutputSafe/18 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_ME_DisablePartitionClock/17 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_RGM_DisableResetDomain/16 (1073741824 (estimated locally),1.00 per call) Power_Ip_ConfigPartCoreCofbReset.isra.0/25 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_ME_ConfigCoreCOFBClock/15 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_ME_DisablePartitionOutputSafe/14 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_RGM_EnableResetDomain/13 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_ME_EnablePartitionClock/12 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_pfReportErrorsCallback/0 (Power_Ip_pfReportErrorsCallback) @05e3d630
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_ReportPowerErrorsEmptyCallback/8 (addr)
+  Referring: Power_Ip_InstallNotificationsCallback/7 (write)
+  Availability: available
+  Varpool flags: initialized
+Power_Ip_ConfigPartCoreCofbReset.isra.0 (const struct Power_Ip_MC_RGM_ModeConfigType * const * ISRA.1)
+{
+  const struct Power_Ip_MC_RGM_ModeConfigType * _2;
+  const struct Power_Ip_MC_RGM_ModeConfigType * _3;
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG ModeConfigPtr s=> ModeConfigPtr
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _2 = *ISRA.1_7(D);
+  Power_Ip_MC_RGM_ModeConfig (_2);
+  # DEBUG BEGIN_STMT
+  _3 = *ISRA.1_7(D);
+  Power_Ip_MC_RGM_CheckModeConfig (_3);
+  return;
+
+}
+
+
+Power_Ip_InstallNotificationsCallback (void (*Power_Ip_ReportErrorsCallbackType) (Power_Ip_ReportErrorType, uint8) ReportErrorsCallback)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Power_Ip_pfReportErrorsCallback = ReportErrorsCallback_2(D);
+  return;
+
+}
+
+
+Power_Ip_Init (const struct Power_Ip_HwIPsConfigType * HwIPsConfigPtr)
+{
+  const struct Power_Ip_MC_RGM_ConfigType * _1;
+  const struct Power_Ip_PMC_ConfigType * _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = HwIPsConfigPtr_4(D)->McRgmConfigPtr;
+  Power_Ip_MC_RGM_ResetInit (_1);
+  # DEBUG BEGIN_STMT
+  _2 = HwIPsConfigPtr_4(D)->PMCConfigPtr;
+  Power_Ip_PMC_PowerInit (_2);
+  return;
+
+}
+
+
+Power_Ip_GetResetRawValue ()
+{
+  Power_Ip_RawResetType ResetReason;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ResetReason_3 = Power_Ip_MC_RGM_GetResetRawValue ();
+  # DEBUG ResetReason => ResetReason_3
+  # DEBUG BEGIN_STMT
+  return ResetReason_3;
+
+}
+
+
+Power_Ip_GetResetReason ()
+{
+  Power_Ip_ResetType ResetReason;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetReason => 28
+  # DEBUG BEGIN_STMT
+  ResetReason_3 = Power_Ip_MC_RGM_GetResetReason ();
+  # DEBUG ResetReason => ResetReason_3
+  # DEBUG BEGIN_STMT
+  return ResetReason_3;
+
+}
+
+
+Power_Ip_SetMode (const struct Power_Ip_ModeConfigType * ModeConfigPtr)
+{
+  Power_Ip_MSCM_CpxType McuCpxType;
+  Power_Ip_PowerModeType PowerMode;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  PowerMode_4 = ModeConfigPtr_3(D)->PowerMode;
+  # DEBUG PowerMode => PowerMode_4
+  # DEBUG BEGIN_STMT
+  Power_Ip_OnOffPartCoreCofb (ModeConfigPtr_3(D));
+  # DEBUG BEGIN_STMT
+  if (PowerMode_4 <= 1)
+    goto <bb 3>; [25.50%]
+  else
+    goto <bb 4>; [74.50%]
+
+  <bb 3> [local count: 273804165]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_SocTriggerResetEvent (PowerMode_4);
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 799937660]:
+  # DEBUG BEGIN_STMT
+  if (PowerMode_4 == 3)
+    goto <bb 5>; [20.24%]
+  else
+    goto <bb 7>; [79.76%]
+
+  <bb 5> [local count: 161907382]:
+  # DEBUG BEGIN_STMT
+  McuCpxType_7 = Power_Ip_MSCM_GetPersonality ();
+  # DEBUG McuCpxType => McuCpxType_7
+  # DEBUG BEGIN_STMT
+  if (McuCpxType_7 == 2)
+    goto <bb 6>; [20.24%]
+  else
+    goto <bb 7>; [79.76%]
+
+  <bb 6> [local count: 32770054]:
+<L3>:
+  # DEBUG BEGIN_STMT
+  Power_Ip_CortexM_WarmReset ();
+  # DEBUG BEGIN_STMT
+
+  <bb 7> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Power_Ip_OnOffPartCoreCofb (const struct Power_Ip_ModeConfigType * ModeConfigPtr)
+{
+  const struct Power_Ip_MC_ME_ModeConfigType * _1;
+  const struct Power_Ip_MC_RGM_ModeConfigType * _2;
+  const struct Power_Ip_MC_ME_ModeConfigType * _3;
+  const struct Power_Ip_MC_ME_ModeConfigType * _4;
+  const struct Power_Ip_MC_RGM_ModeConfigType * _5;
+  const struct Power_Ip_MC_ME_ModeConfigType * _6;
+  const struct Power_Ip_MC_ME_ModeConfigType * _7;
+  const struct Power_Ip_MC_RGM_ModeConfigType * const * _18;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_9(D)->McMeModeConfigPtr;
+  Power_Ip_MC_ME_EnablePartitionClock (_1);
+  # DEBUG BEGIN_STMT
+  _2 = ModeConfigPtr_9(D)->McRgmModeConfigPtr;
+  Power_Ip_MC_RGM_EnableResetDomain (_2);
+  # DEBUG BEGIN_STMT
+  _3 = ModeConfigPtr_9(D)->McMeModeConfigPtr;
+  Power_Ip_MC_ME_DisablePartitionOutputSafe (_3);
+  # DEBUG BEGIN_STMT
+  _4 = ModeConfigPtr_9(D)->McMeModeConfigPtr;
+  Power_Ip_MC_ME_ConfigCoreCOFBClock (_4);
+  # DEBUG BEGIN_STMT
+  _18 = &MEM[(const struct Power_Ip_MC_RGM_ModeConfigType * *)ModeConfigPtr_9(D) + 16B];
+  # DEBUG D#1 => ModeConfigPtr_9(D)
+  Power_Ip_ConfigPartCoreCofbReset.isra.0 (_18);
+  # DEBUG BEGIN_STMT
+  _5 = ModeConfigPtr_9(D)->McRgmModeConfigPtr;
+  Power_Ip_MC_RGM_DisableResetDomain (_5);
+  # DEBUG BEGIN_STMT
+  _6 = ModeConfigPtr_9(D)->McMeModeConfigPtr;
+  Power_Ip_MC_ME_DisablePartitionClock (_6);
+  # DEBUG BEGIN_STMT
+  _7 = ModeConfigPtr_9(D)->McMeModeConfigPtr;
+  Power_Ip_MC_ME_EnablePartitionOutputSafe (_7);
+  return;
+
+}
+
+

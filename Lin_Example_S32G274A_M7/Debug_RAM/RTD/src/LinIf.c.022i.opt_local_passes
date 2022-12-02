@@ -1,0 +1,66 @@
+LinIf_LinErrorIndication (NetworkHandleType Channel, Lin_SlaveErrorType ErrorStatus)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_TxConfirmation (NetworkHandleType Channel)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_RxIndication (NetworkHandleType Channel, uint8 * Lin_SduPtr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+LinIf_HeaderIndication (NetworkHandleType Channel, struct Lin_PduType * PduPtr)
+{
+  Std_ReturnType _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 0;
+  return _1;
+
+}
+
+
+LinIf_CheckWakeup (EcuM_WakeupSourceType WakeupSource)
+{
+  Std_ReturnType _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 0;
+  return _1;
+
+}
+
+
+LinIf_WakeupConfirmation (EcuM_WakeupSourceType WakeupSource)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

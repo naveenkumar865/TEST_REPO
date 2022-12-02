@@ -1,0 +1,812 @@
+
+
+ local analysis of Clock_Ip_ClockPowerModeChangeNotification
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_ClockInitializeObjects
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_SpecificPlatformInitClock
+   scanning: _1 ={v} MEM[(struct DFS_Type *)1074085888B].CTL;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: CoreDfsIsInReset_49 = _1 & 2;
+  scanning: _2 ={v} MEM[(struct DFS_Type *)1074102272B].CTL;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: PeriphDfsIsInReset_50 = _2 & 2;
+  scanning: if (CoreDfsIsInReset_49 != 0)
+  scanning: if (PeriphDfsIsInReset_50 != 0)
+  scanning: _3 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _4 = (signed int) _3;
+  scanning: if (_4 < 0)
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLCLKMUX ={v} 0;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLDV ={v} 4126;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _5 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _6 = _5 & 2147483647;
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLCR ={v} _6;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _7 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLFD;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _8 = _7 & 3221192704;
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLFD ={v} _8;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _9 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _10 = (signed int) _9;
+  scanning: if (_10 < 0)
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLCLKMUX ={v} 0;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLDV ={v} 4126;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _11 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _12 = _11 & 2147483647;
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLCR ={v} _12;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _13 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLFD;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _14 = _13 & 3221192704;
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLFD ={v} _14;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _15 ={v} MEM[(struct DFS_Type *)1074085888B].PORTRESET;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _16 = _15 | 63;
+  scanning: MEM[(struct DFS_Type *)1074085888B].PORTRESET ={v} _16;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[0] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[1] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[2] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[3] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[4] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[5] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _17 ={v} MEM[(struct DFS_Type *)1074085888B].CTL;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _18 = _17 & 4294967293;
+  scanning: MEM[(struct DFS_Type *)1074085888B].CTL ={v} _18;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _19 ={v} MEM[(struct DFS_Type *)1074102272B].PORTRESET;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _20 = _19 | 63;
+  scanning: MEM[(struct DFS_Type *)1074102272B].PORTRESET ={v} _20;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[0] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[1] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[2] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[3] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[4] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[5] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _21 ={v} MEM[(struct DFS_Type *)1074102272B].CTL;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _22 = _21 & 4294967293;
+  scanning: MEM[(struct DFS_Type *)1074102272B].CTL ={v} _22;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: if (CoreDfsIsInReset_49 != 0)
+  scanning: _23 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _24 = (signed int) _23;
+  scanning: if (_24 < 0)
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLCLKMUX ={v} 0;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLDV ={v} 4126;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _25 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _26 = _25 & 2147483647;
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLCR ={v} _26;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _27 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLFD;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _28 = _27 & 3221192704;
+  scanning: MEM[(struct PLLDIG_Type *)1073971200B].PLLFD ={v} _28;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _29 ={v} MEM[(struct DFS_Type *)1074085888B].PORTRESET;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _30 = _29 | 63;
+  scanning: MEM[(struct DFS_Type *)1074085888B].PORTRESET ={v} _30;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[0] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[1] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[2] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[3] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[4] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074085888B].DVPORT[5] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _31 ={v} MEM[(struct DFS_Type *)1074085888B].CTL;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _32 = _31 & 4294967293;
+  scanning: MEM[(struct DFS_Type *)1074085888B].CTL ={v} _32;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: if (PeriphDfsIsInReset_50 != 0)
+  scanning: _33 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _34 = (signed int) _33;
+  scanning: if (_34 < 0)
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLCLKMUX ={v} 0;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLDV ={v} 4126;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _35 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _36 = _35 & 2147483647;
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLCR ={v} _36;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _37 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLFD;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _38 = _37 & 3221192704;
+  scanning: MEM[(struct PLLDIG_Type *)1073987584B].PLLFD ={v} _38;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _39 ={v} MEM[(struct DFS_Type *)1074102272B].PORTRESET;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _40 = _39 | 63;
+  scanning: MEM[(struct DFS_Type *)1074102272B].PORTRESET ={v} _40;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[0] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[1] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[2] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[3] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[4] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct DFS_Type *)1074102272B].DVPORT[5] ={v} 256;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _41 ={v} MEM[(struct DFS_Type *)1074102272B].CTL;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _42 = _41 & 4294967293;
+  scanning: MEM[(struct DFS_Type *)1074102272B].CTL ={v} _42;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SpecificPeripheralClockInitialization
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_McMeEnterKey
+   scanning: MEM[(struct MC_ME_Type *)1074298880B].CTL_KEY ={v} 23280;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: MEM[(struct MC_ME_Type *)1074298880B].CTL_KEY ={v} 42255;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+callgraph:
+
+Clock_Ip_ClockPowerModeChangeNotification/4 (Clock_Ip_ClockPowerModeChangeNotification) @05e6d1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a550f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/3 (Clock_Ip_ClockInitializeObjects) @05ebce00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55078
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/2 (Clock_Ip_SpecificPlatformInitClock) @05ebcd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55298
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPeripheralClockInitialization/1 (Clock_Ip_SpecificPeripheralClockInitialization) @05eb1b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a54ff8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/0 (Clock_Ip_McMeEnterKey) @05eb18c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55178
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+Clock_Ip_ClockPowerModeChangeNotification/4 (Clock_Ip_ClockPowerModeChangeNotification) @05e6d1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a550f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/3 (Clock_Ip_ClockInitializeObjects) @05ebce00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55078
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/2 (Clock_Ip_SpecificPlatformInitClock) @05ebcd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55298
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPeripheralClockInitialization/1 (Clock_Ip_SpecificPeripheralClockInitialization) @05eb1b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a54ff8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/0 (Clock_Ip_McMeEnterKey) @05eb18c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55178
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+Clock_Ip_ClockPowerModeChangeNotification: malloc_bottom
+Clock_Ip_ClockInitializeObjects: malloc_bottom
+Clock_Ip_SpecificPlatformInitClock: malloc_bottom
+Clock_Ip_SpecificPeripheralClockInitialization: malloc_bottom
+Clock_Ip_McMeEnterKey: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Clock_Ip_ClockPowerModeChangeNotification: malloc_bottom
+Clock_Ip_ClockInitializeObjects: malloc_bottom
+Clock_Ip_SpecificPlatformInitClock: malloc_bottom
+Clock_Ip_SpecificPeripheralClockInitialization: malloc_bottom
+Clock_Ip_McMeEnterKey: malloc_bottom
+callgraph:
+
+Clock_Ip_ClockPowerModeChangeNotification/4 (Clock_Ip_ClockPowerModeChangeNotification) @05e6d1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a551d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/3 (Clock_Ip_ClockInitializeObjects) @05ebce00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a550f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/2 (Clock_Ip_SpecificPlatformInitClock) @05ebcd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55178
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPeripheralClockInitialization/1 (Clock_Ip_SpecificPeripheralClockInitialization) @05eb1b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55298
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/0 (Clock_Ip_McMeEnterKey) @05eb18c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a54f58
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+Clock_Ip_ClockPowerModeChangeNotification/4 (Clock_Ip_ClockPowerModeChangeNotification) @05e6d1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a551d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/3 (Clock_Ip_ClockInitializeObjects) @05ebce00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a550f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/2 (Clock_Ip_SpecificPlatformInitClock) @05ebcd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55178
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPeripheralClockInitialization/1 (Clock_Ip_SpecificPeripheralClockInitialization) @05eb1b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a55298
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/0 (Clock_Ip_McMeEnterKey) @05eb18c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a54f58
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+Function found not to call free: Clock_Ip_McMeEnterKey
+Function found not to call free: Clock_Ip_SpecificPeripheralClockInitialization
+Function found not to call free: Clock_Ip_SpecificPlatformInitClock
+Function found not to call free: Clock_Ip_ClockInitializeObjects
+Function found not to call free: Clock_Ip_ClockPowerModeChangeNotification
+Clock_Ip_ClockPowerModeChangeNotification (Clock_Ip_PowerModesType PowerMode, Clock_Ip_PowerNotificationType Notification)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ClockInitializeObjects ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SpecificPlatformInitClock (const struct Clock_Ip_ClockConfigType * Config)
+{
+  uint32 PeriphDfsIsInReset;
+  uint32 CoreDfsIsInReset;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  signed int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  signed int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  signed int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  long unsigned int _33;
+  signed int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  long unsigned int _42;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct DFS_Type *)1074085888B].CTL;
+  CoreDfsIsInReset_49 = _1 & 2;
+  # DEBUG CoreDfsIsInReset => CoreDfsIsInReset_49
+  # DEBUG BEGIN_STMT
+  _2 ={v} MEM[(struct DFS_Type *)1074102272B].CTL;
+  PeriphDfsIsInReset_50 = _2 & 2;
+  # DEBUG PeriphDfsIsInReset => PeriphDfsIsInReset_50
+  # DEBUG BEGIN_STMT
+  if (CoreDfsIsInReset_49 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  if (PeriphDfsIsInReset_50 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+  _4 = (signed int) _3;
+  if (_4 < 0)
+    goto <bb 5>; [41.00%]
+  else
+    goto <bb 6>; [59.00%]
+
+  <bb 5> [local count: 110058537]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLCLKMUX ={v} 0;
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLDV ={v} 4126;
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+  _6 = _5 & 2147483647;
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLCR ={v} _6;
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLFD;
+  _8 = _7 & 3221192704;
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLFD ={v} _8;
+
+  <bb 6> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  _9 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+  _10 = (signed int) _9;
+  if (_10 < 0)
+    goto <bb 7>; [41.00%]
+  else
+    goto <bb 8>; [59.00%]
+
+  <bb 7> [local count: 110058537]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLCLKMUX ={v} 0;
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLDV ={v} 4126;
+  # DEBUG BEGIN_STMT
+  _11 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+  _12 = _11 & 2147483647;
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLCR ={v} _12;
+  # DEBUG BEGIN_STMT
+  _13 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLFD;
+  _14 = _13 & 3221192704;
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLFD ={v} _14;
+
+  <bb 8> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  _15 ={v} MEM[(struct DFS_Type *)1074085888B].PORTRESET;
+  _16 = _15 | 63;
+  MEM[(struct DFS_Type *)1074085888B].PORTRESET ={v} _16;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[0] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[1] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[2] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[3] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[4] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[5] ={v} 256;
+  # DEBUG BEGIN_STMT
+  _17 ={v} MEM[(struct DFS_Type *)1074085888B].CTL;
+  _18 = _17 & 4294967293;
+  MEM[(struct DFS_Type *)1074085888B].CTL ={v} _18;
+  # DEBUG BEGIN_STMT
+  _19 ={v} MEM[(struct DFS_Type *)1074102272B].PORTRESET;
+  _20 = _19 | 63;
+  MEM[(struct DFS_Type *)1074102272B].PORTRESET ={v} _20;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[0] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[1] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[2] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[3] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[4] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[5] ={v} 256;
+  # DEBUG BEGIN_STMT
+  _21 ={v} MEM[(struct DFS_Type *)1074102272B].CTL;
+  _22 = _21 & 4294967293;
+  MEM[(struct DFS_Type *)1074102272B].CTL ={v} _22;
+  goto <bb 17>; [100.00%]
+
+  <bb 9> [local count: 805306369]:
+  # DEBUG BEGIN_STMT
+  if (CoreDfsIsInReset_49 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 13>; [50.00%]
+
+  <bb 10> [local count: 402653184]:
+  # DEBUG BEGIN_STMT
+  _23 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+  _24 = (signed int) _23;
+  if (_24 < 0)
+    goto <bb 11>; [41.00%]
+  else
+    goto <bb 12>; [59.00%]
+
+  <bb 11> [local count: 165087806]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLCLKMUX ={v} 0;
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLDV ={v} 4126;
+  # DEBUG BEGIN_STMT
+  _25 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLCR;
+  _26 = _25 & 2147483647;
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLCR ={v} _26;
+  # DEBUG BEGIN_STMT
+  _27 ={v} MEM[(struct PLLDIG_Type *)1073971200B].PLLFD;
+  _28 = _27 & 3221192704;
+  MEM[(struct PLLDIG_Type *)1073971200B].PLLFD ={v} _28;
+
+  <bb 12> [local count: 402653184]:
+  # DEBUG BEGIN_STMT
+  _29 ={v} MEM[(struct DFS_Type *)1074085888B].PORTRESET;
+  _30 = _29 | 63;
+  MEM[(struct DFS_Type *)1074085888B].PORTRESET ={v} _30;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[0] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[1] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[2] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[3] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[4] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074085888B].DVPORT[5] ={v} 256;
+  # DEBUG BEGIN_STMT
+  _31 ={v} MEM[(struct DFS_Type *)1074085888B].CTL;
+  _32 = _31 & 4294967293;
+  MEM[(struct DFS_Type *)1074085888B].CTL ={v} _32;
+  goto <bb 17>; [100.00%]
+
+  <bb 13> [local count: 402653184]:
+  # DEBUG BEGIN_STMT
+  if (PeriphDfsIsInReset_50 != 0)
+    goto <bb 14>; [50.00%]
+  else
+    goto <bb 17>; [50.00%]
+
+  <bb 14> [local count: 201326592]:
+  # DEBUG BEGIN_STMT
+  _33 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+  _34 = (signed int) _33;
+  if (_34 < 0)
+    goto <bb 15>; [41.00%]
+  else
+    goto <bb 16>; [59.00%]
+
+  <bb 15> [local count: 82543903]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLCLKMUX ={v} 0;
+  # DEBUG BEGIN_STMT
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLDV ={v} 4126;
+  # DEBUG BEGIN_STMT
+  _35 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLCR;
+  _36 = _35 & 2147483647;
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLCR ={v} _36;
+  # DEBUG BEGIN_STMT
+  _37 ={v} MEM[(struct PLLDIG_Type *)1073987584B].PLLFD;
+  _38 = _37 & 3221192704;
+  MEM[(struct PLLDIG_Type *)1073987584B].PLLFD ={v} _38;
+
+  <bb 16> [local count: 201326592]:
+  # DEBUG BEGIN_STMT
+  _39 ={v} MEM[(struct DFS_Type *)1074102272B].PORTRESET;
+  _40 = _39 | 63;
+  MEM[(struct DFS_Type *)1074102272B].PORTRESET ={v} _40;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[0] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[1] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[2] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[3] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[4] ={v} 256;
+  # DEBUG BEGIN_STMT
+  MEM[(struct DFS_Type *)1074102272B].DVPORT[5] ={v} 256;
+  # DEBUG BEGIN_STMT
+  _41 ={v} MEM[(struct DFS_Type *)1074102272B].CTL;
+  _42 = _41 & 4294967293;
+  MEM[(struct DFS_Type *)1074102272B].CTL ={v} _42;
+
+  <bb 17> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SpecificPeripheralClockInitialization (const struct Clock_IP_SpecificPeriphConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_McMeEnterKey ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1074298880B].CTL_KEY ={v} 23280;
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1074298880B].CTL_KEY ={v} 42255;
+  return;
+
+}
+
+

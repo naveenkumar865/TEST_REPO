@@ -1,0 +1,4 @@
+Callgraph clone;Siul2_Port_Ip_WriteIMCRConfiguration;5;../RTD/src/Siul2_Port_Ip.c;330;20;Siul2_Port_Ip_PinInit;4;../RTD/src/Siul2_Port_Ip.c;239;13;inlining to
+Callgraph clone;Siul2_Port_Ip_GetMSCRConfiguration;6;../RTD/src/Siul2_Port_Ip.c;390;20;Siul2_Port_Ip_GetPinConfiguration;13;../RTD/src/Siul2_Port_Ip.c;801;6;inlining to
+Callgraph removal;Siul2_Port_Ip_WriteIMCRConfiguration;5;../RTD/src/Siul2_Port_Ip.c;330;20
+Callgraph removal;Siul2_Port_Ip_GetMSCRConfiguration;6;../RTD/src/Siul2_Port_Ip.c;390;20

@@ -1,0 +1,790 @@
+Lin_Ipw_Callback (const uint8 Instance, const struct Linflexd_Lin_Ip_StateStructType * LinflexdStateStruct)
+{
+  Std_ReturnType TempReturn;
+  uint8 Channel;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  const struct Lin_HwConfigType * _4;
+  <unnamed type> _5;
+  int _6;
+  const struct Lin_HwConfigType * _7;
+  <unnamed type> _8;
+  struct Linflexd_Lin_Ip_PduType * _9;
+  uint8 * _10;
+  int _11;
+  const struct Lin_HwConfigType * _12;
+  <unnamed type> _13;
+  <unnamed type> _14;
+  struct Linflexd_Lin_Ip_PduType * _15;
+  struct Linflexd_Lin_Ip_PduType * _16;
+  struct Linflexd_Lin_Ip_PduType * _17;
+  struct Linflexd_Lin_Ip_PduType * _18;
+  int _19;
+  unsigned char _20;
+  int _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_25(D);
+  Channel_27 = Lin_Ipw_au8HwMapping[_1];
+  # DEBUG Channel => Channel_27
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinflexdStateStruct_28(D)->CurrentEventId;
+  switch (_2) <default: <L24> [INV], case 3: <L15> [INV], case 7 ... 10: <L7> [INV], case 11: <L0> [INV], case 12: <L3> [INV], case 13 ... 14: <L7> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_27;
+  _4 = Lin_Ipw_apChannelsConfig[_3];
+  _5 = _4->LinNodeType;
+  if (_5 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  LinIf_TxConfirmation (Channel_27);
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  _6 = (int) Channel_27;
+  _7 = Lin_Ipw_apChannelsConfig[_6];
+  _8 = _7->LinNodeType;
+  if (_8 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _9 = LinflexdStateStruct_28(D)->SlavePduInfoPtr;
+  _10 = _9->SduPtr;
+  LinIf_RxIndication (Channel_27, _10);
+  goto <bb 12>; [INV]
+
+  <bb 7> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  _11 = (int) Channel_27;
+  _12 = Lin_Ipw_apChannelsConfig[_11];
+  _13 = _12->LinNodeType;
+  if (_13 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _14 ={v} LinflexdStateStruct_28(D)->CurrentEventId;
+  Lin_Ipw_ErrorCallback (Instance_25(D), _14);
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+<L15>:
+  # DEBUG BEGIN_STMT
+  _15 = LinflexdStateStruct_28(D)->SlavePduInfoPtr;
+  TempReturn_32 = LinIf_HeaderIndication (Channel_27, _15);
+  # DEBUG TempReturn => TempReturn_32
+  # DEBUG BEGIN_STMT
+  if (TempReturn_32 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _16 = LinflexdStateStruct_28(D)->SlavePduInfoPtr;
+  _16->Drc = 2;
+  # DEBUG BEGIN_STMT
+  _17 = LinflexdStateStruct_28(D)->SlavePduInfoPtr;
+  _17->Dl = 1;
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _18 = LinflexdStateStruct_28(D)->SlavePduInfoPtr;
+  Linflexd_Lin_Ip_SendFrame (Instance_25(D), _18);
+  # DEBUG BEGIN_STMT
+
+  <bb 12> :
+<L24>:
+  # DEBUG BEGIN_STMT
+  _19 = (int) Channel_27;
+  _20 ={v} Lin_Ipw_au8TransmitHeaderCommand[_19];
+  if (_20 == 4)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_GoToSleepMode (Instance_25(D));
+  # DEBUG BEGIN_STMT
+  _21 = (int) Channel_27;
+  Lin_Ipw_au8TransmitHeaderCommand[_21] ={v} 5;
+
+  <bb 14> :
+  return;
+
+}
+
+
+Lin_Ipw_WakeUpInternal (const uint8 Channel)
+{
+  uint8 HwUnit;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_3(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_5 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_5
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_GotoIdleState (HwUnit_5);
+  return;
+
+}
+
+
+Lin_Ipw_WakeUp (const uint8 Channel)
+{
+  uint8 HwUnit;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_3(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_5 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_5
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_SendWakeupSignal (HwUnit_5);
+  return;
+
+}
+
+
+Lin_Ipw_HardwareGetStatus (const uint8 Channel, uint8 * * LinSduPtr)
+{
+  Linflexd_Lin_Ip_TransferStatusType TransferState;
+  uint8 HwUnit;
+  Lin_StatusType ReturnStatus;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  int _3;
+  const struct Lin_HwConfigType * _4;
+  <unnamed type> _5;
+  Lin_StatusType _26;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ReturnStatus_8 = 0;
+  # DEBUG ReturnStatus => ReturnStatus_8
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_9(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_11 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_11
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_9(D);
+  _4 = Lin_Ipw_apChannelsConfig[_3];
+  _5 = _4->LinNodeType;
+  if (_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  TransferState_14 = Linflexd_Lin_Ip_GetStatus (HwUnit_11, LinSduPtr_12(D));
+  # DEBUG TransferState => TransferState_14
+  # DEBUG BEGIN_STMT
+  switch (TransferState_14) <default: <L19> [INV], case 0: <L11> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV], case 5: <L5> [INV], case 6: <L6> [INV], case 7: <L7> [INV], case 8: <L8> [INV], case 9 ... 11: <L11> [INV], case 12: <L9> [INV], case 13: <L10> [INV]>
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_24 = 1;
+  # DEBUG ReturnStatus => ReturnStatus_24
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_23 = 2;
+  # DEBUG ReturnStatus => ReturnStatus_23
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_22 = 3;
+  # DEBUG ReturnStatus => ReturnStatus_22
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 7> :
+<L4>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_21 = 4;
+  # DEBUG ReturnStatus => ReturnStatus_21
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 8> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_20 = 5;
+  # DEBUG ReturnStatus => ReturnStatus_20
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 9> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_19 = 6;
+  # DEBUG ReturnStatus => ReturnStatus_19
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 10> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_18 = 7;
+  # DEBUG ReturnStatus => ReturnStatus_18
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+<L8>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_17 = 8;
+  # DEBUG ReturnStatus => ReturnStatus_17
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+<L9>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_16 = 9;
+  # DEBUG ReturnStatus => ReturnStatus_16
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+<L10>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_15 = 10;
+  # DEBUG ReturnStatus => ReturnStatus_15
+  # DEBUG BEGIN_STMT
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+<L11>:
+  # DEBUG BEGIN_STMT
+  ReturnStatus_25 = 0;
+  # DEBUG ReturnStatus => ReturnStatus_25
+  # DEBUG BEGIN_STMT
+
+  <bb 15> :
+  # ReturnStatus_6 = PHI <ReturnStatus_8(2), ReturnStatus_24(4), ReturnStatus_23(5), ReturnStatus_22(6), ReturnStatus_21(7), ReturnStatus_20(8), ReturnStatus_19(9), ReturnStatus_18(10), ReturnStatus_17(11), ReturnStatus_16(12), ReturnStatus_15(13), ReturnStatus_25(14), ReturnStatus_8(3)>
+<L19>:
+  # DEBUG ReturnStatus => ReturnStatus_6
+  # DEBUG BEGIN_STMT
+  _26 = ReturnStatus_6;
+  return _26;
+
+}
+
+
+Lin_Ipw_GoToSleepInternal (const uint8 Channel)
+{
+  uint8 HwUnit;
+  Std_ReturnType TempReturn;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  <unnamed type> _3;
+  <unnamed type> _4;
+  int _5;
+  Std_ReturnType _18;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  TempReturn_8 = 1;
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_9(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_11 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_11
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_AbortTransferData (HwUnit_11);
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 = Linflexd_Lin_Ip_GoToSleepMode (HwUnit_11);
+  if (_4 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 = (int) Channel_9(D);
+  Lin_Ipw_au8TransmitHeaderCommand[_5] ={v} 5;
+  # DEBUG BEGIN_STMT
+  TempReturn_17 = 0;
+  # DEBUG TempReturn => TempReturn_17
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  TempReturn_15 = 1;
+  # DEBUG TempReturn => TempReturn_15
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  TempReturn_13 = 2;
+  # DEBUG TempReturn => TempReturn_13
+
+  <bb 7> :
+  # TempReturn_6 = PHI <TempReturn_15(5), TempReturn_13(6), TempReturn_17(4)>
+  # DEBUG TempReturn => TempReturn_6
+  # DEBUG BEGIN_STMT
+  _18 = TempReturn_6;
+  return _18;
+
+}
+
+
+Lin_Ipw_GoToSleep (const uint8 Channel)
+{
+  uint8 SleepDataField[8];
+  struct Linflexd_Lin_Ip_PduType SleepFrame;
+  uint8 Idx;
+  uint8 HwUnit;
+  Std_ReturnType TempReturn;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  <unnamed type> _3;
+  int _4;
+  unsigned char Idx.0_5;
+  int _6;
+  <unnamed type> _7;
+  Std_ReturnType _31;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  TempReturn_12 = 1;
+  # DEBUG TempReturn => TempReturn_12
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_13(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_15 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_15
+  # DEBUG BEGIN_STMT
+  Idx_16 = 0;
+  # DEBUG Idx => Idx_16
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_AbortTransferData (HwUnit_15);
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  SleepFrame.Dl = 8;
+  # DEBUG BEGIN_STMT
+  SleepFrame.Drc = 0;
+  # DEBUG BEGIN_STMT
+  SleepFrame.Cs = 1;
+  # DEBUG BEGIN_STMT
+  SleepFrame.Pid = 60;
+  # DEBUG BEGIN_STMT
+  SleepFrame.SduPtr = &SleepDataField;
+  # DEBUG BEGIN_STMT
+  SleepDataField[0] = 0;
+  # DEBUG BEGIN_STMT
+  Idx_25 = 1;
+  # DEBUG Idx => Idx_25
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = (int) Idx_9;
+  SleepDataField[_4] = 255;
+  # DEBUG BEGIN_STMT
+  Idx.0_5 = Idx_9;
+  Idx_30 = Idx.0_5 + 1;
+  # DEBUG Idx => Idx_30
+
+  <bb 5> :
+  # Idx_9 = PHI <Idx_25(3), Idx_30(4)>
+  # DEBUG Idx => Idx_9
+  # DEBUG BEGIN_STMT
+  if (Idx_9 <= 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _6 = (int) Channel_13(D);
+  Lin_Ipw_au8TransmitHeaderCommand[_6] ={v} 4;
+  # DEBUG BEGIN_STMT
+  _7 = Linflexd_Lin_Ip_SendFrame (HwUnit_15, &SleepFrame);
+  if (_7 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  TempReturn_28 = 0;
+  # DEBUG TempReturn => TempReturn_28
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  TempReturn_18 = 2;
+  # DEBUG TempReturn => TempReturn_18
+
+  <bb 9> :
+  # TempReturn_8 = PHI <TempReturn_28(7), TempReturn_18(8), TempReturn_12(6)>
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  _31 = TempReturn_8;
+  SleepFrame ={v} {CLOBBER};
+  SleepDataField ={v} {CLOBBER};
+  return _31;
+
+}
+
+
+Lin_Ipw_SendFrame (const uint8 Channel, const struct Lin_PduType * PduInfoPtr)
+{
+  uint8 HwUnit;
+  Std_ReturnType TempReturn;
+  int _1;
+  const struct Lin_HwConfigType * _2;
+  <unnamed type> _3;
+  unsigned char _4;
+  unsigned char _5;
+  <unnamed type> _6;
+  <unnamed type> _7;
+  int _8;
+  <unnamed type> _9;
+  int _10;
+  int _11;
+  Std_ReturnType _27;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  TempReturn_15 = 1;
+  # DEBUG TempReturn => TempReturn_15
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_16(D);
+  _2 = Lin_Ipw_apChannelsConfig[_1];
+  HwUnit_18 = _2->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_18
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_AbortTransferData (HwUnit_18);
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 = PduInfoPtr_21(D)->Dl;
+  _5 = _4 + 255;
+  if (_5 <= 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _6 = Linflexd_Lin_Ip_SendFrame (HwUnit_18, PduInfoPtr_21(D));
+  if (_6 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _7 = PduInfoPtr_21(D)->Drc;
+  if (_7 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _8 = (int) Channel_16(D);
+  Lin_Ipw_au8TransmitHeaderCommand[_8] ={v} 2;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _9 = PduInfoPtr_21(D)->Drc;
+  if (_9 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _10 = (int) Channel_16(D);
+  Lin_Ipw_au8TransmitHeaderCommand[_10] ={v} 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _11 = (int) Channel_16(D);
+  Lin_Ipw_au8TransmitHeaderCommand[_11] ={v} 3;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  TempReturn_26 = 0;
+  # DEBUG TempReturn => TempReturn_26
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  TempReturn_20 = 2;
+  # DEBUG TempReturn => TempReturn_20
+
+  <bb 12> :
+  # TempReturn_12 = PHI <TempReturn_26(10), TempReturn_20(11), TempReturn_15(3), TempReturn_15(4)>
+  # DEBUG TempReturn => TempReturn_12
+  # DEBUG BEGIN_STMT
+  _27 = TempReturn_12;
+  return _27;
+
+}
+
+
+Lin_Ipw_InitChannel (const uint8 Channel, const struct Lin_HwConfigType * ChannelConfigPtr)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * TempPointer;
+  uint8 HwUnit;
+  int _1;
+  int _2;
+  int _3;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  HwUnit_6 = ChannelConfigPtr_5(D)->LinHwChannel;
+  # DEBUG HwUnit => HwUnit_6
+  # DEBUG BEGIN_STMT
+  _1 = (int) HwUnit_6;
+  Lin_Ipw_au8HwMapping[_1] = Channel_7(D);
+  # DEBUG BEGIN_STMT
+  _2 = (int) Channel_7(D);
+  Lin_Ipw_apChannelsConfig[_2] = ChannelConfigPtr_5(D);
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TempPointer_10 = ChannelConfigPtr_5(D)->LinFlexdConfig;
+  # DEBUG TempPointer => TempPointer_10
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Init (HwUnit_6, TempPointer_10);
+  # DEBUG BEGIN_STMT
+  _3 = (int) Channel_7(D);
+  Lin_Ipw_au8TransmitHeaderCommand[_3] ={v} 5;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_GoToSleepMode (HwUnit_6);
+  return;
+
+}
+
+
+Lin_Ipw_CheckWakeup (const uint8 Channel)
+{
+  const struct Lin_HwConfigType * ChannelConfigPtr;
+  boolean IsWakeup;
+  Std_ReturnType RetVal;
+  int _1;
+  unsigned char _2;
+  long unsigned int _3;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal_5 = 1;
+  # DEBUG RetVal => RetVal_5
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  ChannelConfigPtr_8 = Lin_Ipw_apChannelsConfig[_1];
+  # DEBUG ChannelConfigPtr => ChannelConfigPtr_8
+  # DEBUG BEGIN_STMT
+  _2 = ChannelConfigPtr_8->LinHwChannel;
+  _3 = (long unsigned int) _2;
+  IsWakeup_10 = Linflexd_Lin_Ip_CheckWakeup (_3);
+  # DEBUG IsWakeup => IsWakeup_10
+  # DEBUG BEGIN_STMT
+  if (IsWakeup_10 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RetVal_11 = 0;
+  # DEBUG RetVal => RetVal_11
+
+  <bb 4> :
+  # RetVal_4 = PHI <RetVal_5(2), RetVal_11(3)>
+  # DEBUG RetVal => RetVal_4
+  # DEBUG BEGIN_STMT
+  _12 = RetVal_4;
+  return _12;
+
+}
+
+
+Lin_Ipw_ErrorCallback (const uint8 Instance, const Linflexd_Lin_Ip_EventIdType CurrentEvent)
+{
+  uint8 Channel;
+  uint8 * Buffer;
+  Linflexd_Lin_Ip_TransferStatusType TransferStatus;
+  Lin_SlaveErrorType SlaveError;
+  int _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_5(D);
+  Channel_7 = Lin_Ipw_au8HwMapping[_1];
+  # DEBUG Channel => Channel_7
+  # DEBUG BEGIN_STMT
+  TransferStatus_9 = Linflexd_Lin_Ip_GetStatus (Instance_5(D), &Buffer);
+  # DEBUG TransferStatus => TransferStatus_9
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  switch (CurrentEvent_10(D)) <default: <L17> [INV], case 7: <L13> [INV], case 8: <L0> [INV], case 9: <L4> [INV], case 10: <L11> [INV], case 13: <L5> [INV], case 14: <L12> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  if (TransferStatus_9 == 11)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  SlaveError_20 = 0;
+  # DEBUG SlaveError => SlaveError_20
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  SlaveError_19 = 1;
+  # DEBUG SlaveError => SlaveError_19
+
+  <bb 6> :
+  # SlaveError_2 = PHI <SlaveError_20(4), SlaveError_19(5)>
+  # DEBUG SlaveError => SlaveError_2
+  # DEBUG BEGIN_STMT
+  LinIf_LinErrorIndication (Channel_7, SlaveError_2);
+  # DEBUG BEGIN_STMT
+  goto <bb 16>; [INV]
+
+  <bb 7> :
+<L4>:
+  # DEBUG BEGIN_STMT
+  LinIf_LinErrorIndication (Channel_7, 3);
+  # DEBUG BEGIN_STMT
+  goto <bb 16>; [INV]
+
+  <bb 8> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  SlaveError_12 = 0;
+  # DEBUG SlaveError => SlaveError_12
+  # DEBUG BEGIN_STMT
+  switch (TransferStatus_9) <default: <L16> [INV], case 7: <L7> [INV], case 8: <L8> [INV], case 11: <L6> [INV]>
+
+  <bb 9> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  SlaveError_13 = 0;
+  # DEBUG SlaveError => SlaveError_13
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  SlaveError_15 = 5;
+  # DEBUG SlaveError => SlaveError_15
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+<L8>:
+  # DEBUG BEGIN_STMT
+  SlaveError_14 = 4;
+  # DEBUG SlaveError => SlaveError_14
+  # DEBUG BEGIN_STMT
+
+  <bb 12> :
+  # SlaveError_3 = PHI <SlaveError_13(9), SlaveError_15(10), SlaveError_14(11), SlaveError_12(8)>
+<L16>:
+  # DEBUG SlaveError => SlaveError_3
+  # DEBUG BEGIN_STMT
+  LinIf_LinErrorIndication (Channel_7, SlaveError_3);
+  # DEBUG BEGIN_STMT
+  goto <bb 16>; [INV]
+
+  <bb 13> :
+<L11>:
+  # DEBUG BEGIN_STMT
+  LinIf_LinErrorIndication (Channel_7, 2);
+  # DEBUG BEGIN_STMT
+  goto <bb 16>; [INV]
+
+  <bb 14> :
+<L12>:
+  # DEBUG BEGIN_STMT
+  LinIf_LinErrorIndication (Channel_7, 0);
+  # DEBUG BEGIN_STMT
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+<L13>:
+  # DEBUG BEGIN_STMT
+  LinIf_LinErrorIndication (Channel_7, 5);
+  # DEBUG BEGIN_STMT
+
+  <bb 16> :
+<L17>:
+  Buffer ={v} {CLOBBER};
+  return;
+
+}
+
+

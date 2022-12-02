@@ -1,0 +1,1294 @@
+Trivially needed symbols: Lin_Ipw_Callback Lin_Ipw_WakeUpInternal Lin_Ipw_WakeUp Lin_Ipw_HardwareGetStatus Lin_Ipw_GoToSleepInternal Lin_Ipw_GoToSleep Lin_Ipw_SendFrame Lin_Ipw_InitChannel Lin_Ipw_CheckWakeup Lin_Ipw_au8TransmitHeaderCommand
+
+
+Initial Symbol table:
+
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUpInternal/11 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUp/10 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_HardwareGetStatus/9 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_CheckWakeup/4 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: Lin_Ipw_au8HwMapping/0 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_SendFrame/17 LinIf_HeaderIndication/23 Lin_Ipw_ErrorCallback/3 LinIf_RxIndication/22 LinIf_TxConfirmation/21 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05bbe9a0
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GotoIdleState/20 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05bbe700
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendWakeupSignal/19 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05bbe460
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05bbe1c0
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05b21d20
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05b217e0
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05b21ee0
+  References: Lin_Ipw_au8HwMapping/0 (write)Lin_Ipw_apChannelsConfig/1 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_Init/14 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05b21c40
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CheckWakeup/13 
+Lin_Ipw_ErrorCallback/3 (Lin_Ipw_ErrorCallback) @05b21700
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01733ea0
+  References: Lin_Ipw_au8HwMapping/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @05b219a0
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_GoToSleep/7 (write)Lin_Ipw_GoToSleepInternal/8 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (write)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05b21c40
+  References: 
+  Referring: Lin_Ipw_CheckWakeup/4 (read)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (read)Lin_Ipw_GoToSleep/7 (read)Lin_Ipw_GoToSleepInternal/8 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_WakeUp/10 (read)Lin_Ipw_WakeUpInternal/11 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05b21ee0
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_ErrorCallback/3 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUpInternal/11 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUp/10 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_HardwareGetStatus/9 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_CheckWakeup/4 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_au8HwMapping/0 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_SendFrame/17 LinIf_HeaderIndication/23 Lin_Ipw_ErrorCallback/3 LinIf_RxIndication/22 LinIf_TxConfirmation/21 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GotoIdleState/20 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendWakeupSignal/19 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_au8HwMapping/0 (write)Lin_Ipw_apChannelsConfig/1 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_Init/14 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CheckWakeup/13 
+Lin_Ipw_ErrorCallback/3 (Lin_Ipw_ErrorCallback) @05b21700
+  Type: function definition analyzed
+  Visibility:
+  References: Lin_Ipw_au8HwMapping/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_GoToSleep/7 (write)Lin_Ipw_GoToSleepInternal/8 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (write)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Lin_Ipw_CheckWakeup/4 (read)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (read)Lin_Ipw_GoToSleep/7 (read)Lin_Ipw_GoToSleepInternal/8 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_WakeUp/10 (read)Lin_Ipw_WakeUpInternal/11 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_ErrorCallback/3 (read)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUpInternal/11 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUp/10 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_HardwareGetStatus/9 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_CheckWakeup/4 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_au8HwMapping/0 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_SendFrame/17 LinIf_HeaderIndication/23 Lin_Ipw_ErrorCallback/3 LinIf_RxIndication/22 LinIf_TxConfirmation/21 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GotoIdleState/20 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendWakeupSignal/19 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_au8HwMapping/0 (write)Lin_Ipw_apChannelsConfig/1 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_Init/14 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CheckWakeup/13 
+Lin_Ipw_ErrorCallback/3 (Lin_Ipw_ErrorCallback) @05b21700
+  Type: function definition analyzed
+  Visibility:
+  References: Lin_Ipw_au8HwMapping/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_GoToSleep/7 (write)Lin_Ipw_GoToSleepInternal/8 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (write)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Lin_Ipw_CheckWakeup/4 (read)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (read)Lin_Ipw_GoToSleep/7 (read)Lin_Ipw_GoToSleepInternal/8 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_WakeUp/10 (read)Lin_Ipw_WakeUpInternal/11 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_ErrorCallback/3 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 Lin_Ipw_ErrorCallback/3 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUpInternal/11 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUp/10 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 Lin_Ipw_HardwareGetStatus/9 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_GoToSleep/7 Lin_Ipw_SendFrame/6 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 Lin_Ipw_GoToSleepInternal/8 Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_InitChannel/5 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Lin_Ipw_CheckWakeup/4 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_au8HwMapping/0 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_SendFrame/17 LinIf_HeaderIndication/23 Lin_Ipw_ErrorCallback/3 LinIf_RxIndication/22 LinIf_TxConfirmation/21 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GotoIdleState/20 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendWakeupSignal/19 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 Linflexd_Lin_Ip_AbortTransferData/16 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_au8HwMapping/0 (write)Lin_Ipw_apChannelsConfig/1 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 Linflexd_Lin_Ip_Init/14 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CheckWakeup/13 
+Lin_Ipw_ErrorCallback/3 (Lin_Ipw_ErrorCallback) @05b21700
+  Type: function definition analyzed
+  Visibility:
+  References: Lin_Ipw_au8HwMapping/0 (read)
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Lin_Ipw_Callback/12 
+  Calls: LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 LinIf_LinErrorIndication/24 Linflexd_Lin_Ip_GetStatus/18 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_GoToSleep/7 (write)Lin_Ipw_GoToSleepInternal/8 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (write)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Lin_Ipw_CheckWakeup/4 (read)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (read)Lin_Ipw_GoToSleep/7 (read)Lin_Ipw_GoToSleepInternal/8 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_WakeUp/10 (read)Lin_Ipw_WakeUpInternal/11 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)
+  Availability: not-ready
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_ErrorCallback/3 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+CSWTCH.8/25 (CSWTCH.8) @05cd8558
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: Lin_Ipw_HardwareGetStatus/9 (read)
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_ErrorCallback/3 (6211158 (estimated locally),0.01 per call) Lin_Ipw_ErrorCallback/3 (6211158 (estimated locally),0.01 per call) Lin_Ipw_ErrorCallback/3 (6211158 (estimated locally),0.01 per call) Lin_Ipw_ErrorCallback/3 (6210537 (estimated locally),0.01 per call) Lin_Ipw_ErrorCallback/3 (6211158 (estimated locally),0.01 per call) Lin_Ipw_ErrorCallback/3 (6211158 (estimated locally),0.01 per call) 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (214748364 (estimated locally),0.20 per call) 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (43465069 (estimated locally),0.04 per call) 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (43465069 (estimated locally),0.04 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUpInternal/11 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_WakeUp/10 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_HardwareGetStatus/9 (354334802 (estimated locally),0.33 per call) Lin_Ipw_ErrorCallback/3 (43465069 (estimated locally),0.04 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (214748364 (estimated locally),0.20 per call) Lin_Ipw_GoToSleep/7 (134217728 (estimated locally),0.65 per call) Lin_Ipw_SendFrame/6 (230317621 (estimated locally),0.21 per call) 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_GoToSleepInternal/8 (1073741823 (estimated locally),1.00 per call) Lin_Ipw_GoToSleep/7 (206488813 (estimated locally),1.00 per call) Lin_Ipw_SendFrame/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_Callback/12 (217325345 (estimated locally),0.20 per call) Lin_Ipw_GoToSleepInternal/8 (512926468 (estimated locally),0.48 per call) Lin_Ipw_InitChannel/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_InitChannel/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Ipw_CheckWakeup/4 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_au8HwMapping/0 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 (217325345 (estimated locally),0.20 per call) Linflexd_Lin_Ip_SendFrame/17 (214748364 (estimated locally),0.20 per call) LinIf_HeaderIndication/23 (214748364 (estimated locally),0.20 per call) Lin_Ipw_ErrorCallback/3 (inlined) (43465069 (estimated locally),0.04 per call) LinIf_RxIndication/22 (43465069 (estimated locally),0.04 per call) LinIf_TxConfirmation/21 (43465069 (estimated locally),0.04 per call) 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GotoIdleState/20 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendWakeupSignal/19 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)CSWTCH.8/25 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetStatus/18 (354334802 (estimated locally),0.33 per call) 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 (512926468 (estimated locally),0.48 per call) Linflexd_Lin_Ip_AbortTransferData/16 (1073741823 (estimated locally),1.00 per call) 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:206488813 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 (134217728 (estimated locally),0.65 per call) Linflexd_Lin_Ip_AbortTransferData/16 (206488813 (estimated locally),1.00 per call) 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SendFrame/17 (230317621 (estimated locally),0.21 per call) Linflexd_Lin_Ip_AbortTransferData/16 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_au8HwMapping/0 (write)Lin_Ipw_apChannelsConfig/1 (write)Lin_Ipw_au8TransmitHeaderCommand/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GoToSleepMode/15 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_Init/14 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_Ipw_apChannelsConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CheckWakeup/13 (1073741824 (estimated locally),1.00 per call) 
+Lin_Ipw_ErrorCallback/3 (Lin_Ipw_ErrorCallback) @05b21700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Lin_Ipw_au8HwMapping/0 (read)
+  Referring: 
+  Function Lin_Ipw_ErrorCallback/3 is inline copy in Lin_Ipw_Callback/12
+  Availability: local
+  Function flags: count:43465069 (estimated locally) body local optimize_size
+  Called by: Lin_Ipw_Callback/12 (inlined) (43465069 (estimated locally),0.04 per call) 
+  Calls: LinIf_LinErrorIndication/24 (6211158 (estimated locally),0.01 per call) LinIf_LinErrorIndication/24 (6211158 (estimated locally),0.01 per call) LinIf_LinErrorIndication/24 (6211158 (estimated locally),0.01 per call) LinIf_LinErrorIndication/24 (6210537 (estimated locally),0.01 per call) LinIf_LinErrorIndication/24 (6211158 (estimated locally),0.01 per call) LinIf_LinErrorIndication/24 (6211158 (estimated locally),0.01 per call) Linflexd_Lin_Ip_GetStatus/18 (43465069 (estimated locally),0.04 per call) 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: Lin_Ipw_GoToSleep/7 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_GoToSleepInternal/8 (write)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (write)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (write)
+  Availability: available
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Lin_Ipw_WakeUp/10 (read)Lin_Ipw_WakeUpInternal/11 (read)Lin_Ipw_CheckWakeup/4 (read)Lin_Ipw_InitChannel/5 (write)Lin_Ipw_SendFrame/6 (read)Lin_Ipw_HardwareGetStatus/9 (read)Lin_Ipw_GoToSleep/7 (read)Lin_Ipw_GoToSleepInternal/8 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)Lin_Ipw_Callback/12 (read)
+  Availability: available
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Lin_Ipw_InitChannel/5 (write)Lin_Ipw_ErrorCallback/3 (read)Lin_Ipw_Callback/12 (read)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:Lin_Ipw_CheckWakeup:0
+Time profile order in expand_all_functions:Lin_Ipw_InitChannel:0
+Time profile order in expand_all_functions:Lin_Ipw_SendFrame:0
+Time profile order in expand_all_functions:Lin_Ipw_GoToSleep:0
+Time profile order in expand_all_functions:Lin_Ipw_GoToSleepInternal:0
+Time profile order in expand_all_functions:Lin_Ipw_HardwareGetStatus:0
+Time profile order in expand_all_functions:Lin_Ipw_WakeUp:0
+Time profile order in expand_all_functions:Lin_Ipw_WakeUpInternal:0
+Time profile order in expand_all_functions:Lin_Ipw_Callback:0
+Trivially needed variables: CSWTCH.8 Lin_Ipw_au8TransmitHeaderCommand Lin_Ipw_apChannelsConfig Lin_Ipw_au8HwMapping
+Removing variables:
+
+Final Symbol table:
+
+CSWTCH.8/25 (CSWTCH.8) @05cd8558
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written artificial
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+LinIf_LinErrorIndication/24 (LinIf_LinErrorIndication) @05c9ce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+LinIf_HeaderIndication/23 (LinIf_HeaderIndication) @05c9cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+LinIf_RxIndication/22 (LinIf_RxIndication) @05c9ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+LinIf_TxConfirmation/21 (LinIf_TxConfirmation) @05c9c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GotoIdleState/20 (Linflexd_Lin_Ip_GotoIdleState) @05c9c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_SendWakeupSignal/19 (Linflexd_Lin_Ip_SendWakeupSignal) @05c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GetStatus/18 (Linflexd_Lin_Ip_GetStatus) @05c9c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_SendFrame/17 (Linflexd_Lin_Ip_SendFrame) @05c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_AbortTransferData/16 (Linflexd_Lin_Ip_AbortTransferData) @05bbe7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_GoToSleepMode/15 (Linflexd_Lin_Ip_GoToSleepMode) @05bbe2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/14 (Linflexd_Lin_Ip_Init) @05bbe000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_CheckWakeup/13 (Linflexd_Lin_Ip_CheckWakeup) @05bbee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_Callback/12 (Lin_Ipw_Callback) @05bbe9a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_WakeUpInternal/11 (Lin_Ipw_WakeUpInternal) @05bbe700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_WakeUp/10 (Lin_Ipw_WakeUp) @05bbe460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_HardwareGetStatus/9 (Lin_Ipw_HardwareGetStatus) @05bbe1c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_GoToSleepInternal/8 (Lin_Ipw_GoToSleepInternal) @05b21d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_GoToSleep/7 (Lin_Ipw_GoToSleep) @05b217e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:206488813 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_SendFrame/6 (Lin_Ipw_SendFrame) @05b21ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_InitChannel/5 (Lin_Ipw_InitChannel) @05b21c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_CheckWakeup/4 (Lin_Ipw_CheckWakeup) @05b219a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Lin_Ipw_au8TransmitHeaderCommand/2 (Lin_Ipw_au8TransmitHeaderCommand) @05b20090
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written
+  Aux: @05cd8558
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Lin_Ipw_apChannelsConfig/1 (Lin_Ipw_apChannelsConfig) @05b20000
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @05b20090
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Lin_Ipw_au8HwMapping/0 (Lin_Ipw_au8HwMapping) @05b1bf30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @05b20000
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

@@ -1,0 +1,37 @@
+Histogram:
+LIN_LINFLEXD2_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (2);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (2);
+  return;
+
+}
+
+
+LIN_LINFLEXD1_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (1);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (1);
+  return;
+
+}
+
+
+LIN_LINFLEXD0_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_TxRx_IRQHandler (0);
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_Error_IRQHandler (0);
+  return;
+
+}
+
+

@@ -1,0 +1,237 @@
+IPA function summary for Platform_Ipw_InitNonCore/7 inlinable
+  global time:     234.345457
+  self size:       28
+  global size:     28
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:1.000000, time:6.013636,  executed if:(op0[ref offset: 0] != 0B) && (not inlined)
+    size:14.000000, time:81.740910,  executed if:(op0[ref offset: 0] != 0B)
+  calls:
+    IntCtrl_Ip_InstallHandler/10 function body not available
+      loop depth: 1 freq:5.66 size: 4 time: 13 predicate: (op0[ref offset: 0] != 0B)
+       op2 is compile time invariant
+    IntCtrl_Ip_SetTargetCores/9 function body not available
+      loop depth: 1 freq:5.66 size: 3 time: 12 predicate: (op0[ref offset: 0] != 0B)
+
+IPA function summary for Platform_Ipw_Init/6 inlinable
+  global time:     10.881700
+  self size:       8
+  global size:     8
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+    IntCtrl_Ip_Init/8 function body not available
+      loop depth: 0 freq:0.53 size: 2 time: 11 predicate: (op0[ref offset: 0] != 0B)
+
+
+Flattening functions:
+Overall time estimate: 245.227157 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Platform_Ipw_InitNonCore/7.
+Enqueueing calls in Platform_Ipw_Init/6.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 245.227157 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        3 calls, 11.861973 freq, 0 count
+IPA function summary for Platform_Ipw_InitNonCore/7 inlinable
+  global time:     234.345457
+  self size:       28
+  global size:     28
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:1.000000, time:6.013636,  executed if:(op0[ref offset: 0] != 0B) && (not inlined)
+    size:14.000000, time:81.740910,  executed if:(op0[ref offset: 0] != 0B)
+  calls:
+    IntCtrl_Ip_InstallHandler/10 function body not available
+      loop depth: 1 freq:5.66 size: 4 time: 13 predicate: (op0[ref offset: 0] != 0B)
+       op2 is compile time invariant
+    IntCtrl_Ip_SetTargetCores/9 function body not available
+      loop depth: 1 freq:5.66 size: 3 time: 12 predicate: (op0[ref offset: 0] != 0B)
+
+IPA function summary for Platform_Ipw_Init/6 inlinable
+  global time:     10.881700
+  self size:       8
+  global size:     8
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+    IntCtrl_Ip_Init/8 function body not available
+      loop depth: 0 freq:0.53 size: 2 time: 11 predicate: (op0[ref offset: 0] != 0B)
+
+Symbol table:
+
+IntCtrl_Ip_InstallHandler/10 (IntCtrl_Ip_InstallHandler) @05e06a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 (955630225 (estimated locally),5.66 per call) 
+  Calls: 
+IntCtrl_Ip_SetTargetCores/9 (IntCtrl_Ip_SetTargetCores) @05e069a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InitNonCore/7 (955630225 (estimated locally),5.66 per call) 
+  Calls: 
+IntCtrl_Ip_Init/8 (IntCtrl_Ip_Init) @05e067e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_Init/6 (574129754 (estimated locally),0.53 per call) 
+  Calls: 
+Platform_Ipw_InitNonCore/7 (Platform_Ipw_InitNonCore) @05e061c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:168730857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/10 (955630225 (estimated locally),5.66 per call) IntCtrl_Ip_SetTargetCores/9 (955630225 (estimated locally),5.66 per call) 
+Platform_Ipw_Init/6 (Platform_Ipw_Init) @05dade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/8 (574129754 (estimated locally),0.53 per call) 
+
+;; Function Platform_Ipw_Init (Platform_Ipw_Init, funcdef_no=6, decl_uid=6026, cgraph_uid=7, symbol_order=6)
+
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  const struct IntCtrl_Ip_CtrlConfigType * _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_4(D)->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 4>; [46.53%]
+
+  <bb 3> [local count: 574129754]:
+  # DEBUG BEGIN_STMT
+  # DEBUG pIntCtrlCtrlConfig => _1
+  # DEBUG INLINE_ENTRY Platform_Ipw_InitIntCtrl
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_Init (_1);
+  # DEBUG BEGIN_STMT
+  # DEBUG pIntCtrlCtrlConfig => NULL
+  # DEBUG ret => 0
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Platform_Ipw_InitNonCore (Platform_Ipw_InitNonCore, funcdef_no=7, decl_uid=6028, cgraph_uid=8, symbol_order=7)
+
+Platform_Ipw_InitNonCore (const struct Platform_Ipw_NonCoreConfigType * pConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _1;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _2;
+  long unsigned int _3;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _4;
+  <unnamed type> _5;
+  unsigned char _6;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _7;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _8;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _9;
+  <unnamed type> _10;
+  void (*<T4f8>) (void) _11;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _12;
+  long unsigned int _13;
+
+  <bb 2> [local count: 168730857]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_18(D)->pIntRouteConfig;
+  if (_1 != 0B)
+    goto <bb 6>; [70.00%]
+  else
+    goto <bb 5>; [30.00%]
+
+  <bb 6> [local count: 118111600]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _2 = _12->aIrqConfig;
+  _3 = irqIdx_14 * 12;
+  _4 = _2 + _3;
+  _5 = _4->eIrqNumber;
+  _6 = _4->u8TargetCores;
+  IntCtrl_Ip_SetTargetCores (_5, _6);
+  # DEBUG BEGIN_STMT
+  _7 = pConfig_18(D)->pIntRouteConfig;
+  _8 = _7->aIrqConfig;
+  _9 = _8 + _3;
+  _10 = _9->eIrqNumber;
+  _11 = _9->pfHandler;
+  IntCtrl_Ip_InstallHandler (_10, _11, 0B);
+  # DEBUG BEGIN_STMT
+  irqIdx_21 = irqIdx_14 + 1;
+  # DEBUG irqIdx => irqIdx_21
+
+  <bb 4> [local count: 1073741824]:
+  # irqIdx_14 = PHI <irqIdx_21(3), 0(6)>
+  # DEBUG irqIdx => irqIdx_14
+  # DEBUG BEGIN_STMT
+  _12 = pConfig_18(D)->pIntRouteConfig;
+  _13 = _12->u32ConfigIrqCount;
+  if (_13 > irqIdx_14)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 168730858]:
+  return;
+
+}
+
+

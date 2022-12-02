@@ -1,0 +1,404 @@
+Trivially needed symbols: System_Ip_GetPlatformRevision System_Ip_ClearWriteAbortFlag System_Ip_ConfigIrq System_Ip_SetAhbSlavePriority
+
+
+Initial Symbol table:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_GetPlatformRevisionPrivileged/4 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05aaf7e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ClearWriteAbortFlagPrivileged/3 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05aaf2a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05aafee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 
+System_Ip_GetPlatformRevisionPrivileged/4 (System_Ip_GetPlatformRevisionPrivileged) @05aaf9a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_GetPlatformRevision/8 
+  Calls: 
+System_Ip_ClearWriteAbortFlagPrivileged/3 (System_Ip_ClearWriteAbortFlagPrivileged) @05aaf700
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05aaf7e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ClearWriteAbortFlag/7 
+  Calls: 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05aaf2a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ConfigIrq/6 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @05aafee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 
+  Calls: 
+DevAssert/0 (DevAssert) @05a37460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_GetPlatformRevisionPrivileged/4 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ClearWriteAbortFlagPrivileged/3 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 
+System_Ip_GetPlatformRevisionPrivileged/4 (System_Ip_GetPlatformRevisionPrivileged) @05aaf9a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_GetPlatformRevision/8 
+  Calls: 
+System_Ip_ClearWriteAbortFlagPrivileged/3 (System_Ip_ClearWriteAbortFlagPrivileged) @05aaf700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ClearWriteAbortFlag/7 
+  Calls: 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ConfigIrq/6 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 
+  Calls: 
+
+
+Initial Symbol table:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_GetPlatformRevisionPrivileged/4 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ClearWriteAbortFlagPrivileged/3 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 
+System_Ip_GetPlatformRevisionPrivileged/4 (System_Ip_GetPlatformRevisionPrivileged) @05aaf9a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_GetPlatformRevision/8 
+  Calls: 
+System_Ip_ClearWriteAbortFlagPrivileged/3 (System_Ip_ClearWriteAbortFlagPrivileged) @05aaf700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ClearWriteAbortFlag/7 
+  Calls: 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ConfigIrq/6 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_GetPlatformRevisionPrivileged/4 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ClearWriteAbortFlagPrivileged/3 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 
+System_Ip_GetPlatformRevisionPrivileged/4 (System_Ip_GetPlatformRevisionPrivileged) @05aaf9a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_GetPlatformRevision/8 
+  Calls: 
+System_Ip_ClearWriteAbortFlagPrivileged/3 (System_Ip_ClearWriteAbortFlagPrivileged) @05aaf700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ClearWriteAbortFlag/7 
+  Calls: 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_ConfigIrq/6 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function System_Ip_ConfigIrqPrivileged/2 is inline copy in System_Ip_ConfigIrq/6
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: System_Ip_ConfigIrq/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function System_Ip_SetAhbSlavePriorityPrivileged/1 is inline copy in System_Ip_SetAhbSlavePriority/5
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Time profile order in expand_all_functions:System_Ip_SetAhbSlavePriority:0
+Time profile order in expand_all_functions:System_Ip_ConfigIrq:0
+Time profile order in expand_all_functions:System_Ip_ClearWriteAbortFlag:0
+Time profile order in expand_all_functions:System_Ip_GetPlatformRevision:0
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

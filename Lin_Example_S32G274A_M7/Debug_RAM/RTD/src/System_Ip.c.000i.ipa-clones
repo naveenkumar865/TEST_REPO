@@ -1,0 +1,8 @@
+Callgraph clone;System_Ip_ClearWriteAbortFlagPrivileged;3;../RTD/src/System_Ip.c;166;20;System_Ip_ClearWriteAbortFlag;7;../RTD/src/System_Ip.c;243;6;inlining to
+Callgraph removal;System_Ip_ClearWriteAbortFlagPrivileged;3;../RTD/src/System_Ip.c;166;20
+Callgraph clone;System_Ip_GetPlatformRevisionPrivileged;4;../RTD/src/System_Ip.c;178;22;System_Ip_GetPlatformRevision;8;../RTD/src/System_Ip.c;262;8;inlining to
+Callgraph removal;System_Ip_GetPlatformRevisionPrivileged;4;../RTD/src/System_Ip.c;178;22
+Callgraph clone;System_Ip_SetAhbSlavePriorityPrivileged;1;../RTD/src/System_Ip.c;118;21;System_Ip_SetAhbSlavePriority;5;../RTD/src/System_Ip.c;203;7;inlining to
+Callgraph clone;System_Ip_ConfigIrqPrivileged;2;../RTD/src/System_Ip.c;136;20;System_Ip_ConfigIrq;6;../RTD/src/System_Ip.c;224;6;inlining to
+Callgraph removal;System_Ip_SetAhbSlavePriorityPrivileged;1;../RTD/src/System_Ip.c;118;21
+Callgraph removal;System_Ip_ConfigIrqPrivileged;2;../RTD/src/System_Ip.c;136;20

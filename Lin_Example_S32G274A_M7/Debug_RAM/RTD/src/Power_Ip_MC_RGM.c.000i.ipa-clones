@@ -1,0 +1,22 @@
+Callgraph clone;Power_Ip_MC_RGM_ClearFesResetFlags;4;../RTD/src/Power_Ip_MC_RGM.c;250;13;Power_Ip_MC_RGM_ClearFesResetFlags.part.0;24;../RTD/src/Power_Ip_MC_RGM.c;250;13;part
+Callgraph clone;Power_Ip_MC_RGM_ClearDesResetFlags;5;../RTD/src/Power_Ip_MC_RGM.c;291;13;Power_Ip_MC_RGM_ClearDesResetFlags.part.0;25;../RTD/src/Power_Ip_MC_RGM.c;291;13;part
+Callgraph clone;Power_Ip_MC_RGM_ConfigureCore;11;../RTD/src/Power_Ip_MC_RGM.c;419;13;Power_Ip_MC_RGM_ModeConfig;14;../RTD/src/Power_Ip_MC_RGM.c;580;6;inlining to
+Callgraph clone;Power_Ip_MC_RGM_ConfigureCOFB;9;../RTD/src/Power_Ip_MC_RGM.c;378;13;Power_Ip_MC_RGM_ModeConfig;14;../RTD/src/Power_Ip_MC_RGM.c;580;6;inlining to
+Callgraph clone;Power_Ip_MC_RGM_CheckResetReason;18;../RTD/src/Power_Ip_MC_RGM.c;740;27;Power_Ip_MC_RGM_GetResetReason;19;../RTD/src/Power_Ip_MC_RGM.c;812;20;inlining to
+Callgraph clone;Power_Ip_MC_RGM_AssertDomainReset;7;../RTD/src/Power_Ip_MC_RGM.c;327;13;Power_Ip_MC_RGM_DisableResetDomain;17;../RTD/src/Power_Ip_MC_RGM.c;700;6;inlining to
+Callgraph clone;Power_Ip_MC_RGM_ReleaseDomainReset;6;../RTD/src/Power_Ip_MC_RGM.c;321;13;Power_Ip_MC_RGM_EnableResetDomain;16;../RTD/src/Power_Ip_MC_RGM.c;662;6;inlining to
+Callgraph clone;Power_Ip_MC_RGM_CheckConfigureCore;12;../RTD/src/Power_Ip_MC_RGM.c;432;13;Power_Ip_MC_RGM_CheckModeConfig;15;../RTD/src/Power_Ip_MC_RGM.c;621;6;inlining to
+Callgraph clone;Power_Ip_MC_RGM_CheckConfigureCOFB;10;../RTD/src/Power_Ip_MC_RGM.c;392;13;Power_Ip_MC_RGM_CheckModeConfig;15;../RTD/src/Power_Ip_MC_RGM.c;621;6;inlining to
+Callgraph removal;Power_Ip_MC_RGM_ClearDesResetFlags.part.0;25;../RTD/src/Power_Ip_MC_RGM.c;291;13
+Callgraph clone;Power_Ip_MC_RGM_ClearFesResetFlags.part.0;24;../RTD/src/Power_Ip_MC_RGM.c;250;13;Power_Ip_MC_RGM_ClearDesResetFlags;5;../RTD/src/Power_Ip_MC_RGM.c;291;13;inlining to
+Callgraph clone;Power_Ip_MC_RGM_ClearFesResetFlags.part.0;24;../RTD/src/Power_Ip_MC_RGM.c;250;13;Power_Ip_MC_RGM_ClearFesResetFlags;4;../RTD/src/Power_Ip_MC_RGM.c;250;13;inlining to
+Callgraph clone;Power_Ip_MC_RGM_CheckResetReason;18;../RTD/src/Power_Ip_MC_RGM.c;740;27;Power_Ip_MC_RGM_GetResetReason;19;../RTD/src/Power_Ip_MC_RGM.c;812;20;inlining to
+Callgraph removal;Power_Ip_MC_RGM_ClearFesResetFlags.part.0;24;../RTD/src/Power_Ip_MC_RGM.c;250;13
+Callgraph removal;Power_Ip_MC_RGM_ClearFesResetFlags.part.0;27;../RTD/src/Power_Ip_MC_RGM.c;250;13
+Callgraph removal;Power_Ip_MC_RGM_ConfigureCOFB;9;../RTD/src/Power_Ip_MC_RGM.c;378;13
+Callgraph removal;Power_Ip_MC_RGM_ConfigureCore;11;../RTD/src/Power_Ip_MC_RGM.c;419;13
+Callgraph removal;Power_Ip_MC_RGM_CheckConfigureCOFB;10;../RTD/src/Power_Ip_MC_RGM.c;392;13
+Callgraph removal;Power_Ip_MC_RGM_CheckConfigureCore;12;../RTD/src/Power_Ip_MC_RGM.c;432;13
+Callgraph removal;Power_Ip_MC_RGM_ReleaseDomainReset;6;../RTD/src/Power_Ip_MC_RGM.c;321;13
+Callgraph removal;Power_Ip_MC_RGM_AssertDomainReset;7;../RTD/src/Power_Ip_MC_RGM.c;327;13
+Callgraph removal;Power_Ip_MC_RGM_CheckResetReason;18;../RTD/src/Power_Ip_MC_RGM.c;740;27

@@ -1,0 +1,7 @@
+Clock_Ip_ExtOsc.c:148:13:Clock_Ip_ExternalOscillatorEmpty	0	static
+Clock_Ip_ExtOsc.c:153:13:Clock_Ip_DisableClockIpExternalOscillatorEmpty	0	static
+Clock_Ip_ExtOsc.c:160:13:Clock_Ip_ResetFxoscOsconBypEocvGmSel	0	static
+Clock_Ip_ExtOsc.c:169:13:Clock_Ip_SetFxoscOsconBypEocvGmSel	0	static
+Clock_Ip_ExtOsc.c:233:13:Clock_Ip_DisableFxoscOsconBypEocvGmSel	0	static
+Clock_Ip_ExtOsc.c:240:13:Clock_Ip_EnableFxoscOsconBypEocvGmSel	0	static
+Clock_Ip_ExtOsc.c:190:13:Clock_Ip_CompleteFxoscOsconBypEocvGmSel	32	static

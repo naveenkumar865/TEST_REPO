@@ -1,0 +1,211 @@
+main ()
+{
+  volatile Std_ReturnType wakeUpEvent;
+  uint8 Channel_Index;
+  volatile uint8 T_result;
+  uint8 * linSduPtr;
+  struct Lin_PduType linFrame;
+  uint8 Index_frame;
+  volatile uint32 TimeOut;
+  volatile Lin_StatusType T_LinStatus;
+  static uint8 linSdu[8] = "\x00\x00\x00\x00\x00\x00\x00";
+  <unnamed type> _1;
+  unsigned char _2;
+  int _3;
+  <unnamed type> _4;
+  <unnamed type> T_LinStatus.0_5;
+  long unsigned int TimeOut.1_6;
+  long unsigned int TimeOut.2_7;
+  long unsigned int _8;
+  <unnamed type> T_LinStatus.3_9;
+  unsigned char T_result.4_10;
+  unsigned char _11;
+  unsigned char Channel_Index.5_12;
+  unsigned char wakeUpEvent.7_13;
+  unsigned char T_result.8_14;
+  _Bool _15;
+  int iftmp.6_17;
+  int iftmp.6_38;
+  int iftmp.6_39;
+  int _41;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Index_frame_23 = 0;
+  # DEBUG Index_frame => Index_frame_23
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  linSduPtr = &linSdu;
+  # DEBUG BEGIN_STMT
+  T_result ={v} 0;
+  # DEBUG BEGIN_STMT
+  Channel_Index_27 = 0;
+  # DEBUG Channel_Index => Channel_Index_27
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Port_Init (0B);
+  # DEBUG BEGIN_STMT
+  Mcu_Init (0B);
+  # DEBUG BEGIN_STMT
+  Mcu_InitClock (0);
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Mcu_DistributePllClock ();
+  # DEBUG BEGIN_STMT
+  Mcu_SetMode (0);
+  # DEBUG BEGIN_STMT
+  Platform_Init (0B);
+  # DEBUG BEGIN_STMT
+  OsIf_Init (0B);
+  # DEBUG BEGIN_STMT
+  Lin_Init (0B);
+  # DEBUG BEGIN_STMT
+  Channel_Index_37 = 0;
+  # DEBUG Channel_Index => Channel_Index_37
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Lin_WakeupInternal (Channel_Index_16);
+  # DEBUG BEGIN_STMT
+  _2 = Lin_CheckWakeup (Channel_Index_16);
+  wakeUpEvent ={v} _2;
+  # DEBUG BEGIN_STMT
+  _3 = (int) Index_frame_23;
+  linFrame = T_Lin_Frame[_3];
+  # DEBUG BEGIN_STMT
+  Lin_SendFrame (Channel_Index_16, &linFrame);
+  # DEBUG BEGIN_STMT
+  TimeOut ={v} 1600000;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _4 = Lin_GetStatus (Channel_Index_16, &linSduPtr);
+  T_LinStatus ={v} _4;
+  # DEBUG BEGIN_STMT
+  T_LinStatus.0_5 ={v} T_LinStatus;
+  if (T_LinStatus.0_5 != 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  TimeOut.1_6 ={v} TimeOut;
+  TimeOut.2_7 = TimeOut.1_6;
+  _8 = TimeOut.2_7 + 4294967295;
+  TimeOut ={v} _8;
+  if (TimeOut.2_7 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  T_LinStatus.3_9 ={v} T_LinStatus;
+  if (T_LinStatus.3_9 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  T_result.4_10 ={v} T_result;
+  _11 = T_result.4_10 + 1;
+  T_result ={v} _11;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Channel_Index.5_12 = Channel_Index_16;
+  Channel_Index_54 = Channel_Index.5_12 + 1;
+  # DEBUG Channel_Index => Channel_Index_54
+
+  <bb 11> :
+  # Channel_Index_16 = PHI <Channel_Index_37(4), Channel_Index_54(10)>
+  # DEBUG Channel_Index => Channel_Index_16
+  # DEBUG BEGIN_STMT
+  if (Channel_Index_16 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  wakeUpEvent.7_13 ={v} wakeUpEvent;
+  if (wakeUpEvent.7_13 == 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 13> :
+  T_result.8_14 ={v} T_result;
+  if (T_result.8_14 == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.6_38 = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.6_39 = 0;
+
+  <bb 16> :
+  # iftmp.6_17 = PHI <iftmp.6_38(14), iftmp.6_39(15)>
+  _15 = (_Bool) iftmp.6_17;
+  Exit_Example (_15);
+  # DEBUG BEGIN_STMT
+  _41 = 0;
+  linFrame ={v} {CLOBBER};
+  linSduPtr ={v} {CLOBBER};
+  return _41;
+
+}
+
+
+Exit_Example (boolean result)
+{
+  volatile uint8 * testResultBasePtr;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  testResultBasePtr_2 = 877658112B;
+  # DEBUG testResultBasePtr => testResultBasePtr_2
+  # DEBUG BEGIN_STMT
+  if (result_3(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  *testResultBasePtr_2 ={v} 90;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  *testResultBasePtr_2 ={v} 51;
+
+  <bb 5> :
+  return;
+
+}
+
+

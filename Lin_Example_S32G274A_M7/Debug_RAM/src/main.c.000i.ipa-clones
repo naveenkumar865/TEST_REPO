@@ -1,0 +1,2 @@
+Callgraph clone;Exit_Example;1;C:/Users/imnav/workspaceS32DS.3.4/Lin_Example_S32G274A_M7/include/check_example.h;78;20;main;4;../src/main.c;92;5;inlining to
+Callgraph removal;Exit_Example;1;C:/Users/imnav/workspaceS32DS.3.4/Lin_Example_S32G274A_M7/include/check_example.h;78;20

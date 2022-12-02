@@ -1,0 +1,2826 @@
+Linflexd_Lin_Ip_Error_IRQHandler (const uint32 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  uint32 LinSyncErrorStatus;
+  uint32 ErrorFlag;
+  <unnamed type> _1;
+  long unsigned int _2;
+  long unsigned int _13;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState_8 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_7(D)];
+  # DEBUG LinCurrentState => LinCurrentState_8
+  # DEBUG BEGIN_STMT
+  Base_9 = Linflexd_Lin_Ip_apxBases[Instance_7(D)];
+  # DEBUG Base => Base_9
+  # DEBUG BEGIN_STMT
+  if (LinCurrentState_8 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  _1 ={v} LinCurrentState_8->CurrentNodeState;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  ErrorFlag_10 ={v} Base_9->LINESR;
+  # DEBUG ErrorFlag => ErrorFlag_10
+  # DEBUG BEGIN_STMT
+  LinSyncErrorStatus_11 = ErrorFlag_10 & 3584;
+  # DEBUG LinSyncErrorStatus => LinSyncErrorStatus_11
+  # DEBUG BEGIN_STMT
+  if (LinSyncErrorStatus_11 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  ErrorFlag_12 = ErrorFlag_10 | 2048;
+  # DEBUG ErrorFlag => ErrorFlag_12
+
+  <bb 6> :
+  # ErrorFlag_3 = PHI <ErrorFlag_10(4), ErrorFlag_12(5)>
+  # DEBUG ErrorFlag => ErrorFlag_3
+  # DEBUG BEGIN_STMT
+  _13 ={v} Base_9->LINIER;
+  ErrorFlag_14 = _13 & ErrorFlag_3;
+  # DEBUG ErrorFlag => ErrorFlag_14
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag_14 & 2048;
+  if (_2 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  ErrorFlag_15 = ErrorFlag_14 & 4294965247;
+  # DEBUG ErrorFlag => ErrorFlag_15
+  # DEBUG BEGIN_STMT
+  ErrorFlag_16 = ErrorFlag_15 | LinSyncErrorStatus_11;
+  # DEBUG ErrorFlag => ErrorFlag_16
+
+  <bb 8> :
+  # ErrorFlag_4 = PHI <ErrorFlag_14(6), ErrorFlag_16(7)>
+  # DEBUG ErrorFlag => ErrorFlag_4
+  # DEBUG BEGIN_STMT
+  if (ErrorFlag_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_ErrorsHandler (Instance_7(D), ErrorFlag_4);
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Base_9->LINESR ={v} 65408;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  Base_9->LINESR ={v} 65408;
+
+  <bb 12> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_TxRx_IRQHandler (const uint32 Instance)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  uint8 Pid;
+  uint32 StatusFlag;
+  <unnamed type> _1;
+  struct Linflexd_Lin_Ip_PduType * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _6;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  struct Linflexd_Lin_Ip_PduType * _12;
+  _Bool _13;
+  _Bool _14;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _15;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _16;
+  unsigned char _17;
+  long unsigned int _30;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  StatusFlag_21 = 0;
+  # DEBUG StatusFlag => StatusFlag_21
+  # DEBUG BEGIN_STMT
+  Pid_22 = 0;
+  # DEBUG Pid => Pid_22
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState_25 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_24(D)];
+  # DEBUG LinCurrentState => LinCurrentState_25
+  # DEBUG BEGIN_STMT
+  Base_26 = Linflexd_Lin_Ip_apxBases[Instance_24(D)];
+  # DEBUG Base => Base_26
+  # DEBUG BEGIN_STMT
+  if (LinCurrentState_25 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 3> :
+  _1 ={v} LinCurrentState_25->CurrentNodeState;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  LinUserConfig_27 = Linflexd_Lin_Ip_apUserConfigs[Instance_24(D)];
+  # DEBUG LinUserConfig => LinUserConfig_27
+  # DEBUG BEGIN_STMT
+  _2 = &Linflexd_Lin_Ip_anPduInfo[Instance_24(D)];
+  LinCurrentState_25->SlavePduInfoPtr = _2;
+  # DEBUG BEGIN_STMT
+  StatusFlag_29 ={v} Base_26->LINIER;
+  # DEBUG StatusFlag => StatusFlag_29
+  # DEBUG BEGIN_STMT
+  _30 ={v} Base_26->LINSR;
+  StatusFlag_31 = _30 & StatusFlag_29;
+  # DEBUG StatusFlag => StatusFlag_31
+  # DEBUG BEGIN_STMT
+  if (StatusFlag_31 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _3 = StatusFlag_31 & 32;
+  if (_3 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_26->LINIER;
+  _5 = _4 & 4294967263;
+  Base_26->LINIER ={v} _5;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_25->CurrentEventId ={v} 1;
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig_27->Callback;
+  if (_6 != 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _7 = LinUserConfig_27->Callback;
+  _8 = (unsigned char) Instance_24(D);
+  _7 (_8, LinCurrentState_25);
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Base_26->LINSR ={v} 32;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_25->CurrentNodeState ={v} 2;
+  goto <bb 17>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _9 = StatusFlag_31 & 1;
+  if (_9 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_25->CurrentEventId ={v} 3;
+  # DEBUG BEGIN_STMT
+  _10 ={v} Base_26->BIDR;
+  _11 = _10 & 63;
+  Pid_36 = Linflexd_Lin_Ip_CalculatePid (_11);
+  # DEBUG Pid => Pid_36
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  _12 = LinCurrentState_25->SlavePduInfoPtr;
+  _12->Pid = Pid_36;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig_27->NodeFunction;
+  _14 = ~_13;
+  if (_14 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _15 = LinUserConfig_27->Callback;
+  if (_15 != 0B)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _16 = LinUserConfig_27->Callback;
+  _17 = (unsigned char) Instance_24(D);
+  _16 (_17, LinCurrentState_25);
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Base_26->LINSR ={v} 1;
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_CompleteTransfer (Instance_24(D), StatusFlag_31);
+  goto <bb 17>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  Base_26->LINSR ={v} 807;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  Base_26->LINSR ={v} 807;
+
+  <bb 17> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_SendFrame (const uint8 Instance, const struct Linflexd_Lin_Ip_PduType * PduInfoPtr)
+{
+  uint8 DataLength;
+  uint8 Loop;
+  uint32 Temp;
+  uint32 RegVal;
+  boolean CheckSleepMode;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  int _1;
+  int _2;
+  int _3;
+  <unnamed type> _4;
+  _Bool _5;
+  _Bool _6;
+  int _7;
+  int _8;
+  unsigned char Loop.6_9;
+  unsigned char _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  unsigned char _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  <unnamed type> _17;
+  <unnamed type> _18;
+  unsigned char _19;
+  uint8 * _20;
+  sizetype _21;
+  uint8 * _22;
+  unsigned char _23;
+  long unsigned int _24;
+  int _25;
+  int _26;
+  long unsigned int _27;
+  unsigned char Loop.7_28;
+  unsigned char _29;
+  uint8 * _30;
+  sizetype _31;
+  uint8 * _32;
+  unsigned char _33;
+  long unsigned int _34;
+  int _35;
+  int _36;
+  long unsigned int _37;
+  unsigned char Loop.8_38;
+  uint8 * _39;
+  sizetype _40;
+  uint8 * _41;
+  unsigned char _42;
+  long unsigned int _43;
+  unsigned int _44;
+  unsigned int _45;
+  unsigned int _46;
+  long unsigned int _47;
+  unsigned char Loop.9_48;
+  unsigned char _49;
+  <unnamed type> _50;
+  <unnamed type> _51;
+  long unsigned int _52;
+  long unsigned int _53;
+  long unsigned int _54;
+  long unsigned int _55;
+  _Bool _56;
+  <unnamed type> _57;
+  <unnamed type> _58;
+  long unsigned int _59;
+  long unsigned int _60;
+  Linflexd_Lin_Ip_StatusType _140;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal_78 = 0;
+  # DEBUG RetVal => RetVal_78
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RegVal_79 = 0;
+  # DEBUG RegVal => RegVal_79
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_80(D);
+  LinCurrentState_82 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_82
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_80(D);
+  LinUserConfig_83 = Linflexd_Lin_Ip_apUserConfigs[_2];
+  # DEBUG LinUserConfig => LinUserConfig_83
+  # DEBUG BEGIN_STMT
+  _3 = (int) Instance_80(D);
+  Base_84 = Linflexd_Lin_Ip_apxBases[_3];
+  # DEBUG Base => Base_84
+  # DEBUG BEGIN_STMT
+  _4 ={v} LinCurrentState_82->CurrentNodeState;
+  CheckSleepMode_85 = _4 == 1;
+  # DEBUG CheckSleepMode => CheckSleepMode_85
+  # DEBUG BEGIN_STMT
+  if (CheckSleepMode_85 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RetVal_139 = 1;
+  # DEBUG RetVal => RetVal_139
+  goto <bb 38>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 ={v} LinCurrentState_82->IsBusBusy;
+  if (_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal_138 = 2;
+  # DEBUG RetVal => RetVal_138
+  goto <bb 38>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->CurrentEventId ={v} 0;
+  # DEBUG BEGIN_STMT
+  Base_84->LINSR ={v} 512;
+  # DEBUG BEGIN_STMT
+  Base_84->LINESR ={v} 1;
+  # DEBUG BEGIN_STMT
+  Base_84->LINSR ={v} 256;
+  # DEBUG BEGIN_STMT
+  Base_84->BDRL ={v} 0;
+  # DEBUG BEGIN_STMT
+  Base_84->BDRM ={v} 0;
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig_83->NodeFunction;
+  if (_6 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Loop_92 = 0;
+  # DEBUG Loop => Loop_92
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _7 = (int) Instance_80(D);
+  _8 = (int) Loop_68;
+  Linflexd_Lin_Ip_au8SduBuffer[_7][_8] = 0;
+  # DEBUG BEGIN_STMT
+  Loop.6_9 = Loop_68;
+  Loop_94 = Loop.6_9 + 1;
+  # DEBUG Loop => Loop_94
+
+  <bb 9> :
+  # Loop_68 = PHI <Loop_92(7), Loop_94(8)>
+  # DEBUG Loop => Loop_68
+  # DEBUG BEGIN_STMT
+  if (Loop_68 <= 7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _10 = PduInfoPtr_95(D)->Dl;
+  DataLength_96 = _10 + 255;
+  # DEBUG DataLength => DataLength_96
+  # DEBUG BEGIN_STMT
+  _11 = (long unsigned int) DataLength_96;
+  _12 = _11 << 10;
+  _13 = _12 & 7168;
+  RegVal_97 = RegVal_79 | _13;
+  # DEBUG RegVal => RegVal_97
+  # DEBUG BEGIN_STMT
+  _14 = PduInfoPtr_95(D)->Pid;
+  _15 = (long unsigned int) _14;
+  _16 = _15 & 63;
+  RegVal_98 = RegVal_97 | _16;
+  # DEBUG RegVal => RegVal_98
+  # DEBUG BEGIN_STMT
+  _17 = PduInfoPtr_95(D)->Cs;
+  if (_17 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  RegVal_100 = RegVal_98 | 256;
+  # DEBUG RegVal => RegVal_100
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  RegVal_99 = RegVal_98 & 4294967039;
+  # DEBUG RegVal => RegVal_99
+
+  <bb 13> :
+  # RegVal_62 = PHI <RegVal_100(11), RegVal_99(12)>
+  # DEBUG RegVal => RegVal_62
+  # DEBUG BEGIN_STMT
+  Base_84->BIDR ={v} RegVal_62;
+  # DEBUG BEGIN_STMT
+  _18 = PduInfoPtr_95(D)->Drc;
+  if (_18 == 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _19 = PduInfoPtr_95(D)->Dl;
+  if (_19 <= 4)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  RegVal_118 = 0;
+  # DEBUG RegVal => RegVal_118
+  # DEBUG BEGIN_STMT
+  Loop_119 = 0;
+  # DEBUG Loop => Loop_119
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _20 = PduInfoPtr_95(D)->SduPtr;
+  _21 = (sizetype) Loop_69;
+  _22 = _20 + _21;
+  _23 = *_22;
+  Temp_121 = (uint32) _23;
+  # DEBUG Temp => Temp_121
+  # DEBUG BEGIN_STMT
+  _24 = Temp_121 & 255;
+  _25 = (int) Loop_69;
+  _26 = _25 * 8;
+  _27 = _24 << _26;
+  RegVal_122 = RegVal_63 | _27;
+  # DEBUG RegVal => RegVal_122
+  # DEBUG BEGIN_STMT
+  Loop.7_28 = Loop_69;
+  Loop_123 = Loop.7_28 + 1;
+  # DEBUG Loop => Loop_123
+
+  <bb 17> :
+  # RegVal_63 = PHI <RegVal_118(15), RegVal_122(16)>
+  # Loop_69 = PHI <Loop_119(15), Loop_123(16)>
+  # DEBUG Loop => Loop_69
+  # DEBUG RegVal => RegVal_63
+  # DEBUG BEGIN_STMT
+  _29 = PduInfoPtr_95(D)->Dl;
+  if (Loop_69 < _29)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  Base_84->BDRL ={v} RegVal_63;
+  goto <bb 26>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  RegVal_106 = 0;
+  # DEBUG RegVal => RegVal_106
+  # DEBUG BEGIN_STMT
+  Loop_107 = 0;
+  # DEBUG Loop => Loop_107
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  _30 = PduInfoPtr_95(D)->SduPtr;
+  _31 = (sizetype) Loop_70;
+  _32 = _30 + _31;
+  _33 = *_32;
+  Temp_115 = (uint32) _33;
+  # DEBUG Temp => Temp_115
+  # DEBUG BEGIN_STMT
+  _34 = Temp_115 & 255;
+  _35 = (int) Loop_70;
+  _36 = _35 * 8;
+  _37 = _34 << _36;
+  RegVal_116 = RegVal_64 | _37;
+  # DEBUG RegVal => RegVal_116
+  # DEBUG BEGIN_STMT
+  Loop.8_38 = Loop_70;
+  Loop_117 = Loop.8_38 + 1;
+  # DEBUG Loop => Loop_117
+
+  <bb 21> :
+  # RegVal_64 = PHI <RegVal_106(19), RegVal_116(20)>
+  # Loop_70 = PHI <Loop_107(19), Loop_117(20)>
+  # DEBUG Loop => Loop_70
+  # DEBUG RegVal => RegVal_64
+  # DEBUG BEGIN_STMT
+  if (Loop_70 <= 3)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  Base_84->BDRL ={v} RegVal_64;
+  # DEBUG BEGIN_STMT
+  RegVal_109 = 0;
+  # DEBUG RegVal => RegVal_109
+  # DEBUG BEGIN_STMT
+  Loop_110 = 4;
+  # DEBUG Loop => Loop_110
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  # DEBUG BEGIN_STMT
+  _39 = PduInfoPtr_95(D)->SduPtr;
+  _40 = (sizetype) Loop_71;
+  _41 = _39 + _40;
+  _42 = *_41;
+  Temp_112 = (uint32) _42;
+  # DEBUG Temp => Temp_112
+  # DEBUG BEGIN_STMT
+  _43 = Temp_112 & 255;
+  _44 = (unsigned int) Loop_71;
+  _45 = _44 + 4294967292;
+  _46 = _45 * 8;
+  _47 = _43 << _46;
+  RegVal_113 = RegVal_65 | _47;
+  # DEBUG RegVal => RegVal_113
+  # DEBUG BEGIN_STMT
+  Loop.9_48 = Loop_71;
+  Loop_114 = Loop.9_48 + 1;
+  # DEBUG Loop => Loop_114
+
+  <bb 24> :
+  # RegVal_65 = PHI <RegVal_109(22), RegVal_113(23)>
+  # Loop_71 = PHI <Loop_110(22), Loop_114(23)>
+  # DEBUG Loop => Loop_71
+  # DEBUG RegVal => RegVal_65
+  # DEBUG BEGIN_STMT
+  _49 = PduInfoPtr_95(D)->Dl;
+  if (Loop_71 < _49)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 25> :
+  # DEBUG BEGIN_STMT
+  Base_84->BDRM ={v} RegVal_65;
+
+  <bb 26> :
+  # DEBUG BEGIN_STMT
+  RegVal_124 = 512;
+  # DEBUG RegVal => RegVal_124
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->FrameCommand = 1;
+  goto <bb 31>; [INV]
+
+  <bb 27> :
+  # DEBUG BEGIN_STMT
+  _50 = PduInfoPtr_95(D)->Drc;
+  if (_50 == 1)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+  # DEBUG BEGIN_STMT
+  RegVal_104 = 0;
+  # DEBUG RegVal => RegVal_104
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->FrameCommand = 2;
+  goto <bb 31>; [INV]
+
+  <bb 29> :
+  # DEBUG BEGIN_STMT
+  _51 = PduInfoPtr_95(D)->Drc;
+  if (_51 == 2)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 30> :
+  # DEBUG BEGIN_STMT
+  _52 ={v} Base_84->LINCR2;
+  _53 = _52 | 2048;
+  Base_84->LINCR2 ={v} _53;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->FrameCommand = 3;
+
+  <bb 31> :
+  # RegVal_66 = PHI <RegVal_124(26), RegVal_104(28), RegVal_62(29), RegVal_62(30)>
+  # DEBUG RegVal => RegVal_66
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _54 ={v} Base_84->BIDR;
+  _55 = RegVal_66 | _54;
+  Base_84->BIDR ={v} _55;
+  # DEBUG BEGIN_STMT
+  _56 = LinUserConfig_83->NodeFunction;
+  if (_56 != 0)
+    goto <bb 32>; [INV]
+  else
+    goto <bb 33>; [INV]
+
+  <bb 32> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->CurrentNodeState ={v} 3;
+  # DEBUG BEGIN_STMT
+  RegVal_133 = 256;
+  # DEBUG RegVal => RegVal_133
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->IsBusBusy ={v} 1;
+  goto <bb 37>; [INV]
+
+  <bb 33> :
+  # DEBUG BEGIN_STMT
+  _57 = PduInfoPtr_95(D)->Drc;
+  if (_57 == 0)
+    goto <bb 34>; [INV]
+  else
+    goto <bb 35>; [INV]
+
+  <bb 34> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->CurrentNodeState ={v} 9;
+  # DEBUG BEGIN_STMT
+  RegVal_130 = 1024;
+  # DEBUG RegVal => RegVal_130
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->IsBusBusy ={v} 1;
+  goto <bb 37>; [INV]
+
+  <bb 35> :
+  # DEBUG BEGIN_STMT
+  _58 = PduInfoPtr_95(D)->Drc;
+  if (_58 == 1)
+    goto <bb 36>; [INV]
+  else
+    goto <bb 37>; [INV]
+
+  <bb 36> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->CurrentNodeState ={v} 7;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_82->IsBusBusy ={v} 1;
+
+  <bb 37> :
+  # RegVal_67 = PHI <RegVal_133(32), RegVal_130(34), RegVal_66(35), RegVal_66(36)>
+  # DEBUG RegVal => RegVal_67
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06 ();
+  # DEBUG BEGIN_STMT
+  _59 ={v} Base_84->LINCR2;
+  _60 = RegVal_67 | _59;
+  Base_84->LINCR2 ={v} _60;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06 ();
+
+  <bb 38> :
+  # RetVal_61 = PHI <RetVal_139(3), RetVal_138(5), RetVal_78(37)>
+  # DEBUG RetVal => RetVal_61
+  # DEBUG BEGIN_STMT
+  _140 = RetVal_61;
+  return _140;
+
+}
+
+
+Linflexd_Lin_Ip_SendWakeupSignal (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  <unnamed type> _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  Linflexd_Lin_Ip_StatusType _26;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal_12 = 0;
+  # DEBUG RetVal => RetVal_12
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_13(D);
+  LinCurrentState_15 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_15
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_13(D);
+  Base_16 = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG Base => Base_16
+  # DEBUG BEGIN_STMT
+  _3 ={v} LinCurrentState_15->IsBusBusy;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 ={v} LinCurrentState_15->CurrentNodeState;
+  if (_5 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal_20 = Linflexd_Lin_Ip_GotoIdleState (Instance_13(D));
+  # DEBUG RetVal => RetVal_20
+  # DEBUG BEGIN_STMT
+  if (RetVal_20 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05 ();
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_16->LINCR2;
+  _7 = _6 & 4294966783;
+  Base_16->LINCR2 ={v} _7;
+  # DEBUG BEGIN_STMT
+  _8 ={v} Base_16->LINCR2;
+  _9 = _8 | 4096;
+  Base_16->LINCR2 ={v} _9;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05 ();
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  RetVal_21 = 1;
+  # DEBUG RetVal => RetVal_21
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  RetVal_18 = 1;
+  # DEBUG RetVal => RetVal_18
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  RetVal_17 = 2;
+  # DEBUG RetVal => RetVal_17
+
+  <bb 9> :
+  # RetVal_10 = PHI <RetVal_18(7), RetVal_17(8), RetVal_21(6), RetVal_20(5)>
+  # DEBUG RetVal => RetVal_10
+  # DEBUG BEGIN_STMT
+  _26 = RetVal_10;
+  return _26;
+
+}
+
+
+Linflexd_Lin_Ip_GotoIdleState (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  Linflexd_Lin_Ip_StatusType _25;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal_9 = 0;
+  # DEBUG RetVal => RetVal_9
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_10(D);
+  Base_12 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_12
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_10(D);
+  LinCurrentState_13 = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG LinCurrentState => LinCurrentState_13
+  # DEBUG BEGIN_STMT
+  Base_12->LINSR ={v} 32;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_12->LINCR1;
+  _4 = _3 & 4294967293;
+  Base_12->LINCR1 ={v} _4;
+  # DEBUG BEGIN_STMT
+  RetVal_18 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_10(D), 2);
+  # DEBUG RetVal => RetVal_18
+  # DEBUG BEGIN_STMT
+  if (RetVal_18 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_12->LINIER;
+  _6 = _5 & 4294967263;
+  Base_12->LINIER ={v} _6;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentEventId ={v} 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 2;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->FrameCommand = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal_19 = 1;
+  # DEBUG RetVal => RetVal_19
+
+  <bb 5> :
+  # RetVal_7 = PHI <RetVal_18(3), RetVal_19(4)>
+  # DEBUG RetVal => RetVal_7
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  _25 = RetVal_7;
+  return _25;
+
+}
+
+
+Linflexd_Lin_Ip_GoToSleepMode (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  _Bool _3;
+  int _4;
+  const struct Linflexd_Lin_Ip_UserConfigType * _5;
+  _Bool _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  Linflexd_Lin_Ip_StatusType _32;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal_15 = 1;
+  # DEBUG RetVal => RetVal_15
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_16(D);
+  Base_18 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_18
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_16(D);
+  LinCurrentState_19 = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG LinCurrentState => LinCurrentState_19
+  # DEBUG BEGIN_STMT
+  _3 ={v} LinCurrentState_19->IsBusBusy;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RetVal_31 = 1;
+  # DEBUG RetVal => RetVal_31
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Base_18->LINSR ={v} 32;
+  # DEBUG BEGIN_STMT
+  Base_18->LINSR ={v} 512;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  _4 = (int) Instance_16(D);
+  _5 = Linflexd_Lin_Ip_apUserConfigs[_4];
+  _6 = _5->WakeupDetectSupport;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _7 ={v} Base_18->LINIER;
+  _8 = _7 | 32;
+  Base_18->LINIER ={v} _8;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _9 ={v} Base_18->LINCR1;
+  _10 = _9 | 2;
+  Base_18->LINCR1 ={v} _10;
+  # DEBUG BEGIN_STMT
+  RetVal_26 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_16(D), 0);
+  # DEBUG RetVal => RetVal_26
+  # DEBUG BEGIN_STMT
+  if (RetVal_26 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_19->CurrentNodeState ={v} 1;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_19->CurrentEventId ={v} 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_19->FrameCommand = 0;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03 ();
+
+  <bb 9> :
+  # RetVal_11 = PHI <RetVal_31(3), RetVal_26(8)>
+  # DEBUG RetVal => RetVal_11
+  # DEBUG BEGIN_STMT
+  _32 = RetVal_11;
+  return _32;
+
+}
+
+
+Linflexd_Lin_Ip_GetStatus (const uint8 Instance, uint8 * * Buffer)
+{
+  uint32 Linsr;
+  const struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_NodeStateType CurrentNodeState;
+  Linflexd_Lin_Ip_EventIdType CurrentEventId;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  int _1;
+  long unsigned int _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  uint8[8] * _6;
+  long unsigned int _7;
+  int _8;
+  uint8[8] * _9;
+  Linflexd_Lin_Ip_TransferStatusType _39;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal_12 = 0;
+  # DEBUG RetVal => RetVal_12
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Linsr_13 = 0;
+  # DEBUG Linsr => Linsr_13
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_14(D);
+  LinCurrentState_16 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_16
+  # DEBUG BEGIN_STMT
+  CurrentEventId_17 ={v} LinCurrentState_16->CurrentEventId;
+  # DEBUG CurrentEventId => CurrentEventId_17
+  # DEBUG BEGIN_STMT
+  _2 = (long unsigned int) Instance_14(D);
+  Linflexd_Lin_Ip_UpdateCurrentNodeState (_2);
+  # DEBUG BEGIN_STMT
+  CurrentNodeState_19 ={v} LinCurrentState_16->CurrentNodeState;
+  # DEBUG CurrentNodeState => CurrentNodeState_19
+  # DEBUG BEGIN_STMT
+  _3 = (int) Instance_14(D);
+  Base_20 = Linflexd_Lin_Ip_apxBases[_3];
+  # DEBUG Base => Base_20
+  # DEBUG BEGIN_STMT
+  Linsr_21 ={v} Base_20->LINSR;
+  # DEBUG Linsr => Linsr_21
+  # DEBUG BEGIN_STMT
+  switch (CurrentEventId_17) <default: <L22> [INV], case 0 ... 1: <L0> [INV], case 3: <L2> [INV], case 7: <L4> [INV], case 8: <L5> [INV], case 9: <L9> [INV], case 10: <L14> [INV], case 11: <L15> [INV], case 12: <L16> [INV], case 13: <L17> [INV], case 14: <L18> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  RetVal_37 = Linflexd_Lin_Ip_GetNoEventStatus (Instance_14(D));
+  # DEBUG RetVal => RetVal_37
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 4> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  RetVal_35 = 9;
+  # DEBUG RetVal => RetVal_35
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 5> :
+<L4>:
+  # DEBUG BEGIN_STMT
+  RetVal_34 = 7;
+  # DEBUG RetVal => RetVal_34
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 6> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  _4 = Linsr_21 & 256;
+  if (_4 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  RetVal_33 = 7;
+  # DEBUG RetVal => RetVal_33
+  goto <bb 17>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  RetVal_32 = 11;
+  # DEBUG RetVal => RetVal_32
+  goto <bb 17>; [INV]
+
+  <bb 9> :
+<L9>:
+  # DEBUG BEGIN_STMT
+  switch (CurrentNodeState_19) <default: <L22> [INV], case 3: <L10> [INV], case 9: <L11> [INV]>
+
+  <bb 10> :
+<L10>:
+  # DEBUG BEGIN_STMT
+  RetVal_31 = 3;
+  # DEBUG RetVal => RetVal_31
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 11> :
+<L11>:
+  # DEBUG BEGIN_STMT
+  RetVal_30 = 4;
+  # DEBUG RetVal => RetVal_30
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 12> :
+<L14>:
+  # DEBUG BEGIN_STMT
+  RetVal_29 = 7;
+  # DEBUG RetVal => RetVal_29
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 13> :
+<L15>:
+  # DEBUG BEGIN_STMT
+  RetVal_28 = 1;
+  # DEBUG RetVal => RetVal_28
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+<L16>:
+  # DEBUG BEGIN_STMT
+  RetVal_24 = 5;
+  # DEBUG RetVal => RetVal_24
+  # DEBUG BEGIN_STMT
+  _5 = (int) Instance_14(D);
+  _6 = &Linflexd_Lin_Ip_au8SduBuffer[_5];
+  *Buffer_25(D) = _6;
+  # DEBUG BEGIN_STMT
+  _7 = (long unsigned int) Instance_14(D);
+  _8 = (int) Instance_14(D);
+  _9 = &Linflexd_Lin_Ip_au8SduBuffer[_8];
+  Linflexd_Lin_Ip_CopyData (_7, _9);
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 15> :
+<L17>:
+  # DEBUG BEGIN_STMT
+  RetVal_23 = Linflexd_Lin_Ip_GetTimeoutErrorStatus (Instance_14(D));
+  # DEBUG RetVal => RetVal_23
+  # DEBUG BEGIN_STMT
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+<L18>:
+  # DEBUG BEGIN_STMT
+  RetVal_38 = 11;
+  # DEBUG RetVal => RetVal_38
+  # DEBUG BEGIN_STMT
+
+  <bb 17> :
+  # RetVal_10 = PHI <RetVal_37(3), RetVal_35(4), RetVal_12(2), RetVal_34(5), RetVal_32(8), RetVal_30(11), RetVal_29(12), RetVal_28(13), RetVal_24(14), RetVal_23(15), RetVal_38(16), RetVal_12(9), RetVal_33(7), RetVal_31(10)>
+<L22>:
+  # DEBUG RetVal => RetVal_10
+  # DEBUG BEGIN_STMT
+  _39 = RetVal_10;
+  return _39;
+
+}
+
+
+Linflexd_Lin_Ip_GetCurrentNodeState (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  long unsigned int _1;
+  int _2;
+  Linflexd_Lin_Ip_NodeStateType _7;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_3(D);
+  Linflexd_Lin_Ip_UpdateCurrentNodeState (_1);
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_3(D);
+  LinCurrentState_6 = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG LinCurrentState => LinCurrentState_6
+  # DEBUG BEGIN_STMT
+  _7 ={v} LinCurrentState_6->CurrentNodeState;
+  return _7;
+
+}
+
+
+Linflexd_Lin_Ip_AbortTransferData (const uint8 Instance)
+{
+  volatile uint32 TestFlag;
+  uint32 ElapsedTicks;
+  uint32 StartTime;
+  uint32 TimeoutTicks;
+  struct LINFLEXD_Type * Base;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  int _1;
+  int _2;
+  _Bool _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int TestFlag.1_8;
+  long unsigned int TimeoutTicks.2_9;
+  _Bool _10;
+  _Bool _11;
+  Linflexd_Lin_Ip_StatusType _33;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal_17 = 1;
+  # DEBUG RetVal => RetVal_17
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ElapsedTicks = 0;
+  # DEBUG BEGIN_STMT
+  TestFlag ={v} 512;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_21(D);
+  LinCurrentState_22 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_22
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_21(D);
+  Base_23 = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG Base => Base_23
+  # DEBUG BEGIN_STMT
+  _3 ={v} LinCurrentState_22->IsBusBusy;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_23->LINCR2;
+  _5 = _4 | 512;
+  Base_23->LINCR2 ={v} _5;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_StartTimeout (&StartTime, &TimeoutTicks, 65535, 0);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_23->LINCR2;
+  _7 = _6 & 512;
+  TestFlag.1_8 ={v} TestFlag;
+  if (_7 != TestFlag.1_8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal_28 = 0;
+  # DEBUG RetVal => RetVal_28
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.2_9 = TimeoutTicks;
+  _10 = Linflexd_Lin_Ip_TimeoutExpired (&StartTime, &ElapsedTicks, TimeoutTicks.2_9, 0);
+  _11 = ~_10;
+  if (_11 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # RetVal_12 = PHI <RetVal_28(5), RetVal_17(6)>
+  # DEBUG RetVal => RetVal_12
+  # DEBUG BEGIN_STMT
+  if (RetVal_12 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02 ();
+  # DEBUG BEGIN_STMT
+  LinCurrentState_22->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02 ();
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  RetVal_29 = 1;
+  # DEBUG RetVal => RetVal_29
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  RetVal_24 = 0;
+  # DEBUG RetVal => RetVal_24
+
+  <bb 11> :
+  # RetVal_13 = PHI <RetVal_29(9), RetVal_24(10), RetVal_12(8)>
+  # DEBUG RetVal => RetVal_13
+  # DEBUG BEGIN_STMT
+  _33 = RetVal_13;
+  TimeoutTicks ={v} {CLOBBER};
+  StartTime ={v} {CLOBBER};
+  ElapsedTicks ={v} {CLOBBER};
+  return _33;
+
+}
+
+
+Linflexd_Lin_Ip_Deinit (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  int _5;
+  Linflexd_Lin_Ip_StatusType _17;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal_8 = 0;
+  # DEBUG RetVal => RetVal_8
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_9(D);
+  LinCurrentState_11 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_11
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_9(D);
+  Base_12 = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG Base => Base_12
+  # DEBUG BEGIN_STMT
+  _3 ={v} LinCurrentState_11->IsBusBusy;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base_12->LINIER ={v} 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_11->CurrentNodeState ={v} 0;
+  # DEBUG BEGIN_STMT
+  _5 = (int) Instance_9(D);
+  Linflexd_Lin_Ip_apxStateStructureArray[_5] = 0B;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal_13 = 1;
+  # DEBUG RetVal => RetVal_13
+
+  <bb 5> :
+  # RetVal_6 = PHI <RetVal_8(3), RetVal_13(4)>
+  # DEBUG RetVal => RetVal_6
+  # DEBUG BEGIN_STMT
+  _17 = RetVal_6;
+  return _17;
+
+}
+
+
+Linflexd_Lin_Ip_Init (const uint8 Instance, const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * CrtStateStruct;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  struct Linflexd_Lin_Ip_StateStructType * _3;
+  int _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  Linflexd_Lin_Ip_StatusType _37;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal_14 = 0;
+  # DEBUG RetVal => RetVal_14
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_15(D);
+  Base_17 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_17
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_15(D);
+  _3 = LinUserConfig_18(D)->StateStructPtr;
+  Linflexd_Lin_Ip_apxStateStructureArray[_2] = _3;
+  # DEBUG BEGIN_STMT
+  _4 = (int) Instance_15(D);
+  CrtStateStruct_20 = Linflexd_Lin_Ip_apxStateStructureArray[_4];
+  # DEBUG CrtStateStruct => CrtStateStruct_20
+  # DEBUG BEGIN_STMT
+  CrtStateStruct_20->CurrentNodeState ={v} 0;
+  # DEBUG BEGIN_STMT
+  _5 = (int) Instance_15(D);
+  Linflexd_Lin_Ip_apUserConfigs[_5] = LinUserConfig_18(D);
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_17->LINCR1;
+  _7 = _6 | 1;
+  Base_17->LINCR1 ={v} _7;
+  # DEBUG BEGIN_STMT
+  _8 ={v} Base_17->LINCR1;
+  _9 = _8 & 4294967293;
+  Base_17->LINCR1 ={v} _9;
+  # DEBUG BEGIN_STMT
+  RetVal_26 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_15(D), 1);
+  # DEBUG RetVal => RetVal_26
+  # DEBUG BEGIN_STMT
+  if (RetVal_26 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_SetUpRegisterInInitMode (Instance_15(D));
+  # DEBUG BEGIN_STMT
+  _10 ={v} Base_17->LINCR1;
+  _11 = _10 & 4294967294;
+  Base_17->LINCR1 ={v} _11;
+  # DEBUG BEGIN_STMT
+  RetVal_31 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_15(D), 2);
+  # DEBUG RetVal => RetVal_31
+  # DEBUG BEGIN_STMT
+  if (RetVal_31 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_SetUpRegisterInNormalMode (Instance_15(D));
+  # DEBUG BEGIN_STMT
+  CrtStateStruct_20->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  CrtStateStruct_20->CurrentNodeState ={v} 2;
+  # DEBUG BEGIN_STMT
+  CrtStateStruct_20->FrameCommand = 0;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal_32 = 1;
+  # DEBUG RetVal => RetVal_32
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  RetVal_27 = 1;
+  # DEBUG RetVal => RetVal_27
+
+  <bb 7> :
+  # RetVal_12 = PHI <RetVal_32(5), RetVal_27(6), RetVal_31(4)>
+  # DEBUG RetVal => RetVal_12
+  # DEBUG BEGIN_STMT
+  _37 = RetVal_12;
+  return _37;
+
+}
+
+
+Linflexd_Lin_Ip_UpdateCurrentNodeState (const uint32 Instance)
+{
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  const struct LINFLEXD_Type * Base;
+  uint8 LinState;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Base_12 = Linflexd_Lin_Ip_apxBases[Instance_11(D)];
+  # DEBUG Base => Base_12
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_11(D)];
+  # DEBUG LinCurrentState => LinCurrentState_13
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_12->LINSR;
+  _2 = _1 >> 12;
+  _3 = (unsigned char) _2;
+  LinState_14 = _3 & 15;
+  # DEBUG LinState => LinState_14
+  # DEBUG BEGIN_STMT
+  _4 = (int) LinState_14;
+  switch (_4) <default: <L18> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3 ... 6: <L3> [INV], case 7 ... 9: <L10> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_12->LINCR1;
+  _6 = _5 & 16;
+  if (_6 == 16)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 3;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 4;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+<L10>:
+  # DEBUG BEGIN_STMT
+  _7 ={v} Base_12->BIDR;
+  _8 = _7 & 512;
+  if (_8 == 512)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 9;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_13->CurrentNodeState ={v} 7;
+
+  <bb 12> :
+<L18>:
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_CalculatePid (uint32 ReceptFrameID)
+{
+  uint32 Temp2;
+  uint32 Temp1;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int iftmp.10_17;
+  long unsigned int iftmp.10_21;
+  long unsigned int iftmp.10_22;
+  uint8 _25;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Temp1_19 = ReceptFrameID_18(D);
+  # DEBUG Temp1 => Temp1_19
+  # DEBUG BEGIN_STMT
+  Temp2_20 = ReceptFrameID_18(D);
+  # DEBUG Temp2 => Temp2_20
+  # DEBUG BEGIN_STMT
+  _1 = Temp2_20 >> 1;
+  _2 = Temp2_20 >> 3;
+  _3 = _1 ^ _2;
+  _4 = Temp2_20 >> 4;
+  _5 = _3 ^ _4;
+  _6 = Temp2_20 >> 5;
+  _7 = _5 ^ _6;
+  _8 = _7 & 1;
+  if (_8 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.10_22 = 128;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.10_21 = 0;
+
+  <bb 5> :
+  # iftmp.10_17 = PHI <iftmp.10_22(3), iftmp.10_21(4)>
+  Temp1_23 = iftmp.10_17 | Temp1_19;
+  # DEBUG Temp1 => Temp1_23
+  # DEBUG BEGIN_STMT
+  _9 = Temp2_20 >> 1;
+  _10 = Temp2_20 ^ _9;
+  _11 = Temp2_20 >> 2;
+  _12 = _10 ^ _11;
+  _13 = Temp2_20 >> 4;
+  _14 = _12 ^ _13;
+  _15 = _14 << 6;
+  _16 = _15 & 64;
+  Temp1_24 = Temp1_23 | _16;
+  # DEBUG Temp1 => Temp1_24
+  # DEBUG BEGIN_STMT
+  _25 = (uint8) Temp1_24;
+  return _25;
+
+}
+
+
+Linflexd_Lin_Ip_CopyData (const uint32 Instance, uint8 * Buffer)
+{
+  struct LINFLEXD_Type * Base;
+  uint8 Loop;
+  uint8 DataLength;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  unsigned char _4;
+  long unsigned int _5;
+  unsigned int _6;
+  unsigned int _7;
+  long unsigned int _8;
+  sizetype _9;
+  uint8 * _10;
+  unsigned char _11;
+  unsigned char Loop.3_12;
+  long unsigned int _13;
+  unsigned int _14;
+  unsigned int _15;
+  long unsigned int _16;
+  sizetype _17;
+  uint8 * _18;
+  unsigned char _19;
+  unsigned char Loop.4_20;
+  long unsigned int _21;
+  unsigned int _22;
+  unsigned int _23;
+  unsigned int _24;
+  long unsigned int _25;
+  sizetype _26;
+  uint8 * _27;
+  unsigned char _28;
+  unsigned char Loop.5_29;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Base_40 = Linflexd_Lin_Ip_apxBases[Instance_39(D)];
+  # DEBUG Base => Base_40
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_40->BIDR;
+  _2 = _1 >> 10;
+  _3 = (unsigned char) _2;
+  _4 = _3 & 7;
+  DataLength_41 = _4 + 1;
+  # DEBUG DataLength => DataLength_41
+  # DEBUG BEGIN_STMT
+  if (DataLength_41 <= 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Loop_42 = 0;
+  # DEBUG Loop => Loop_42
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_40->BDRL;
+  _6 = (unsigned int) Loop_30;
+  _7 = _6 * 8;
+  _8 = _5 >> _7;
+  _9 = (sizetype) Loop_30;
+  _10 = Buffer_43(D) + _9;
+  _11 = (unsigned char) _8;
+  *_10 = _11;
+  # DEBUG BEGIN_STMT
+  Loop.3_12 = Loop_30;
+  Loop_45 = Loop.3_12 + 1;
+  # DEBUG Loop => Loop_45
+
+  <bb 5> :
+  # Loop_30 = PHI <Loop_42(3), Loop_45(4)>
+  # DEBUG Loop => Loop_30
+  # DEBUG BEGIN_STMT
+  if (Loop_30 < DataLength_41)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (DataLength_41 > 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Loop_46 = 0;
+  # DEBUG Loop => Loop_46
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _13 ={v} Base_40->BDRL;
+  _14 = (unsigned int) Loop_31;
+  _15 = _14 * 8;
+  _16 = _13 >> _15;
+  _17 = (sizetype) Loop_31;
+  _18 = Buffer_43(D) + _17;
+  _19 = (unsigned char) _16;
+  *_18 = _19;
+  # DEBUG BEGIN_STMT
+  Loop.4_20 = Loop_31;
+  Loop_51 = Loop.4_20 + 1;
+  # DEBUG Loop => Loop_51
+
+  <bb 9> :
+  # Loop_31 = PHI <Loop_46(7), Loop_51(8)>
+  # DEBUG Loop => Loop_31
+  # DEBUG BEGIN_STMT
+  if (Loop_31 <= 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Loop_47 = 4;
+  # DEBUG Loop => Loop_47
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _21 ={v} Base_40->BDRM;
+  _22 = (unsigned int) Loop_32;
+  _23 = _22 + 4294967292;
+  _24 = _23 * 8;
+  _25 = _21 >> _24;
+  _26 = (sizetype) Loop_32;
+  _27 = Buffer_43(D) + _26;
+  _28 = (unsigned char) _25;
+  *_27 = _28;
+  # DEBUG BEGIN_STMT
+  Loop.5_29 = Loop_32;
+  Loop_49 = Loop.5_29 + 1;
+  # DEBUG Loop => Loop_49
+
+  <bb 12> :
+  # Loop_32 = PHI <Loop_47(10), Loop_49(11)>
+  # DEBUG Loop => Loop_32
+  # DEBUG BEGIN_STMT
+  if (Loop_32 < DataLength_41)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Base_40->LINSR ={v} 512;
+  # DEBUG BEGIN_STMT
+  Base_40->LINSR ={v} 256;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_CompleteTransfer (const uint32 Instance, uint32 StatusFlag)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _3;
+  struct Linflexd_Lin_Ip_PduType * _4;
+  uint8 * _5;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _6;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _12;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _13;
+  unsigned char _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_19(D)];
+  # DEBUG LinCurrentState => LinCurrentState_20
+  # DEBUG BEGIN_STMT
+  Base_21 = Linflexd_Lin_Ip_apxBases[Instance_19(D)];
+  # DEBUG Base => Base_21
+  # DEBUG BEGIN_STMT
+  LinUserConfig_22 = Linflexd_Lin_Ip_apUserConfigs[Instance_19(D)];
+  # DEBUG LinUserConfig => LinUserConfig_22
+  # DEBUG BEGIN_STMT
+  _1 = StatusFlag_23(D) & 4;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 4;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentEventId ={v} 12;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentNodeState ={v} 8;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _2 = LinUserConfig_22->NodeFunction;
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = LinCurrentState_20->SlavePduInfoPtr;
+  _5 = _4->SduPtr;
+  Linflexd_Lin_Ip_CopyData (Instance_19(D), _5);
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig_22->Callback;
+  if (_6 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _7 = LinUserConfig_22->Callback;
+  _8 = (unsigned char) Instance_19(D);
+  _7 (_8, LinCurrentState_20);
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _9 ={v} Base_21->LINESR;
+  _10 = _9 & 1;
+  if (_10 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Base_21->LINESR ={v} 1;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _11 = StatusFlag_23(D) & 2;
+  if (_11 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 2;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentEventId ={v} 11;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentNodeState ={v} 10;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _12 = LinUserConfig_22->Callback;
+  if (_12 != 0B)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig_22->Callback;
+  _14 = (unsigned char) Instance_19(D);
+  _13 (_14, LinCurrentState_20);
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 39;
+
+  <bb 13> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_ErrorsHandler (const uint32 Instance, uint32 ErrorFlag)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  boolean IsErrorAvailable;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _7;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _8;
+  unsigned char _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable_13 = 1;
+  # DEBUG IsErrorAvailable => IsErrorAvailable_13
+  # DEBUG BEGIN_STMT
+  LinUserConfig_16 = Linflexd_Lin_Ip_apUserConfigs[Instance_15(D)];
+  # DEBUG LinUserConfig => LinUserConfig_16
+  # DEBUG BEGIN_STMT
+  LinCurrentState_17 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_15(D)];
+  # DEBUG LinCurrentState => LinCurrentState_17
+  # DEBUG BEGIN_STMT
+  Base_18 = Linflexd_Lin_Ip_apxBases[Instance_15(D)];
+  # DEBUG Base => Base_18
+  # DEBUG BEGIN_STMT
+  _1 = ErrorFlag_19(D) & 1024;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base_18->LINESR ={v} 1024;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_17->CurrentEventId ={v} 14;
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag_19(D) & 2048;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Base_18->LINESR ={v} 2048;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_17->CurrentEventId ={v} 14;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _3 = ErrorFlag_19(D) & 512;
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Base_18->LINESR ={v} 512;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_17->CurrentEventId ={v} 14;
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _4 = ErrorFlag_19(D) & 8192;
+  if (_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Base_18->LINESR ={v} 8192;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_17->CurrentEventId ={v} 9;
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_18->LINCR2;
+  _6 = _5 | 512;
+  Base_18->LINCR2 ={v} _6;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable_21 = Linflexd_Lin_Ip_ReceiveErrorsHandler (Instance_15(D), ErrorFlag_19(D));
+  # DEBUG IsErrorAvailable => IsErrorAvailable_21
+
+  <bb 11> :
+  # IsErrorAvailable_10 = PHI <IsErrorAvailable_13(3), IsErrorAvailable_13(5), IsErrorAvailable_13(7), IsErrorAvailable_13(9), IsErrorAvailable_21(10)>
+  # DEBUG IsErrorAvailable => IsErrorAvailable_10
+  # DEBUG BEGIN_STMT
+  if (IsErrorAvailable_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  LinCurrentState_17->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _7 = LinUserConfig_16->Callback;
+  if (_7 != 0B)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  _8 = LinUserConfig_16->Callback;
+  _9 = (unsigned char) Instance_15(D);
+  _8 (_9, LinCurrentState_17);
+
+  <bb 14> :
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_ReceiveErrorsHandler (const uint32 Instance, uint32 ErrorFlag)
+{
+  boolean IsErrorAvailable;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  boolean _32;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable_12 = 1;
+  # DEBUG IsErrorAvailable => IsErrorAvailable_12
+  # DEBUG BEGIN_STMT
+  LinCurrentState_15 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_14(D)];
+  # DEBUG LinCurrentState => LinCurrentState_15
+  # DEBUG BEGIN_STMT
+  Base_16 = Linflexd_Lin_Ip_apxBases[Instance_14(D)];
+  # DEBUG Base => Base_16
+  # DEBUG BEGIN_STMT
+  _1 = ErrorFlag_17(D) & 128;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Base_16->LINESR ={v} 128;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_15->CurrentEventId ={v} 7;
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag_17(D) & 4096;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Base_16->LINESR ={v} 4096;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_15->CurrentEventId ={v} 10;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _3 = ErrorFlag_17(D) & 256;
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Base_16->LINESR ={v} 256;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_15->CurrentEventId ={v} 8;
+  # DEBUG BEGIN_STMT
+  Base_16->LINSR ={v} 256;
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _4 = ErrorFlag_17(D) & 16384;
+  if (_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Base_16->LINESR ={v} 16384;
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_16->LINSR;
+  LinCurrentState_15->LinState ={v} _5;
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_16->LINCR1;
+  _7 = _6 | 2;
+  Base_16->LINCR1 ={v} _7;
+  # DEBUG BEGIN_STMT
+  _8 ={v} Base_16->LINCR1;
+  _9 = _8 & 4294967293;
+  Base_16->LINCR1 ={v} _9;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_15->CurrentEventId ={v} 13;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Base_16->LINESR ={v} 32640;
+  # DEBUG BEGIN_STMT
+  IsErrorAvailable_19 = 0;
+  # DEBUG IsErrorAvailable => IsErrorAvailable_19
+
+  <bb 11> :
+  # IsErrorAvailable_10 = PHI <IsErrorAvailable_12(3), IsErrorAvailable_12(5), IsErrorAvailable_12(7), IsErrorAvailable_12(9), IsErrorAvailable_19(10)>
+  # DEBUG IsErrorAvailable => IsErrorAvailable_10
+  # DEBUG BEGIN_STMT
+  _32 = IsErrorAvailable_10;
+  return _32;
+
+}
+
+
+Linflexd_Lin_Ip_GetNoEventStatus (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_NodeStateType CurrentNodeState;
+  uint32 Linsr;
+  const struct LINFLEXD_Type * Base;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  int _1;
+  int _2;
+  unsigned char _3;
+  int _4;
+  long unsigned int _5;
+  Linflexd_Lin_Ip_TransferStatusType _23;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal_7 = 0;
+  # DEBUG RetVal => RetVal_7
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Linsr_8 = 0;
+  # DEBUG Linsr => Linsr_8
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_9(D);
+  LinCurrentState_11 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_11
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_9(D);
+  Base_12 = Linflexd_Lin_Ip_apxBases[_2];
+  # DEBUG Base => Base_12
+  # DEBUG BEGIN_STMT
+  Linsr_13 ={v} Base_12->LINSR;
+  # DEBUG Linsr => Linsr_13
+  # DEBUG BEGIN_STMT
+  CurrentNodeState_14 ={v} LinCurrentState_11->CurrentNodeState;
+  # DEBUG CurrentNodeState => CurrentNodeState_14
+  # DEBUG BEGIN_STMT
+  switch (CurrentNodeState_14) <default: <L17> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L6> [INV], case 4: <L7> [INV], case 7: <L8> [INV], case 9: <L12> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  RetVal_22 = 13;
+  # DEBUG RetVal => RetVal_22
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  _3 = LinCurrentState_11->FrameCommand;
+  _4 = (int) _3;
+  switch (_4) <default: <L17> [INV], case 0: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  RetVal_21 = 12;
+  # DEBUG RetVal => RetVal_21
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  RetVal_20 = 1;
+  # DEBUG RetVal => RetVal_20
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  RetVal_19 = 2;
+  # DEBUG RetVal => RetVal_19
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  RetVal_18 = 10;
+  # DEBUG RetVal => RetVal_18
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+<L8>:
+  # DEBUG BEGIN_STMT
+  _5 = Linsr_13 & 256;
+  if (_5 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  RetVal_17 = 6;
+  # DEBUG RetVal => RetVal_17
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  RetVal_16 = 8;
+  # DEBUG RetVal => RetVal_16
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L12>:
+  # DEBUG BEGIN_STMT
+  RetVal_15 = 2;
+  # DEBUG RetVal => RetVal_15
+  # DEBUG BEGIN_STMT
+
+  <bb 13> :
+  # RetVal_6 = PHI <RetVal_22(3), RetVal_20(6), RetVal_19(7), RetVal_18(8), RetVal_16(11), RetVal_15(12), RetVal_7(2), RetVal_21(5), RetVal_7(4), RetVal_17(10)>
+<L17>:
+  # DEBUG RetVal => RetVal_6
+  # DEBUG BEGIN_STMT
+  _23 = RetVal_6;
+  return _23;
+
+}
+
+
+Linflexd_Lin_Ip_GetTimeoutErrorStatus (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  Linflexd_Lin_Ip_TransferStatusType _15;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetVal_8 = 0;
+  # DEBUG RetVal => RetVal_8
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_9(D);
+  LinCurrentState_11 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_11
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinCurrentState_11->LinState;
+  _3 = _2 >> 12;
+  _4 = _3 & 15;
+  switch (_4) <default: <L13> [INV], case 3 ... 5: <L0> [INV], case 6 ... 9: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  RetVal_14 = 11;
+  # DEBUG RetVal => RetVal_14
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  _5 ={v} LinCurrentState_11->LinState;
+  _6 = _5 & 256;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  RetVal_13 = 7;
+  # DEBUG RetVal => RetVal_13
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  RetVal_12 = 8;
+  # DEBUG RetVal => RetVal_12
+
+  <bb 7> :
+  # RetVal_7 = PHI <RetVal_14(3), RetVal_12(6), RetVal_8(2), RetVal_13(5)>
+<L13>:
+  # DEBUG RetVal => RetVal_7
+  # DEBUG BEGIN_STMT
+  _15 = RetVal_7;
+  return _15;
+
+}
+
+
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  uint32 RegValue;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  _Bool _3;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RegValue_5 = 0;
+  # DEBUG RegValue => RegValue_5
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_6(D);
+  Base_8 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_8
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_6(D);
+  LinUserConfig_9 = Linflexd_Lin_Ip_apUserConfigs[_2];
+  # DEBUG LinUserConfig => LinUserConfig_9
+  # DEBUG BEGIN_STMT
+  RegValue_10 ={v} Base_8->LINIER;
+  # DEBUG RegValue => RegValue_10
+  # DEBUG BEGIN_STMT
+  RegValue_11 = RegValue_10 | 12672;
+  # DEBUG RegValue => RegValue_11
+  # DEBUG BEGIN_STMT
+  RegValue_12 = RegValue_11 | 6;
+  # DEBUG RegValue => RegValue_12
+  # DEBUG BEGIN_STMT
+  RegValue_13 = RegValue_12 & 4294934423;
+  # DEBUG RegValue => RegValue_13
+  # DEBUG BEGIN_STMT
+  _3 = LinUserConfig_9->NodeFunction;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RegValue_16 = RegValue_13 & 4294967294;
+  # DEBUG RegValue => RegValue_16
+  # DEBUG BEGIN_STMT
+  RegValue_17 = RegValue_16 & 4294965247;
+  # DEBUG RegValue => RegValue_17
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RegValue_14 = RegValue_13 | 1;
+  # DEBUG RegValue => RegValue_14
+  # DEBUG BEGIN_STMT
+  RegValue_15 = RegValue_14 | 2048;
+  # DEBUG RegValue => RegValue_15
+
+  <bb 5> :
+  # RegValue_4 = PHI <RegValue_17(3), RegValue_15(4)>
+  # DEBUG RegValue => RegValue_4
+  # DEBUG BEGIN_STMT
+  RegValue_18 = RegValue_4 | 16384;
+  # DEBUG RegValue => RegValue_18
+  # DEBUG BEGIN_STMT
+  Base_8->LINIER ={v} RegValue_18;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_SetUpRegisterInInitMode (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  uint32 RegValue;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  _Bool _13;
+  unsigned char _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  unsigned char _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  unsigned char _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  unsigned char _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+  _Bool _37;
+  _Bool _38;
+  long unsigned int _39;
+  unsigned char _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  long unsigned int _43;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RegValue_46 = 0;
+  # DEBUG RegValue => RegValue_46
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_47(D);
+  Base_49 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_49
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_47(D);
+  LinUserConfig_50 = Linflexd_Lin_Ip_apUserConfigs[_2];
+  # DEBUG LinUserConfig => LinUserConfig_50
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_49->UARTCR;
+  _4 = _3 & 4294967294;
+  Base_49->UARTCR ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_49->GCR;
+  _6 = _5 & 4294967293;
+  Base_49->GCR ={v} _6;
+  # DEBUG BEGIN_STMT
+  _7 ={v} Base_49->GCR;
+  _8 = LinUserConfig_50->StopBitsCount;
+  _9 = (long unsigned int) _8;
+  _10 = _9 << 1;
+  _11 = _10 & 2;
+  _12 = _7 | _11;
+  Base_49->GCR ={v} _12;
+  # DEBUG BEGIN_STMT
+  RegValue_54 ={v} Base_49->LINCR1;
+  # DEBUG RegValue => RegValue_54
+  # DEBUG BEGIN_STMT
+  RegValue_55 = RegValue_54 | 65536;
+  # DEBUG RegValue => RegValue_55
+  # DEBUG BEGIN_STMT
+  RegValue_56 = RegValue_55 & 4294946779;
+  # DEBUG RegValue => RegValue_56
+  # DEBUG BEGIN_STMT
+  RegValue_57 = RegValue_56 & 4294963455;
+  # DEBUG RegValue => RegValue_57
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig_50->NodeFunction;
+  if (_13 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  RegValue_61 = RegValue_57 | 16;
+  # DEBUG RegValue => RegValue_61
+  # DEBUG BEGIN_STMT
+  _14 = LinUserConfig_50->BreakLength;
+  _15 = (long unsigned int) _14;
+  _16 = _15 << 8;
+  _17 = _16 & 3840;
+  RegValue_62 = RegValue_61 | _17;
+  # DEBUG RegValue => RegValue_62
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RegValue_58 = RegValue_57 & 4294967279;
+  # DEBUG RegValue => RegValue_58
+  # DEBUG BEGIN_STMT
+  RegValue_59 = RegValue_58 & 4294967287;
+  # DEBUG RegValue => RegValue_59
+  # DEBUG BEGIN_STMT
+  _18 = LinUserConfig_50->SlaveSyncBreakLength;
+  _19 = (long unsigned int) _18;
+  _20 = _19 << 3;
+  _21 = _20 & 8;
+  RegValue_60 = RegValue_59 | _21;
+  # DEBUG RegValue => RegValue_60
+
+  <bb 5> :
+  # RegValue_44 = PHI <RegValue_62(3), RegValue_60(4)>
+  # DEBUG RegValue => RegValue_44
+  # DEBUG BEGIN_STMT
+  RegValue_63 = RegValue_44 & 4294934527;
+  # DEBUG RegValue => RegValue_63
+  # DEBUG BEGIN_STMT
+  _22 = LinUserConfig_50->CsCalDisable;
+  _23 = (long unsigned int) _22;
+  _24 = _23 << 15;
+  _25 = _24 & 65535;
+  RegValue_64 = RegValue_63 | _25;
+  # DEBUG RegValue => RegValue_64
+  # DEBUG BEGIN_STMT
+  Base_49->LINCR1 ={v} RegValue_64;
+  # DEBUG BEGIN_STMT
+  _26 = LinUserConfig_50->BaudrateRegValue;
+  _27 = _26 & 15;
+  Base_49->LINFBRR ={v} _27;
+  # DEBUG BEGIN_STMT
+  _28 = LinUserConfig_50->BaudrateRegValue;
+  _29 = _28 >> 8;
+  _30 = _29 & 1048575;
+  Base_49->LINIBRR ={v} _30;
+  # DEBUG BEGIN_STMT
+  _31 ={v} Base_49->LINTCSR;
+  _32 = _31 & 4294965759;
+  Base_49->LINTCSR ={v} _32;
+  # DEBUG BEGIN_STMT
+  _33 = LinUserConfig_50->ResponseTimeout;
+  _34 = (long unsigned int) _33;
+  _35 = _34 << 8;
+  _36 = _35 & 3840;
+  Base_49->LINTOCR ={v} _36;
+  # DEBUG BEGIN_STMT
+  _37 = LinUserConfig_50->NodeFunction;
+  _38 = ~_37;
+  if (_38 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _39 ={v} Base_49->LINTOCR;
+  _40 = LinUserConfig_50->HeaderTimeout;
+  _41 = (long unsigned int) _40;
+  _42 = _41 & 127;
+  _43 = _39 | _42;
+  Base_49->LINTOCR ={v} _43;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  RegValue_71 ={v} Base_49->LINCR2;
+  # DEBUG RegValue => RegValue_71
+  # DEBUG BEGIN_STMT
+  RegValue_72 = RegValue_71 | 32768;
+  # DEBUG RegValue => RegValue_72
+  # DEBUG BEGIN_STMT
+  RegValue_73 = RegValue_72 & 4294942719;
+  # DEBUG RegValue => RegValue_73
+  # DEBUG BEGIN_STMT
+  Base_49->LINCR2 ={v} RegValue_73;
+  return;
+
+}
+
+
+Linflexd_Lin_Ip_StateTimeoutMode (const uint8 Instance, uint32 TestFlag)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  const struct LINFLEXD_Type * Base;
+  uint32 ElapsedTicks;
+  uint32 TimeoutTicks;
+  uint32 StartTime;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int TimeoutTicks.0_5;
+  _Bool _6;
+  _Bool _7;
+  Linflexd_Lin_Ip_StatusType _20;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ElapsedTicks = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  RetVal_13 = 3;
+  # DEBUG RetVal => RetVal_13
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_14(D);
+  Base_15 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_15
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_StartTimeout (&StartTime, &TimeoutTicks, 65535, 0);
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 ={v} Base_15->LINSR;
+  _3 = _2 >> 12;
+  _4 = _3 & 15;
+  if (TestFlag_17(D) == _4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  RetVal_19 = 0;
+  # DEBUG RetVal => RetVal_19
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_5 = TimeoutTicks;
+  _6 = Linflexd_Lin_Ip_TimeoutExpired (&StartTime, &ElapsedTicks, TimeoutTicks.0_5, 0);
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # RetVal_8 = PHI <RetVal_19(4), RetVal_13(5)>
+  # DEBUG RetVal => RetVal_8
+  # DEBUG BEGIN_STMT
+  _20 = RetVal_8;
+  StartTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  ElapsedTicks ={v} {CLOBBER};
+  return _20;
+
+}
+
+
+Linflexd_Lin_Ip_TimeoutExpired (uint32 * StartTime, uint32 * ElapsedTicks, uint32 TimeoutTicks, OsIf_CounterType OsifCounter)
+{
+  uint32 CurrentElapsedTicks;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  boolean _12;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CurrentElapsedTicks_8 = OsIf_GetElapsed (StartTime_5(D), OsifCounter_6(D));
+  # DEBUG CurrentElapsedTicks => CurrentElapsedTicks_8
+  # DEBUG BEGIN_STMT
+  _1 = *ElapsedTicks_9(D);
+  _2 = CurrentElapsedTicks_8 + _1;
+  *ElapsedTicks_9(D) = _2;
+  # DEBUG BEGIN_STMT
+  _3 = *ElapsedTicks_9(D);
+  _12 = TimeoutTicks_11(D) <= _3;
+  return _12;
+
+}
+
+
+Linflexd_Lin_Ip_StartTimeout (uint32 * StartTimeOut, uint32 * TimeoutTicksOut, uint32 TimeoutUs, OsIf_CounterType OsifCounter)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_GetCounter (OsifCounter_4(D));
+  *StartTimeOut_6(D) = _1;
+  # DEBUG BEGIN_STMT
+  _2 = OsIf_MicrosToTicks (TimeoutUs_8(D), OsifCounter_4(D));
+  *TimeoutTicksOut_10(D) = _2;
+  return;
+
+}
+
+

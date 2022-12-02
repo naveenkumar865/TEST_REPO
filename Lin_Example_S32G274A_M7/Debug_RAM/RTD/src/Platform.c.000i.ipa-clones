@@ -1,0 +1,8 @@
+Callgraph clone;Platform_Ipw_SetIrqPriority;2;../RTD/include/Platform_Ipw.h;154;20;Platform_SetIrqPriority;7;../RTD/src/Platform.c;223;16;inlining to
+Callgraph removal;Platform_Ipw_SetIrqPriority;2;../RTD/include/Platform_Ipw.h;154;20
+Callgraph clone;Platform_Ipw_GetIrqPriority;3;../RTD/include/Platform_Ipw.h;163;21;Platform_GetIrqPriority;8;../RTD/src/Platform.c;248;16;inlining to
+Callgraph removal;Platform_Ipw_GetIrqPriority;3;../RTD/include/Platform_Ipw.h;163;21
+Callgraph clone;Platform_Ipw_InstallIrqHandler;4;../RTD/include/Platform_Ipw.h;172;20;Platform_InstallIrqHandler;9;../RTD/src/Platform.c;278;16;inlining to
+Callgraph removal;Platform_Ipw_InstallIrqHandler;4;../RTD/include/Platform_Ipw.h;172;20
+Callgraph clone;Platform_Ipw_SetIrq;1;../RTD/include/Platform_Ipw.h;138;20;Platform_SetIrq;6;../RTD/src/Platform.c;199;16;inlining to
+Callgraph removal;Platform_Ipw_SetIrq;1;../RTD/include/Platform_Ipw.h;138;20

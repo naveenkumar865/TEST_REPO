@@ -1,0 +1,472 @@
+
+
+ local analysis of System_Ip_GetPlatformRevision
+   scanning: _2 ={v} MEM[(struct MCM_Type *)3758620672B].PLREV;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _3 = (long unsigned int) _2;
+  scanning: return _3;
+
+
+ local analysis of System_Ip_ClearWriteAbortFlag
+   scanning: MEM[(struct MCM_Type *)3758620672B].ISCR ={v} 32;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of System_Ip_ConfigIrq
+   scanning: System_Ip_ConfigIrqPrivileged (eIrq_2(D), bEnable_3(D));
+  scanning: return;
+Function is locally const.
+
+
+ local analysis of System_Ip_SetAhbSlavePriority
+   scanning: System_Ip_SetAhbSlavePriorityPrivileged (bPriority_2(D));
+  scanning: return;
+Function is locally const.
+
+
+ local analysis of System_Ip_ConfigIrqPrivileged
+   scanning: regValTemp_6 ={v} MEM[(struct MCM_Type *)3758620672B].ISCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: regValTemp_7 = regValTemp_6 & 4294967263;
+  scanning: if (bEnable_8(D) != 0)
+  scanning: _1 = 1 << eIrq_9(D);
+  scanning: regValTemp_11 = _1 | regValTemp_7;
+  scanning: _2 = 1 << eIrq_9(D);
+  scanning: _3 = ~_2;
+  scanning: regValTemp_10 = _3 & regValTemp_7;
+  scanning: MEM[(struct MCM_Type *)3758620672B].ISCR ={v} regValTemp_4;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of System_Ip_SetAhbSlavePriorityPrivileged
+   scanning: if (bPriority_6(D) != 0)
+  scanning: _1 ={v} MEM[(struct MCM_Type *)3758620672B].CPCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 | 134217728;
+  scanning: MEM[(struct MCM_Type *)3758620672B].CPCR ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: _3 ={v} MEM[(struct MCM_Type *)3758620672B].CPCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _4 = _3 & 4160749567;
+  scanning: MEM[(struct MCM_Type *)3758620672B].CPCR ={v} _4;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+callgraph:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24bb0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24b50
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24b70
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24a10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24a30
+  References: 
+  Referring: 
+  Function System_Ip_ConfigIrqPrivileged/2 is inline copy in System_Ip_ConfigIrq/6
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_ConfigIrq/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24a70
+  References: 
+  Referring: 
+  Function System_Ip_SetAhbSlavePriorityPrivileged/1 is inline copy in System_Ip_SetAhbSlavePriority/5
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24bb0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24b50
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24b70
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24a10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24a30
+  References: 
+  Referring: 
+  Function System_Ip_ConfigIrqPrivileged/2 is inline copy in System_Ip_ConfigIrq/6
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_ConfigIrq/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24a70
+  References: 
+  Referring: 
+  Function System_Ip_SetAhbSlavePriorityPrivileged/1 is inline copy in System_Ip_SetAhbSlavePriority/5
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+System_Ip_GetPlatformRevision: malloc_bottom
+System_Ip_ClearWriteAbortFlag: malloc_bottom
+System_Ip_ConfigIrq: malloc_bottom
+System_Ip_SetAhbSlavePriority: malloc_bottom
+System_Ip_ConfigIrqPrivileged: malloc_bottom
+System_Ip_SetAhbSlavePriorityPrivileged: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+System_Ip_GetPlatformRevision: malloc_bottom
+System_Ip_ClearWriteAbortFlag: malloc_bottom
+System_Ip_ConfigIrq: malloc_bottom
+System_Ip_SetAhbSlavePriority: malloc_bottom
+System_Ip_ConfigIrqPrivileged: malloc_bottom
+System_Ip_SetAhbSlavePriorityPrivileged: malloc_bottom
+callgraph:
+
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a249f0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24a10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24a30
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24b50
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24a70
+  References: 
+  Referring: 
+  Function System_Ip_ConfigIrqPrivileged/2 is inline copy in System_Ip_ConfigIrq/6
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_ConfigIrq/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24bb0
+  References: 
+  Referring: 
+  Function System_Ip_SetAhbSlavePriorityPrivileged/1 is inline copy in System_Ip_SetAhbSlavePriority/5
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+
+
+ ordered call graph: reduced
+System_Ip_GetPlatformRevision/8 (System_Ip_GetPlatformRevision) @05aaf7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a249f0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ClearWriteAbortFlag/7 (System_Ip_ClearWriteAbortFlag) @05aaf2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24a10
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+System_Ip_ConfigIrq/6 (System_Ip_ConfigIrq) @05aafee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24a30
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_ConfigIrqPrivileged/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_SetAhbSlavePriority/5 (System_Ip_SetAhbSlavePriority) @05aafc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04a24b50
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: System_Ip_SetAhbSlavePriorityPrivileged/1 (inlined) (1073741824 (estimated locally),1.00 per call) 
+System_Ip_ConfigIrqPrivileged/2 (System_Ip_ConfigIrqPrivileged) @05aaf460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24a70
+  References: 
+  Referring: 
+  Function System_Ip_ConfigIrqPrivileged/2 is inline copy in System_Ip_ConfigIrq/6
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_ConfigIrq/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+System_Ip_SetAhbSlavePriorityPrivileged/1 (System_Ip_SetAhbSlavePriorityPrivileged) @05aaf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Aux: @04a24bb0
+  References: 
+  Referring: 
+  Function System_Ip_SetAhbSlavePriorityPrivileged/1 is inline copy in System_Ip_SetAhbSlavePriority/5
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: System_Ip_SetAhbSlavePriority/5 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+
+Function found not to call free: System_Ip_SetAhbSlavePriorityPrivileged
+Function found not to call free: System_Ip_ConfigIrqPrivileged
+Function found not to call free: System_Ip_SetAhbSlavePriority
+Function found not to call free: System_Ip_ConfigIrq
+Function found not to call free: System_Ip_ClearWriteAbortFlag
+Function found not to call free: System_Ip_GetPlatformRevision
+System_Ip_GetPlatformRevision ()
+{
+  short unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY System_Ip_GetPlatformRevisionPrivileged
+  # DEBUG BEGIN_STMT
+  _2 ={v} MEM[(struct MCM_Type *)3758620672B].PLREV;
+  _3 = (long unsigned int) _2;
+  return _3;
+
+}
+
+
+System_Ip_ClearWriteAbortFlag ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY System_Ip_ClearWriteAbortFlagPrivileged
+  # DEBUG BEGIN_STMT
+  MEM[(struct MCM_Type *)3758620672B].ISCR ={v} 32;
+  return;
+
+}
+
+
+System_Ip_ConfigIrq (System_Ip_IrqType eIrq, boolean bEnable)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  System_Ip_ConfigIrqPrivileged (eIrq_2(D), bEnable_3(D));
+  return;
+
+}
+
+
+System_Ip_SetAhbSlavePriority (boolean bPriority)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  System_Ip_SetAhbSlavePriorityPrivileged (bPriority_2(D));
+  return;
+
+}
+
+
+System_Ip_ConfigIrqPrivileged (System_Ip_IrqType eIrq, boolean bEnable)
+{
+  uint32 regValTemp;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  regValTemp_6 ={v} MEM[(struct MCM_Type *)3758620672B].ISCR;
+  # DEBUG regValTemp => regValTemp_6
+  # DEBUG BEGIN_STMT
+  regValTemp_7 = regValTemp_6 & 4294967263;
+  # DEBUG regValTemp => regValTemp_7
+  # DEBUG BEGIN_STMT
+  if (bEnable_8(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _1 = 1 << eIrq_9(D);
+  regValTemp_11 = _1 | regValTemp_7;
+  # DEBUG regValTemp => regValTemp_11
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _2 = 1 << eIrq_9(D);
+  _3 = ~_2;
+  regValTemp_10 = _3 & regValTemp_7;
+  # DEBUG regValTemp => regValTemp_10
+
+  <bb 5> [local count: 1073741824]:
+  # regValTemp_4 = PHI <regValTemp_11(3), regValTemp_10(4)>
+  # DEBUG regValTemp => regValTemp_4
+  # DEBUG BEGIN_STMT
+  MEM[(struct MCM_Type *)3758620672B].ISCR ={v} regValTemp_4;
+  return;
+
+}
+
+
+System_Ip_SetAhbSlavePriorityPrivileged (boolean bPriority)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (bPriority_6(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MCM_Type *)3758620672B].CPCR;
+  _2 = _1 | 134217728;
+  MEM[(struct MCM_Type *)3758620672B].CPCR ={v} _2;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MCM_Type *)3758620672B].CPCR;
+  _4 = _3 & 4160749567;
+  MEM[(struct MCM_Type *)3758620672B].CPCR ={v} _4;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+

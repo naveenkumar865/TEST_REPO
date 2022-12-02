@@ -1,0 +1,35 @@
+Linflexd_Lin_Ip_CheckWakeup (const uint32 Instance)
+{
+  boolean RetVal;
+  const struct LINFLEXD_Type * Base;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  Base_6 = Linflexd_Lin_Ip_apxBases[Instance_5(D)];
+  # DEBUG Base => Base_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_6->LINSR;
+  _2 = _1 & 32;
+  if (_2 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 1
+
+  <bb 4> [local count: 1073741824]:
+  # RetVal_3 = PHI <0(2), 1(3)>
+  # DEBUG RetVal => RetVal_3
+  # DEBUG BEGIN_STMT
+  return RetVal_3;
+
+}
+
+

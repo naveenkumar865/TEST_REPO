@@ -1,0 +1,124 @@
+Trivially needed symbols: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS
+
+
+Initial Symbol table:
+
+Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82bd0
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01733ea0
+  References: Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82bd0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82bd0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82bd0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82bd0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS
+Removing variables:
+
+Final Symbol table:
+
+Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS/0 (Lin_Ipw_pHwConfigPB_0_BOARD_INITPERIPHERALS) @05a82bd0
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @00000001
+  References: Linflexd_Lin_Ip_pHwConfigPB_0_BOARD_INITPERIPHERALS/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

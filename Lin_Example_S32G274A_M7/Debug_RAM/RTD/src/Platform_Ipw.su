@@ -1,0 +1,2 @@
+Platform_Ipw.c:136:6:Platform_Ipw_Init	0	static
+Platform_Ipw.c:169:6:Platform_Ipw_InitNonCore	24	static

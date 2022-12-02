@@ -1,0 +1,4030 @@
+IPA function summary for Linflexd_Lin_Ip_StartTimeout.constprop/46 inlinable
+  global time:     29.000000
+  self size:       12
+  global size:     12
+  min size:       28
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    OsIf_GetCounter/30 function body not available
+      loop depth: 0 freq:1.00 size: 3 time: 12
+    OsIf_MicrosToTicks/31 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13
+
+IPA function summary for Linflexd_Lin_Ip_TimeoutExpired.constprop/45 inlinable
+  global time:     19.000000
+  self size:       11
+  global size:     11
+  min size:       16
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    OsIf_GetElapsed/32 function body not available
+      loop depth: 0 freq:1.00 size: 4 time: 13
+
+IPA function summary for Linflexd_Lin_Ip_Error_IRQHandler/29 inlinable
+  global time:     14.745500
+  self size:       29
+  global size:     29
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:23.000000, time:11.359500
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Linflexd_Lin_Ip_ErrorsHandler/14 function not considered for inlining
+      loop depth: 0 freq:0.12 size: 3 time: 12callee size:22 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_TxRx_IRQHandler/28 inlinable
+  global time:     16.635938
+  self size:       64
+  global size:     64
+  min size:       36
+  self stack:      0
+  global stack:    0
+    size:43.000000, time:11.409375
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Linflexd_Lin_Ip_CompleteTransfer/15 function not considered for inlining
+      loop depth: 0 freq:0.04 size: 3 time: 12callee size:25 stack: 0
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    Linflexd_Lin_Ip_CalculatePid/17 function not considered for inlining
+      loop depth: 0 freq:0.04 size: 3 time: 12callee size:10 stack: 0
+    indirect call loop depth: 0 freq:0.02 size: 5 time: 17
+    indirect call loop depth: 0 freq:0.06 size: 5 time: 17
+
+IPA function summary for Linflexd_Lin_Ip_SendFrame/27 inlinable
+  global time:     59.644418
+  self size:       103
+  global size:     103
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:94.500000, time:47.343543
+    size:6.500000, time:3.720875,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 function body not available
+      loop depth: 0 freq:0.43 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 function body not available
+      loop depth: 0 freq:0.43 size: 1 time: 10
+
+IPA function summary for Linflexd_Lin_Ip_SendWakeupSignal/26 inlinable
+  global time:     11.920625
+  self size:       24
+  global size:     24
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:16.000000, time:7.473609
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    Linflexd_Lin_Ip_GotoIdleState/25 function not considered for inlining
+      loop depth: 0 freq:0.13 size: 3 time: 12callee size:11 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_GotoIdleState/25 inlinable
+  global time:     46.000000
+  self size:       23
+  global size:     23
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:14.000000, time:11.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 function body not available
+      loop depth: 0 freq:1.00 size: 1 time: 10
+    Linflexd_Lin_Ip_StateTimeoutMode/8 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 4 time: 13callee size:12 stack:12
+       op1 is compile time invariant
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 function body not available
+      loop depth: 0 freq:1.00 size: 1 time: 10
+
+IPA function summary for Linflexd_Lin_Ip_GoToSleepMode/24 inlinable
+  global time:     22.510000
+  self size:       31
+  global size:     31
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:22.000000, time:9.620000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 function body not available
+      loop depth: 0 freq:0.33 size: 1 time: 10
+    Linflexd_Lin_Ip_StateTimeoutMode/8 function not considered for inlining
+      loop depth: 0 freq:0.33 size: 4 time: 13callee size:12 stack:12
+       op1 is compile time invariant
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 function body not available
+      loop depth: 0 freq:0.33 size: 1 time: 10
+
+IPA function summary for Linflexd_Lin_Ip_GetStatus/23 inlinable
+  global time:     27.817582
+  self size:       51
+  global size:     51
+  min size:       22
+  self stack:      0
+  global stack:    0
+    size:36.500000, time:11.499950
+    size:3.500000, time:2.045232,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 function not considered for inlining
+      loop depth: 0 freq:0.09 size: 3 time: 12callee size: 8 stack: 0
+    Linflexd_Lin_Ip_CopyData/16 function not considered for inlining
+      loop depth: 0 freq:0.09 size: 3 time: 12callee size:19 stack: 0
+    Linflexd_Lin_Ip_GetNoEventStatus/12 function not considered for inlining
+      loop depth: 0 freq:0.09 size: 3 time: 12callee size:15 stack: 0
+    Linflexd_Lin_Ip_UpdateCurrentNodeState/18 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 2 time: 11callee size:17 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_GetCurrentNodeState/22 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     7
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_UpdateCurrentNodeState/18 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 2 time: 11callee size:17 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_AbortTransferData/21 inlinable
+  global time:     85.454072
+  self size:       37
+  global size:     37
+  min size:       26
+  self stack:      16
+  global stack:    16
+    size:21.000000, time:32.928566
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 function body not available
+      loop depth: 0 freq:0.11 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 function body not available
+      loop depth: 0 freq:0.11 size: 1 time: 10
+    Linflexd_Lin_Ip_TimeoutExpired.constprop/45 function not considered for inlining
+      loop depth: 1 freq:2.92 size: 6 time: 15callee size: 5 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op3 is compile time invariant
+    Linflexd_Lin_Ip_StartTimeout.constprop/46 function not considered for inlining
+      loop depth: 0 freq:0.33 size: 5 time: 14callee size: 6 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Linflexd_Lin_Ip_Deinit/20 inlinable
+  global time:     8.500000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:6.500000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_Init/19 inlinable
+  global time:     39.094600
+  self size:       36
+  global size:     36
+  min size:       24
+  self stack:      0
+  global stack:    0
+    size:20.000000, time:13.976700
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 96] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op1[ref offset: 96] changed)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 function not considered for inlining
+      loop depth: 0 freq:0.11 size: 2 time: 11callee size: 7 stack: 0
+    Linflexd_Lin_Ip_StateTimeoutMode/8 function not considered for inlining
+      loop depth: 0 freq:0.33 size: 4 time: 13callee size:12 stack:12
+       op1 is compile time invariant
+    Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 function not considered for inlining
+      loop depth: 0 freq:0.33 size: 2 time: 11callee size:31 stack: 0
+    Linflexd_Lin_Ip_StateTimeoutMode/8 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 4 time: 13callee size:12 stack:12
+       op1 is compile time invariant
+
+IPA function summary for Linflexd_Lin_Ip_UpdateCurrentNodeState/18 inlinable
+  global time:     13.167500
+  self size:       35
+  global size:     35
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:32.000000, time:11.167100
+    size:3.000000, time:2.000400,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_CalculatePid/17 inlinable
+  global time:     20.000000
+  self size:       21
+  global size:     21
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:18.000000, time:18.000000,  nonconst if:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_CopyData/16 inlinable
+  global time:     66.000000
+  self size:       39
+  global size:     39
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:36.000000, time:64.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_CompleteTransfer/15 inlinable
+  global time:     29.985000
+  self size:       50
+  global size:     50
+  min size:       26
+  self stack:      0
+  global stack:    0
+    size:28.000000, time:12.580000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:6.000000, time:4.500000,  nonconst if:(op1 changed)
+  calls:
+    Linflexd_Lin_Ip_CopyData/16 function not considered for inlining
+      loop depth: 0 freq:0.17 size: 3 time: 12callee size:19 stack: 0
+    indirect call loop depth: 0 freq:0.18 size: 5 time: 17
+    indirect call loop depth: 0 freq:0.35 size: 5 time: 17
+
+IPA function summary for Linflexd_Lin_Ip_ErrorsHandler/14 inlinable
+  global time:     28.984563
+  self size:       44
+  global size:     44
+  min size:       18
+  self stack:      0
+  global stack:    0
+    size:20.000000, time:9.168750
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:12.000000, time:5.625000,  nonconst if:(op1 changed)
+  calls:
+    Linflexd_Lin_Ip_ReceiveErrorsHandler/13 function not considered for inlining
+      loop depth: 0 freq:0.04 size: 4 time: 13callee size:17 stack: 0
+    indirect call loop depth: 0 freq:0.69 size: 5 time: 17
+
+IPA function summary for Linflexd_Lin_Ip_ReceiveErrorsHandler/13 inlinable
+  global time:     12.187500
+  self size:       35
+  global size:     35
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:20.000000, time:4.562500
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:12.000000, time:5.625000,  nonconst if:(op1 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_GetNoEventStatus/12 inlinable
+  global time:     10.857971
+  self size:       31
+  global size:     31
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:28.000000, time:8.857400
+    size:3.000000, time:2.000571,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 inlinable
+  global time:     9.333000
+  self size:       17
+  global size:     17
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:14.000000, time:7.333200
+    size:3.000000, time:1.999800,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 inlinable
+  global time:     12.500000
+  self size:       15
+  global size:     15
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:12.000000, time:10.500000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 inlinable
+  global time:     54.000000
+  self size:       63
+  global size:     63
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:60.000000, time:52.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_StateTimeoutMode/8 inlinable
+  global time:     223.749007
+  self size:       24
+  global size:     24
+  min size:       22
+  self stack:      12
+  global stack:    12
+    size:10.000000, time:75.241411
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_TimeoutExpired.constprop/45 function not considered for inlining
+      loop depth: 1 freq:8.83 size: 6 time: 15callee size: 5 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op3 is compile time invariant
+    Linflexd_Lin_Ip_StartTimeout.constprop/46 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 5 time: 14callee size: 6 stack: 0
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+
+Flattening functions:
+Overall time estimate: 876.087276 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Linflexd_Lin_Ip_StartTimeout.constprop/46.
+Enqueueing calls in Linflexd_Lin_Ip_TimeoutExpired.constprop/45.
+Enqueueing calls in Linflexd_Lin_Ip_Error_IRQHandler/29.
+Enqueueing calls in Linflexd_Lin_Ip_TxRx_IRQHandler/28.
+Enqueueing calls in Linflexd_Lin_Ip_SendFrame/27.
+Enqueueing calls in Linflexd_Lin_Ip_SendWakeupSignal/26.
+Enqueueing calls in Linflexd_Lin_Ip_GotoIdleState/25.
+Enqueueing calls in Linflexd_Lin_Ip_GoToSleepMode/24.
+Enqueueing calls in Linflexd_Lin_Ip_GetStatus/23.
+Enqueueing calls in Linflexd_Lin_Ip_GetCurrentNodeState/22.
+Enqueueing calls in Linflexd_Lin_Ip_AbortTransferData/21.
+Enqueueing calls in Linflexd_Lin_Ip_Deinit/20.
+Enqueueing calls in Linflexd_Lin_Ip_Init/19.
+Enqueueing calls in Linflexd_Lin_Ip_UpdateCurrentNodeState/18.
+Enqueueing calls in Linflexd_Lin_Ip_CalculatePid/17.
+Enqueueing calls in Linflexd_Lin_Ip_CopyData/16.
+Enqueueing calls in Linflexd_Lin_Ip_CompleteTransfer/15.
+Enqueueing calls in Linflexd_Lin_Ip_ErrorsHandler/14.
+Enqueueing calls in Linflexd_Lin_Ip_ReceiveErrorsHandler/13.
+Enqueueing calls in Linflexd_Lin_Ip_GetNoEventStatus/12.
+Enqueueing calls in Linflexd_Lin_Ip_GetTimeoutErrorStatus/11.
+Enqueueing calls in Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10.
+Enqueueing calls in Linflexd_Lin_Ip_SetUpRegisterInInitMode/9.
+Enqueueing calls in Linflexd_Lin_Ip_StateTimeoutMode/8.
+
+Considering Linflexd_Lin_Ip_TimeoutExpired.constprop/45 with 11 size
+ to be inlined into Linflexd_Lin_Ip_StateTimeoutMode/8 in ../RTD/src/Linflexd_Lin_Ip.c:265
+ Estimated badness is -25.441458, frequency 8.83.
+
+Considering Linflexd_Lin_Ip_TimeoutExpired.constprop/45 with 11 size
+ to be inlined into Linflexd_Lin_Ip_AbortTransferData/21 in ../RTD/src/Linflexd_Lin_Ip.c:1178
+ Estimated badness is -5.523474, frequency 2.92.
+
+Considering Linflexd_Lin_Ip_StartTimeout.constprop/46 with 12 size
+ to be inlined into Linflexd_Lin_Ip_StateTimeoutMode/8 in ../RTD/src/Linflexd_Lin_Ip.c:255
+ Estimated badness is -0.839506, frequency 1.00.
+
+Considering Linflexd_Lin_Ip_StartTimeout.constprop/46 with 12 size
+ to be inlined into Linflexd_Lin_Ip_AbortTransferData/21 in ../RTD/src/Linflexd_Lin_Ip.c:1166
+ Estimated badness is -0.187000, frequency 0.33.
+
+Considering Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 with 15 size
+ to be inlined into Linflexd_Lin_Ip_Init/19 in ../RTD/src/Linflexd_Lin_Ip.c:1053
+ Estimated badness is -0.012310, frequency 0.11.
+
+Considering Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 with 17 size
+ to be inlined into Linflexd_Lin_Ip_GetStatus/23 in ../RTD/src/Linflexd_Lin_Ip.c:1328
+ Estimated badness is -0.007464, frequency 0.09.
+
+Considering Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 with 63 size
+ to be inlined into Linflexd_Lin_Ip_Init/19 in ../RTD/src/Linflexd_Lin_Ip.c:1045
+ Estimated badness is -0.003147, frequency 0.33.
+
+Considering Linflexd_Lin_Ip_GetNoEventStatus/12 with 31 size
+ to be inlined into Linflexd_Lin_Ip_GetStatus/23 in ../RTD/src/Linflexd_Lin_Ip.c:1275
+ Estimated badness is -0.002679, frequency 0.09.
+
+Considering Linflexd_Lin_Ip_ErrorsHandler/14 with 44 size
+ to be inlined into Linflexd_Lin_Ip_Error_IRQHandler/29 in ../RTD/src/Linflexd_Lin_Ip.c:1917
+ Estimated badness is -0.002540, frequency 0.12.
+
+Considering Linflexd_Lin_Ip_CalculatePid/17 with 21 size
+ to be inlined into Linflexd_Lin_Ip_TxRx_IRQHandler/28 in ../RTD/src/Linflexd_Lin_Ip.c:1823
+ Estimated badness is -0.002068, frequency 0.04.
+
+Considering Linflexd_Lin_Ip_CompleteTransfer/15 with 50 size
+ to be inlined into Linflexd_Lin_Ip_TxRx_IRQHandler/28 in ../RTD/src/Linflexd_Lin_Ip.c:1845
+ Estimated badness is -0.000516, frequency 0.04.
+
+Considering Linflexd_Lin_Ip_ReceiveErrorsHandler/13 with 35 size
+ to be inlined into Linflexd_Lin_Ip_ErrorsHandler/14 in ../RTD/src/Linflexd_Lin_Ip.c:736
+ Estimated badness is -0.000179, frequency 0.00.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 693.393085 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       18 calls, 18.319136 freq, 0 count
+--param max-inline-insns-auto limit reached       :        2 calls, 0.098119 freq, 0 count
+call is unlikely and code size would grow         :        7 calls, 4.791560 freq, 0 count
+IPA function summary for Linflexd_Lin_Ip_Error_IRQHandler/29 inlinable
+  global time:     16.462817
+  self size:       29
+  global size:     95
+  min size:       34
+  self stack:      0
+  global stack:    0
+    size:87.000000, time:13.116715
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Linflexd_Lin_Ip_ErrorsHandler/14 inlined
+      loop depth: 0 freq:0.12 size: 3 time: 12callee size:22 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+      Linflexd_Lin_Ip_ReceiveErrorsHandler/13 inlined
+        loop depth: 0 freq:0.00 size: 4 time: 13callee size:17 stack: 0
+        Stack frame offset 0, callee self size 0, callee size 0
+      indirect call loop depth: 0 freq:0.08 size: 5 time: 17
+
+IPA function summary for Linflexd_Lin_Ip_TxRx_IRQHandler/28 inlinable
+  global time:     17.597781
+  self size:       64
+  global size:     123
+  min size:       116
+  self stack:      0
+  global stack:    0
+    size:95.000000, time:12.944125
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Linflexd_Lin_Ip_CompleteTransfer/15 inlined
+      loop depth: 0 freq:0.04 size: 3 time: 12callee size:25 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+      Linflexd_Lin_Ip_CopyData/16 --param max-inline-insns-auto limit reached
+        loop depth: 0 freq:0.01 size: 3 time: 12callee size:19 stack: 0
+      indirect call loop depth: 0 freq:0.01 size: 5 time: 17
+      indirect call loop depth: 0 freq:0.02 size: 5 time: 17
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    Linflexd_Lin_Ip_CalculatePid/17 inlined
+      loop depth: 0 freq:0.04 size: 3 time: 12callee size:10 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+    indirect call loop depth: 0 freq:0.02 size: 5 time: 17
+    indirect call loop depth: 0 freq:0.06 size: 5 time: 17
+
+IPA function summary for Linflexd_Lin_Ip_SendFrame/27 inlinable
+  global time:     59.644418
+  self size:       103
+  global size:     103
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:94.500000, time:47.343543
+    size:6.500000, time:3.720875,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 function body not available
+      loop depth: 0 freq:0.43 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 function body not available
+      loop depth: 0 freq:0.43 size: 1 time: 10
+
+IPA function summary for Linflexd_Lin_Ip_SendWakeupSignal/26 inlinable
+  global time:     11.920625
+  self size:       24
+  global size:     24
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:16.000000, time:7.473609
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 function body not available
+      loop depth: 0 freq:0.04 size: 1 time: 10
+    Linflexd_Lin_Ip_GotoIdleState/25 call is unlikely and code size would grow
+      loop depth: 0 freq:0.13 size: 3 time: 12callee size:11 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_GotoIdleState/25 inlinable
+  global time:     46.000000
+  self size:       23
+  global size:     23
+  min size:       14
+  self stack:      0
+  global stack:    0
+  estimated growth:17
+    size:14.000000, time:11.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 function body not available
+      loop depth: 0 freq:1.00 size: 1 time: 10
+    Linflexd_Lin_Ip_StateTimeoutMode/8 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 4 time: 13callee size:14 stack:12
+       op1 is compile time invariant
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 function body not available
+      loop depth: 0 freq:1.00 size: 1 time: 10
+
+IPA function summary for Linflexd_Lin_Ip_GoToSleepMode/24 inlinable
+  global time:     22.510000
+  self size:       31
+  global size:     31
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:22.000000, time:9.620000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 function body not available
+      loop depth: 0 freq:0.33 size: 1 time: 10
+    Linflexd_Lin_Ip_StateTimeoutMode/8 call is unlikely and code size would grow
+      loop depth: 0 freq:0.33 size: 4 time: 13callee size:14 stack:12
+       op1 is compile time invariant
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 function body not available
+      loop depth: 0 freq:0.33 size: 1 time: 10
+
+IPA function summary for Linflexd_Lin_Ip_GetStatus/23 inlinable
+  global time:     27.107707
+  self size:       51
+  global size:     87
+  min size:       48
+  self stack:      0
+  global stack:    0
+    size:78.500000, time:12.971676
+    size:3.500000, time:2.045232,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 inlined
+      loop depth: 0 freq:0.09 size: 3 time: 12callee size: 8 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+    Linflexd_Lin_Ip_CopyData/16 --param max-inline-insns-auto limit reached
+      loop depth: 0 freq:0.09 size: 3 time: 12callee size:19 stack: 0
+    Linflexd_Lin_Ip_GetNoEventStatus/12 inlined
+      loop depth: 0 freq:0.09 size: 3 time: 12callee size:15 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+    Linflexd_Lin_Ip_UpdateCurrentNodeState/18 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 2 time: 11callee size:17 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_GetCurrentNodeState/22 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     7
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_UpdateCurrentNodeState/18 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 2 time: 11callee size:17 stack: 0
+
+IPA function summary for Linflexd_Lin_Ip_AbortTransferData/21 inlinable
+  global time:     92.329239
+  self size:       37
+  global size:     41
+  min size:       74
+  self stack:      16
+  global stack:    16
+    size:25.000000, time:42.004067
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 function body not available
+      loop depth: 0 freq:0.11 size: 1 time: 10
+    SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 function body not available
+      loop depth: 0 freq:0.11 size: 1 time: 10
+    Linflexd_Lin_Ip_TimeoutExpired.constprop/45 inlined
+      loop depth: 1 freq:2.92 size: 6 time: 15callee size: 5 stack: 0
+      Stack frame offset 16, callee self size 0, callee size 0
+      OsIf_GetElapsed/32 function body not available
+        loop depth: 1 freq:2.92 size: 4 time: 13
+    Linflexd_Lin_Ip_StartTimeout.constprop/46 inlined
+      loop depth: 0 freq:0.33 size: 5 time: 14callee size: 6 stack: 0
+      Stack frame offset 16, callee self size 0, callee size 0
+      OsIf_GetCounter/30 function body not available
+        loop depth: 0 freq:0.33 size: 3 time: 12
+      OsIf_MicrosToTicks/31 function body not available
+        loop depth: 0 freq:0.33 size: 4 time: 13
+
+IPA function summary for Linflexd_Lin_Ip_Deinit/20 inlinable
+  global time:     8.500000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:6.500000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_Init/19 inlinable
+  global time:     52.570150
+  self size:       36
+  global size:     104
+  min size:       60
+  self stack:      0
+  global stack:    0
+    size:92.000000, time:32.280150
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 96] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op1[ref offset: 96] changed)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 inlined
+      loop depth: 0 freq:0.11 size: 2 time: 11callee size: 7 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+    Linflexd_Lin_Ip_StateTimeoutMode/8 call is unlikely and code size would grow
+      loop depth: 0 freq:0.33 size: 4 time: 13callee size:14 stack:12
+       op1 is compile time invariant
+    Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 inlined
+      loop depth: 0 freq:0.33 size: 2 time: 11callee size:31 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+    Linflexd_Lin_Ip_StateTimeoutMode/8 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 4 time: 13callee size:14 stack:12
+       op1 is compile time invariant
+
+IPA function summary for Linflexd_Lin_Ip_UpdateCurrentNodeState/18 inlinable
+  global time:     13.167500
+  self size:       35
+  global size:     35
+  min size:       32
+  self stack:      0
+  global stack:    0
+  estimated growth:25
+    size:32.000000, time:11.167100
+    size:3.000000, time:2.000400,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_CopyData/16 inlinable
+  global time:     66.000000
+  self size:       39
+  global size:     39
+  min size:       36
+  self stack:      0
+  global stack:    0
+  estimated growth:27
+    size:36.000000, time:64.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Linflexd_Lin_Ip_StateTimeoutMode/8 inlinable
+  global time:     244.582846
+  self size:       24
+  global size:     28
+  min size:       14
+  self stack:      12
+  global stack:    12
+  estimated growth:44
+    size:14.000000, time:102.742931
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Linflexd_Lin_Ip_TimeoutExpired.constprop/47 inlined
+      loop depth: 1 freq:8.83 size: 6 time: 15callee size: 5 stack: 0
+      Stack frame offset 12, callee self size 0, callee size 0
+      OsIf_GetElapsed/32 function body not available
+        loop depth: 1 freq:8.83 size: 4 time: 13
+    Linflexd_Lin_Ip_StartTimeout.constprop/48 inlined
+      loop depth: 0 freq:1.00 size: 5 time: 14callee size: 6 stack: 0
+      Stack frame offset 12, callee self size 0, callee size 0
+      OsIf_MicrosToTicks/31 function body not available
+        loop depth: 0 freq:1.00 size: 4 time: 13
+      OsIf_GetCounter/30 function body not available
+        loop depth: 0 freq:1.00 size: 3 time: 12
+
+Symbol table:
+
+Linflexd_Lin_Ip_StartTimeout.constprop.0/48 (Linflexd_Lin_Ip_StartTimeout.constprop) @06138540
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 46
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_StartTimeout.constprop/48 is inline copy in Linflexd_Lin_Ip_StateTimeoutMode/8
+  Clone of Linflexd_Lin_Ip_StartTimeout.constprop.0/46
+  Availability: local
+  Function flags: count:114863532 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_StateTimeoutMode/8 (inlined) (114863532 (estimated locally),1.00 per call) 
+  Calls: OsIf_MicrosToTicks/31 (114863532 (estimated locally),1.00 per call) OsIf_GetCounter/30 (114863532 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_TimeoutExpired.constprop.0/47 (Linflexd_Lin_Ip_TimeoutExpired.constprop) @06138460
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 45
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_TimeoutExpired.constprop/47 is inline copy in Linflexd_Lin_Ip_StateTimeoutMode/8
+  Clone of Linflexd_Lin_Ip_TimeoutExpired.constprop.0/45
+  Availability: local
+  Function flags: count:1014686025 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_StateTimeoutMode/8 (inlined) (1014686025 (estimated locally),8.83 per call) 
+  Calls: OsIf_GetElapsed/32 (1014686025 (estimated locally),8.83 per call) 
+Linflexd_Lin_Ip_StartTimeout.constprop.0/46 (Linflexd_Lin_Ip_StartTimeout.constprop) @061380e0
+  Type: function definition analyzed
+  Visibility:
+  previous sharing asm name: 48
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_StartTimeout.constprop/46 is inline copy in Linflexd_Lin_Ip_AbortTransferData/21
+  Clone of Linflexd_Lin_Ip_StartTimeout/6
+  Availability: local
+  Function flags: count:114863532 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (inlined) (114863532 (estimated locally),0.33 per call) 
+  Calls: OsIf_GetCounter/30 (114863532 (estimated locally),0.33 per call) OsIf_MicrosToTicks/31 (114863532 (estimated locally),0.33 per call) 
+Linflexd_Lin_Ip_TimeoutExpired.constprop.0/45 (Linflexd_Lin_Ip_TimeoutExpired.constprop) @05ffce00
+  Type: function definition analyzed
+  Visibility:
+  previous sharing asm name: 47
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_TimeoutExpired.constprop/45 is inline copy in Linflexd_Lin_Ip_AbortTransferData/21
+  Clone of Linflexd_Lin_Ip_TimeoutExpired/7
+  Availability: local
+  Function flags: count:1014686025 (estimated locally) local optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (inlined) (1014686025 (estimated locally),2.92 per call) 
+  Calls: OsIf_GetElapsed/32 (1014686025 (estimated locally),2.92 per call) 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (46976205 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07) @05fc1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (46976205 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 (238585434 (estimated locally),0.43 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06) @05fc1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendFrame/27 (238585434 (estimated locally),0.43 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05) @05fc17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 (46616287 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05) @05fc1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 (46616287 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04) @05fc1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03) @05fc12a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 (354334802 (estimated locally),0.33 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03) @05fc11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_GoToSleepMode/24 (354334802 (estimated locally),0.33 per call) 
+  Calls: 
+SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02) @05e759a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (37904965 (estimated locally),0.11 per call) 
+  Calls: 
+SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02) @05e758c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_AbortTransferData/21 (37904965 (estimated locally),0.11 per call) 
+  Calls: 
+OsIf_GetElapsed/32 (OsIf_GetElapsed) @05e75540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_TimeoutExpired.constprop/47 (1014686025 (estimated locally),8.83 per call) Linflexd_Lin_Ip_TimeoutExpired.constprop/45 (1014686025 (estimated locally),2.92 per call) 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @05e75380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout.constprop/48 (114863532 (estimated locally),1.00 per call) Linflexd_Lin_Ip_StartTimeout.constprop/46 (114863532 (estimated locally),0.33 per call) 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @05e752a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Linflexd_Lin_Ip_StartTimeout.constprop/48 (114863532 (estimated locally),1.00 per call) Linflexd_Lin_Ip_StartTimeout.constprop/46 (114863532 (estimated locally),0.33 per call) 
+  Calls: 
+Linflexd_Lin_Ip_Error_IRQHandler/29 (Linflexd_Lin_Ip_Error_IRQHandler) @05e6fb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_ErrorsHandler/14 (inlined) (124017181 (estimated locally),0.12 per call) 
+Linflexd_Lin_Ip_TxRx_IRQHandler/28 (Linflexd_Lin_Ip_TxRx_IRQHandler) @05e6b7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_anPduInfo/2 (addr)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_CompleteTransfer/15 (inlined) (46976205 (estimated locally),0.04 per call) SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07/44 (46976205 (estimated locally),0.04 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07/43 (46976205 (estimated locally),0.04 per call) Linflexd_Lin_Ip_CalculatePid/17 (inlined) (46976205 (estimated locally),0.04 per call) 
+   Indirect call(16441672 (estimated locally),0.02 per call) 
+   Indirect call(65766687 (estimated locally),0.06 per call) 
+Linflexd_Lin_Ip_SendFrame/27 (Linflexd_Lin_Ip_SendFrame) @05e648c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:556143199 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06/42 (238585434 (estimated locally),0.43 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06/41 (238585434 (estimated locally),0.43 per call) 
+Linflexd_Lin_Ip_SendWakeupSignal/26 (Linflexd_Lin_Ip_SendWakeupSignal) @05d58ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05/40 (46616287 (estimated locally),0.04 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05/39 (46616287 (estimated locally),0.04 per call) Linflexd_Lin_Ip_GotoIdleState/25 (141261474 (estimated locally),0.13 per call) 
+Linflexd_Lin_Ip_GotoIdleState/25 (Linflexd_Lin_Ip_GotoIdleState) @05d58a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Linflexd_Lin_Ip_SendWakeupSignal/26 (141261474 (estimated locally),0.13 per call) 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04/38 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04/37 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_GoToSleepMode/24 (Linflexd_Lin_Ip_GoToSleepMode) @05d58540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03/36 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (354334802 (estimated locally),0.33 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03/35 (354334802 (estimated locally),0.33 per call) 
+Linflexd_Lin_Ip_GetStatus/23 (Linflexd_Lin_Ip_GetStatus) @05d4cd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_au8SduBuffer/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (inlined) (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_CopyData/16 (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_GetNoEventStatus/12 (inlined) (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_GetCurrentNodeState/22 (Linflexd_Lin_Ip_GetCurrentNodeState) @05d4c540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_AbortTransferData/21 (Linflexd_Lin_Ip_AbortTransferData) @05d4c000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:348071309 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02/34 (37904965 (estimated locally),0.11 per call) SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02/33 (37904965 (estimated locally),0.11 per call) Linflexd_Lin_Ip_TimeoutExpired.constprop/45 (inlined) (1014686025 (estimated locally),2.92 per call) Linflexd_Lin_Ip_StartTimeout.constprop/46 (inlined) (114863532 (estimated locally),0.33 per call) 
+Linflexd_Lin_Ip_Deinit/20 (Linflexd_Lin_Ip_Deinit) @05d4cc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_Init/19 (Linflexd_Lin_Ip_Init) @05d4c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (write)Linflexd_Lin_Ip_apUserConfigs/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (inlined) (116930485 (estimated locally),0.11 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (inlined) (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_StateTimeoutMode/8 (1073741824 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (Linflexd_Lin_Ip_UpdateCurrentNodeState) @05d4c460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073527120 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_GetCurrentNodeState/22 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CalculatePid/17 (Linflexd_Lin_Ip_CalculatePid) @05d4c1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Linflexd_Lin_Ip_CalculatePid/17 is inline copy in Linflexd_Lin_Ip_TxRx_IRQHandler/28
+  Availability: local
+  Function flags: count:46976205 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (inlined) (46976205 (estimated locally),0.04 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CopyData/16 (Linflexd_Lin_Ip_CopyData) @05e0fd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:429496726 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (97603132 (estimated locally),0.09 per call) Linflexd_Lin_Ip_CompleteTransfer/15 (7751074 (estimated locally),0.01 per call) 
+  Calls: 
+Linflexd_Lin_Ip_CompleteTransfer/15 (Linflexd_Lin_Ip_CompleteTransfer) @05e0fc40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_CompleteTransfer/15 is inline copy in Linflexd_Lin_Ip_TxRx_IRQHandler/28
+  Availability: local
+  Function flags: count:46976205 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (inlined) (46976205 (estimated locally),0.04 per call) 
+  Calls: Linflexd_Lin_Ip_CopyData/16 (7751074 (estimated locally),0.01 per call) 
+   Indirect call(8220836 (estimated locally),0.01 per call) 
+   Indirect call(16441672 (estimated locally),0.02 per call) 
+Linflexd_Lin_Ip_ErrorsHandler/14 (Linflexd_Lin_Ip_ErrorsHandler) @05e0f380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apUserConfigs/4 (read)Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_ErrorsHandler/14 is inline copy in Linflexd_Lin_Ip_Error_IRQHandler/29
+  Availability: local
+  Function flags: count:124017181 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_Error_IRQHandler/29 (inlined) (124017181 (estimated locally),0.12 per call) 
+  Calls: Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (inlined) (5115709 (estimated locally),0.00 per call) 
+   Indirect call(85021529 (estimated locally),0.08 per call) 
+Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (Linflexd_Lin_Ip_ReceiveErrorsHandler) @05e0ce00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_ReceiveErrorsHandler/13 is inline copy in Linflexd_Lin_Ip_Error_IRQHandler/29
+  Availability: local
+  Function flags: count:5115709 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_ErrorsHandler/14 (inlined) (5115709 (estimated locally),0.00 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GetNoEventStatus/12 (Linflexd_Lin_Ip_GetNoEventStatus) @05e0c000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_GetNoEventStatus/12 is inline copy in Linflexd_Lin_Ip_GetStatus/23
+  Availability: local
+  Function flags: count:97603132 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (inlined) (97603132 (estimated locally),0.09 per call) 
+  Calls: 
+Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (Linflexd_Lin_Ip_GetTimeoutErrorStatus) @05c2aee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxStateStructureArray/5 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 is inline copy in Linflexd_Lin_Ip_GetStatus/23
+  Availability: local
+  Function flags: count:97603132 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_GetStatus/23 (inlined) (97603132 (estimated locally),0.09 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (Linflexd_Lin_Ip_SetUpRegisterInNormalMode) @05c2ac40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 is inline copy in Linflexd_Lin_Ip_Init/19
+  Availability: local
+  Function flags: count:116930485 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 (inlined) (116930485 (estimated locally),0.11 per call) 
+  Calls: 
+Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (Linflexd_Lin_Ip_SetUpRegisterInInitMode) @05c25e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)Linflexd_Lin_Ip_apUserConfigs/4 (read)
+  Referring: 
+  Function Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 is inline copy in Linflexd_Lin_Ip_Init/19
+  Availability: local
+  Function flags: count:354334802 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_Init/19 (inlined) (354334802 (estimated locally),0.33 per call) 
+  Calls: 
+Linflexd_Lin_Ip_StateTimeoutMode/8 (Linflexd_Lin_Ip_StateTimeoutMode) @05c21c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Linflexd_Lin_Ip_apxBases/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local optimize_size
+  Called by: Linflexd_Lin_Ip_GotoIdleState/25 (1073741824 (estimated locally),1.00 per call) Linflexd_Lin_Ip_GoToSleepMode/24 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_Init/19 (354334802 (estimated locally),0.33 per call) Linflexd_Lin_Ip_Init/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Linflexd_Lin_Ip_TimeoutExpired.constprop/47 (inlined) (1014686025 (estimated locally),8.83 per call) Linflexd_Lin_Ip_StartTimeout.constprop/48 (inlined) (114863532 (estimated locally),1.00 per call) 
+Linflexd_Lin_Ip_TimeoutExpired/7 (Linflexd_Lin_Ip_TimeoutExpired) @05c219a0
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_StartTimeout/6 (Linflexd_Lin_Ip_StartTimeout) @05c21700
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Linflexd_Lin_Ip_apxStateStructureArray/5 (Linflexd_Lin_Ip_apxStateStructureArray) @05c0a3a8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_Deinit/20 (write)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_GetTimeoutErrorStatus/11 (read)Linflexd_Lin_Ip_GetCurrentNodeState/22 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apUserConfigs/4 (Linflexd_Lin_Ip_apUserConfigs) @05c0a318
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_Init/19 (write)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_axStateStructure/3 (Linflexd_Lin_Ip_axStateStructure) @05c0a288
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_anPduInfo/2 (Linflexd_Lin_Ip_anPduInfo) @05c0a240
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_TxRx_IRQHandler/28 (addr)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_au8SduBuffer/1 (Linflexd_Lin_Ip_au8SduBuffer) @05c0a1b0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Linflexd_Lin_Ip_GetStatus/23 (addr)Linflexd_Lin_Ip_SendFrame/27 (write)
+  Availability: available
+  Varpool flags:
+Linflexd_Lin_Ip_apxBases/0 (Linflexd_Lin_Ip_apxBases) @05c0a120
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Linflexd_Lin_Ip_UpdateCurrentNodeState/18 (read)Linflexd_Lin_Ip_SetUpRegisterInNormalMode/10 (read)Linflexd_Lin_Ip_CompleteTransfer/15 (read)Linflexd_Lin_Ip_TxRx_IRQHandler/28 (read)Linflexd_Lin_Ip_StateTimeoutMode/8 (read)Linflexd_Lin_Ip_Init/19 (read)Linflexd_Lin_Ip_CopyData/16 (read)Linflexd_Lin_Ip_Deinit/20 (read)Linflexd_Lin_Ip_SetUpRegisterInInitMode/9 (read)Linflexd_Lin_Ip_ReceiveErrorsHandler/13 (read)Linflexd_Lin_Ip_AbortTransferData/21 (read)Linflexd_Lin_Ip_GetStatus/23 (read)Linflexd_Lin_Ip_GoToSleepMode/24 (read)Linflexd_Lin_Ip_GotoIdleState/25 (read)Linflexd_Lin_Ip_SendWakeupSignal/26 (read)Linflexd_Lin_Ip_ErrorsHandler/14 (read)Linflexd_Lin_Ip_SendFrame/27 (read)Linflexd_Lin_Ip_GetNoEventStatus/12 (read)Linflexd_Lin_Ip_Error_IRQHandler/29 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+
+;; Function Linflexd_Lin_Ip_CopyData (Linflexd_Lin_Ip_CopyData, funcdef_no=10, decl_uid=5905, cgraph_uid=11, symbol_order=16)
+
+Linflexd_Lin_Ip_CopyData (const uint32 Instance, uint8 * Buffer)
+{
+  struct LINFLEXD_Type * Base;
+  uint8 Loop;
+  uint8 DataLength;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  unsigned char _4;
+  long unsigned int _5;
+  unsigned int _6;
+  unsigned int _7;
+  long unsigned int _8;
+  uint8 * _9;
+  unsigned char _10;
+  long unsigned int _11;
+  unsigned int _12;
+  unsigned int _13;
+  long unsigned int _14;
+  uint8 * _15;
+  unsigned char _16;
+  long unsigned int _17;
+  unsigned int _18;
+  unsigned int _19;
+  unsigned int _20;
+  long unsigned int _21;
+  uint8 * _22;
+  unsigned char _23;
+
+  <bb 2> [local count: 429496726]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Base_34 = Linflexd_Lin_Ip_apxBases[Instance_33(D)];
+  # DEBUG Base => Base_34
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_34->BIDR;
+  _2 = _1 >> 10;
+  _3 = (unsigned char) _2;
+  _4 = _3 & 7;
+  DataLength_35 = _4 + 1;
+  # DEBUG DataLength => DataLength_35
+  # DEBUG BEGIN_STMT
+  if (DataLength_35 <= 4)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 13> [local count: 214748363]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 858993456]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_34->BDRL;
+  _6 = (unsigned int) Loop_24;
+  _7 = _6 * 8;
+  _8 = _5 >> _7;
+  _9 = Buffer_36(D) + _6;
+  _10 = (unsigned char) _8;
+  *_9 = _10;
+  # DEBUG BEGIN_STMT
+  Loop_38 = Loop_24 + 1;
+  # DEBUG Loop => Loop_38
+
+  <bb 4> [local count: 1073741821]:
+  # Loop_24 = PHI <Loop_38(3), 0(13)>
+  # DEBUG Loop => Loop_24
+  # DEBUG BEGIN_STMT
+  if (Loop_24 < DataLength_35)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 5>; [20.00%]
+
+  <bb 5> [local count: 429496727]:
+  # DEBUG BEGIN_STMT
+  if (DataLength_35 > 4)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 12> [local count: 214748364]:
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 858993458]:
+  # DEBUG BEGIN_STMT
+  _11 ={v} Base_34->BDRL;
+  _12 = (unsigned int) Loop_25;
+  _13 = _12 * 8;
+  _14 = _11 >> _13;
+  _15 = Buffer_36(D) + _12;
+  _16 = (unsigned char) _14;
+  *_15 = _16;
+  # DEBUG BEGIN_STMT
+  Loop_42 = Loop_25 + 1;
+  # DEBUG Loop => Loop_42
+
+  <bb 7> [local count: 1073741822]:
+  # Loop_25 = PHI <Loop_42(6), 0(12)>
+  # DEBUG Loop => Loop_25
+  # DEBUG BEGIN_STMT
+  if (Loop_25 != 4)
+    goto <bb 6>; [80.00%]
+  else
+    goto <bb 11>; [20.00%]
+
+  <bb 11> [local count: 214748364]:
+  goto <bb 9>; [100.00%]
+
+  <bb 8> [local count: 858993461]:
+  # DEBUG BEGIN_STMT
+  _17 ={v} Base_34->BDRM;
+  _18 = (unsigned int) Loop_26;
+  _19 = _18 + 4294967292;
+  _20 = _19 * 8;
+  _21 = _17 >> _20;
+  _22 = Buffer_36(D) + _18;
+  _23 = (unsigned char) _21;
+  *_22 = _23;
+  # DEBUG BEGIN_STMT
+  Loop_40 = Loop_26 + 1;
+  # DEBUG Loop => Loop_40
+
+  <bb 9> [local count: 1073741824]:
+  # Loop_26 = PHI <Loop_40(8), 4(11)>
+  # DEBUG Loop => Loop_26
+  # DEBUG BEGIN_STMT
+  if (Loop_26 < DataLength_35)
+    goto <bb 8>; [80.00%]
+  else
+    goto <bb 10>; [20.00%]
+
+  <bb 10> [local count: 429496729]:
+  # DEBUG BEGIN_STMT
+  Base_34->LINSR ={v} 512;
+  # DEBUG BEGIN_STMT
+  Base_34->LINSR ={v} 256;
+  return;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_UpdateCurrentNodeState (Linflexd_Lin_Ip_UpdateCurrentNodeState, funcdef_no=12, decl_uid=5909, cgraph_uid=13, symbol_order=18)
+
+Linflexd_Lin_Ip_UpdateCurrentNodeState (const uint32 Instance)
+{
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  const struct LINFLEXD_Type * Base;
+  uint8 LinState;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073527120]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Base_11 = Linflexd_Lin_Ip_apxBases[Instance_10(D)];
+  # DEBUG Base => Base_11
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_10(D)];
+  # DEBUG LinCurrentState => LinCurrentState_12
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_11->LINSR;
+  _2 = _1 >> 12;
+  _3 = (unsigned char) _2;
+  LinState_13 = _3 & 15;
+  # DEBUG LinState => LinState_13
+  # DEBUG BEGIN_STMT
+  switch (LinState_13) <default: <L18> [16.67%], case 0: <L0> [16.67%], case 1: <L1> [16.67%], case 2: <L2> [16.67%], case 3 ... 6: <L3> [16.67%], case 7 ... 9: <L10> [16.67%]>
+
+  <bb 3> [local count: 178956971]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [100.00%]
+
+  <bb 4> [local count: 178956971]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [100.00%]
+
+  <bb 5> [local count: 178956971]:
+<L2>:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 12>; [100.00%]
+
+  <bb 6> [local count: 178956971]:
+<L3>:
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_11->LINCR1;
+  _5 = _4 & 16;
+  if (_5 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 89478485]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 3;
+  goto <bb 12>; [100.00%]
+
+  <bb 8> [local count: 89478485]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 4;
+  goto <bb 12>; [100.00%]
+
+  <bb 9> [local count: 178956971]:
+<L10>:
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_11->BIDR;
+  _7 = _6 & 512;
+  if (_7 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 89478485]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 9;
+  goto <bb 12>; [100.00%]
+
+  <bb 11> [local count: 89478485]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_12->CurrentNodeState ={v} 7;
+
+  <bb 12> [local count: 1073741824]:
+<L18>:
+  return;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_StateTimeoutMode (Linflexd_Lin_Ip_StateTimeoutMode, funcdef_no=2, decl_uid=5935, cgraph_uid=3, symbol_order=8)
+
+
+Symbols to be put in SSA form
+{ D.6416 D.6511 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 13
+Number of blocks to update: 12 ( 92%)
+
+
+Merging blocks 2 and 8
+Merging blocks 4 and 11
+Removing basic block 6
+Removing basic block 7
+Merging blocks 2 and 9
+Merging blocks 4 and 12
+Merging blocks 4 and 10
+No longer having address taken: TimeoutTicks
+No longer having address taken: ElapsedTicks
+
+Symbols to be put in SSA form
+{ D.5958 D.5959 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 6
+Number of blocks to update: 5 ( 83%)
+
+
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 5 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 1 }
+Linflexd_Lin_Ip_StateTimeoutMode (const uint8 Instance, uint32 TestFlag)
+{
+  uint32 CurrentElapsedTicks;
+  boolean D.6511;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  const struct LINFLEXD_Type * Base;
+  uint32 ElapsedTicks;
+  uint32 TimeoutTicks;
+  uint32 StartTime;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int TimeoutTicks.0_5;
+  _Bool _6;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int _23;
+  long unsigned int _24;
+  _Bool _25;
+
+  <bb 2> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ElapsedTicks_34 = 0;
+  # DEBUG ElapsedTicks => ElapsedTicks_34
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 3
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_12(D);
+  Base_13 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_13
+  # DEBUG BEGIN_STMT
+  # DEBUG StartTimeOut => &StartTime
+  # DEBUG TimeoutTicksOut => &TimeoutTicks
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_StartTimeout
+  # DEBUG OsifCounter => 0
+  # DEBUG TimeoutUs => 65535
+  # DEBUG BEGIN_STMT
+  _20 = OsIf_GetCounter (0);
+  StartTime = _20;
+  # DEBUG BEGIN_STMT
+  _21 = OsIf_MicrosToTicks (65535, 0);
+  TimeoutTicks_35 = _21;
+  # DEBUG TimeoutTicks => TimeoutTicks_35
+
+  <bb 3> [local count: 1073741824]:
+  # ElapsedTicks_33 = PHI <ElapsedTicks_34(2), ElapsedTicks_36(4)>
+  # DEBUG ElapsedTicks => ElapsedTicks_33
+  # DEBUG StartTimeOut => NULL
+  # DEBUG TimeoutTicksOut => NULL
+  # DEBUG TimeoutUs => NULL
+  # DEBUG OsifCounter => NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 ={v} Base_13->LINSR;
+  _3 = _2 >> 12;
+  _4 = _3 & 15;
+  if (_4 == TestFlag_15(D))
+    goto <bb 5>; [5.50%]
+  else
+    goto <bb 4>; [94.50%]
+
+  <bb 4> [local count: 1014686025]:
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_5 = TimeoutTicks_35;
+  # DEBUG StartTime => &StartTime
+  # DEBUG ElapsedTicks => &ElapsedTicks
+  # DEBUG TimeoutTicks => TimeoutTicks.0_5
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_TimeoutExpired
+  # DEBUG OsifCounter => 0
+  # DEBUG BEGIN_STMT
+  CurrentElapsedTicks_22 = OsIf_GetElapsed (&StartTime, 0);
+  # DEBUG CurrentElapsedTicks => CurrentElapsedTicks_22
+  # DEBUG BEGIN_STMT
+  _23 = ElapsedTicks_33;
+  _24 = CurrentElapsedTicks_22 + _23;
+  ElapsedTicks_36 = _24;
+  # DEBUG ElapsedTicks => ElapsedTicks_36
+  # DEBUG BEGIN_STMT
+  _25 = TimeoutTicks.0_5 <= _24;
+  _32 = _25;
+  # DEBUG StartTime => NULL
+  # DEBUG ElapsedTicks => NULL
+  # DEBUG TimeoutTicks => NULL
+  # DEBUG CurrentElapsedTicks => NULL
+  # DEBUG OsifCounter => NULL
+  _6 = _32;
+  if (_6 != 0)
+    goto <bb 5>; [5.50%]
+  else
+    goto <bb 3>; [94.50%]
+
+  <bb 5> [local count: 114863532]:
+  # RetVal_7 = PHI <0(3), 3(4)>
+  # DEBUG RetVal => RetVal_7
+  # DEBUG BEGIN_STMT
+  StartTime ={v} {CLOBBER};
+  # DEBUG D#4 => {CLOBBER}
+  # DEBUG TimeoutTicks => D#4
+  # DEBUG D#5 => {CLOBBER}
+  # DEBUG ElapsedTicks => D#5
+  return RetVal_7;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_Init (Linflexd_Lin_Ip_Init, funcdef_no=13, decl_uid=5746, cgraph_uid=14, symbol_order=19)
+
+
+Symbols to be put in SSA form
+{ D.6417 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 18
+Number of blocks to update: 17 ( 94%)
+
+
+Removing basic block 3
+Removing basic block 4
+Merging blocks 12 and 6
+Merging blocks 17 and 13
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+;; 2 succs { 3 13 }
+;; 3 succs { 4 5 }
+;; 4 succs { 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 13 }
+;; 9 succs { 10 11 }
+;; 10 succs { 12 }
+;; 11 succs { 12 }
+;; 12 succs { 13 }
+;; 13 succs { 1 }
+Linflexd_Lin_Ip_Init (const uint8 Instance, const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig)
+{
+  struct LINFLEXD_Type * Base;
+  uint32 RegValue;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  struct LINFLEXD_Type * Base;
+  uint32 RegValue;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  struct Linflexd_Lin_Ip_StateStructType * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  int _30;
+  long unsigned int _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+  long unsigned int _37;
+  unsigned char _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  long unsigned int _44;
+  _Bool _45;
+  unsigned char _47;
+  long unsigned int _48;
+  long unsigned int _49;
+  long unsigned int _50;
+  long unsigned int _52;
+  unsigned char _54;
+  long unsigned int _55;
+  long unsigned int _56;
+  long unsigned int _57;
+  unsigned char _61;
+  long unsigned int _62;
+  long unsigned int _63;
+  long unsigned int _64;
+  long unsigned int _66;
+  long unsigned int _67;
+  long unsigned int _68;
+  long unsigned int _69;
+  long unsigned int _70;
+  long unsigned int _71;
+  unsigned char _72;
+  long unsigned int _73;
+  long unsigned int _74;
+  long unsigned int _75;
+  long unsigned int _76;
+  unsigned char _77;
+  unsigned char _78;
+  long unsigned int _79;
+  long unsigned int _80;
+  long unsigned int _82;
+  int _84;
+  long unsigned int _88;
+  _Bool _89;
+  long unsigned int _90;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_11(D);
+  Base_13 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_13
+  # DEBUG BEGIN_STMT
+  _2 = LinUserConfig_14(D)->StateStructPtr;
+  Linflexd_Lin_Ip_apxStateStructureArray[_1] = _2;
+  # DEBUG BEGIN_STMT
+  # DEBUG CrtStateStruct => _2
+  # DEBUG BEGIN_STMT
+  _2->CurrentNodeState ={v} 0;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_apUserConfigs[_1] = LinUserConfig_14(D);
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_13->LINCR1;
+  _4 = _3 | 1;
+  Base_13->LINCR1 ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_13->LINCR1;
+  _6 = _5 & 4294967293;
+  Base_13->LINCR1 ={v} _6;
+  # DEBUG BEGIN_STMT
+  RetVal_21 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_11(D), 1);
+  # DEBUG RetVal => RetVal_21
+  # DEBUG BEGIN_STMT
+  if (RetVal_21 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 13>; [67.00%]
+
+  <bb 3> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_11(D)
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_SetUpRegisterInInitMode
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _30 = (int) Instance_11(D);
+  Base_31 = Linflexd_Lin_Ip_apxBases[_30];
+  # DEBUG Base => Base_31
+  # DEBUG BEGIN_STMT
+  LinUserConfig_32 = Linflexd_Lin_Ip_apUserConfigs[_30];
+  # DEBUG LinUserConfig => LinUserConfig_32
+  # DEBUG BEGIN_STMT
+  _33 ={v} Base_31->UARTCR;
+  _34 = _33 & 4294967294;
+  Base_31->UARTCR ={v} _34;
+  # DEBUG BEGIN_STMT
+  _35 ={v} Base_31->GCR;
+  _36 = _35 & 4294967293;
+  Base_31->GCR ={v} _36;
+  # DEBUG BEGIN_STMT
+  _37 ={v} Base_31->GCR;
+  _38 = LinUserConfig_32->StopBitsCount;
+  _39 = (long unsigned int) _38;
+  _40 = _39 << 1;
+  _41 = _40 & 2;
+  _42 = _37 | _41;
+  Base_31->GCR ={v} _42;
+  # DEBUG BEGIN_STMT
+  RegValue_43 ={v} Base_31->LINCR1;
+  # DEBUG RegValue => RegValue_43
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => RegValue_43 | 65536
+  # DEBUG BEGIN_STMT
+  # DEBUG D#2 => RegValue_43 & 4294946779
+  # DEBUG RegValue => D#2 | 65536
+  # DEBUG BEGIN_STMT
+  _44 = RegValue_43 & 4294942939;
+  # DEBUG RegValue => _44 | 65536
+  # DEBUG BEGIN_STMT
+  _45 = LinUserConfig_32->NodeFunction;
+  if (_45 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 177167401]:
+  # DEBUG BEGIN_STMT
+  RegValue_46 = _44 | 65552;
+  # DEBUG RegValue => RegValue_46
+  # DEBUG BEGIN_STMT
+  _47 = LinUserConfig_32->BreakLength;
+  _48 = (long unsigned int) _47;
+  _49 = _48 << 8;
+  _50 = _49 & 3840;
+  RegValue_51 = RegValue_46 | _50;
+  # DEBUG RegValue => RegValue_51
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 177167401]:
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => RegValue_43 & 4294942923
+  # DEBUG RegValue => D#1 | 65536
+  # DEBUG BEGIN_STMT
+  _52 = RegValue_43 & 4294942915;
+  RegValue_53 = _52 | 65536;
+  # DEBUG RegValue => RegValue_53
+  # DEBUG BEGIN_STMT
+  _54 = LinUserConfig_32->SlaveSyncBreakLength;
+  _55 = (long unsigned int) _54;
+  _56 = _55 << 3;
+  _57 = _56 & 8;
+  RegValue_58 = RegValue_53 | _57;
+  # DEBUG RegValue => RegValue_58
+
+  <bb 6> [local count: 354334802]:
+  # RegValue_59 = PHI <RegValue_51(4), RegValue_58(5)>
+  # DEBUG RegValue => RegValue_59
+  # DEBUG BEGIN_STMT
+  RegValue_60 = RegValue_59 & 4294934527;
+  # DEBUG RegValue => RegValue_60
+  # DEBUG BEGIN_STMT
+  _61 = LinUserConfig_32->CsCalDisable;
+  _62 = (long unsigned int) _61;
+  _63 = _62 << 15;
+  _64 = _63 & 65535;
+  RegValue_65 = RegValue_60 | _64;
+  # DEBUG RegValue => RegValue_65
+  # DEBUG BEGIN_STMT
+  Base_31->LINCR1 ={v} RegValue_65;
+  # DEBUG BEGIN_STMT
+  _66 = LinUserConfig_32->BaudrateRegValue;
+  _67 = _66 & 15;
+  Base_31->LINFBRR ={v} _67;
+  # DEBUG BEGIN_STMT
+  _68 = _66 >> 8;
+  _69 = _68 & 1048575;
+  Base_31->LINIBRR ={v} _69;
+  # DEBUG BEGIN_STMT
+  _70 ={v} Base_31->LINTCSR;
+  _71 = _70 & 4294965759;
+  Base_31->LINTCSR ={v} _71;
+  # DEBUG BEGIN_STMT
+  _72 = LinUserConfig_32->ResponseTimeout;
+  _73 = (long unsigned int) _72;
+  _74 = _73 << 8;
+  _75 = _74 & 3840;
+  Base_31->LINTOCR ={v} _75;
+  # DEBUG BEGIN_STMT
+  if (_45 != 0)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 7> [local count: 177167401]:
+  # DEBUG BEGIN_STMT
+  _76 ={v} Base_31->LINTOCR;
+  _77 = LinUserConfig_32->HeaderTimeout;
+  _78 = _77 & 127;
+  _79 = (long unsigned int) _78;
+  _80 = _76 | _79;
+  Base_31->LINTOCR ={v} _80;
+
+  <bb 8> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  RegValue_81 ={v} Base_31->LINCR2;
+  # DEBUG RegValue => RegValue_81
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => RegValue_81 | 32768
+  # DEBUG BEGIN_STMT
+  _82 = RegValue_81 & 4294942719;
+  RegValue_83 = _82 | 32768;
+  # DEBUG RegValue => RegValue_83
+  # DEBUG BEGIN_STMT
+  Base_31->LINCR2 ={v} RegValue_83;
+  # DEBUG Instance => NULL
+  # DEBUG LinUserConfig => NULL
+  # DEBUG RegValue => NULL
+  # DEBUG Base => NULL
+  # DEBUG BEGIN_STMT
+  _7 ={v} Base_13->LINCR1;
+  _8 = _7 & 4294967294;
+  Base_13->LINCR1 ={v} _8;
+  # DEBUG BEGIN_STMT
+  RetVal_25 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_11(D), 2);
+  # DEBUG RetVal => RetVal_25
+  # DEBUG BEGIN_STMT
+  if (RetVal_25 == 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 13>; [67.00%]
+
+  <bb 9> [local count: 116930485]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_11(D)
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_SetUpRegisterInNormalMode
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _84 = (int) Instance_11(D);
+  Base_85 = Linflexd_Lin_Ip_apxBases[_84];
+  # DEBUG Base => Base_85
+  # DEBUG BEGIN_STMT
+  LinUserConfig_86 = Linflexd_Lin_Ip_apUserConfigs[_84];
+  # DEBUG LinUserConfig => LinUserConfig_86
+  # DEBUG BEGIN_STMT
+  RegValue_87 ={v} Base_85->LINIER;
+  # DEBUG RegValue => RegValue_87
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => RegValue_87 | 12672
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => RegValue_87 | 12678
+  # DEBUG BEGIN_STMT
+  _88 = RegValue_87 & 4294934423;
+  # DEBUG RegValue => _88 | 12678
+  # DEBUG BEGIN_STMT
+  _89 = LinUserConfig_86->NodeFunction;
+  if (_89 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 58465242]:
+  # DEBUG BEGIN_STMT
+  # DEBUG D#3 => RegValue_87 & 4294934422
+  # DEBUG RegValue => D#3 | 12678
+  # DEBUG BEGIN_STMT
+  _90 = RegValue_87 & 4294932374;
+  RegValue_91 = _90 | 12678;
+  # DEBUG RegValue => RegValue_91
+  goto <bb 12>; [100.00%]
+
+  <bb 11> [local count: 58465242]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => _88 | 12679
+  # DEBUG BEGIN_STMT
+  RegValue_92 = _88 | 14727;
+  # DEBUG RegValue => RegValue_92
+
+  <bb 12> [local count: 116930485]:
+  # RegValue_93 = PHI <RegValue_91(10), RegValue_92(11)>
+  # DEBUG RegValue => RegValue_93
+  # DEBUG BEGIN_STMT
+  RegValue_94 = RegValue_93 | 16384;
+  # DEBUG RegValue => RegValue_94
+  # DEBUG BEGIN_STMT
+  Base_85->LINIER ={v} RegValue_94;
+  # DEBUG Instance => NULL
+  # DEBUG LinUserConfig => NULL
+  # DEBUG RegValue => NULL
+  # DEBUG Base => NULL
+  # DEBUG BEGIN_STMT
+  _2->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _2->CurrentNodeState ={v} 2;
+  # DEBUG BEGIN_STMT
+  _2->FrameCommand = 0;
+
+  <bb 13> [local count: 1073741824]:
+  # RetVal_9 = PHI <1(8), 1(2), 0(12)>
+  # DEBUG RetVal => RetVal_9
+  # DEBUG BEGIN_STMT
+  return RetVal_9;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_Deinit (Linflexd_Lin_Ip_Deinit, funcdef_no=14, decl_uid=5748, cgraph_uid=15, symbol_order=20)
+
+Linflexd_Lin_Ip_Deinit (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  _Bool _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_5(D);
+  LinCurrentState_7 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_7
+  # DEBUG BEGIN_STMT
+  Base_8 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_8
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinCurrentState_7->IsBusBusy;
+  if (_2 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Base_8->LINIER ={v} 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_7->CurrentNodeState ={v} 0;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_apxStateStructureArray[_1] = 0B;
+
+  <bb 4> [local count: 1073741824]:
+  # RetVal_3 = PHI <0(3), 1(2)>
+  # DEBUG RetVal => RetVal_3
+  # DEBUG BEGIN_STMT
+  return RetVal_3;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_AbortTransferData (Linflexd_Lin_Ip_AbortTransferData, funcdef_no=15, decl_uid=5753, cgraph_uid=16, symbol_order=21)
+
+
+Symbols to be put in SSA form
+{ D.6419 D.6535 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 16
+Number of blocks to update: 15 ( 94%)
+
+
+Merging blocks 3 and 11
+Merging blocks 5 and 14
+Removing basic block 9
+Removing basic block 10
+Merging blocks 3 and 12
+Merging blocks 5 and 15
+Merging blocks 5 and 13
+No longer having address taken: TimeoutTicks
+No longer having address taken: ElapsedTicks
+
+Symbols to be put in SSA form
+{ D.6090 D.6092 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 9
+Number of blocks to update: 8 ( 89%)
+
+
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;;
+;; Loop 1
+;;  header 4, latch 5
+;;  depth 1, outer 0
+;;  nodes: 4 5
+;; 2 succs { 3 8 }
+;; 3 succs { 4 }
+;; 4 succs { 6 5 }
+;; 5 succs { 4 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+Linflexd_Lin_Ip_AbortTransferData (const uint8 Instance)
+{
+  uint32 CurrentElapsedTicks;
+  boolean D.6535;
+  volatile uint32 TestFlag;
+  uint32 ElapsedTicks;
+  uint32 StartTime;
+  uint32 TimeoutTicks;
+  struct LINFLEXD_Type * Base;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  int _1;
+  _Bool _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int TestFlag.1_7;
+  long unsigned int TimeoutTicks.2_8;
+  _Bool _9;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _33;
+  long unsigned int _34;
+  _Bool _35;
+
+  <bb 2> [local count: 348071309]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ElapsedTicks_44 = 0;
+  # DEBUG ElapsedTicks => ElapsedTicks_44
+  # DEBUG BEGIN_STMT
+  TestFlag ={v} 512;
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_18(D);
+  LinCurrentState_19 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_19
+  # DEBUG BEGIN_STMT
+  Base_20 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_20
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinCurrentState_19->IsBusBusy;
+  if (_2 != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 3> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_20->LINCR2;
+  _4 = _3 | 512;
+  Base_20->LINCR2 ={v} _4;
+  # DEBUG BEGIN_STMT
+  # DEBUG StartTimeOut => &StartTime
+  # DEBUG TimeoutTicksOut => &TimeoutTicks
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_StartTimeout
+  # DEBUG OsifCounter => 0
+  # DEBUG TimeoutUs => 65535
+  # DEBUG BEGIN_STMT
+  _30 = OsIf_GetCounter (0);
+  StartTime = _30;
+  # DEBUG BEGIN_STMT
+  _31 = OsIf_MicrosToTicks (65535, 0);
+  TimeoutTicks_45 = _31;
+  # DEBUG TimeoutTicks => TimeoutTicks_45
+
+  <bb 4> [local count: 1073741824]:
+  # ElapsedTicks_43 = PHI <ElapsedTicks_44(3), ElapsedTicks_46(5)>
+  # DEBUG ElapsedTicks => ElapsedTicks_43
+  # DEBUG StartTimeOut => NULL
+  # DEBUG TimeoutTicksOut => NULL
+  # DEBUG TimeoutUs => NULL
+  # DEBUG OsifCounter => NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_20->LINCR2;
+  _6 = _5 & 512;
+  TestFlag.1_7 ={v} TestFlag;
+  if (_6 != TestFlag.1_7)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 5>; [94.50%]
+
+  <bb 5> [local count: 1014686025]:
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.2_8 = TimeoutTicks_45;
+  # DEBUG StartTime => &StartTime
+  # DEBUG ElapsedTicks => &ElapsedTicks
+  # DEBUG TimeoutTicks => TimeoutTicks.2_8
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_TimeoutExpired
+  # DEBUG OsifCounter => 0
+  # DEBUG BEGIN_STMT
+  CurrentElapsedTicks_32 = OsIf_GetElapsed (&StartTime, 0);
+  # DEBUG CurrentElapsedTicks => CurrentElapsedTicks_32
+  # DEBUG BEGIN_STMT
+  _33 = ElapsedTicks_43;
+  _34 = CurrentElapsedTicks_32 + _33;
+  ElapsedTicks_46 = _34;
+  # DEBUG ElapsedTicks => ElapsedTicks_46
+  # DEBUG BEGIN_STMT
+  _35 = TimeoutTicks.2_8 <= _34;
+  _42 = _35;
+  # DEBUG StartTime => NULL
+  # DEBUG ElapsedTicks => NULL
+  # DEBUG TimeoutTicks => NULL
+  # DEBUG CurrentElapsedTicks => NULL
+  # DEBUG OsifCounter => NULL
+  _9 = _42;
+  if (_9 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 4>; [94.50%]
+
+  <bb 6> [local count: 114863532]:
+  # RetVal_10 = PHI <0(4), 1(5)>
+  # DEBUG RetVal => RetVal_10
+  # DEBUG BEGIN_STMT
+  if (RetVal_10 == 0)
+    goto <bb 7>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 7> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_02 ();
+  # DEBUG BEGIN_STMT
+  LinCurrentState_19->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_02 ();
+
+  <bb 8> [local count: 348071309]:
+  # RetVal_11 = PHI <1(6), 0(2), 0(7)>
+  # DEBUG RetVal => RetVal_11
+  # DEBUG BEGIN_STMT
+  # DEBUG D#10 => {CLOBBER}
+  # DEBUG TimeoutTicks => D#10
+  StartTime ={v} {CLOBBER};
+  # DEBUG D#11 => {CLOBBER}
+  # DEBUG ElapsedTicks => D#11
+  return RetVal_11;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_GetCurrentNodeState (Linflexd_Lin_Ip_GetCurrentNodeState, funcdef_no=16, decl_uid=5755, cgraph_uid=17, symbol_order=22)
+
+Linflexd_Lin_Ip_GetCurrentNodeState (const uint8 Instance)
+{
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  long unsigned int _1;
+  int _2;
+  Linflexd_Lin_Ip_NodeStateType _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_3(D);
+  Linflexd_Lin_Ip_UpdateCurrentNodeState (_1);
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_3(D);
+  LinCurrentState_6 = Linflexd_Lin_Ip_apxStateStructureArray[_2];
+  # DEBUG LinCurrentState => LinCurrentState_6
+  # DEBUG BEGIN_STMT
+  _7 ={v} LinCurrentState_6->CurrentNodeState;
+  return _7;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_GetStatus (Linflexd_Lin_Ip_GetStatus, funcdef_no=17, decl_uid=5758, cgraph_uid=18, symbol_order=23)
+
+
+Symbols to be put in SSA form
+{ D.6421 D.6546 D.6559 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 35
+Number of blocks to update: 34 ( 97%)
+
+
+Removing basic block 3
+Removing basic block 14
+Merging blocks 28 and 17
+Merging blocks 34 and 29
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+;; 2 succs { 29 3 14 30 15 16 18 21 22 23 24 }
+;; 3 succs { 13 4 5 8 9 10 12 }
+;; 4 succs { 13 }
+;; 5 succs { 13 6 7 }
+;; 6 succs { 13 }
+;; 7 succs { 13 }
+;; 8 succs { 13 }
+;; 9 succs { 13 }
+;; 10 succs { 13 11 }
+;; 11 succs { 13 }
+;; 12 succs { 13 }
+;; 13 succs { 30 }
+;; 14 succs { 30 }
+;; 15 succs { 30 }
+;; 16 succs { 30 17 }
+;; 17 succs { 30 }
+;; 18 succs { 30 19 20 }
+;; 19 succs { 30 }
+;; 20 succs { 30 }
+;; 21 succs { 30 }
+;; 22 succs { 30 }
+;; 23 succs { 30 }
+;; 24 succs { 28 25 26 }
+;; 25 succs { 28 }
+;; 26 succs { 28 27 }
+;; 27 succs { 28 }
+;; 28 succs { 30 }
+;; 29 succs { 30 }
+;; 30 succs { 1 }
+Linflexd_Lin_Ip_GetStatus (const uint8 Instance, uint8 * * Buffer)
+{
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType D.6559;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  const struct LINFLEXD_Type * Base;
+  uint32 Linsr;
+  Linflexd_Lin_Ip_NodeStateType CurrentNodeState;
+  Linflexd_Lin_Ip_TransferStatusType D.6546;
+  uint32 Linsr;
+  const struct LINFLEXD_Type * Base;
+  Linflexd_Lin_Ip_NodeStateType CurrentNodeState;
+  Linflexd_Lin_Ip_EventIdType CurrentEventId;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  Linflexd_Lin_Ip_TransferStatusType RetVal;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint8[8] * _4;
+  int _22;
+  unsigned char _27;
+  long unsigned int _28;
+  int _30;
+  long unsigned int _32;
+  long unsigned int _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Linsr => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_7(D);
+  LinCurrentState_9 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_9
+  # DEBUG BEGIN_STMT
+  CurrentEventId_10 ={v} LinCurrentState_9->CurrentEventId;
+  # DEBUG CurrentEventId => CurrentEventId_10
+  # DEBUG BEGIN_STMT
+  _2 = (long unsigned int) Instance_7(D);
+  Linflexd_Lin_Ip_UpdateCurrentNodeState (_2);
+  # DEBUG BEGIN_STMT
+  CurrentNodeState_12 ={v} LinCurrentState_9->CurrentNodeState;
+  # DEBUG CurrentNodeState => CurrentNodeState_12
+  # DEBUG BEGIN_STMT
+  Base_13 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_13
+  # DEBUG BEGIN_STMT
+  Linsr_14 ={v} Base_13->LINSR;
+  # DEBUG Linsr => Linsr_14
+  # DEBUG BEGIN_STMT
+  switch (CurrentEventId_10) <default: <L22> [9.09%], case 0 ... 1: <L36> [9.09%], case 3: <L2> [9.09%], case 7: <L4> [9.09%], case 8: <L5> [9.09%], case 9: <L9> [9.09%], case 10: <L14> [9.09%], case 11: <L15> [9.09%], case 12: <L16> [9.09%], case 13: <L37> [9.09%], case 14: <L18> [9.09%]>
+
+  <bb 3> [local count: 97603132]:
+<L36>:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_7(D)
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_GetNoEventStatus
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Linsr => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _22 = (int) Instance_7(D);
+  LinCurrentState_23 = Linflexd_Lin_Ip_apxStateStructureArray[_22];
+  # DEBUG LinCurrentState => LinCurrentState_23
+  # DEBUG BEGIN_STMT
+  Base_24 = Linflexd_Lin_Ip_apxBases[_22];
+  # DEBUG Base => Base_24
+  # DEBUG BEGIN_STMT
+  Linsr_25 ={v} Base_24->LINSR;
+  # DEBUG Linsr => Linsr_25
+  # DEBUG BEGIN_STMT
+  CurrentNodeState_26 ={v} LinCurrentState_23->CurrentNodeState;
+  # DEBUG CurrentNodeState => CurrentNodeState_26
+  # DEBUG BEGIN_STMT
+  switch (CurrentNodeState_26) <default: <L32> [14.29%], case 1: <L24> [14.29%], case 2: <L25> [14.29%], case 3: <L28> [14.29%], case 4: <L29> [14.29%], case 7: <L30> [14.29%], case 9: <L31> [14.29%]>
+
+  <bb 4> [local count: 13947488]:
+<L24>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 13
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [100.00%]
+
+  <bb 5> [local count: 13947488]:
+<L25>:
+  # DEBUG BEGIN_STMT
+  _27 = LinCurrentState_23->FrameCommand;
+  switch (_27) <default: <L32> [33.33%], case 0: <L26> [33.33%], case 3: <L27> [33.33%]>
+
+  <bb 6> [local count: 4648698]:
+<L26>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 12
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [100.00%]
+
+  <bb 7> [local count: 4648698]:
+<L27>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [100.00%]
+
+  <bb 8> [local count: 13947488]:
+<L28>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 2
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [100.00%]
+
+  <bb 9> [local count: 13947488]:
+<L29>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 10
+  # DEBUG BEGIN_STMT
+  goto <bb 13>; [100.00%]
+
+  <bb 10> [local count: 13947488]:
+<L30>:
+  # DEBUG BEGIN_STMT
+  _28 = Linsr_25 & 256;
+  if (_28 != 0)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 11> [local count: 6973744]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 8
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 13947488]:
+<L31>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 2
+  # DEBUG BEGIN_STMT
+
+  <bb 13> [local count: 97631018]:
+  # RetVal_29 = PHI <0(3), 13(4), 0(5), 12(6), 1(7), 2(8), 10(9), 6(10), 8(11), 2(12)>
+<L32>:
+  # DEBUG RetVal => RetVal_29
+  # DEBUG BEGIN_STMT
+  _39 = RetVal_29;
+  # DEBUG Instance => NULL
+  # DEBUG CurrentNodeState => NULL
+  # DEBUG Linsr => NULL
+  # DEBUG Base => NULL
+  # DEBUG LinCurrentState => NULL
+  # DEBUG RetVal => NULL
+  RetVal_21 = _39;
+  # DEBUG RetVal => RetVal_21
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 14> [local count: 97603132]:
+<L2>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 9
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 15> [local count: 97603132]:
+<L4>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 7
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 16> [local count: 97603132]:
+<L5>:
+  # DEBUG BEGIN_STMT
+  _3 = Linsr_14 & 256;
+  if (_3 != 0)
+    goto <bb 30>; [50.00%]
+  else
+    goto <bb 17>; [50.00%]
+
+  <bb 17> [local count: 48801566]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 11
+  goto <bb 30>; [100.00%]
+
+  <bb 18> [local count: 97603132]:
+<L9>:
+  # DEBUG BEGIN_STMT
+  switch (CurrentNodeState_12) <default: <L22> [33.33%], case 3: <L10> [33.33%], case 9: <L11> [33.33%]>
+
+  <bb 19> [local count: 32531124]:
+<L10>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 3
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 20> [local count: 32531124]:
+<L11>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 4
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 21> [local count: 97603132]:
+<L14>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 7
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 22> [local count: 97603132]:
+<L15>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 23> [local count: 97603132]:
+<L16>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 5
+  # DEBUG BEGIN_STMT
+  _4 = &Linflexd_Lin_Ip_au8SduBuffer[_1];
+  *Buffer_17(D) = _4;
+  # DEBUG BEGIN_STMT
+  Linflexd_Lin_Ip_CopyData (_2, _4);
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 24> [local count: 97603132]:
+<L37>:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_7(D)
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_GetTimeoutErrorStatus
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _30 = (int) Instance_7(D);
+  LinCurrentState_31 = Linflexd_Lin_Ip_apxStateStructureArray[_30];
+  # DEBUG LinCurrentState => LinCurrentState_31
+  # DEBUG BEGIN_STMT
+  _32 ={v} LinCurrentState_31->LinState;
+  _33 = _32 >> 12;
+  _34 = _33 & 15;
+  switch (_34) <default: <L35> [33.33%], case 3 ... 5: <L33> [33.33%], case 6 ... 9: <L34> [33.33%]>
+
+  <bb 25> [local count: 32531124]:
+<L33>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 11
+  # DEBUG BEGIN_STMT
+  goto <bb 28>; [100.00%]
+
+  <bb 26> [local count: 32531124]:
+<L34>:
+  # DEBUG BEGIN_STMT
+  _35 ={v} LinCurrentState_31->LinState;
+  _36 = _35 & 256;
+  if (_36 != 0)
+    goto <bb 28>; [50.00%]
+  else
+    goto <bb 27>; [50.00%]
+
+  <bb 27> [local count: 16265562]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 8
+
+  <bb 28> [local count: 97593372]:
+  # RetVal_37 = PHI <0(24), 11(25), 7(26), 8(27)>
+<L35>:
+  # DEBUG RetVal => RetVal_37
+  # DEBUG BEGIN_STMT
+  _38 = RetVal_37;
+  # DEBUG Instance => NULL
+  # DEBUG LinCurrentState => NULL
+  # DEBUG RetVal => NULL
+  RetVal_16 = _38;
+  # DEBUG RetVal => RetVal_16
+  # DEBUG BEGIN_STMT
+  goto <bb 30>; [100.00%]
+
+  <bb 29> [local count: 97603132]:
+<L18>:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 11
+  # DEBUG BEGIN_STMT
+
+  <bb 30> [local count: 1073642818]:
+  # RetVal_5 = PHI <RetVal_21(13), 9(14), 0(2), 7(15), 11(17), 4(20), 7(21), 1(22), 5(23), RetVal_16(28), 11(29), 0(18), 7(16), 3(19)>
+<L22>:
+  # DEBUG RetVal => RetVal_5
+  # DEBUG BEGIN_STMT
+  return RetVal_5;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_GoToSleepMode (Linflexd_Lin_Ip_GoToSleepMode, funcdef_no=18, decl_uid=5760, cgraph_uid=19, symbol_order=24)
+
+Linflexd_Lin_Ip_GoToSleepMode (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  _Bool _2;
+  const struct Linflexd_Lin_Ip_UserConfigType * _3;
+  _Bool _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 1
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_13(D);
+  Base_15 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_15
+  # DEBUG BEGIN_STMT
+  LinCurrentState_16 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_16
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinCurrentState_16->IsBusBusy;
+  if (_2 != 0)
+    goto <bb 8>; [67.00%]
+  else
+    goto <bb 3>; [33.00%]
+
+  <bb 3> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  Base_15->LINSR ={v} 32;
+  # DEBUG BEGIN_STMT
+  Base_15->LINSR ={v} 512;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  _3 = Linflexd_Lin_Ip_apUserConfigs[_1];
+  _4 = _3->WakeupDetectSupport;
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 177167401]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_15->LINIER;
+  _6 = _5 | 32;
+  Base_15->LINIER ={v} _6;
+
+  <bb 5> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _7 ={v} Base_15->LINCR1;
+  _8 = _7 | 2;
+  Base_15->LINCR1 ={v} _8;
+  # DEBUG BEGIN_STMT
+  RetVal_23 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_13(D), 0);
+  # DEBUG RetVal => RetVal_23
+  # DEBUG BEGIN_STMT
+  if (RetVal_23 == 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 6> [local count: 177167401]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_16->CurrentNodeState ={v} 1;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_16->CurrentEventId ={v} 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_16->FrameCommand = 0;
+
+  <bb 7> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_03 ();
+
+  <bb 8> [local count: 1073741824]:
+  # RetVal_9 = PHI <1(2), RetVal_23(7)>
+  # DEBUG RetVal => RetVal_9
+  # DEBUG BEGIN_STMT
+  return RetVal_9;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_GotoIdleState (Linflexd_Lin_Ip_GotoIdleState, funcdef_no=19, decl_uid=5762, cgraph_uid=20, symbol_order=25)
+
+Linflexd_Lin_Ip_GotoIdleState (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_8(D);
+  Base_10 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_10
+  # DEBUG BEGIN_STMT
+  LinCurrentState_11 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_11
+  # DEBUG BEGIN_STMT
+  Base_10->LINSR ={v} 32;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  _2 ={v} Base_10->LINCR1;
+  _3 = _2 & 4294967293;
+  Base_10->LINCR1 ={v} _3;
+  # DEBUG BEGIN_STMT
+  RetVal_16 = Linflexd_Lin_Ip_StateTimeoutMode (Instance_8(D), 2);
+  # DEBUG RetVal => RetVal_16
+  # DEBUG BEGIN_STMT
+  if (RetVal_16 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_10->LINIER;
+  _5 = _4 & 4294967263;
+  Base_10->LINIER ={v} _5;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_11->CurrentEventId ={v} 0;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_11->CurrentNodeState ={v} 2;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_11->FrameCommand = 0;
+
+  <bb 4> [local count: 1073741824]:
+  # RetVal_6 = PHI <0(3), 1(2)>
+  # DEBUG RetVal => RetVal_6
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  return RetVal_6;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_SendWakeupSignal (Linflexd_Lin_Ip_SendWakeupSignal, funcdef_no=20, decl_uid=5764, cgraph_uid=21, symbol_order=26)
+
+Linflexd_Lin_Ip_SendWakeupSignal (const uint8 Instance)
+{
+  Linflexd_Lin_Ip_StatusType RetVal;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  int _1;
+  _Bool _2;
+  <unnamed type> _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_10(D);
+  LinCurrentState_12 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_12
+  # DEBUG BEGIN_STMT
+  Base_13 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_13
+  # DEBUG BEGIN_STMT
+  _2 ={v} LinCurrentState_12->IsBusBusy;
+  if (_2 != 0)
+    goto <bb 6>; [35.00%]
+  else
+    goto <bb 3>; [65.00%]
+
+  <bb 3> [local count: 697932186]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} LinCurrentState_12->CurrentNodeState;
+  if (_3 == 1)
+    goto <bb 4>; [20.24%]
+  else
+    goto <bb 6>; [79.76%]
+
+  <bb 4> [local count: 141261474]:
+  # DEBUG BEGIN_STMT
+  RetVal_15 = Linflexd_Lin_Ip_GotoIdleState (Instance_10(D));
+  # DEBUG RetVal => RetVal_15
+  # DEBUG BEGIN_STMT
+  if (RetVal_15 == 0)
+    goto <bb 5>; [33.00%]
+  else
+    goto <bb 6>; [67.00%]
+
+  <bb 5> [local count: 46616287]:
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_05 ();
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_13->LINCR2;
+  _5 = _4 & 4294966783;
+  Base_13->LINCR2 ={v} _5;
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_13->LINCR2;
+  _7 = _6 | 4096;
+  Base_13->LINCR2 ={v} _7;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_05 ();
+
+  <bb 6> [local count: 1073741824]:
+  # RetVal_8 = PHI <1(3), 2(2), 1(4), 0(5)>
+  # DEBUG RetVal => RetVal_8
+  # DEBUG BEGIN_STMT
+  return RetVal_8;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_SendFrame (Linflexd_Lin_Ip_SendFrame, funcdef_no=21, decl_uid=5751, cgraph_uid=22, symbol_order=27)
+
+Linflexd_Lin_Ip_SendFrame (const uint8 Instance, const struct Linflexd_Lin_Ip_PduType * PduInfoPtr)
+{
+  uint8 DataLength;
+  uint8 Loop;
+  uint32 Temp;
+  uint32 RegVal;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  Linflexd_Lin_Ip_StatusType RetVal;
+  int _1;
+  <unnamed type> _4;
+  _Bool _5;
+  _Bool _6;
+  int _8;
+  unsigned char _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  unsigned char _13;
+  long unsigned int _14;
+  <unnamed type> _15;
+  <unnamed type> _16;
+  uint8 * _17;
+  sizetype _18;
+  uint8 * _19;
+  unsigned char _20;
+  int _21;
+  int _22;
+  long unsigned int _23;
+  uint8 * _24;
+  sizetype _25;
+  uint8 * _26;
+  unsigned char _27;
+  int _28;
+  int _29;
+  long unsigned int _30;
+  uint8 * _31;
+  sizetype _32;
+  uint8 * _33;
+  unsigned char _34;
+  unsigned int _35;
+  unsigned int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  long unsigned int _43;
+  unsigned char _61;
+
+  <bb 2> [local count: 556143199]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG RegVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_62(D);
+  LinCurrentState_64 = Linflexd_Lin_Ip_apxStateStructureArray[_1];
+  # DEBUG LinCurrentState => LinCurrentState_64
+  # DEBUG BEGIN_STMT
+  LinUserConfig_65 = Linflexd_Lin_Ip_apUserConfigs[_1];
+  # DEBUG LinUserConfig => LinUserConfig_65
+  # DEBUG BEGIN_STMT
+  Base_66 = Linflexd_Lin_Ip_apxBases[_1];
+  # DEBUG Base => Base_66
+  # DEBUG BEGIN_STMT
+  _4 ={v} LinCurrentState_64->CurrentNodeState;
+  # DEBUG CheckSleepMode => _4 == 1
+  # DEBUG BEGIN_STMT
+  if (_4 == 1)
+    goto <bb 32>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 367054511]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} LinCurrentState_64->IsBusBusy;
+  if (_5 != 0)
+    goto <bb 32>; [35.00%]
+  else
+    goto <bb 4>; [65.00%]
+
+  <bb 4> [local count: 238585432]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->CurrentEventId ={v} 0;
+  # DEBUG BEGIN_STMT
+  Base_66->LINSR ={v} 512;
+  # DEBUG BEGIN_STMT
+  Base_66->LINESR ={v} 1;
+  # DEBUG BEGIN_STMT
+  Base_66->LINSR ={v} 256;
+  # DEBUG BEGIN_STMT
+  Base_66->BDRL ={v} 0;
+  # DEBUG BEGIN_STMT
+  Base_66->BDRM ={v} 0;
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig_65->NodeFunction;
+  if (_6 != 0)
+    goto <bb 35>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 35> [local count: 119292716]:
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 954449108]:
+  # DEBUG BEGIN_STMT
+  _8 = (int) Loop_51;
+  Linflexd_Lin_Ip_au8SduBuffer[_1][_8] = 0;
+  # DEBUG BEGIN_STMT
+  Loop_74 = Loop_51 + 1;
+  # DEBUG Loop => Loop_74
+
+  <bb 6> [local count: 1073741824]:
+  # Loop_51 = PHI <Loop_74(5), 0(35)>
+  # DEBUG Loop => Loop_51
+  # DEBUG BEGIN_STMT
+  if (Loop_51 != 8)
+    goto <bb 5>; [88.89%]
+  else
+    goto <bb 7>; [11.11%]
+
+  <bb 7> [local count: 238585433]:
+  # DEBUG BEGIN_STMT
+  _9 = PduInfoPtr_75(D)->Dl;
+  DataLength_76 = _9 + 255;
+  # DEBUG DataLength => DataLength_76
+  # DEBUG BEGIN_STMT
+  _10 = (long unsigned int) DataLength_76;
+  _11 = _10 << 10;
+  _12 = _11 & 7168;
+  # DEBUG RegVal => _12
+  # DEBUG BEGIN_STMT
+  _13 = PduInfoPtr_75(D)->Pid;
+  _61 = _13 & 63;
+  _14 = (long unsigned int) _61;
+  RegVal_77 = _12 | _14;
+  # DEBUG RegVal => RegVal_77
+  # DEBUG BEGIN_STMT
+  _15 = PduInfoPtr_75(D)->Cs;
+  if (_15 == 1)
+    goto <bb 8>; [34.00%]
+  else
+    goto <bb 9>; [66.00%]
+
+  <bb 8> [local count: 81119047]:
+  # DEBUG BEGIN_STMT
+  RegVal_78 = RegVal_77 | 256;
+  # DEBUG RegVal => RegVal_78
+
+  <bb 9> [local count: 238585433]:
+  # RegVal_45 = PHI <RegVal_78(8), RegVal_77(7)>
+  # DEBUG RegVal => RegVal_45
+  # DEBUG BEGIN_STMT
+  Base_66->BIDR ={v} RegVal_45;
+  # DEBUG BEGIN_STMT
+  _16 = PduInfoPtr_75(D)->Drc;
+  if (_16 == 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 21>; [50.00%]
+
+  <bb 10> [local count: 119292716]:
+  # DEBUG BEGIN_STMT
+  if (_9 <= 4)
+    goto <bb 33>; [50.00%]
+  else
+    goto <bb 34>; [50.00%]
+
+  <bb 34> [local count: 59646358]:
+  goto <bb 15>; [100.00%]
+
+  <bb 33> [local count: 59646358]:
+  goto <bb 12>; [100.00%]
+
+  <bb 11> [local count: 238585434]:
+  # DEBUG BEGIN_STMT
+  _17 = PduInfoPtr_75(D)->SduPtr;
+  _18 = (sizetype) Loop_52;
+  _19 = _17 + _18;
+  _20 = *_19;
+  Temp_92 = (uint32) _20;
+  # DEBUG Temp => Temp_92
+  # DEBUG BEGIN_STMT
+  _21 = (int) Loop_52;
+  _22 = _21 * 8;
+  _23 = Temp_92 << _22;
+  RegVal_93 = _23 | RegVal_46;
+  # DEBUG RegVal => RegVal_93
+  # DEBUG BEGIN_STMT
+  Loop_94 = Loop_52 + 1;
+  # DEBUG Loop => Loop_94
+
+  <bb 12> [local count: 298231792]:
+  # RegVal_46 = PHI <RegVal_93(11), 0(33)>
+  # Loop_52 = PHI <Loop_94(11), 0(33)>
+  # DEBUG Loop => Loop_52
+  # DEBUG RegVal => RegVal_46
+  # DEBUG BEGIN_STMT
+  if (_9 > Loop_52)
+    goto <bb 11>; [80.00%]
+  else
+    goto <bb 13>; [20.00%]
+
+  <bb 13> [local count: 59646358]:
+  # RegVal_2 = PHI <RegVal_46(12)>
+  # DEBUG BEGIN_STMT
+  Base_66->BDRL ={v} RegVal_2;
+  goto <bb 20>; [100.00%]
+
+  <bb 14> [local count: 238585434]:
+  # DEBUG BEGIN_STMT
+  _24 = PduInfoPtr_75(D)->SduPtr;
+  _25 = (sizetype) Loop_53;
+  _26 = _24 + _25;
+  _27 = *_26;
+  Temp_88 = (uint32) _27;
+  # DEBUG Temp => Temp_88
+  # DEBUG BEGIN_STMT
+  _28 = (int) Loop_53;
+  _29 = _28 * 8;
+  _30 = Temp_88 << _29;
+  RegVal_89 = _30 | RegVal_47;
+  # DEBUG RegVal => RegVal_89
+  # DEBUG BEGIN_STMT
+  Loop_90 = Loop_53 + 1;
+  # DEBUG Loop => Loop_90
+
+  <bb 15> [local count: 298231792]:
+  # RegVal_47 = PHI <RegVal_89(14), 0(34)>
+  # Loop_53 = PHI <Loop_90(14), 0(34)>
+  # DEBUG Loop => Loop_53
+  # DEBUG RegVal => RegVal_47
+  # DEBUG BEGIN_STMT
+  if (Loop_53 != 4)
+    goto <bb 14>; [80.00%]
+  else
+    goto <bb 16>; [20.00%]
+
+  <bb 16> [local count: 59646358]:
+  # RegVal_3 = PHI <RegVal_47(15)>
+  # DEBUG BEGIN_STMT
+  Base_66->BDRL ={v} RegVal_3;
+  # DEBUG BEGIN_STMT
+  # DEBUG RegVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG Loop => 4
+  goto <bb 18>; [100.00%]
+
+  <bb 17> [local count: 482593266]:
+  # DEBUG BEGIN_STMT
+  _31 = PduInfoPtr_75(D)->SduPtr;
+  _32 = (sizetype) Loop_54;
+  _33 = _31 + _32;
+  _34 = *_33;
+  Temp_85 = (uint32) _34;
+  # DEBUG Temp => Temp_85
+  # DEBUG BEGIN_STMT
+  _35 = _32 + 4294967292;
+  _36 = _35 * 8;
+  _37 = Temp_85 << _36;
+  RegVal_86 = _37 | RegVal_48;
+  # DEBUG RegVal => RegVal_86
+  # DEBUG BEGIN_STMT
+  Loop_87 = Loop_54 + 1;
+  # DEBUG Loop => Loop_87
+
+  <bb 18> [local count: 542239626]:
+  # RegVal_48 = PHI <0(16), RegVal_86(17)>
+  # Loop_54 = PHI <4(16), Loop_87(17)>
+  # DEBUG Loop => Loop_54
+  # DEBUG RegVal => RegVal_48
+  # DEBUG BEGIN_STMT
+  if (_9 > Loop_54)
+    goto <bb 17>; [89.00%]
+  else
+    goto <bb 19>; [11.00%]
+
+  <bb 19> [local count: 59646359]:
+  # RegVal_7 = PHI <RegVal_48(18)>
+  # DEBUG BEGIN_STMT
+  Base_66->BDRM ={v} RegVal_7;
+
+  <bb 20> [local count: 119292717]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RegVal => 512
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->FrameCommand = 1;
+  goto <bb 25>; [100.00%]
+
+  <bb 21> [local count: 119292716]:
+  # DEBUG BEGIN_STMT
+  if (_16 == 1)
+    goto <bb 22>; [34.00%]
+  else
+    goto <bb 23>; [66.00%]
+
+  <bb 22> [local count: 40559524]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RegVal => 0
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->FrameCommand = 2;
+  goto <bb 25>; [100.00%]
+
+  <bb 23> [local count: 78733193]:
+  # DEBUG BEGIN_STMT
+  if (_16 == 2)
+    goto <bb 24>; [34.00%]
+  else
+    goto <bb 25>; [66.00%]
+
+  <bb 24> [local count: 26769286]:
+  # DEBUG BEGIN_STMT
+  _38 ={v} Base_66->LINCR2;
+  _39 = _38 | 2048;
+  Base_66->LINCR2 ={v} _39;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->FrameCommand = 3;
+
+  <bb 25> [local count: 238585434]:
+  # RegVal_49 = PHI <512(20), 0(22), RegVal_45(23), RegVal_45(24)>
+  # DEBUG RegVal => RegVal_49
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _40 ={v} Base_66->BIDR;
+  _41 = _40 | RegVal_49;
+  Base_66->BIDR ={v} _41;
+  # DEBUG BEGIN_STMT
+  if (_6 != 0)
+    goto <bb 26>; [50.00%]
+  else
+    goto <bb 27>; [50.00%]
+
+  <bb 26> [local count: 119292717]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->CurrentNodeState ={v} 3;
+  # DEBUG BEGIN_STMT
+  # DEBUG RegVal => 256
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->IsBusBusy ={v} 1;
+  goto <bb 31>; [100.00%]
+
+  <bb 27> [local count: 119292717]:
+  # DEBUG BEGIN_STMT
+  if (_16 == 0)
+    goto <bb 28>; [50.00%]
+  else
+    goto <bb 29>; [50.00%]
+
+  <bb 28> [local count: 59646358]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->CurrentNodeState ={v} 9;
+  # DEBUG BEGIN_STMT
+  # DEBUG RegVal => 1024
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->IsBusBusy ={v} 1;
+  goto <bb 31>; [100.00%]
+
+  <bb 29> [local count: 59646358]:
+  # DEBUG BEGIN_STMT
+  if (_16 == 1)
+    goto <bb 30>; [34.00%]
+  else
+    goto <bb 31>; [66.00%]
+
+  <bb 30> [local count: 20279762]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->CurrentNodeState ={v} 7;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_64->IsBusBusy ={v} 1;
+
+  <bb 31> [local count: 238585434]:
+  # RegVal_50 = PHI <256(26), 1024(28), RegVal_49(29), RegVal_49(30)>
+  # DEBUG RegVal => RegVal_50
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_06 ();
+  # DEBUG BEGIN_STMT
+  _42 ={v} Base_66->LINCR2;
+  _43 = _42 | RegVal_50;
+  Base_66->LINCR2 ={v} _43;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_06 ();
+
+  <bb 32> [local count: 556143201]:
+  # RetVal_44 = PHI <1(2), 2(3), 0(31)>
+  # DEBUG RetVal => RetVal_44
+  # DEBUG BEGIN_STMT
+  return RetVal_44;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_TxRx_IRQHandler (Linflexd_Lin_Ip_TxRx_IRQHandler, funcdef_no=22, decl_uid=5766, cgraph_uid=23, symbol_order=28)
+
+
+Symbols to be put in SSA form
+{ D.6426 D.6627 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 35
+Number of blocks to update: 34 ( 97%)
+
+
+Merging blocks 10 and 19
+Removing basic block 14
+Merging blocks 21 and 18
+Removing basic block 22
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+;; 2 succs { 3 29 }
+;; 3 succs { 4 29 }
+;; 4 succs { 5 28 }
+;; 5 succs { 6 9 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 30 }
+;; 9 succs { 10 16 }
+;; 10 succs { 12 11 }
+;; 11 succs { 12 }
+;; 12 succs { 13 15 }
+;; 13 succs { 14 15 }
+;; 14 succs { 15 }
+;; 15 succs { 30 }
+;; 16 succs { 17 23 }
+;; 17 succs { 18 19 }
+;; 18 succs { 19 }
+;; 19 succs { 20 21 }
+;; 20 succs { 21 }
+;; 21 succs { 22 27 }
+;; 22 succs { 27 }
+;; 23 succs { 24 26 }
+;; 24 succs { 25 27 }
+;; 25 succs { 27 }
+;; 26 succs { 27 }
+;; 27 succs { 30 }
+;; 28 succs { 30 }
+;; 29 succs { 30 }
+;; 30 succs { 1 }
+Linflexd_Lin_Ip_TxRx_IRQHandler (const uint32 Instance)
+{
+  struct LINFLEXD_Type * Base;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  uint32 Temp1;
+  uint8 D.6627;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  uint8 Pid;
+  uint32 StatusFlag;
+  <unnamed type> _1;
+  struct Linflexd_Lin_Ip_PduType * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _6;
+  unsigned char _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  struct Linflexd_Lin_Ip_PduType * _11;
+  _Bool _12;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _13;
+  unsigned char _14;
+  long unsigned int _25;
+  long unsigned int _42;
+  long unsigned int _43;
+  long unsigned int _44;
+  long unsigned int _45;
+  long unsigned int _46;
+  long unsigned int _47;
+  long unsigned int _48;
+  long unsigned int _49;
+  long unsigned int iftmp.10_50;
+  long unsigned int _52;
+  long unsigned int _53;
+  long unsigned int _54;
+  long unsigned int _55;
+  long unsigned int _56;
+  long unsigned int _57;
+  unsigned char _59;
+  long unsigned int _63;
+  _Bool _64;
+  struct Linflexd_Lin_Ip_PduType * _65;
+  uint8 * _66;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _67;
+  unsigned char _68;
+  long unsigned int _69;
+  long unsigned int _70;
+  long unsigned int _71;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _72;
+  unsigned char _73;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG StatusFlag => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG Pid => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_19(D)];
+  # DEBUG LinCurrentState => LinCurrentState_20
+  # DEBUG BEGIN_STMT
+  Base_21 = Linflexd_Lin_Ip_apxBases[Instance_19(D)];
+  # DEBUG Base => Base_21
+  # DEBUG BEGIN_STMT
+  if (LinCurrentState_20 != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 29>; [30.00%]
+
+  <bb 3> [local count: 751619278]:
+  _1 ={v} LinCurrentState_20->CurrentNodeState;
+  if (_1 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 29>; [50.00%]
+
+  <bb 4> [local count: 375809639]:
+  # DEBUG BEGIN_STMT
+  LinUserConfig_22 = Linflexd_Lin_Ip_apUserConfigs[Instance_19(D)];
+  # DEBUG LinUserConfig => LinUserConfig_22
+  # DEBUG BEGIN_STMT
+  _2 = &Linflexd_Lin_Ip_anPduInfo[Instance_19(D)];
+  LinCurrentState_20->SlavePduInfoPtr = _2;
+  # DEBUG BEGIN_STMT
+  StatusFlag_24 ={v} Base_21->LINIER;
+  # DEBUG StatusFlag => StatusFlag_24
+  # DEBUG BEGIN_STMT
+  _25 ={v} Base_21->LINSR;
+  StatusFlag_26 = StatusFlag_24 & _25;
+  # DEBUG StatusFlag => StatusFlag_26
+  # DEBUG BEGIN_STMT
+  if (StatusFlag_26 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 28>; [50.00%]
+
+  <bb 5> [local count: 187904819]:
+  # DEBUG BEGIN_STMT
+  _3 = StatusFlag_26 & 32;
+  if (_3 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 6> [local count: 93952410]:
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_21->LINIER;
+  _5 = _4 & 4294967263;
+  Base_21->LINIER ={v} _5;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentEventId ={v} 1;
+  # DEBUG BEGIN_STMT
+  _6 = LinUserConfig_22->Callback;
+  if (_6 != 0B)
+    goto <bb 7>; [70.00%]
+  else
+    goto <bb 8>; [30.00%]
+
+  <bb 7> [local count: 65766687]:
+  # DEBUG BEGIN_STMT
+  _7 = (unsigned char) Instance_19(D);
+  _6 (_7, LinCurrentState_20);
+
+  <bb 8> [local count: 93952410]:
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 32;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentNodeState ={v} 2;
+  goto <bb 30>; [100.00%]
+
+  <bb 9> [local count: 93952410]:
+  # DEBUG BEGIN_STMT
+  _8 = StatusFlag_26 & 1;
+  if (_8 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 16>; [50.00%]
+
+  <bb 10> [local count: 46976205]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_20->CurrentEventId ={v} 3;
+  # DEBUG BEGIN_STMT
+  _9 ={v} Base_21->BIDR;
+  _10 = _9 & 63;
+  # DEBUG ReceptFrameID => _10
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_CalculatePid
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Temp1 => _10
+  # DEBUG BEGIN_STMT
+  # DEBUG Temp2 => _10
+  # DEBUG BEGIN_STMT
+  _42 = _10 >> 1;
+  _43 = _10 >> 3;
+  _44 = _42 ^ _43;
+  _45 = _10 >> 4;
+  _46 = _44 ^ _45;
+  _47 = _10 >> 5;
+  _48 = _46 ^ _47;
+  _49 = _48 & 1;
+  if (_49 == 0)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 11> [local count: 23488102]:
+
+  <bb 12> [local count: 46976205]:
+  # iftmp.10_50 = PHI <128(10), 0(11)>
+  Temp1_51 = _10 | iftmp.10_50;
+  # DEBUG Temp1 => Temp1_51
+  # DEBUG BEGIN_STMT
+  _52 = _10 ^ _42;
+  _53 = _10 >> 2;
+  _54 = _52 ^ _53;
+  _55 = _45 ^ _54;
+  _56 = _55 << 6;
+  _57 = _56 & 64;
+  Temp1_58 = Temp1_51 | _57;
+  # DEBUG Temp1 => Temp1_58
+  # DEBUG BEGIN_STMT
+  _59 = (unsigned char) Temp1_58;
+  _90 = _59;
+  # DEBUG ReceptFrameID => NULL
+  # DEBUG Temp1 => NULL
+  Pid_30 = _90;
+  # DEBUG Pid => Pid_30
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Lin_LIN_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  _11 = LinCurrentState_20->SlavePduInfoPtr;
+  _11->Pid = Pid_30;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Lin_LIN_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  _12 = LinUserConfig_22->NodeFunction;
+  if (_12 != 0)
+    goto <bb 15>; [50.00%]
+  else
+    goto <bb 13>; [50.00%]
+
+  <bb 13> [local count: 23488102]:
+  # DEBUG BEGIN_STMT
+  _13 = LinUserConfig_22->Callback;
+  if (_13 != 0B)
+    goto <bb 14>; [70.00%]
+  else
+    goto <bb 15>; [30.00%]
+
+  <bb 14> [local count: 16441672]:
+  # DEBUG BEGIN_STMT
+  _14 = (unsigned char) Instance_19(D);
+  _13 (_14, LinCurrentState_20);
+
+  <bb 15> [local count: 46976205]:
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 1;
+  goto <bb 30>; [100.00%]
+
+  <bb 16> [local count: 46976205]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_19(D)
+  # DEBUG StatusFlag => StatusFlag_26
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_CompleteTransfer
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_19(D)];
+  # DEBUG LinCurrentState => LinCurrentState_60
+  # DEBUG BEGIN_STMT
+  Base_61 = Linflexd_Lin_Ip_apxBases[Instance_19(D)];
+  # DEBUG Base => Base_61
+  # DEBUG BEGIN_STMT
+  LinUserConfig_62 = Linflexd_Lin_Ip_apUserConfigs[Instance_19(D)];
+  # DEBUG LinUserConfig => LinUserConfig_62
+  # DEBUG BEGIN_STMT
+  _63 = StatusFlag_26 & 4;
+  if (_63 != 0)
+    goto <bb 17>; [50.00%]
+  else
+    goto <bb 23>; [50.00%]
+
+  <bb 17> [local count: 23488102]:
+  # DEBUG BEGIN_STMT
+  Base_61->LINSR ={v} 4;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60->CurrentEventId ={v} 12;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60->CurrentNodeState ={v} 8;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _64 = LinUserConfig_62->NodeFunction;
+  if (_64 != 0)
+    goto <bb 19>; [67.00%]
+  else
+    goto <bb 18>; [33.00%]
+
+  <bb 18> [local count: 7751074]:
+  # DEBUG BEGIN_STMT
+  _65 = LinCurrentState_60->SlavePduInfoPtr;
+  _66 = _65->SduPtr;
+  Linflexd_Lin_Ip_CopyData (Instance_19(D), _66);
+
+  <bb 19> [local count: 23488102]:
+  # DEBUG BEGIN_STMT
+  _67 = LinUserConfig_62->Callback;
+  if (_67 != 0B)
+    goto <bb 20>; [70.00%]
+  else
+    goto <bb 21>; [30.00%]
+
+  <bb 20> [local count: 16441672]:
+  # DEBUG BEGIN_STMT
+  _68 = (unsigned char) Instance_19(D);
+  _67 (_68, LinCurrentState_60);
+
+  <bb 21> [local count: 23488102]:
+  # DEBUG BEGIN_STMT
+  _69 ={v} Base_61->LINESR;
+  _70 = _69 & 1;
+  if (_70 != 0)
+    goto <bb 22>; [50.00%]
+  else
+    goto <bb 27>; [50.00%]
+
+  <bb 22> [local count: 11744051]:
+  # DEBUG BEGIN_STMT
+  Base_61->LINESR ={v} 1;
+  goto <bb 27>; [100.00%]
+
+  <bb 23> [local count: 23488102]:
+  # DEBUG BEGIN_STMT
+  _71 = StatusFlag_26 & 2;
+  if (_71 != 0)
+    goto <bb 24>; [50.00%]
+  else
+    goto <bb 26>; [50.00%]
+
+  <bb 24> [local count: 11744051]:
+  # DEBUG BEGIN_STMT
+  Base_61->LINSR ={v} 2;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60->CurrentEventId ={v} 11;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60->CurrentNodeState ={v} 10;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_60->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _72 = LinUserConfig_62->Callback;
+  if (_72 != 0B)
+    goto <bb 25>; [70.00%]
+  else
+    goto <bb 27>; [30.00%]
+
+  <bb 25> [local count: 8220836]:
+  # DEBUG BEGIN_STMT
+  _73 = (unsigned char) Instance_19(D);
+  _72 (_73, LinCurrentState_60);
+  goto <bb 27>; [100.00%]
+
+  <bb 26> [local count: 11744051]:
+  # DEBUG BEGIN_STMT
+  Base_61->LINSR ={v} 39;
+
+  <bb 27> [local count: 46976205]:
+  goto <bb 30>; [100.00%]
+
+  <bb 28> [local count: 187904819]:
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 807;
+  goto <bb 30>; [100.00%]
+
+  <bb 29> [local count: 697932187]:
+  # DEBUG BEGIN_STMT
+  Base_21->LINSR ={v} 807;
+
+  <bb 30> [local count: 1073741824]:
+  # DEBUG Instance => NULL
+  # DEBUG StatusFlag => NULL
+  # DEBUG LinUserConfig => NULL
+  # DEBUG LinCurrentState => NULL
+  # DEBUG Base => NULL
+  return;
+
+}
+
+
+
+;; Function Linflexd_Lin_Ip_Error_IRQHandler (Linflexd_Lin_Ip_Error_IRQHandler, funcdef_no=23, decl_uid=5768, cgraph_uid=24, symbol_order=29)
+
+
+Symbols to be put in SSA form
+{ D.6427 D.6646 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 37
+Number of blocks to update: 36 ( 97%)
+
+
+Removing basic block 9
+Removing basic block 13
+Removing basic block 22
+Merging blocks 36 and 26
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32
+;; 2 succs { 3 31 }
+;; 3 succs { 4 31 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 30 }
+;; 9 succs { 10 11 }
+;; 10 succs { 27 }
+;; 11 succs { 12 13 }
+;; 12 succs { 27 }
+;; 13 succs { 14 15 }
+;; 14 succs { 27 }
+;; 15 succs { 16 17 }
+;; 16 succs { 27 }
+;; 17 succs { 18 19 }
+;; 18 succs { 26 }
+;; 19 succs { 20 21 }
+;; 20 succs { 26 }
+;; 21 succs { 22 23 }
+;; 22 succs { 26 }
+;; 23 succs { 24 25 }
+;; 24 succs { 26 }
+;; 25 succs { 26 }
+;; 26 succs { 27 29 }
+;; 27 succs { 28 29 }
+;; 28 succs { 29 }
+;; 29 succs { 32 }
+;; 30 succs { 32 }
+;; 31 succs { 32 }
+;; 32 succs { 1 }
+Linflexd_Lin_Ip_Error_IRQHandler (const uint32 Instance)
+{
+  struct LINFLEXD_Type * Base;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  boolean IsErrorAvailable;
+  boolean D.6646;
+  struct LINFLEXD_Type * Base;
+  struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  boolean IsErrorAvailable;
+  const struct Linflexd_Lin_Ip_UserConfigType * LinUserConfig;
+  const struct Linflexd_Lin_Ip_StateStructType * LinCurrentState;
+  struct LINFLEXD_Type * Base;
+  uint32 LinSyncErrorStatus;
+  uint32 ErrorFlag;
+  <unnamed type> _1;
+  long unsigned int _2;
+  long unsigned int _13;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  void (*<T4b4>) (const uint8, const struct Linflexd_Lin_Ip_StateStructType *) _30;
+  unsigned char _31;
+  long unsigned int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  long unsigned int _42;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  LinCurrentState_8 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_7(D)];
+  # DEBUG LinCurrentState => LinCurrentState_8
+  # DEBUG BEGIN_STMT
+  Base_9 = Linflexd_Lin_Ip_apxBases[Instance_7(D)];
+  # DEBUG Base => Base_9
+  # DEBUG BEGIN_STMT
+  if (LinCurrentState_8 != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 31>; [30.00%]
+
+  <bb 3> [local count: 751619278]:
+  _1 ={v} LinCurrentState_8->CurrentNodeState;
+  if (_1 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 31>; [50.00%]
+
+  <bb 4> [local count: 375809639]:
+  # DEBUG BEGIN_STMT
+  ErrorFlag_10 ={v} Base_9->LINESR;
+  # DEBUG ErrorFlag => ErrorFlag_10
+  # DEBUG BEGIN_STMT
+  LinSyncErrorStatus_11 = ErrorFlag_10 & 3584;
+  # DEBUG LinSyncErrorStatus => LinSyncErrorStatus_11
+  # DEBUG BEGIN_STMT
+  if (LinSyncErrorStatus_11 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 187904819]:
+  # DEBUG BEGIN_STMT
+  ErrorFlag_12 = ErrorFlag_10 | 2048;
+  # DEBUG ErrorFlag => ErrorFlag_12
+
+  <bb 6> [local count: 375809639]:
+  # ErrorFlag_3 = PHI <ErrorFlag_10(4), ErrorFlag_12(5)>
+  # DEBUG ErrorFlag => ErrorFlag_3
+  # DEBUG BEGIN_STMT
+  _13 ={v} Base_9->LINIER;
+  ErrorFlag_14 = ErrorFlag_3 & _13;
+  # DEBUG ErrorFlag => ErrorFlag_14
+  # DEBUG BEGIN_STMT
+  _2 = ErrorFlag_14 & 2048;
+  if (_2 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 187904819]:
+  # DEBUG BEGIN_STMT
+  ErrorFlag_15 = ErrorFlag_14 & 4294965247;
+  # DEBUG ErrorFlag => ErrorFlag_15
+  # DEBUG BEGIN_STMT
+  ErrorFlag_16 = LinSyncErrorStatus_11 | ErrorFlag_15;
+  # DEBUG ErrorFlag => ErrorFlag_16
+
+  <bb 8> [local count: 375809639]:
+  # ErrorFlag_4 = PHI <ErrorFlag_14(6), ErrorFlag_16(7)>
+  # DEBUG ErrorFlag => ErrorFlag_4
+  # DEBUG BEGIN_STMT
+  if (ErrorFlag_4 != 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 30>; [67.00%]
+
+  <bb 9> [local count: 124017181]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_7(D)
+  # DEBUG ErrorFlag => ErrorFlag_4
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_ErrorsHandler
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG IsErrorAvailable => 1
+  # DEBUG BEGIN_STMT
+  LinUserConfig_20 = Linflexd_Lin_Ip_apUserConfigs[Instance_7(D)];
+  # DEBUG LinUserConfig => LinUserConfig_20
+  # DEBUG BEGIN_STMT
+  LinCurrentState_21 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_7(D)];
+  # DEBUG LinCurrentState => LinCurrentState_21
+  # DEBUG BEGIN_STMT
+  Base_22 = Linflexd_Lin_Ip_apxBases[Instance_7(D)];
+  # DEBUG Base => Base_22
+  # DEBUG BEGIN_STMT
+  _23 = ErrorFlag_4 & 1024;
+  if (_23 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 62008590]:
+  # DEBUG BEGIN_STMT
+  Base_22->LINESR ={v} 1024;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_21->CurrentEventId ={v} 14;
+  # DEBUG IsErrorAvailable => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 27>; [100.00%]
+
+  <bb 11> [local count: 62008590]:
+  # DEBUG BEGIN_STMT
+  _24 = ErrorFlag_4 & 2048;
+  if (_24 != 0)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 13>; [50.00%]
+
+  <bb 12> [local count: 31004295]:
+  # DEBUG BEGIN_STMT
+  Base_22->LINESR ={v} 2048;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_21->CurrentEventId ={v} 14;
+  # DEBUG IsErrorAvailable => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 27>; [100.00%]
+
+  <bb 13> [local count: 31004295]:
+  # DEBUG BEGIN_STMT
+  _25 = ErrorFlag_4 & 512;
+  if (_25 != 0)
+    goto <bb 14>; [50.00%]
+  else
+    goto <bb 15>; [50.00%]
+
+  <bb 14> [local count: 15502148]:
+  # DEBUG BEGIN_STMT
+  Base_22->LINESR ={v} 512;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_21->CurrentEventId ={v} 14;
+  # DEBUG IsErrorAvailable => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 27>; [100.00%]
+
+  <bb 15> [local count: 15502148]:
+  # DEBUG BEGIN_STMT
+  _26 = ErrorFlag_4 & 8192;
+  if (_26 != 0)
+    goto <bb 16>; [67.00%]
+  else
+    goto <bb 17>; [33.00%]
+
+  <bb 16> [local count: 10386439]:
+  # DEBUG BEGIN_STMT
+  Base_22->LINESR ={v} 8192;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_21->CurrentEventId ={v} 9;
+  # DEBUG BEGIN_STMT
+  _27 ={v} Base_22->LINCR2;
+  _28 = _27 | 512;
+  Base_22->LINCR2 ={v} _28;
+  # DEBUG IsErrorAvailable => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 27>; [100.00%]
+
+  <bb 17> [local count: 5115709]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_7(D)
+  # DEBUG ErrorFlag => ErrorFlag_4
+  # DEBUG INLINE_ENTRY Linflexd_Lin_Ip_ReceiveErrorsHandler
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG IsErrorAvailable => 1
+  # DEBUG BEGIN_STMT
+  LinCurrentState_32 = Linflexd_Lin_Ip_apxStateStructureArray[Instance_7(D)];
+  # DEBUG LinCurrentState => LinCurrentState_32
+  # DEBUG BEGIN_STMT
+  Base_33 = Linflexd_Lin_Ip_apxBases[Instance_7(D)];
+  # DEBUG Base => Base_33
+  # DEBUG BEGIN_STMT
+  _34 = ErrorFlag_4 & 128;
+  if (_34 != 0)
+    goto <bb 18>; [50.00%]
+  else
+    goto <bb 19>; [50.00%]
+
+  <bb 18> [local count: 2557854]:
+  # DEBUG BEGIN_STMT
+  Base_33->LINESR ={v} 128;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_32->CurrentEventId ={v} 7;
+  goto <bb 26>; [100.00%]
+
+  <bb 19> [local count: 2557854]:
+  # DEBUG BEGIN_STMT
+  _35 = ErrorFlag_4 & 4096;
+  if (_35 != 0)
+    goto <bb 20>; [50.00%]
+  else
+    goto <bb 21>; [50.00%]
+
+  <bb 20> [local count: 1278927]:
+  # DEBUG BEGIN_STMT
+  Base_33->LINESR ={v} 4096;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_32->CurrentEventId ={v} 10;
+  goto <bb 26>; [100.00%]
+
+  <bb 21> [local count: 1278927]:
+  # DEBUG BEGIN_STMT
+  _36 = ErrorFlag_4 & 256;
+  if (_36 != 0)
+    goto <bb 22>; [50.00%]
+  else
+    goto <bb 23>; [50.00%]
+
+  <bb 22> [local count: 639464]:
+  # DEBUG BEGIN_STMT
+  Base_33->LINESR ={v} 256;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_32->CurrentEventId ={v} 8;
+  # DEBUG BEGIN_STMT
+  Base_33->LINSR ={v} 256;
+  goto <bb 26>; [100.00%]
+
+  <bb 23> [local count: 639464]:
+  # DEBUG BEGIN_STMT
+  _37 = ErrorFlag_4 & 16384;
+  if (_37 != 0)
+    goto <bb 24>; [50.00%]
+  else
+    goto <bb 25>; [50.00%]
+
+  <bb 24> [local count: 319732]:
+  # DEBUG BEGIN_STMT
+  Base_33->LINESR ={v} 16384;
+  # DEBUG BEGIN_STMT
+  _38 ={v} Base_33->LINSR;
+  LinCurrentState_32->LinState ={v} _38;
+  # DEBUG BEGIN_STMT
+  _39 ={v} Base_33->LINCR1;
+  _40 = _39 | 2;
+  Base_33->LINCR1 ={v} _40;
+  # DEBUG BEGIN_STMT
+  _41 ={v} Base_33->LINCR1;
+  _42 = _41 & 4294967293;
+  Base_33->LINCR1 ={v} _42;
+  # DEBUG BEGIN_STMT
+  LinCurrentState_32->CurrentEventId ={v} 13;
+  goto <bb 26>; [100.00%]
+
+  <bb 25> [local count: 319732]:
+  # DEBUG BEGIN_STMT
+  Base_33->LINESR ={v} 32640;
+  # DEBUG BEGIN_STMT
+  # DEBUG IsErrorAvailable => 0
+
+  <bb 26> [local count: 5115709]:
+  # IsErrorAvailable_43 = PHI <1(18), 1(20), 1(22), 1(24), 0(25)>
+  # DEBUG IsErrorAvailable => IsErrorAvailable_43
+  # DEBUG BEGIN_STMT
+  _60 = IsErrorAvailable_43;
+  # DEBUG Instance => NULL
+  # DEBUG ErrorFlag => NULL
+  # DEBUG IsErrorAvailable => NULL
+  # DEBUG LinCurrentState => NULL
+  # DEBUG Base => NULL
+  IsErrorAvailable_29 = _60;
+  # DEBUG IsErrorAvailable => IsErrorAvailable_29
+  # DEBUG BEGIN_STMT
+  if (IsErrorAvailable_29 != 0)
+    goto <bb 27>; [50.00%]
+  else
+    goto <bb 29>; [50.00%]
+
+  <bb 27> [local count: 121459326]:
+  # DEBUG BEGIN_STMT
+  LinCurrentState_21->IsBusBusy ={v} 0;
+  # DEBUG BEGIN_STMT
+  _30 = LinUserConfig_20->Callback;
+  if (_30 != 0B)
+    goto <bb 28>; [70.00%]
+  else
+    goto <bb 29>; [30.00%]
+
+  <bb 28> [local count: 85021529]:
+  # DEBUG BEGIN_STMT
+  _31 = (unsigned char) Instance_7(D);
+  _30 (_31, LinCurrentState_21);
+
+  <bb 29> [local count: 124017181]:
+  goto <bb 32>; [100.00%]
+
+  <bb 30> [local count: 251792458]:
+  # DEBUG BEGIN_STMT
+  Base_9->LINESR ={v} 65408;
+  goto <bb 32>; [100.00%]
+
+  <bb 31> [local count: 697932187]:
+  # DEBUG BEGIN_STMT
+  Base_9->LINESR ={v} 65408;
+
+  <bb 32> [local count: 1073741824]:
+  # DEBUG Instance => NULL
+  # DEBUG ErrorFlag => NULL
+  # DEBUG LinUserConfig => NULL
+  # DEBUG IsErrorAvailable => NULL
+  # DEBUG LinCurrentState => NULL
+  # DEBUG Base => NULL
+  return;
+
+}
+
+

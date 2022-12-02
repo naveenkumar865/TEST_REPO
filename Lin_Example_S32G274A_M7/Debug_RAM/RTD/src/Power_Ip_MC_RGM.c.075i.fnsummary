@@ -1,0 +1,2548 @@
+
+Analyzing function: Power_Ip_MC_RGM_ClearDesResetFlags.part.0/25
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 4 2 3
+;; 4 succs { 2 }
+;; 2 succs { 3 }
+;; 3 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ClearDesResetFlags.part.0
+
+IPA function summary for Power_Ip_MC_RGM_ClearDesResetFlags.part.0/25 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_ReportPowerErrors/23 function body not available
+      loop depth: 0 freq:1.00 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 4 2 3
+;; 4 succs { 2 }
+;; 2 succs { 3 }
+;; 3 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ClearFesResetFlags.part.0
+
+IPA function summary for Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_ReportPowerErrors/23 function body not available
+      loop depth: 0 freq:1.00 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_GetResetRawValue/20
+;; 3 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 24 5 6 7 8 9 10 11 12 13 14 23 15 16 17 18 19 20 21 22
+;;
+;; Loop 2
+;;  header 20, latch 19
+;;  depth 1, outer 0
+;;  nodes: 20 19 15 18 16 17
+;;
+;; Loop 1
+;;  header 10, latch 9
+;;  depth 1, outer 0
+;;  nodes: 10 9 5 8 6 7
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 24 12 }
+;; 24 succs { 10 }
+;; 5 succs { 6 9 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 }
+;; 9 succs { 10 }
+;; 10 succs { 5 11 }
+;; 11 succs { 12 }
+;; 12 succs { 13 14 }
+;; 13 succs { 14 }
+;; 14 succs { 23 22 }
+;; 23 succs { 20 }
+;; 15 succs { 16 19 }
+;; 16 succs { 17 18 }
+;; 17 succs { 18 }
+;; 18 succs { 19 }
+;; 19 succs { 20 }
+;; 20 succs { 15 21 }
+;; 21 succs { 22 }
+;; 22 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_GetResetRawValue
+
+IPA function summary for Power_Ip_MC_RGM_GetResetRawValue/20 inlinable
+  global time:     336.031345
+  self size:       51
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:44.000000, time:323.031345
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_ClearDesResetFlags/5 function not considered for inlining
+      loop depth: 0 freq:0.50 size: 2 time: 11
+    Power_Ip_MC_RGM_ClearFesResetFlags/4 function not considered for inlining
+      loop depth: 0 freq:0.50 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_MC_RGM_GetResetReason/19
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 5 10 }
+;; 5 succs { 6 7 }
+;; 6 succs { 7 }
+;; 7 succs { 8 9 }
+;; 8 succs { 9 }
+;; 9 succs { 10 }
+;; 10 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_GetResetReason
+
+IPA function summary for Power_Ip_MC_RGM_GetResetReason/19 inlinable
+  global time:     48.560000
+  self size:       36
+  global size:     0
+  min size:       0
+  self stack:      4
+  global stack:    4
+    size:19.000000, time:13.750000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_ClearFesResetFlags/4 function not considered for inlining
+      loop depth: 0 freq:0.50 size: 2 time: 11
+    Power_Ip_MC_RGM_CheckResetReason/18 function not considered for inlining
+      loop depth: 0 freq:0.17 size: 5 time: 14
+       op1 is compile time invariant
+       op2 is compile time invariant
+    Power_Ip_MC_RGM_ClearDesResetFlags/5 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 2 time: 11
+    Power_Ip_MC_RGM_CheckResetReason/18 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 5 time: 14
+       op1 is compile time invariant
+       op2 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_CheckResetReason/18
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11
+;;
+;; Loop 1
+;;  header 10, latch 9
+;;  depth 1, outer 0
+;;  nodes: 10 9 5 8 6 7
+;; 2 succs { 4 3 }
+;; 3 succs { 4 }
+;; 4 succs { 10 }
+;; 5 succs { 6 9 }
+;; 6 succs { 7 8 }
+;; 7 succs { 11 8 }
+;; 8 succs { 9 }
+;; 9 succs { 10 }
+;; 10 succs { 5 11 }
+;; 11 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_CheckResetReason
+
+IPA function summary for Power_Ip_MC_RGM_CheckResetReason/18 inlinable
+  global time:     223.459873
+  self size:       21
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:14.500000, time:217.959873
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op2[ref offset: 0] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op2[ref offset: 0] changed)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+  calls:
+
+
+Analyzing function: Power_Ip_MC_RGM_DisableResetDomain/17
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10
+;;
+;; Loop 1
+;;  header 9, latch 8
+;;  depth 1, outer 0
+;;  nodes: 9 8 3 4 5 6 7
+;; 2 succs { 9 }
+;; 3 succs { 4 8 }
+;; 4 succs { 5 8 }
+;; 5 succs { 6 8 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 }
+;; 9 succs { 3 10 }
+;; 10 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_DisableResetDomain
+
+IPA function summary for Power_Ip_MC_RGM_DisableResetDomain/17 inlinable
+  global time:     46.630000
+  self size:       24
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:16.500000, time:39.000000
+    size:3.500000, time:4.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_ConfigureResetDomainController/8 function not considered for inlining
+      loop depth: 1 freq:0.16 size: 2 time: 11
+    Power_Ip_MC_RGM_AssertDomainReset/7 function not considered for inlining
+      loop depth: 1 freq:0.16 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_MC_RGM_EnableResetDomain/16
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10
+;;
+;; Loop 1
+;;  header 9, latch 8
+;;  depth 1, outer 0
+;;  nodes: 9 8 3 4 5 6 7
+;; 2 succs { 9 }
+;; 3 succs { 4 8 }
+;; 4 succs { 5 8 }
+;; 5 succs { 6 8 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 }
+;; 9 succs { 3 10 }
+;; 10 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_EnableResetDomain
+
+IPA function summary for Power_Ip_MC_RGM_EnableResetDomain/16 inlinable
+  global time:     46.795000
+  self size:       25
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:17.500000, time:39.165000
+    size:3.500000, time:4.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_ReleaseDomainReset/6 function not considered for inlining
+      loop depth: 1 freq:0.16 size: 2 time: 11
+    Power_Ip_MC_RGM_ConfigureResetDomainController/8 function not considered for inlining
+      loop depth: 1 freq:0.16 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_MC_RGM_CheckModeConfig/15
+;; 4 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 16 4 5 6 7 15 8 9 10 11 12 13 14
+;;
+;; Loop 1
+;;  header 13, latch 12
+;;  depth 1, outer 0
+;;  nodes: 13 12 3 11 10 15 7 6 16 4 5 8 9
+;;
+;; Loop 3
+;;  header 11, latch 10
+;;  depth 2, outer 1
+;;  nodes: 11 10 8 9
+;;
+;; Loop 2
+;;  header 7, latch 6
+;;  depth 2, outer 1
+;;  nodes: 7 6 4 5
+;; 2 succs { 13 }
+;; 3 succs { 16 12 }
+;; 16 succs { 7 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 }
+;; 7 succs { 4 15 }
+;; 15 succs { 11 }
+;; 8 succs { 9 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 }
+;; 11 succs { 8 12 }
+;; 12 succs { 13 }
+;; 13 succs { 3 14 }
+;; 14 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_CheckModeConfig
+
+IPA function summary for Power_Ip_MC_RGM_CheckModeConfig/15 inlinable
+  global time:     253.264497
+  self size:       34
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:24.500000, time:180.058101
+    size:3.500000, time:4.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_CheckConfigureCore/12 function not considered for inlining
+      loop depth: 2 freq:2.88 size: 3 time: 12
+    Power_Ip_MC_RGM_CheckConfigureCOFB/10 function not considered for inlining
+      loop depth: 2 freq:2.88 size: 3 time: 12
+
+
+Analyzing function: Power_Ip_MC_RGM_ModeConfig/14
+;; 4 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 16 4 5 6 7 15 8 9 10 11 12 13 14
+;;
+;; Loop 1
+;;  header 13, latch 12
+;;  depth 1, outer 0
+;;  nodes: 13 12 3 11 10 15 7 6 16 4 5 8 9
+;;
+;; Loop 3
+;;  header 11, latch 10
+;;  depth 2, outer 1
+;;  nodes: 11 10 8 9
+;;
+;; Loop 2
+;;  header 7, latch 6
+;;  depth 2, outer 1
+;;  nodes: 7 6 4 5
+;; 2 succs { 13 }
+;; 3 succs { 16 12 }
+;; 16 succs { 7 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 }
+;; 7 succs { 4 15 }
+;; 15 succs { 11 }
+;; 8 succs { 9 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 }
+;; 11 succs { 8 12 }
+;; 12 succs { 13 }
+;; 13 succs { 3 14 }
+;; 14 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ModeConfig
+
+IPA function summary for Power_Ip_MC_RGM_ModeConfig/14 inlinable
+  global time:     253.264497
+  self size:       34
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:24.500000, time:180.058101
+    size:3.500000, time:4.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_ConfigureCore/11 function not considered for inlining
+      loop depth: 2 freq:2.88 size: 3 time: 12
+    Power_Ip_MC_RGM_ConfigureCOFB/9 function not considered for inlining
+      loop depth: 2 freq:2.88 size: 3 time: 12
+
+
+Analyzing function: Power_Ip_MC_RGM_ResetInit/13
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ResetInit
+
+IPA function summary for Power_Ip_MC_RGM_ResetInit/13 inlinable
+  global time:     20.960000
+  self size:       23
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:16.500000, time:14.330000
+    size:4.500000, time:3.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_RGM_ClearFesResetFlags/4 function not considered for inlining
+      loop depth: 0 freq:0.33 size: 2 time: 11
+
+
+Analyzing function: Power_Ip_MC_RGM_CheckConfigureCore/12
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 8 5 6 7
+;;
+;; Loop 1
+;;  header 3, latch 8
+;;  depth 1, outer 0
+;;  nodes: 3 8 4
+;; 2 succs { 3 }
+;; 3 succs { 4 5 }
+;; 4 succs { 8 5 }
+;; 8 succs { 3 }
+;; 5 succs { 6 7 }
+;; 6 succs { 7 }
+;; 7 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_CheckConfigureCore
+
+IPA function summary for Power_Ip_MC_RGM_CheckConfigureCore/12 inlinable
+  global time:     237.935228
+  self size:       29
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:11.000000, time:85.103529
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 64] changed)
+  array index:(op1 changed)
+  calls:
+    Power_Ip_ReportPowerErrors/23 function body not available
+      loop depth: 0 freq:0.33 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/22 function body not available
+      loop depth: 1 freq:9.35 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/21 function body not available
+      loop depth: 0 freq:1.00 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_ConfigureCore/11
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ConfigureCore
+
+IPA function summary for Power_Ip_MC_RGM_ConfigureCore/11 inlinable
+  global time:     10.000000
+  self size:       11
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:6.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 64] changed)
+  array index:(op1 changed)
+  calls:
+
+
+Analyzing function: Power_Ip_MC_RGM_CheckConfigureCOFB/10
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 8 5 6 7
+;;
+;; Loop 1
+;;  header 3, latch 8
+;;  depth 1, outer 0
+;;  nodes: 3 8 4
+;; 2 succs { 3 }
+;; 3 succs { 4 5 }
+;; 4 succs { 8 5 }
+;; 8 succs { 3 }
+;; 5 succs { 6 7 }
+;; 6 succs { 7 }
+;; 7 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_CheckConfigureCOFB
+
+IPA function summary for Power_Ip_MC_RGM_CheckConfigureCOFB/10 inlinable
+  global time:     238.935228
+  self size:       30
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:11.000000, time:85.103529
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 8] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 8] changed)
+  array index:(op0[ref offset: 8] changed || op1 changed)
+  calls:
+    Power_Ip_ReportPowerErrors/23 function body not available
+      loop depth: 0 freq:0.33 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/22 function body not available
+      loop depth: 1 freq:9.35 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/21 function body not available
+      loop depth: 0 freq:1.00 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_ConfigureCOFB/9
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ConfigureCOFB
+
+IPA function summary for Power_Ip_MC_RGM_ConfigureCOFB/9 inlinable
+  global time:     11.000000
+  self size:       12
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:6.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 8] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 8] changed)
+  array index:(op0[ref offset: 8] changed || op1 changed)
+  calls:
+
+
+Analyzing function: Power_Ip_MC_RGM_ConfigureResetDomainController/8
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 8 5 6 7
+;;
+;; Loop 1
+;;  header 3, latch 8
+;;  depth 1, outer 0
+;;  nodes: 3 8 4
+;; 2 succs { 3 }
+;; 3 succs { 4 5 }
+;; 4 succs { 8 5 }
+;; 8 succs { 3 }
+;; 5 succs { 6 7 }
+;; 6 succs { 7 }
+;; 7 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ConfigureResetDomainController
+
+IPA function summary for Power_Ip_MC_RGM_ConfigureResetDomainController/8 inlinable
+  global time:     269.631185
+  self size:       44
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:25.000000, time:107.451507
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:9.847978,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 16] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 16] changed)
+  array index:(op0[ref offset: 16] changed)
+  calls:
+    Power_Ip_ReportPowerErrors/23 function body not available
+      loop depth: 0 freq:0.33 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/22 function body not available
+      loop depth: 1 freq:9.35 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/21 function body not available
+      loop depth: 0 freq:1.00 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_AssertDomainReset/7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_AssertDomainReset
+
+IPA function summary for Power_Ip_MC_RGM_AssertDomainReset/7 inlinable
+  global time:     6.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:4.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+
+Analyzing function: Power_Ip_MC_RGM_ReleaseDomainReset/6
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ReleaseDomainReset
+
+IPA function summary for Power_Ip_MC_RGM_ReleaseDomainReset/6 inlinable
+  global time:     6.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:4.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+
+
+Analyzing function: Power_Ip_MC_RGM_ClearDesResetFlags/5
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 9 6 7 8
+;;
+;; Loop 1
+;;  header 4, latch 9
+;;  depth 1, outer 0
+;;  nodes: 4 9 5
+;; 2 succs { 3 8 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 9 6 }
+;; 9 succs { 4 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ClearDesResetFlags
+
+IPA function summary for Power_Ip_MC_RGM_ClearDesResetFlags/5 inlinable
+  global time:     80.980825
+  self size:       27
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:11.000000, time:28.084164,  executed if:(op0 != 0)
+  calls:
+    Power_Ip_MC_RGM_ClearDesResetFlags.part.0/25 function not considered for inlining
+      loop depth: 0 freq:0.11 size: 1 time: 10callee size: 3 stack:12 predicate: (op0 != 0)
+    Power_Ip_TimeoutExpired/22 function body not available
+      loop depth: 1 freq:3.08 size: 5 time: 14 predicate: (op0 != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/21 function body not available
+      loop depth: 0 freq:0.33 size: 5 time: 14 predicate: (op0 != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+
+Analyzing function: Power_Ip_MC_RGM_ClearFesResetFlags/4
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 9 6 7 8
+;;
+;; Loop 1
+;;  header 4, latch 9
+;;  depth 1, outer 0
+;;  nodes: 4 9 5
+;; 2 succs { 3 8 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 9 6 }
+;; 9 succs { 4 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+
+Analyzing function body size: Power_Ip_MC_RGM_ClearFesResetFlags
+
+IPA function summary for Power_Ip_MC_RGM_ClearFesResetFlags/4 inlinable
+  global time:     80.980825
+  self size:       27
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:11.000000, time:28.084164,  executed if:(op0 != 0)
+  calls:
+    Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 function not considered for inlining
+      loop depth: 0 freq:0.11 size: 1 time: 10callee size: 3 stack:12 predicate: (op0 != 0)
+    Power_Ip_TimeoutExpired/22 function body not available
+      loop depth: 1 freq:3.08 size: 5 time: 14 predicate: (op0 != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/21 function body not available
+      loop depth: 0 freq:0.33 size: 5 time: 14 predicate: (op0 != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+Symbol table:
+
+Power_Ip_MC_RGM_ClearDesResetFlags.part.0/25 (Power_Ip_MC_RGM_ClearDesResetFlags.part.0) @060ae380
+  Type: function definition analyzed alias
+  Visibility: prevailing_def_ironly artificial
+  References: Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (alias)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) first_run:1 local icf_merged split_part optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 (37904965 (estimated locally),0.11 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (Power_Ip_MC_RGM_ClearFesResetFlags.part.0) @05e39540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: Power_Ip_MC_RGM_ClearDesResetFlags.part.0/25 (alias)
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) first_run:1 body local icf_merged split_part optimize_size
+  Called by: Power_Ip_MC_RGM_ClearFesResetFlags/4 (37904965 (estimated locally),0.11 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_ReportPowerErrors/23 (Power_Ip_ReportPowerErrors) @05f230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (37904965 (estimated locally),0.33 per call) Power_Ip_MC_RGM_CheckConfigureCore/12 (37904965 (estimated locally),0.33 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (37904965 (estimated locally),0.33 per call) Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_TimeoutExpired/22 (Power_Ip_TimeoutExpired) @05f23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 (1073741824 (estimated locally),3.08 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (1073741824 (estimated locally),9.35 per call) Power_Ip_MC_RGM_CheckConfigureCore/12 (1073741824 (estimated locally),9.35 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (1073741824 (estimated locally),9.35 per call) Power_Ip_MC_RGM_ClearFesResetFlags/4 (1073741824 (estimated locally),3.08 per call) 
+  Calls: 
+Power_Ip_StartTimeout/21 (Power_Ip_StartTimeout) @05f177e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_RGM_ClearDesResetFlags/5 (114863532 (estimated locally),0.33 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (114863532 (estimated locally),1.00 per call) Power_Ip_MC_RGM_CheckConfigureCore/12 (114863532 (estimated locally),1.00 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (114863532 (estimated locally),1.00 per call) Power_Ip_MC_RGM_ClearFesResetFlags/4 (114863532 (estimated locally),0.33 per call) 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/20 (Power_Ip_MC_RGM_GetResetRawValue) @05f17b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:65068756 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags/5 (32534377 (estimated locally),0.50 per call) Power_Ip_MC_RGM_ClearFesResetFlags/4 (32534377 (estimated locally),0.50 per call) 
+Power_Ip_MC_RGM_GetResetReason/19 (Power_Ip_MC_RGM_GetResetReason) @05f17700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32DesResetStatus/0 (write)Power_Ip_u32DesResetStatus/0 (read)Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_u32FesResetStatus/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 (536870913 (estimated locally),0.50 per call) Power_Ip_MC_RGM_CheckResetReason/18 (177167401 (estimated locally),0.17 per call) Power_Ip_MC_RGM_ClearDesResetFlags/5 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_RGM_CheckResetReason/18 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_RGM_CheckResetReason/18 (Power_Ip_MC_RGM_CheckResetReason) @05f17380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:46850980 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetReason/19 (177167401 (estimated locally),0.17 per call) Power_Ip_MC_RGM_GetResetReason/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_MC_RGM_DisableResetDomain/17 (Power_Ip_MC_RGM_DisableResetDomain) @05f17000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (35433480 (estimated locally),0.16 per call) Power_Ip_MC_RGM_AssertDomainReset/7 (35433480 (estimated locally),0.16 per call) 
+Power_Ip_MC_RGM_EnableResetDomain/16 (Power_Ip_MC_RGM_EnableResetDomain) @05e96b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:214748364 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ReleaseDomainReset/6 (35433480 (estimated locally),0.16 per call) Power_Ip_MC_RGM_ConfigureResetDomainController/8 (35433480 (estimated locally),0.16 per call) 
+Power_Ip_MC_RGM_CheckModeConfig/15 (Power_Ip_MC_RGM_CheckModeConfig) @05e96620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_CheckConfigureCore/12 (315357970 (estimated locally),2.88 per call) Power_Ip_MC_RGM_CheckConfigureCOFB/10 (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_RGM_ModeConfig/14 (Power_Ip_MC_RGM_ModeConfig) @05e960e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:109362598 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ConfigureCore/11 (315357970 (estimated locally),2.88 per call) Power_Ip_MC_RGM_ConfigureCOFB/9 (315357974 (estimated locally),2.88 per call) 
+Power_Ip_MC_RGM_ResetInit/13 (Power_Ip_MC_RGM_ResetInit) @05e96d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_RGM/2 (read)Power_Ip_u32FesResetStatus/1 (write)Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags/4 (354334802 (estimated locally),0.33 per call) 
+Power_Ip_MC_RGM_CheckConfigureCore/12 (Power_Ip_MC_RGM_CheckConfigureCore) @05e96a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 (315357970 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (37904965 (estimated locally),0.33 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),9.35 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),1.00 per call) 
+Power_Ip_MC_RGM_ConfigureCore/11 (Power_Ip_MC_RGM_ConfigureCore) @05e967e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 (315357970 (estimated locally),2.88 per call) 
+  Calls: 
+Power_Ip_MC_RGM_CheckConfigureCOFB/10 (Power_Ip_MC_RGM_CheckConfigureCOFB) @05e96540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_CheckModeConfig/15 (315357974 (estimated locally),2.88 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (37904965 (estimated locally),0.33 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),9.35 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),1.00 per call) 
+Power_Ip_MC_RGM_ConfigureCOFB/9 (Power_Ip_MC_RGM_ConfigureCOFB) @05e962a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_ModeConfig/14 (315357974 (estimated locally),2.88 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ConfigureResetDomainController/8 (Power_Ip_MC_RGM_ConfigureResetDomainController) @05e96000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)Power_Ip_pxRdc/3 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:114863532 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 (35433480 (estimated locally),0.16 per call) Power_Ip_MC_RGM_EnableResetDomain/16 (35433480 (estimated locally),0.16 per call) 
+  Calls: Power_Ip_ReportPowerErrors/23 (37904965 (estimated locally),0.33 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),9.35 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),1.00 per call) 
+Power_Ip_MC_RGM_AssertDomainReset/7 (Power_Ip_MC_RGM_AssertDomainReset) @05e8b540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_DisableResetDomain/17 (35433480 (estimated locally),0.16 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ReleaseDomainReset/6 (Power_Ip_MC_RGM_ReleaseDomainReset) @05e8bd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_EnableResetDomain/16 (35433480 (estimated locally),0.16 per call) 
+  Calls: 
+Power_Ip_MC_RGM_ClearDesResetFlags/5 (Power_Ip_MC_RGM_ClearDesResetFlags) @05e8ba80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 (32534377 (estimated locally),0.50 per call) Power_Ip_MC_RGM_GetResetReason/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_RGM_ClearDesResetFlags.part.0/25 (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),0.33 per call) 
+Power_Ip_MC_RGM_ClearFesResetFlags/4 (Power_Ip_MC_RGM_ClearFesResetFlags) @05e8b7e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_RGM/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:348071309 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_RGM_GetResetRawValue/20 (32534377 (estimated locally),0.50 per call) Power_Ip_MC_RGM_GetResetReason/19 (536870913 (estimated locally),0.50 per call) Power_Ip_MC_RGM_ResetInit/13 (354334802 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_RGM_ClearFesResetFlags.part.0/24 (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/22 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/21 (114863532 (estimated locally),0.33 per call) 
+Power_Ip_pxRdc/3 (Power_Ip_pxRdc) @05e8a090
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)Power_Ip_MC_RGM_ConfigureResetDomainController/8 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_pxMC_RGM/2 (Power_Ip_pxMC_RGM) @05e8a000
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_ClearDesResetFlags/5 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_CheckConfigureCOFB/10 (read)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_CheckConfigureCore/12 (read)Power_Ip_MC_RGM_ClearFesResetFlags/4 (read)Power_Ip_MC_RGM_ConfigureCOFB/9 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_ReleaseDomainReset/6 (read)Power_Ip_MC_RGM_ResetInit/13 (read)Power_Ip_MC_RGM_AssertDomainReset/7 (read)Power_Ip_MC_RGM_ConfigureCore/11 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_u32FesResetStatus/1 (Power_Ip_u32FesResetStatus) @05dfcf30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_ResetInit/13 (write)Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: available
+  Varpool flags:
+Power_Ip_u32DesResetStatus/0 (Power_Ip_u32DesResetStatus) @05dfcea0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_RGM_GetResetReason/19 (write)Power_Ip_MC_RGM_GetResetReason/19 (read)Power_Ip_MC_RGM_GetResetRawValue/20 (write)Power_Ip_MC_RGM_GetResetRawValue/20 (read)
+  Availability: available
+  Varpool flags:
+Power_Ip_MC_RGM_ClearFesResetFlags.part.0 ()
+{
+  uint32 StartTime;
+  uint32 ElapsedTime;
+  uint32 TimeoutTicks;
+  boolean TimeoutOccurred;
+  uint32 RegValueTemp;
+  uint32 RegValue;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG D#4 s=> RegValue
+  # DEBUG RegValue => D#4
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 3> [local count: 1073741824]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_GetResetRawValue ()
+{
+  uint32 Position;
+  uint32 DynamicMask;
+  uint32 Index;
+  uint32 ActiveValue;
+  uint32 RegValue;
+  uint32 RawReset;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.33_1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.34_6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+
+  <bb 2> [local count: 65068756]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RawReset => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.33_1 = Power_Ip_pxMC_RGM;
+  _2 ={v} Power_Ip_pxMC_RGM.33_1->FES;
+  RegValue_31 = _2 & 3224633433;
+  # DEBUG RegValue => RegValue_31
+  # DEBUG BEGIN_STMT
+  if (RegValue_31 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 32534378]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_u32FesResetStatus = RegValue_31;
+
+  <bb 4> [local count: 65068756]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetMask => 3224633433
+  # DEBUG BEGIN_STMT
+  ActiveValue_33 = Power_Ip_u32FesResetStatus;
+  # DEBUG ActiveValue => ActiveValue_33
+  # DEBUG BEGIN_STMT
+  if (ActiveValue_33 != 0)
+    goto <bb 24>; [50.00%]
+  else
+    goto <bb 12>; [50.00%]
+
+  <bb 24> [local count: 32534378]:
+  goto <bb 10>; [100.00%]
+
+  <bb 5> [local count: 1041207447]:
+  # DEBUG BEGIN_STMT
+  DynamicMask_35 = 1 << Index_19;
+  # DEBUG DynamicMask => DynamicMask_35
+  # DEBUG BEGIN_STMT
+  _3 = DynamicMask_35 & 3224633433;
+  if (_3 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 6> [local count: 520603723]:
+  # DEBUG BEGIN_STMT
+  _4 = ActiveValue_33 & DynamicMask_35;
+  if (_4 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 260301862]:
+  # DEBUG BEGIN_STMT
+  _5 = 1 << Position_22;
+  RawReset_36 = _5 | RawReset_13;
+  # DEBUG RawReset => RawReset_36
+
+  <bb 8> [local count: 520603723]:
+  # RawReset_11 = PHI <RawReset_13(6), RawReset_36(7)>
+  # DEBUG RawReset => RawReset_11
+  # DEBUG BEGIN_STMT
+  Position_37 = Position_22 + 1;
+  # DEBUG Position => Position_37
+
+  <bb 9> [local count: 1041207447]:
+  # RawReset_12 = PHI <RawReset_13(5), RawReset_11(8)>
+  # Position_21 = PHI <Position_22(5), Position_37(8)>
+  # DEBUG Position => Position_21
+  # DEBUG RawReset => RawReset_12
+  # DEBUG BEGIN_STMT
+  Index_38 = Index_19 + 1;
+  # DEBUG Index => Index_38
+
+  <bb 10> [local count: 1073741824]:
+  # RawReset_13 = PHI <RawReset_12(9), 0(24)>
+  # Index_19 = PHI <Index_38(9), 0(24)>
+  # Position_22 = PHI <Position_21(9), 0(24)>
+  # DEBUG Position => Position_22
+  # DEBUG Index => Index_19
+  # DEBUG RawReset => RawReset_13
+  # DEBUG BEGIN_STMT
+  if (Index_19 != 32)
+    goto <bb 5>; [96.97%]
+  else
+    goto <bb 11>; [3.03%]
+
+  <bb 11> [local count: 32534377]:
+  # RawReset_47 = PHI <RawReset_13(10)>
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ClearFesResetFlags (RegValue_31);
+
+  <bb 12> [local count: 65068755]:
+  # RawReset_14 = PHI <0(4), RawReset_47(11)>
+  # DEBUG RawReset => RawReset_14
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.34_6 = Power_Ip_pxMC_RGM;
+  _7 ={v} Power_Ip_pxMC_RGM.34_6->DES;
+  RegValue_39 = _7 & 3221700443;
+  # DEBUG RegValue => RegValue_39
+  # DEBUG BEGIN_STMT
+  if (RegValue_39 != 0)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 13> [local count: 32534378]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_u32DesResetStatus = RegValue_39;
+
+  <bb 14> [local count: 65068755]:
+  # DEBUG BEGIN_STMT
+  ActiveValue_41 = Power_Ip_u32DesResetStatus;
+  # DEBUG ActiveValue => ActiveValue_41
+  # DEBUG BEGIN_STMT
+  if (ActiveValue_41 != 0)
+    goto <bb 23>; [50.00%]
+  else
+    goto <bb 22>; [50.00%]
+
+  <bb 23> [local count: 32534378]:
+  goto <bb 20>; [100.00%]
+
+  <bb 15> [local count: 1041207436]:
+  # DEBUG BEGIN_STMT
+  DynamicMask_43 = 1 << Index_20;
+  # DEBUG DynamicMask => DynamicMask_43
+  # DEBUG BEGIN_STMT
+  _8 = DynamicMask_43 & 3221700443;
+  if (_8 != 0)
+    goto <bb 16>; [50.00%]
+  else
+    goto <bb 19>; [50.00%]
+
+  <bb 16> [local count: 520603718]:
+  # DEBUG BEGIN_STMT
+  _9 = ActiveValue_41 & DynamicMask_43;
+  if (_9 != 0)
+    goto <bb 17>; [50.00%]
+  else
+    goto <bb 18>; [50.00%]
+
+  <bb 17> [local count: 260301859]:
+  # DEBUG BEGIN_STMT
+  _10 = 1 << Position_24;
+  RawReset_44 = _10 | RawReset_17;
+  # DEBUG RawReset => RawReset_44
+
+  <bb 18> [local count: 520603718]:
+  # RawReset_15 = PHI <RawReset_17(16), RawReset_44(17)>
+  # DEBUG RawReset => RawReset_15
+  # DEBUG BEGIN_STMT
+  Position_45 = Position_24 + 1;
+  # DEBUG Position => Position_45
+
+  <bb 19> [local count: 1041207436]:
+  # RawReset_16 = PHI <RawReset_17(15), RawReset_15(18)>
+  # Position_23 = PHI <Position_24(15), Position_45(18)>
+  # DEBUG Position => Position_23
+  # DEBUG RawReset => RawReset_16
+  # DEBUG BEGIN_STMT
+  Index_46 = Index_20 + 1;
+  # DEBUG Index => Index_46
+
+  <bb 20> [local count: 1073741814]:
+  # RawReset_17 = PHI <RawReset_16(19), RawReset_14(23)>
+  # Index_20 = PHI <Index_46(19), 0(23)>
+  # Position_24 = PHI <Position_23(19), 16(23)>
+  # DEBUG Position => Position_24
+  # DEBUG Index => Index_20
+  # DEBUG RawReset => RawReset_17
+  # DEBUG BEGIN_STMT
+  if (Index_20 != 32)
+    goto <bb 15>; [96.97%]
+  else
+    goto <bb 21>; [3.03%]
+
+  <bb 21> [local count: 32534377]:
+  # RawReset_29 = PHI <RawReset_17(20)>
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ClearDesResetFlags (RegValue_39);
+
+  <bb 22> [local count: 65068755]:
+  # RawReset_18 = PHI <RawReset_14(14), RawReset_29(21)>
+  # DEBUG RawReset => RawReset_18
+  # DEBUG BEGIN_STMT
+  return RawReset_18;
+
+}
+
+
+Power_Ip_MC_RGM_GetResetReason ()
+{
+  uint32 Position;
+  uint32 ActiveValue;
+  uint32 RegValue;
+  Power_Ip_ResetType ResetReason;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.28_1;
+  long unsigned int _2;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.29_3;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetReason => 26
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Position = 0;
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.28_1 = Power_Ip_pxMC_RGM;
+  _2 ={v} Power_Ip_pxMC_RGM.28_1->DES;
+  RegValue_13 = _2 & 3221700443;
+  # DEBUG RegValue => RegValue_13
+  # DEBUG BEGIN_STMT
+  if (RegValue_13 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_u32DesResetStatus = RegValue_13;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  ActiveValue_15 = Power_Ip_u32DesResetStatus;
+  # DEBUG ActiveValue => ActiveValue_15
+  # DEBUG BEGIN_STMT
+  ResetReason_17 = Power_Ip_MC_RGM_CheckResetReason (ActiveValue_15, 0, &Position);
+  # DEBUG ResetReason => ResetReason_17
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ClearDesResetFlags (RegValue_13);
+  # DEBUG BEGIN_STMT
+  if (RegValue_13 == 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.29_3 = Power_Ip_pxMC_RGM;
+  _4 ={v} Power_Ip_pxMC_RGM.29_3->FES;
+  RegValue_19 = _4 & 3224633433;
+  # DEBUG RegValue => RegValue_19
+  # DEBUG BEGIN_STMT
+  if (RegValue_19 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 6> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_u32FesResetStatus = RegValue_19;
+
+  <bb 7> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  ActiveValue_21 = Power_Ip_u32FesResetStatus;
+  # DEBUG ActiveValue => ActiveValue_21
+  # DEBUG BEGIN_STMT
+  if (ActiveValue_21 != 0)
+    goto <bb 8>; [33.00%]
+  else
+    goto <bb 9>; [67.00%]
+
+  <bb 8> [local count: 177167401]:
+  # DEBUG BEGIN_STMT
+  ResetReason_23 = Power_Ip_MC_RGM_CheckResetReason (ActiveValue_21, 1, &Position);
+  # DEBUG ResetReason => ResetReason_23
+
+  <bb 9> [local count: 536870913]:
+  # ResetReason_5 = PHI <ResetReason_17(7), ResetReason_23(8)>
+  # DEBUG ResetReason => ResetReason_5
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ClearFesResetFlags (RegValue_19);
+
+  <bb 10> [local count: 1073741824]:
+  # ResetReason_6 = PHI <ResetReason_17(4), ResetReason_5(9)>
+  # DEBUG ResetReason => ResetReason_6
+  # DEBUG BEGIN_STMT
+  Position ={v} {CLOBBER};
+  return ResetReason_6;
+
+}
+
+
+Power_Ip_MC_RGM_CheckResetReason (uint32 ActiveValue, uint8 ResetMode, uint32 * PositionPtr)
+{
+  uint32 Position;
+  uint32 DynamicMask;
+  uint32 Index;
+  uint32 NumberOfFlags;
+  uint32 ResetMask;
+  Power_Ip_ResetType ResetReason;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 46850980]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetReason => 26
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG NumberOfFlags => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Position_16 = *PositionPtr_15(D);
+  # DEBUG Position => Position_16
+  # DEBUG BEGIN_STMT
+  if (ResetMode_17(D) == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 23425490]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetMask => 3224633433
+
+  <bb 4> [local count: 46850980]:
+  # ResetMask_7 = PHI <3221700443(2), 3224633433(3)>
+  # DEBUG ResetMask => ResetMask_7
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => 0
+  goto <bb 10>; [100.00%]
+
+  <bb 5> [local count: 1041207447]:
+  # DEBUG BEGIN_STMT
+  DynamicMask_18 = 1 << Index_11;
+  # DEBUG DynamicMask => DynamicMask_18
+  # DEBUG BEGIN_STMT
+  _1 = ResetMask_7 & DynamicMask_18;
+  if (_1 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 6> [local count: 520603723]:
+  # DEBUG BEGIN_STMT
+  _2 = DynamicMask_18 & ActiveValue_19(D);
+  if (_2 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 260301862]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetReason => Position_13
+  # DEBUG BEGIN_STMT
+  NumberOfFlags_21 = NumberOfFlags_10 + 1;
+  # DEBUG NumberOfFlags => NumberOfFlags_21
+  # DEBUG BEGIN_STMT
+  if (NumberOfFlags_21 > 1)
+    goto <bb 11>; [5.50%]
+  else
+    goto <bb 8>; [94.50%]
+
+  <bb 8> [local count: 506287121]:
+  # ResetReason_3 = PHI <ResetReason_5(6), Position_13(7)>
+  # NumberOfFlags_8 = PHI <NumberOfFlags_10(6), NumberOfFlags_21(7)>
+  # DEBUG NumberOfFlags => NumberOfFlags_8
+  # DEBUG ResetReason => ResetReason_3
+  # DEBUG BEGIN_STMT
+  Position_22 = Position_13 + 1;
+  # DEBUG Position => Position_22
+
+  <bb 9> [local count: 1026890845]:
+  # ResetReason_4 = PHI <ResetReason_5(5), ResetReason_3(8)>
+  # NumberOfFlags_9 = PHI <NumberOfFlags_10(5), NumberOfFlags_8(8)>
+  # Position_12 = PHI <Position_13(5), Position_22(8)>
+  # DEBUG Position => Position_12
+  # DEBUG NumberOfFlags => NumberOfFlags_9
+  # DEBUG ResetReason => ResetReason_4
+  # DEBUG BEGIN_STMT
+  Index_23 = Index_11 + 1;
+  # DEBUG Index => Index_23
+
+  <bb 10> [local count: 1073741824]:
+  # ResetReason_5 = PHI <26(4), ResetReason_4(9)>
+  # NumberOfFlags_10 = PHI <0(4), NumberOfFlags_9(9)>
+  # Index_11 = PHI <0(4), Index_23(9)>
+  # Position_13 = PHI <Position_16(4), Position_12(9)>
+  # DEBUG Position => Position_13
+  # DEBUG Index => Index_11
+  # DEBUG NumberOfFlags => NumberOfFlags_10
+  # DEBUG ResetReason => ResetReason_5
+  # DEBUG BEGIN_STMT
+  if (Index_11 != 32)
+    goto <bb 5>; [96.97%]
+  else
+    goto <bb 11>; [3.03%]
+
+  <bb 11> [local count: 46850980]:
+  # ResetReason_6 = PHI <27(7), ResetReason_5(10)>
+  # Position_20 = PHI <Position_13(7), Position_13(10)>
+  # DEBUG ResetReason => ResetReason_6
+  # DEBUG BEGIN_STMT
+  *PositionPtr_15(D) = Position_20;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return ResetReason_6;
+
+}
+
+
+Power_Ip_MC_RGM_DisableResetDomain (const struct Power_Ip_MC_RGM_ModeConfigType * ModeConfigPtr)
+{
+  uint8 DomainIndex;
+  const struct Power_Ip_MC_RGM_DomainConfigType * TempDomainConfigPtr;
+  const struct Power_Ip_MC_RGM_DomainConfigType[4] * _1;
+  int _2;
+  _Bool _3;
+  unsigned char _4;
+  _Bool _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> [local count: 214748364]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempDomainConfigPtr => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG DomainIndex => 0
+  goto <bb 9>; [100.00%]
+
+  <bb 3> [local count: 858993459]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_12(D)->ArrayDomainConfigPtr;
+  _2 = (int) DomainIndex_8;
+  TempDomainConfigPtr_13 = &*_1[_2];
+  # DEBUG TempDomainConfigPtr => TempDomainConfigPtr_13
+  # DEBUG BEGIN_STMT
+  _3 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 4> [local count: 429496729]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  if (_4 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 5> [local count: 214748365]:
+  # DEBUG BEGIN_STMT
+  _5 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainPowerUnderMcuControl;
+  if (_5 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 6> [local count: 107374182]:
+  # DEBUG BEGIN_STMT
+  _6 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainRdcRegValue;
+  _7 = _6 & 8;
+  if (_7 != 0)
+    goto <bb 7>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 7> [local count: 35433480]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_AssertDomainReset (_4);
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ConfigureResetDomainController (TempDomainConfigPtr_13);
+
+  <bb 8> [local count: 858993459]:
+  # DEBUG BEGIN_STMT
+  DomainIndex_16 = DomainIndex_8 + 1;
+  # DEBUG DomainIndex => DomainIndex_16
+
+  <bb 9> [local count: 1073741824]:
+  # DomainIndex_8 = PHI <0(2), DomainIndex_16(8)>
+  # DEBUG DomainIndex => DomainIndex_8
+  # DEBUG BEGIN_STMT
+  if (DomainIndex_8 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 10>; [20.00%]
+
+  <bb 10> [local count: 214748365]:
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_EnableResetDomain (const struct Power_Ip_MC_RGM_ModeConfigType * ModeConfigPtr)
+{
+  uint8 DomainIndex;
+  const struct Power_Ip_MC_RGM_DomainConfigType * TempDomainConfigPtr;
+  const struct Power_Ip_MC_RGM_DomainConfigType[4] * _1;
+  int _2;
+  _Bool _3;
+  unsigned char _4;
+  _Bool _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  unsigned char _8;
+
+  <bb 2> [local count: 214748364]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempDomainConfigPtr => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG DomainIndex => 0
+  goto <bb 9>; [100.00%]
+
+  <bb 3> [local count: 858993459]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_13(D)->ArrayDomainConfigPtr;
+  _2 = (int) DomainIndex_9;
+  TempDomainConfigPtr_14 = &*_1[_2];
+  # DEBUG TempDomainConfigPtr => TempDomainConfigPtr_14
+  # DEBUG BEGIN_STMT
+  _3 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 4> [local count: 429496729]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  if (_4 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 5> [local count: 214748365]:
+  # DEBUG BEGIN_STMT
+  _5 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainPowerUnderMcuControl;
+  if (_5 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 6> [local count: 107374182]:
+  # DEBUG BEGIN_STMT
+  _6 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainRdcRegValue;
+  _7 = _6 & 8;
+  if (_7 == 0)
+    goto <bb 7>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 7> [local count: 35433480]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ConfigureResetDomainController (TempDomainConfigPtr_14);
+  # DEBUG BEGIN_STMT
+  _8 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  Power_Ip_MC_RGM_ReleaseDomainReset (_8);
+
+  <bb 8> [local count: 858993459]:
+  # DEBUG BEGIN_STMT
+  DomainIndex_17 = DomainIndex_9 + 1;
+  # DEBUG DomainIndex => DomainIndex_17
+
+  <bb 9> [local count: 1073741824]:
+  # DomainIndex_9 = PHI <0(2), DomainIndex_17(8)>
+  # DEBUG DomainIndex => DomainIndex_9
+  # DEBUG BEGIN_STMT
+  if (DomainIndex_9 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 10>; [20.00%]
+
+  <bb 10> [local count: 214748365]:
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_CheckModeConfig (const struct Power_Ip_MC_RGM_ModeConfigType * ModeConfigPtr)
+{
+  uint8 CoreIndex;
+  uint8 CofbIndex;
+  uint8 DomainIndex;
+  const struct Power_Ip_MC_RGM_DomainConfigType[4] * _1;
+  int _2;
+  _Bool _3;
+  const struct Power_Ip_MC_RGM_CofbConfigType[<unknown>] * _4;
+  int _5;
+  _Bool _6;
+  const struct Power_Ip_MC_RGM_CofbConfigType * _7;
+  unsigned char _8;
+  unsigned char _9;
+  const struct Power_Ip_MC_RGM_CoreConfigType[<unknown>] * _10;
+  int _11;
+  _Bool _12;
+  const struct Power_Ip_MC_RGM_CoreConfigType * _13;
+  unsigned char _14;
+  unsigned char _15;
+
+  <bb 2> [local count: 109362598]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempDomainConfigPtr => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG DomainIndex => 0
+  goto <bb 13>; [100.00%]
+
+  <bb 3> [local count: 437450378]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_26(D)->ArrayDomainConfigPtr;
+  _2 = (int) DomainIndex_16;
+  # DEBUG D#8 => &*_1[_2]
+  # DEBUG TempDomainConfigPtr => D#8
+  # DEBUG BEGIN_STMT
+  _3 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 16>; [27.00%]
+  else
+    goto <bb 12>; [73.00%]
+
+  <bb 16> [local count: 118111602]:
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 955630224]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].ArrayDomainCofbConfigPtr;
+  _5 = (int) CofbIndex_17;
+  _6 = *_4[_5].CofbUnderMcuControl;
+  if (_6 != 0)
+    goto <bb 5>; [33.00%]
+  else
+    goto <bb 6>; [67.00%]
+
+  <bb 5> [local count: 315357974]:
+  # DEBUG BEGIN_STMT
+  _7 = &*_4[_5];
+  _8 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  Power_Ip_MC_RGM_CheckConfigureCOFB (_7, _8);
+
+  <bb 6> [local count: 955630224]:
+  # DEBUG BEGIN_STMT
+  CofbIndex_30 = CofbIndex_17 + 1;
+  # DEBUG CofbIndex => CofbIndex_30
+
+  <bb 7> [local count: 1073741824]:
+  # CofbIndex_17 = PHI <CofbIndex_30(6), 0(16)>
+  # DEBUG CofbIndex => CofbIndex_17
+  # DEBUG BEGIN_STMT
+  _9 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].NumberOfCofbs;
+  if (_9 > CofbIndex_17)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 15> [local count: 118111601]:
+  goto <bb 11>; [100.00%]
+
+  <bb 8> [local count: 955630212]:
+  # DEBUG BEGIN_STMT
+  _10 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].ArrayDomainCoreConfigPtr;
+  _11 = (int) CoreIndex_18;
+  _12 = *_10[_11].CoreUnderMcuControl;
+  if (_12 != 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 10>; [67.00%]
+
+  <bb 9> [local count: 315357970]:
+  # DEBUG BEGIN_STMT
+  _13 = &*_10[_11];
+  _14 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  Power_Ip_MC_RGM_CheckConfigureCore (_13, _14);
+
+  <bb 10> [local count: 955630212]:
+  # DEBUG BEGIN_STMT
+  CoreIndex_28 = CoreIndex_18 + 1;
+  # DEBUG CoreIndex => CoreIndex_28
+
+  <bb 11> [local count: 1073741811]:
+  # CoreIndex_18 = PHI <CoreIndex_28(10), 0(15)>
+  # DEBUG CoreIndex => CoreIndex_18
+  # DEBUG BEGIN_STMT
+  _15 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].NumberOfCores;
+  if (_15 > CoreIndex_18)
+    goto <bb 8>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 12> [local count: 437450375]:
+  # DEBUG BEGIN_STMT
+  DomainIndex_31 = DomainIndex_16 + 1;
+  # DEBUG DomainIndex => DomainIndex_31
+
+  <bb 13> [local count: 546812973]:
+  # DomainIndex_16 = PHI <0(2), DomainIndex_31(12)>
+  # DEBUG DomainIndex => DomainIndex_16
+  # DEBUG BEGIN_STMT
+  if (DomainIndex_16 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 14>; [20.00%]
+
+  <bb 14> [local count: 109362594]:
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ModeConfig (const struct Power_Ip_MC_RGM_ModeConfigType * ModeConfigPtr)
+{
+  uint8 CoreIndex;
+  uint8 CofbIndex;
+  uint8 DomainIndex;
+  const struct Power_Ip_MC_RGM_DomainConfigType[4] * _1;
+  int _2;
+  _Bool _3;
+  const struct Power_Ip_MC_RGM_CofbConfigType[<unknown>] * _4;
+  int _5;
+  _Bool _6;
+  const struct Power_Ip_MC_RGM_CofbConfigType * _7;
+  unsigned char _8;
+  unsigned char _9;
+  const struct Power_Ip_MC_RGM_CoreConfigType[<unknown>] * _10;
+  int _11;
+  _Bool _12;
+  const struct Power_Ip_MC_RGM_CoreConfigType * _13;
+  unsigned char _14;
+  unsigned char _15;
+
+  <bb 2> [local count: 109362598]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempDomainConfigPtr => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG DomainIndex => 0
+  goto <bb 13>; [100.00%]
+
+  <bb 3> [local count: 437450378]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_26(D)->ArrayDomainConfigPtr;
+  _2 = (int) DomainIndex_16;
+  # DEBUG D#7 => &*_1[_2]
+  # DEBUG TempDomainConfigPtr => D#7
+  # DEBUG BEGIN_STMT
+  _3 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 16>; [27.00%]
+  else
+    goto <bb 12>; [73.00%]
+
+  <bb 16> [local count: 118111602]:
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 955630224]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].ArrayDomainCofbConfigPtr;
+  _5 = (int) CofbIndex_17;
+  _6 = *_4[_5].CofbUnderMcuControl;
+  if (_6 != 0)
+    goto <bb 5>; [33.00%]
+  else
+    goto <bb 6>; [67.00%]
+
+  <bb 5> [local count: 315357974]:
+  # DEBUG BEGIN_STMT
+  _7 = &*_4[_5];
+  _8 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  Power_Ip_MC_RGM_ConfigureCOFB (_7, _8);
+
+  <bb 6> [local count: 955630224]:
+  # DEBUG BEGIN_STMT
+  CofbIndex_30 = CofbIndex_17 + 1;
+  # DEBUG CofbIndex => CofbIndex_30
+
+  <bb 7> [local count: 1073741824]:
+  # CofbIndex_17 = PHI <CofbIndex_30(6), 0(16)>
+  # DEBUG CofbIndex => CofbIndex_17
+  # DEBUG BEGIN_STMT
+  _9 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].NumberOfCofbs;
+  if (_9 > CofbIndex_17)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 15> [local count: 118111601]:
+  goto <bb 11>; [100.00%]
+
+  <bb 8> [local count: 955630212]:
+  # DEBUG BEGIN_STMT
+  _10 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].ArrayDomainCoreConfigPtr;
+  _11 = (int) CoreIndex_18;
+  _12 = *_10[_11].CoreUnderMcuControl;
+  if (_12 != 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 10>; [67.00%]
+
+  <bb 9> [local count: 315357970]:
+  # DEBUG BEGIN_STMT
+  _13 = &*_10[_11];
+  _14 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].DomainIndex;
+  Power_Ip_MC_RGM_ConfigureCore (_13, _14);
+
+  <bb 10> [local count: 955630212]:
+  # DEBUG BEGIN_STMT
+  CoreIndex_28 = CoreIndex_18 + 1;
+  # DEBUG CoreIndex => CoreIndex_28
+
+  <bb 11> [local count: 1073741811]:
+  # CoreIndex_18 = PHI <CoreIndex_28(10), 0(15)>
+  # DEBUG CoreIndex => CoreIndex_18
+  # DEBUG BEGIN_STMT
+  _15 = MEM[(const struct Power_Ip_MC_RGM_DomainConfigType *)_1][_2].NumberOfCores;
+  if (_15 > CoreIndex_18)
+    goto <bb 8>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 12> [local count: 437450375]:
+  # DEBUG BEGIN_STMT
+  DomainIndex_31 = DomainIndex_16 + 1;
+  # DEBUG DomainIndex => DomainIndex_31
+
+  <bb 13> [local count: 546812973]:
+  # DomainIndex_16 = PHI <0(2), DomainIndex_31(12)>
+  # DEBUG DomainIndex => DomainIndex_16
+  # DEBUG BEGIN_STMT
+  if (DomainIndex_16 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 14>; [20.00%]
+
+  <bb 14> [local count: 109362594]:
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ResetInit (const struct Power_Ip_MC_RGM_ConfigType * ConfigPtr)
+{
+  uint32 DesResetReason;
+  uint32 FesResetReason;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.0_1;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.1_2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG FesResetReason => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG DesResetReason => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.0_1 = Power_Ip_pxMC_RGM;
+  FesResetReason_11 ={v} Power_Ip_pxMC_RGM.0_1->FES;
+  # DEBUG FesResetReason => FesResetReason_11
+  # DEBUG BEGIN_STMT
+  if (FesResetReason_11 != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334802]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_u32FesResetStatus = FesResetReason_11;
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_RGM_ClearFesResetFlags (FesResetReason_11);
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.1_2 = Power_Ip_pxMC_RGM;
+  _3 = ConfigPtr_14(D)->FuncResetOpt;
+  Power_Ip_pxMC_RGM.1_2->FERD ={v} _3;
+  # DEBUG BEGIN_STMT
+  DesResetReason_16 ={v} Power_Ip_pxMC_RGM.1_2->DES;
+  # DEBUG DesResetReason => DesResetReason_16
+  # DEBUG BEGIN_STMT
+  if (DesResetReason_16 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _4 = ConfigPtr_14(D)->FesThresholdReset;
+  Power_Ip_pxMC_RGM.1_2->FRET ={v} _4;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 = DesResetReason_16 & 1;
+  if (_5 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _6 = ConfigPtr_14(D)->DesThresholdReset;
+  Power_Ip_pxMC_RGM.1_2->DRET ={v} _6;
+
+  <bb 8> [local count: 1073741824]:
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_CheckConfigureCore (const struct Power_Ip_MC_RGM_CoreConfigType * CoreConfigPtr, uint8 DomainIndex)
+{
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  uint32 CoreStatus;
+  uint32 CoreToUpdate;
+  uint32 CoreConfig;
+  long unsigned int TimeoutTicks.14_1;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.15_2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  CoreConfig_10 = CoreConfigPtr_9(D)->CorePrstRegValue;
+  # DEBUG CoreConfig => CoreConfig_10
+  # DEBUG BEGIN_STMT
+  CoreToUpdate_11 = CoreConfigPtr_9(D)->CoreBlocksToUpdateMask;
+  # DEBUG CoreToUpdate => CoreToUpdate_11
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.14_1 = TimeoutTicks;
+  TimeoutOccurred_15 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.14_1);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_15
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.15_2 = Power_Ip_pxMC_RGM;
+  _3 = (int) DomainIndex_16(D);
+  CoreStatus_17 ={v} Power_Ip_pxMC_RGM.15_2->PSTAT[_3].PSTAT_COFB[0];
+  # DEBUG CoreStatus => CoreStatus_17
+  # DEBUG BEGIN_STMT
+  _4 = CoreConfig_10 ^ CoreStatus_17;
+  _5 = _4 & CoreToUpdate_11;
+  if (_5 != 0)
+    goto <bb 4>; [94.50%]
+  else
+    goto <bb 5>; [5.50%]
+
+  <bb 4> [local count: 1014686025]:
+  if (TimeoutOccurred_15 != 0)
+    goto <bb 5>; [5.50%]
+  else
+    goto <bb 8>; [94.50%]
+
+  <bb 8> [local count: 958878293]:
+  goto <bb 3>; [100.00%]
+
+  <bb 5> [local count: 114863532]:
+  # TimeoutOccurred_12 = PHI <TimeoutOccurred_15(3), TimeoutOccurred_15(4)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_12 != 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 6> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 7> [local count: 114863532]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ConfigureCore (const struct Power_Ip_MC_RGM_CoreConfigType * CoreConfigPtr, uint8 DomainIndex)
+{
+  uint32 TempValue;
+  uint32 CoreToUpdate;
+  uint32 CoreConfig;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.10_1;
+  int _2;
+  long unsigned int _7;
+  long unsigned int _12;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  CoreConfig_5 = CoreConfigPtr_4(D)->CorePrstRegValue;
+  # DEBUG CoreConfig => CoreConfig_5
+  # DEBUG BEGIN_STMT
+  CoreToUpdate_6 = CoreConfigPtr_4(D)->CoreBlocksToUpdateMask;
+  # DEBUG CoreToUpdate => CoreToUpdate_6
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.10_1 = Power_Ip_pxMC_RGM;
+  _2 = (int) DomainIndex_8(D);
+  TempValue_9 ={v} Power_Ip_pxMC_RGM.10_1->PRST[_2].PRST_COFB[0];
+  # DEBUG TempValue => TempValue_9
+  # DEBUG BEGIN_STMT
+  # DEBUG D#2 => ~CoreToUpdate_6
+  # DEBUG TempValue => D#2 & TempValue_9
+  # DEBUG BEGIN_STMT
+  _7 = CoreConfig_5 ^ TempValue_9;
+  _12 = CoreToUpdate_6 & _7;
+  TempValue_10 = TempValue_9 ^ _12;
+  # DEBUG TempValue => TempValue_10
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.10_1->PRST[_2].PRST_COFB[0] ={v} TempValue_10;
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_CheckConfigureCOFB (const struct Power_Ip_MC_RGM_CofbConfigType * CofbConfigPtr, uint8 DomainIndex)
+{
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  uint32 PeripheralsRstStatus;
+  uint8 CofbIndex;
+  uint32 PeripheralsRstToUpdate;
+  uint32 PeripheralsRstConfig;
+  long unsigned int TimeoutTicks.12_1;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.13_2;
+  int _3;
+  int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  PeripheralsRstConfig_11 = CofbConfigPtr_10(D)->CofbRstRegValue;
+  # DEBUG PeripheralsRstConfig => PeripheralsRstConfig_11
+  # DEBUG BEGIN_STMT
+  PeripheralsRstToUpdate_12 = CofbConfigPtr_10(D)->CofbBlocksToUpdateMask;
+  # DEBUG PeripheralsRstToUpdate => PeripheralsRstToUpdate_12
+  # DEBUG BEGIN_STMT
+  CofbIndex_13 = CofbConfigPtr_10(D)->CofbIndex;
+  # DEBUG CofbIndex => CofbIndex_13
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.12_1 = TimeoutTicks;
+  TimeoutOccurred_17 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.12_1);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_17
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.13_2 = Power_Ip_pxMC_RGM;
+  _3 = (int) DomainIndex_18(D);
+  _4 = (int) CofbIndex_13;
+  PeripheralsRstStatus_19 ={v} Power_Ip_pxMC_RGM.13_2->PRST[_3].PRST_COFB[_4];
+  # DEBUG PeripheralsRstStatus => PeripheralsRstStatus_19
+  # DEBUG BEGIN_STMT
+  _5 = PeripheralsRstConfig_11 ^ PeripheralsRstStatus_19;
+  _6 = _5 & PeripheralsRstToUpdate_12;
+  if (_6 != 0)
+    goto <bb 4>; [94.50%]
+  else
+    goto <bb 5>; [5.50%]
+
+  <bb 4> [local count: 1014686025]:
+  if (TimeoutOccurred_17 != 0)
+    goto <bb 5>; [5.50%]
+  else
+    goto <bb 8>; [94.50%]
+
+  <bb 8> [local count: 958878293]:
+  goto <bb 3>; [100.00%]
+
+  <bb 5> [local count: 114863532]:
+  # TimeoutOccurred_14 = PHI <TimeoutOccurred_17(3), TimeoutOccurred_17(4)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_14 != 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 6> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 7> [local count: 114863532]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ConfigureCOFB (const struct Power_Ip_MC_RGM_CofbConfigType * CofbConfigPtr, uint8 DomainIndex)
+{
+  uint32 TempValue;
+  uint8 CofbIndex;
+  uint32 PeripheralsRstToUpdate;
+  uint32 PeripheralsRstConfig;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.8_1;
+  int _2;
+  int _3;
+  long unsigned int _9;
+  long unsigned int _14;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  PeripheralsRstConfig_6 = CofbConfigPtr_5(D)->CofbRstRegValue;
+  # DEBUG PeripheralsRstConfig => PeripheralsRstConfig_6
+  # DEBUG BEGIN_STMT
+  PeripheralsRstToUpdate_7 = CofbConfigPtr_5(D)->CofbBlocksToUpdateMask;
+  # DEBUG PeripheralsRstToUpdate => PeripheralsRstToUpdate_7
+  # DEBUG BEGIN_STMT
+  CofbIndex_8 = CofbConfigPtr_5(D)->CofbIndex;
+  # DEBUG CofbIndex => CofbIndex_8
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.8_1 = Power_Ip_pxMC_RGM;
+  _2 = (int) DomainIndex_10(D);
+  _3 = (int) CofbIndex_8;
+  TempValue_11 ={v} Power_Ip_pxMC_RGM.8_1->PRST[_2].PRST_COFB[_3];
+  # DEBUG TempValue => TempValue_11
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => ~PeripheralsRstToUpdate_7
+  # DEBUG TempValue => D#1 & TempValue_11
+  # DEBUG BEGIN_STMT
+  _9 = PeripheralsRstConfig_6 ^ TempValue_11;
+  _14 = PeripheralsRstToUpdate_7 & _9;
+  TempValue_12 = TempValue_11 ^ _14;
+  # DEBUG TempValue => TempValue_12
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.8_1->PRST[_2].PRST_COFB[_3] ={v} TempValue_12;
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ConfigureResetDomainController (const struct Power_Ip_MC_RGM_DomainConfigType * ResetDomainConfigPtr)
+{
+  uint8 DomainIndex;
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  uint32 ResetDomainStatus;
+  uint32 ResetDomainConfig;
+  uint32 TempValue;
+  struct Power_Ip_RDC_Type * Power_Ip_pxRdc.16_1;
+  int _2;
+  long unsigned int TimeoutTicks.20_4;
+  struct Power_Ip_RDC_Type * Power_Ip_pxRdc.21_5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct Power_Ip_RDC_Type * Power_Ip_pxRdc.22_10;
+
+  <bb 2> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  ResetDomainConfig_15 = ResetDomainConfigPtr_14(D)->DomainRdcRegValue;
+  # DEBUG ResetDomainConfig => ResetDomainConfig_15
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  DomainIndex_16 = ResetDomainConfigPtr_14(D)->DomainIndex;
+  # DEBUG DomainIndex => DomainIndex_16
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxRdc.16_1 = Power_Ip_pxRdc;
+  _2 = (int) DomainIndex_16;
+  TempValue_17 ={v} Power_Ip_pxRdc.16_1->RDC_CTRL_REG[_2];
+  # DEBUG TempValue => TempValue_17
+  # DEBUG BEGIN_STMT
+  TempValue_18 = TempValue_17 & 2147483647;
+  # DEBUG TempValue => TempValue_18
+  # DEBUG BEGIN_STMT
+  TempValue_19 = TempValue_18 | 2147483648;
+  # DEBUG TempValue => TempValue_19
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxRdc.16_1->RDC_CTRL_REG[_2] ={v} TempValue_19;
+  # DEBUG BEGIN_STMT
+  TempValue_21 ={v} Power_Ip_pxRdc.16_1->RDC_CTRL_REG[_2];
+  # DEBUG TempValue => TempValue_21
+  # DEBUG BEGIN_STMT
+  TempValue_22 = TempValue_21 & 4294967287;
+  # DEBUG TempValue => TempValue_22
+  # DEBUG BEGIN_STMT
+  TempValue_23 = ResetDomainConfig_15 | TempValue_22;
+  # DEBUG TempValue => TempValue_23
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxRdc.16_1->RDC_CTRL_REG[_2] ={v} TempValue_23;
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.20_4 = TimeoutTicks;
+  TimeoutOccurred_27 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.20_4);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_27
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxRdc.21_5 = Power_Ip_pxRdc;
+  ResetDomainStatus_28 ={v} Power_Ip_pxRdc.21_5->RDC_STAT_REG[_2];
+  # DEBUG ResetDomainStatus => ResetDomainStatus_28
+  # DEBUG BEGIN_STMT
+  _6 = ResetDomainStatus_28 >> 4;
+  _7 = ResetDomainConfig_15 >> 3;
+  _8 = _6 ^ _7;
+  _9 = _8 & 1;
+  if (_9 != 0)
+    goto <bb 4>; [94.50%]
+  else
+    goto <bb 5>; [5.50%]
+
+  <bb 4> [local count: 1014686025]:
+  if (TimeoutOccurred_27 != 0)
+    goto <bb 5>; [5.50%]
+  else
+    goto <bb 8>; [94.50%]
+
+  <bb 8> [local count: 958878293]:
+  goto <bb 3>; [100.00%]
+
+  <bb 5> [local count: 114863532]:
+  # TimeoutOccurred_3 = PHI <TimeoutOccurred_27(3), TimeoutOccurred_27(4)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_3 != 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 6> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 7> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxRdc.22_10 = Power_Ip_pxRdc;
+  TempValue_30 ={v} Power_Ip_pxRdc.22_10->RDC_CTRL_REG[_2];
+  # DEBUG TempValue => TempValue_30
+  # DEBUG BEGIN_STMT
+  TempValue_31 = TempValue_30 & 2147483647;
+  # DEBUG TempValue => TempValue_31
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => TempValue_31
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxRdc.22_10->RDC_CTRL_REG[_2] ={v} TempValue_31;
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_AssertDomainReset (uint8 DomainIndex)
+{
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.26_1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.26_1 = Power_Ip_pxMC_RGM;
+  _2 = (int) DomainIndex_6(D);
+  _3 ={v} Power_Ip_pxMC_RGM.26_1->PRST[_2].PRST_COFB[0];
+  _4 = _3 | 1;
+  Power_Ip_pxMC_RGM.26_1->PRST[_2].PRST_COFB[0] ={v} _4;
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ReleaseDomainReset (uint8 DomainIndex)
+{
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.24_1;
+  int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.24_1 = Power_Ip_pxMC_RGM;
+  _2 = (int) DomainIndex_6(D);
+  _3 ={v} Power_Ip_pxMC_RGM.24_1->PRST[_2].PRST_COFB[0];
+  _4 = _3 & 4294967294;
+  Power_Ip_pxMC_RGM.24_1->PRST[_2].PRST_COFB[0] ={v} _4;
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ClearDesResetFlags (uint32 RegValue)
+{
+  uint32 RegValueTemp;
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  long unsigned int TimeoutTicks.30_1;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.31_2;
+  long unsigned int _4;
+
+  <bb 2> [local count: 348071309]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValueTemp => RegValue_9(D)
+  # DEBUG BEGIN_STMT
+  if (RegValue_9(D) != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 3> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> [local count: 1073741824]:
+  # RegValueTemp_6 = PHI <RegValue_9(D)(3), RegValueTemp_15(9)>
+  # DEBUG RegValueTemp => RegValueTemp_6
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.30_1 = TimeoutTicks;
+  TimeoutOccurred_13 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.30_1);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_13
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.31_2 = Power_Ip_pxMC_RGM;
+  Power_Ip_pxMC_RGM.31_2->DES ={v} RegValueTemp_6;
+  # DEBUG BEGIN_STMT
+  _4 ={v} Power_Ip_pxMC_RGM.31_2->DES;
+  RegValueTemp_15 = _4 & 3221700443;
+  # DEBUG RegValueTemp => RegValueTemp_15
+  # DEBUG BEGIN_STMT
+  if (RegValueTemp_15 != 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 6>; [5.50%]
+
+  <bb 5> [local count: 1014686025]:
+  if (TimeoutOccurred_13 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 9>; [94.50%]
+
+  <bb 9> [local count: 958878294]:
+  goto <bb 4>; [100.00%]
+
+  <bb 6> [local count: 114863532]:
+  # TimeoutOccurred_3 = PHI <TimeoutOccurred_13(4), TimeoutOccurred_13(5)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_3 != 0)
+    goto <bb 7>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 7> [local count: 37904965]:
+  # DEBUG D#5 => RegValue_9(D)
+  Power_Ip_MC_RGM_ClearDesResetFlags.part.0 ();
+
+  <bb 8> [local count: 348071309]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Power_Ip_MC_RGM_ClearFesResetFlags (uint32 RegValue)
+{
+  uint32 RegValueTemp;
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  long unsigned int TimeoutTicks.5_1;
+  struct Power_Ip_MC_RGM_Type * Power_Ip_pxMC_RGM.6_2;
+  long unsigned int _4;
+
+  <bb 2> [local count: 348071309]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValueTemp => RegValue_9(D)
+  # DEBUG BEGIN_STMT
+  if (RegValue_9(D) != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 3> [local count: 114863532]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> [local count: 1073741824]:
+  # RegValueTemp_6 = PHI <RegValue_9(D)(3), RegValueTemp_15(9)>
+  # DEBUG RegValueTemp => RegValueTemp_6
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.5_1 = TimeoutTicks;
+  TimeoutOccurred_13 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.5_1);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_13
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_RGM.6_2 = Power_Ip_pxMC_RGM;
+  Power_Ip_pxMC_RGM.6_2->FES ={v} RegValueTemp_6;
+  # DEBUG BEGIN_STMT
+  _4 ={v} Power_Ip_pxMC_RGM.6_2->FES;
+  RegValueTemp_15 = _4 & 3224633433;
+  # DEBUG RegValueTemp => RegValueTemp_15
+  # DEBUG BEGIN_STMT
+  if (RegValueTemp_15 != 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 6>; [5.50%]
+
+  <bb 5> [local count: 1014686025]:
+  if (TimeoutOccurred_13 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 9>; [94.50%]
+
+  <bb 9> [local count: 958878294]:
+  goto <bb 4>; [100.00%]
+
+  <bb 6> [local count: 114863532]:
+  # TimeoutOccurred_3 = PHI <TimeoutOccurred_13(4), TimeoutOccurred_13(5)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_3 != 0)
+    goto <bb 7>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 7> [local count: 37904965]:
+  # DEBUG D#3 => RegValue_9(D)
+  Power_Ip_MC_RGM_ClearFesResetFlags.part.0 ();
+
+  <bb 8> [local count: 348071309]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+

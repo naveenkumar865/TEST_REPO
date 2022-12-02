@@ -1,0 +1,5 @@
+Power_Ip_CortexM7.c:140:6:Power_Ip_CM7_DisableSleepOnExit	0	static
+Power_Ip_CortexM7.c:153:6:Power_Ip_CM7_EnableSleepOnExit	0	static
+Power_Ip_CortexM7.c:162:6:Power_Ip_CortexM_WarmReset	0	static
+Power_Ip_CortexM7.c:181:6:Power_Ip_CM7_DisableDeepSleep	0	static
+Power_Ip_CortexM7.c:194:6:Power_Ip_CM7_EnableDeepSleep	0	static

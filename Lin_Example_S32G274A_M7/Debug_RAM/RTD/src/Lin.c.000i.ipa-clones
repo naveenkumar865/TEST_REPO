@@ -1,0 +1,9 @@
+Callgraph clone;Lin_CommonCheckingChannel;5;../RTD/src/Lin.c;245;23;Lin_CommonCheckingChannel.isra.0;24;../RTD/src/Lin.c;245;23;isra
+Callgraph clone;Lin_CommonCheckingChannel.isra.0;24;../RTD/src/Lin.c;245;23;Lin_CommonCheckingChannel.isra.0.part.0;25;../RTD/src/Lin.c;245;23;part
+Callgraph removal;Lin_CommonCheckingChannel;5;../RTD/src/Lin.c;245;23
+Callgraph clone;Lin_ChkParamFuncSendFrame;6;../RTD/src/Lin.c;323;23;Lin_SendFrame;12;../RTD/src/Lin.c;857;16;inlining to
+Callgraph clone;Lin_InitImplementation;4;../RTD/src/Lin.c;210;14;Lin_Init;7;../RTD/src/Lin.c;395;6;inlining to
+Callgraph clone;Lin_CommonCheckingChannel.isra.0.part.0;25;../RTD/src/Lin.c;245;23;Lin_CommonCheckingChannel.isra.0;24;../RTD/src/Lin.c;245;23;inlining to
+Callgraph removal;Lin_CommonCheckingChannel.isra.0.part.0;25;../RTD/src/Lin.c;245;23
+Callgraph removal;Lin_InitImplementation;4;../RTD/src/Lin.c;210;14
+Callgraph removal;Lin_ChkParamFuncSendFrame;6;../RTD/src/Lin.c;323;23

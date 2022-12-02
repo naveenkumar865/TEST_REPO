@@ -1,0 +1,338 @@
+Clock_Ip_ClockPowerModeChangeNotification (Clock_Ip_PowerModesType PowerMode, Clock_Ip_PowerNotificationType Notification)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ClockInitializeObjects ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SpecificPlatformInitClock (const struct Clock_Ip_ClockConfigType * Config)
+{
+  uint32 PeriphDfsIsInReset;
+  uint32 CoreDfsIsInReset;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1074085888B;
+  _2 = _1->CTL;
+  CoreDfsIsInReset = _2 & 2;
+  # DEBUG BEGIN_STMT
+  _3 = 1074102272B;
+  _4 = _3->CTL;
+  PeriphDfsIsInReset = _4 & 2;
+  # DEBUG BEGIN_STMT
+  if (CoreDfsIsInReset != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  if (PeriphDfsIsInReset != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 = 1073971200B;
+  _6 = _5->PLLCR;
+  _7 = (signed int) _6;
+  if (_7 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _8 = 1073971200B;
+  _8->PLLCLKMUX = 0;
+  # DEBUG BEGIN_STMT
+  _9 = 1073971200B;
+  _9->PLLDV = 4126;
+  # DEBUG BEGIN_STMT
+  _10 = 1073971200B;
+  _11 = _10->PLLCR;
+  _12 = 1073971200B;
+  _13 = _11 & 2147483647;
+  _12->PLLCR = _13;
+  # DEBUG BEGIN_STMT
+  _14 = 1073971200B;
+  _15 = _14->PLLFD;
+  _16 = 1073971200B;
+  _17 = _15 & 3221192704;
+  _16->PLLFD = _17;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _18 = 1073987584B;
+  _19 = _18->PLLCR;
+  _20 = (signed int) _19;
+  if (_20 < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _21 = 1073987584B;
+  _21->PLLCLKMUX = 0;
+  # DEBUG BEGIN_STMT
+  _22 = 1073987584B;
+  _22->PLLDV = 4126;
+  # DEBUG BEGIN_STMT
+  _23 = 1073987584B;
+  _24 = _23->PLLCR;
+  _25 = 1073987584B;
+  _26 = _24 & 2147483647;
+  _25->PLLCR = _26;
+  # DEBUG BEGIN_STMT
+  _27 = 1073987584B;
+  _28 = _27->PLLFD;
+  _29 = 1073987584B;
+  _30 = _28 & 3221192704;
+  _29->PLLFD = _30;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _31 = 1074085888B;
+  _32 = _31->PORTRESET;
+  _33 = 1074085888B;
+  _34 = _32 | 63;
+  _33->PORTRESET = _34;
+  # DEBUG BEGIN_STMT
+  _35 = 1074085888B;
+  _35->DVPORT[0] = 256;
+  # DEBUG BEGIN_STMT
+  _36 = 1074085888B;
+  _36->DVPORT[1] = 256;
+  # DEBUG BEGIN_STMT
+  _37 = 1074085888B;
+  _37->DVPORT[2] = 256;
+  # DEBUG BEGIN_STMT
+  _38 = 1074085888B;
+  _38->DVPORT[3] = 256;
+  # DEBUG BEGIN_STMT
+  _39 = 1074085888B;
+  _39->DVPORT[4] = 256;
+  # DEBUG BEGIN_STMT
+  _40 = 1074085888B;
+  _40->DVPORT[5] = 256;
+  # DEBUG BEGIN_STMT
+  _41 = 1074085888B;
+  _42 = _41->CTL;
+  _43 = 1074085888B;
+  _44 = _42 & 4294967293;
+  _43->CTL = _44;
+  # DEBUG BEGIN_STMT
+  _45 = 1074102272B;
+  _46 = _45->PORTRESET;
+  _47 = 1074102272B;
+  _48 = _46 | 63;
+  _47->PORTRESET = _48;
+  # DEBUG BEGIN_STMT
+  _49 = 1074102272B;
+  _49->DVPORT[0] = 256;
+  # DEBUG BEGIN_STMT
+  _50 = 1074102272B;
+  _50->DVPORT[1] = 256;
+  # DEBUG BEGIN_STMT
+  _51 = 1074102272B;
+  _51->DVPORT[2] = 256;
+  # DEBUG BEGIN_STMT
+  _52 = 1074102272B;
+  _52->DVPORT[3] = 256;
+  # DEBUG BEGIN_STMT
+  _53 = 1074102272B;
+  _53->DVPORT[4] = 256;
+  # DEBUG BEGIN_STMT
+  _54 = 1074102272B;
+  _54->DVPORT[5] = 256;
+  # DEBUG BEGIN_STMT
+  _55 = 1074102272B;
+  _56 = _55->CTL;
+  _57 = 1074102272B;
+  _58 = _56 & 4294967293;
+  _57->CTL = _58;
+  goto <bb 17>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (CoreDfsIsInReset != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _59 = 1073971200B;
+  _60 = _59->PLLCR;
+  _61 = (signed int) _60;
+  if (_61 < 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _62 = 1073971200B;
+  _62->PLLCLKMUX = 0;
+  # DEBUG BEGIN_STMT
+  _63 = 1073971200B;
+  _63->PLLDV = 4126;
+  # DEBUG BEGIN_STMT
+  _64 = 1073971200B;
+  _65 = _64->PLLCR;
+  _66 = 1073971200B;
+  _67 = _65 & 2147483647;
+  _66->PLLCR = _67;
+  # DEBUG BEGIN_STMT
+  _68 = 1073971200B;
+  _69 = _68->PLLFD;
+  _70 = 1073971200B;
+  _71 = _69 & 3221192704;
+  _70->PLLFD = _71;
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _72 = 1074085888B;
+  _73 = _72->PORTRESET;
+  _74 = 1074085888B;
+  _75 = _73 | 63;
+  _74->PORTRESET = _75;
+  # DEBUG BEGIN_STMT
+  _76 = 1074085888B;
+  _76->DVPORT[0] = 256;
+  # DEBUG BEGIN_STMT
+  _77 = 1074085888B;
+  _77->DVPORT[1] = 256;
+  # DEBUG BEGIN_STMT
+  _78 = 1074085888B;
+  _78->DVPORT[2] = 256;
+  # DEBUG BEGIN_STMT
+  _79 = 1074085888B;
+  _79->DVPORT[3] = 256;
+  # DEBUG BEGIN_STMT
+  _80 = 1074085888B;
+  _80->DVPORT[4] = 256;
+  # DEBUG BEGIN_STMT
+  _81 = 1074085888B;
+  _81->DVPORT[5] = 256;
+  # DEBUG BEGIN_STMT
+  _82 = 1074085888B;
+  _83 = _82->CTL;
+  _84 = 1074085888B;
+  _85 = _83 & 4294967293;
+  _84->CTL = _85;
+  goto <bb 17>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  if (PeriphDfsIsInReset != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _86 = 1073987584B;
+  _87 = _86->PLLCR;
+  _88 = (signed int) _87;
+  if (_88 < 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _89 = 1073987584B;
+  _89->PLLCLKMUX = 0;
+  # DEBUG BEGIN_STMT
+  _90 = 1073987584B;
+  _90->PLLDV = 4126;
+  # DEBUG BEGIN_STMT
+  _91 = 1073987584B;
+  _92 = _91->PLLCR;
+  _93 = 1073987584B;
+  _94 = _92 & 2147483647;
+  _93->PLLCR = _94;
+  # DEBUG BEGIN_STMT
+  _95 = 1073987584B;
+  _96 = _95->PLLFD;
+  _97 = 1073987584B;
+  _98 = _96 & 3221192704;
+  _97->PLLFD = _98;
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _99 = 1074102272B;
+  _100 = _99->PORTRESET;
+  _101 = 1074102272B;
+  _102 = _100 | 63;
+  _101->PORTRESET = _102;
+  # DEBUG BEGIN_STMT
+  _103 = 1074102272B;
+  _103->DVPORT[0] = 256;
+  # DEBUG BEGIN_STMT
+  _104 = 1074102272B;
+  _104->DVPORT[1] = 256;
+  # DEBUG BEGIN_STMT
+  _105 = 1074102272B;
+  _105->DVPORT[2] = 256;
+  # DEBUG BEGIN_STMT
+  _106 = 1074102272B;
+  _106->DVPORT[3] = 256;
+  # DEBUG BEGIN_STMT
+  _107 = 1074102272B;
+  _107->DVPORT[4] = 256;
+  # DEBUG BEGIN_STMT
+  _108 = 1074102272B;
+  _108->DVPORT[5] = 256;
+  # DEBUG BEGIN_STMT
+  _109 = 1074102272B;
+  _110 = _109->CTL;
+  _111 = 1074102272B;
+  _112 = _110 & 4294967293;
+  _111->CTL = _112;
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SpecificPeripheralClockInitialization (const struct Clock_IP_SpecificPeriphConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_McMeEnterKey ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1074298880B;
+  _1->CTL_KEY = 23280;
+  # DEBUG BEGIN_STMT
+  _2 = 1074298880B;
+  _2->CTL_KEY = 42255;
+  return;
+
+}
+
+

@@ -1,0 +1,5 @@
+Platform.c:156:6:Platform_Init	8	static
+Platform.c:199:16:Platform_SetIrq	8	static
+Platform.c:223:16:Platform_SetIrqPriority	8	static
+Platform.c:248:16:Platform_GetIrqPriority	8	static
+Platform.c:278:16:Platform_InstallIrqHandler	8	static

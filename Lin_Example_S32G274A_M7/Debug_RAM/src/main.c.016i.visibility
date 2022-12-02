@@ -1,0 +1,357 @@
+
+Marking local functions: Exit_Example
+
+
+Marking externally visible functions: main
+
+
+Marking externally visible variables: T_Lin_Frame T_Lin_Data
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Lin_GetStatus/18 (Lin_GetStatus) @08d23620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_SendFrame/17 (Lin_SendFrame) @08d23540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_CheckWakeup/16 (Lin_CheckWakeup) @08d23460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_WakeupInternal/15 (Lin_WakeupInternal) @08d23380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Lin_Init/14 (Lin_Init) @08d232a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+OsIf_Init/13 (OsIf_Init) @08d231c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Platform_Init/12 (Platform_Init) @08d230e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_SetMode/11 (Mcu_SetMode) @08d23000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_DistributePllClock/10 (Mcu_DistributePllClock) @065adee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_GetPllStatus/9 (Mcu_GetPllStatus) @065ade00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_InitClock/8 (Mcu_InitClock) @065add20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Mcu_Init/7 (Mcu_Init) @065adc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+Port_Init/6 (Port_Init) @065adb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main/4 
+  Calls: 
+linSdu.7625/5 (linSdu) @08d21510
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: main/4 (addr)
+  Availability: available
+  Varpool flags: initialized
+main/4 (main) @065ad700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: linSdu.7625/5 (addr)T_Lin_Frame/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Exit_Example/1 Lin_GetStatus/18 Lin_SendFrame/17 Lin_CheckWakeup/16 Lin_WakeupInternal/15 Lin_Init/14 OsIf_Init/13 Platform_Init/12 Mcu_SetMode/11 Mcu_DistributePllClock/10 Mcu_GetPllStatus/9 Mcu_InitClock/8 Mcu_Init/7 Port_Init/6 
+T_Lin_Frame/3 (T_Lin_Frame) @065a86c0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: T_Lin_Data/2 (addr)
+  Referring: main/4 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+T_Lin_Data/2 (T_Lin_Data) @065a85e8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: T_Lin_Frame/3 (addr)
+  Availability: available
+  Varpool flags: initialized
+Exit_Example/1 (Exit_Example) @0655dd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: main/4 
+  Calls: 
+main ()
+{
+  volatile Std_ReturnType wakeUpEvent;
+  uint8 Channel_Index;
+  volatile uint8 T_result;
+  uint8 * linSduPtr;
+  struct Lin_PduType linFrame;
+  uint8 Index_frame;
+  volatile uint32 TimeOut;
+  volatile Lin_StatusType T_LinStatus;
+  static uint8 linSdu[8] = "\x00\x00\x00\x00\x00\x00\x00";
+  int D.7654;
+  int iftmp.6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Index_frame = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  linSduPtr = &linSdu;
+  # DEBUG BEGIN_STMT
+  T_result = 0;
+  # DEBUG BEGIN_STMT
+  Channel_Index = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Port_Init (0B);
+  # DEBUG BEGIN_STMT
+  Mcu_Init (0B);
+  # DEBUG BEGIN_STMT
+  Mcu_InitClock (0);
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Mcu_DistributePllClock ();
+  # DEBUG BEGIN_STMT
+  Mcu_SetMode (0);
+  # DEBUG BEGIN_STMT
+  Platform_Init (0B);
+  # DEBUG BEGIN_STMT
+  OsIf_Init (0B);
+  # DEBUG BEGIN_STMT
+  Lin_Init (0B);
+  # DEBUG BEGIN_STMT
+  Channel_Index = 0;
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Lin_WakeupInternal (Channel_Index);
+  # DEBUG BEGIN_STMT
+  _2 = Lin_CheckWakeup (Channel_Index);
+  wakeUpEvent = _2;
+  # DEBUG BEGIN_STMT
+  _3 = (int) Index_frame;
+  linFrame = T_Lin_Frame[_3];
+  # DEBUG BEGIN_STMT
+  Lin_SendFrame (Channel_Index, &linFrame);
+  # DEBUG BEGIN_STMT
+  TimeOut = 1600000;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _4 = Lin_GetStatus (Channel_Index, &linSduPtr);
+  T_LinStatus = _4;
+  # DEBUG BEGIN_STMT
+  T_LinStatus.0_5 = T_LinStatus;
+  if (T_LinStatus.0_5 != 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  TimeOut.1_6 = TimeOut;
+  TimeOut.2_7 = TimeOut.1_6;
+  _8 = TimeOut.2_7 + 4294967295;
+  TimeOut = _8;
+  if (TimeOut.2_7 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  T_LinStatus.3_9 = T_LinStatus;
+  if (T_LinStatus.3_9 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  T_result.4_10 = T_result;
+  _11 = T_result.4_10 + 1;
+  T_result = _11;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Channel_Index.5_12 = Channel_Index;
+  Channel_Index = Channel_Index.5_12 + 1;
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  if (Channel_Index == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  wakeUpEvent.7_13 = wakeUpEvent;
+  if (wakeUpEvent.7_13 == 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 13> :
+  T_result.8_14 = T_result;
+  if (T_result.8_14 == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.6 = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.6 = 0;
+
+  <bb 16> :
+  _15 = (_Bool) iftmp.6;
+  Exit_Example (_15);
+  # DEBUG BEGIN_STMT
+  D.7654 = 0;
+  linFrame = {CLOBBER};
+  linSduPtr = {CLOBBER};
+  return D.7654;
+
+}
+
+
+Exit_Example (boolean result)
+{
+  volatile uint8 * testResultBasePtr;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  testResultBasePtr = 877658112B;
+  # DEBUG BEGIN_STMT
+  if (result != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  *testResultBasePtr = 90;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  *testResultBasePtr = 51;
+
+  <bb 5> :
+  return;
+
+}
+
+

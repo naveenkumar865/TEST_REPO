@@ -1,0 +1,1270 @@
+IPA function summary for Lin_CommonCheckingChannel.isra.0.part.0/25 inlinable
+  global time:     7.500000
+  self size:       10
+  global size:     10
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:5.500000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Lin_CommonCheckingChannel.isra.0/24 inlinable
+  global time:     7.550000
+  self size:       10
+  global size:     10
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:0.680000,  nonconst if:(op0 changed)
+  calls:
+    Lin_CommonCheckingChannel.isra.0.part.0/25 function not considered for inlining
+      loop depth: 0 freq:0.17 size: 2 time: 11callee size: 5 stack: 0 predicate: (op0 == 0)
+
+IPA function summary for Lin_WakeupInternal/14 inlinable
+  global time:     19.583008
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:4.113584
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_WakeUpInternal/23 function body not available
+      loop depth: 0 freq:0.13 size: 2 time: 11
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_Wakeup/13 inlinable
+  global time:     19.583008
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:4.113584
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_WakeUp/22 function body not available
+      loop depth: 0 freq:0.13 size: 2 time: 11
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_SendFrame/12 inlinable
+  global time:     23.843200
+  self size:       14
+  global size:     14
+  min size:       16
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:2.488800
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Lin_Ipw_SendFrame/21 function body not available
+      loop depth: 0 freq:0.49 size: 4 time: 13
+    Lin_ChkParamFuncSendFrame/6 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 4 time: 13callee size: 6 stack: 0
+
+IPA function summary for Lin_GoToSleepInternal/11 inlinable
+  global time:     22.657816
+  self size:       17
+  global size:     17
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:4.786520
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_GoToSleepInternal/20 function body not available
+      loop depth: 0 freq:0.32 size: 3 time: 12
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_GoToSleep/10 inlinable
+  global time:     22.496512
+  self size:       16
+  global size:     16
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:4.625216
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_GoToSleep/19 function body not available
+      loop depth: 0 freq:0.32 size: 3 time: 12
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_GetStatus/9 inlinable
+  global time:     21.247000
+  self size:       24
+  global size:     24
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:1.320000,  nonconst if:(op1 changed)
+    size:10.000000, time:2.425500,  executed if:(op1 != 0B)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_HardwareGetStatus/18 function body not available
+      loop depth: 0 freq:0.12 size: 4 time: 13 predicate: (op1 != 0B)
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_CheckWakeup/8 inlinable
+  global time:     20.491300
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:4.640000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_CheckWakeup/17 function body not available
+      loop depth: 0 freq:0.17 size: 2 time: 11
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_Init/7 inlinable
+  global time:     6.361600
+  self size:       14
+  global size:     14
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:8.000000, time:1.668600,  executed if:(op0 == 0B)
+  calls:
+    Lin_InitImplementation/4 function not considered for inlining
+      loop depth: 0 freq:0.07 size: 1 time: 10callee size: 9 stack: 0 predicate: (op0 == 0B)
+
+IPA function summary for Lin_ChkParamFuncSendFrame/6 inlinable
+  global time:     18.706000
+  self size:       13
+  global size:     13
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:1.320000,  nonconst if:(op1 changed)
+    size:3.000000, time:1.386000,  executed if:(op1 != 0B)
+  array index:(op0 changed)
+  calls:
+    Lin_CommonCheckingChannel.isra.0/24 function not considered for inlining
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 5 stack: 0
+
+IPA function summary for Lin_InitImplementation/4 inlinable
+  global time:     168.305436
+  self size:       19
+  global size:     19
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:13.000000, time:158.707636
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Lin_Ipw_InitChannel/16 function body not available
+      loop depth: 1 freq:0.63 size: 3 time: 12
+       op0 is compile time invariant
+
+
+Flattening functions:
+Overall time estimate: 358.324881 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Lin_CommonCheckingChannel.isra.0.part.0/25.
+Enqueueing calls in Lin_CommonCheckingChannel.isra.0/24.
+Enqueueing calls in Lin_WakeupInternal/14.
+Enqueueing calls in Lin_Wakeup/13.
+Enqueueing calls in Lin_SendFrame/12.
+Enqueueing calls in Lin_GoToSleepInternal/11.
+Enqueueing calls in Lin_GoToSleep/10.
+Enqueueing calls in Lin_GetStatus/9.
+Enqueueing calls in Lin_CheckWakeup/8.
+Enqueueing calls in Lin_Init/7.
+Enqueueing calls in Lin_ChkParamFuncSendFrame/6.
+Enqueueing calls in Lin_InitImplementation/4.
+
+Considering Lin_ChkParamFuncSendFrame/6 with 13 size
+ to be inlined into Lin_SendFrame/12 in ../RTD/src/Lin.c:862
+ Estimated badness is -0.500000, frequency 1.00.
+
+Considering Lin_InitImplementation/4 with 19 size
+ to be inlined into Lin_Init/7 in ../RTD/src/Lin.c:470
+ Estimated badness is -0.007647, frequency 0.07.
+
+Considering Lin_CommonCheckingChannel.isra.0.part.0/25 with 10 size
+ to be inlined into Lin_CommonCheckingChannel.isra.0/24 in unknown:0
+ Estimated badness is -0.000364, frequency 0.17.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 177.416411 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        8 calls, 1.728861 freq, 0 count
+call is unlikely and code size would grow         :        7 calls, 7.000000 freq, 0 count
+IPA function summary for Lin_CommonCheckingChannel.isra.0/24 inlinable
+  global time:     6.615000
+  self size:       10
+  global size:     15
+  min size:       3
+  self stack:      0
+  global stack:    0
+  estimated growth:18
+    size:3.000000, time:3.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:0.680000,  nonconst if:(op0 changed)
+    size:7.000000, time:0.935000,  executed if:(op0 == 0)
+  calls:
+    Lin_CommonCheckingChannel.isra.0.part.0/25 inlined
+      loop depth: 0 freq:0.17 size: 2 time: 11callee size: 5 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+
+IPA function summary for Lin_WakeupInternal/14 inlinable
+  global time:     19.583008
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:4.113584
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_WakeUpInternal/23 function body not available
+      loop depth: 0 freq:0.13 size: 2 time: 11
+    Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_Wakeup/13 inlinable
+  global time:     19.583008
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:4.113584
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_WakeUp/22 function body not available
+      loop depth: 0 freq:0.13 size: 2 time: 11
+    Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_SendFrame/12 inlinable
+  global time:     27.549200
+  self size:       14
+  global size:     20
+  min size:       30
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:4.488800
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:1.320000,  nonconst if:(op1 changed)
+    size:3.000000, time:1.386000,  executed if:(op1 != 0B)
+  calls:
+    Lin_Ipw_SendFrame/21 function body not available
+      loop depth: 0 freq:0.49 size: 4 time: 13
+    Lin_ChkParamFuncSendFrame/6 inlined
+      loop depth: 0 freq:1.00 size: 4 time: 13callee size: 6 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+      Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+        loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_GoToSleepInternal/11 inlinable
+  global time:     22.657816
+  self size:       17
+  global size:     17
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:4.786520
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_GoToSleepInternal/20 function body not available
+      loop depth: 0 freq:0.32 size: 3 time: 12
+    Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_GoToSleep/10 inlinable
+  global time:     22.496512
+  self size:       16
+  global size:     16
+  min size:       12
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:4.625216
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_GoToSleep/19 function body not available
+      loop depth: 0 freq:0.32 size: 3 time: 12
+    Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_GetStatus/9 inlinable
+  global time:     21.247000
+  self size:       24
+  global size:     24
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:1.320000,  nonconst if:(op1 changed)
+    size:10.000000, time:2.425500,  executed if:(op1 != 0B)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_HardwareGetStatus/18 function body not available
+      loop depth: 0 freq:0.12 size: 4 time: 13 predicate: (op1 != 0B)
+    Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_CheckWakeup/8 inlinable
+  global time:     20.491300
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:4.640000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  array index:(op0 changed)
+  calls:
+    Lin_Ipw_CheckWakeup/17 function body not available
+      loop depth: 0 freq:0.17 size: 2 time: 11
+    Lin_CommonCheckingChannel.isra.0/24 call is unlikely and code size would grow
+      loop depth: 0 freq:1.00 size: 3 time: 12callee size: 7 stack: 0
+
+IPA function summary for Lin_Init/7 inlinable
+  global time:     17.193567
+  self size:       14
+  global size:     29
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:21.000000, time:12.667039,  executed if:(op0 == 0B)
+  calls:
+    Lin_InitImplementation/4 inlined
+      loop depth: 0 freq:0.07 size: 1 time: 10callee size: 9 stack: 0
+      Stack frame offset 0, callee self size 0, callee size 0
+      Lin_Ipw_InitChannel/16 function body not available
+        loop depth: 1 freq:0.04 size: 3 time: 12 predicate: (op0 == 0B)
+         op0 is compile time invariant
+
+Symbol table:
+
+Lin_CommonCheckingChannel.isra.0.part.0/25 (Lin_CommonCheckingChannel.isra.0.part.0) @05f367e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: Lin_apChannelConfigPtr/1 (read)
+  Referring: 
+  Function Lin_CommonCheckingChannel.isra.0.part.0/25 is inline copy in Lin_CommonCheckingChannel.isra.0/24
+  Availability: local
+  Function flags: count:182536110 (estimated locally) first_run:1 body local split_part optimize_size
+  Called by: Lin_CommonCheckingChannel.isra.0/24 (inlined) (182536110 (estimated locally),0.17 per call) 
+  Calls: 
+Lin_CommonCheckingChannel.isra.0/24 (Lin_CommonCheckingChannel.isra.0) @05d16e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: Lin_au8LinDrvStatus/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: count:1073741823 (estimated locally) body local optimize_size
+  Called by: Lin_WakeupInternal/14 (1073741824 (estimated locally),1.00 per call) Lin_Wakeup/13 (1073741824 (estimated locally),1.00 per call) Lin_GoToSleepInternal/11 (1073741824 (estimated locally),1.00 per call) Lin_GoToSleep/10 (1073741823 (estimated locally),1.00 per call) Lin_GetStatus/9 (1073741823 (estimated locally),1.00 per call) Lin_CheckWakeup/8 (1073741824 (estimated locally),1.00 per call) Lin_ChkParamFuncSendFrame/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Lin_CommonCheckingChannel.isra.0.part.0/25 (inlined) (182536110 (estimated locally),0.17 per call) 
+Lin_Ipw_WakeUpInternal/23 (Lin_Ipw_WakeUpInternal) @05ce4a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_WakeupInternal/14 (143434728 (estimated locally),0.13 per call) 
+  Calls: 
+Lin_Ipw_WakeUp/22 (Lin_Ipw_WakeUp) @05ce48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_Wakeup/13 (143434728 (estimated locally),0.13 per call) 
+  Calls: 
+Lin_Ipw_SendFrame/21 (Lin_Ipw_SendFrame) @05ce4620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_SendFrame/12 (524845004 (estimated locally),0.49 per call) 
+  Calls: 
+Lin_Ipw_GoToSleepInternal/20 (Lin_Ipw_GoToSleepInternal) @05ce4460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_GoToSleepInternal/11 (346397703 (estimated locally),0.32 per call) 
+  Calls: 
+Lin_Ipw_GoToSleep/19 (Lin_Ipw_GoToSleep) @05ce42a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_GoToSleep/10 (346397702 (estimated locally),0.32 per call) 
+  Calls: 
+Lin_Ipw_HardwareGetStatus/18 (Lin_Ipw_HardwareGetStatus) @05ce40e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_GetStatus/9 (124017180 (estimated locally),0.12 per call) 
+  Calls: 
+Lin_Ipw_CheckWakeup/17 (Lin_Ipw_CheckWakeup) @05c05540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_CheckWakeup/8 (180710749 (estimated locally),0.17 per call) 
+  Calls: 
+Lin_Ipw_InitChannel/16 (Lin_Ipw_InitChannel) @05c05ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Lin_InitImplementation/4 (47112888 (estimated locally),0.04 per call) 
+  Calls: 
+Lin_PBCfgVariantPredefined/15 (Lin_PBCfgVariantPredefined) @05cde2d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Lin_Init/7 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Lin_WakeupInternal/14 (Lin_WakeupInternal) @05c059a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_au8LinChStatus/3 (read)Lin_au8LinChStatus/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_WakeUpInternal/23 (143434728 (estimated locally),0.13 per call) Lin_CommonCheckingChannel.isra.0/24 (1073741824 (estimated locally),1.00 per call) 
+Lin_Wakeup/13 (Lin_Wakeup) @05c05700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_au8LinChStatus/3 (read)Lin_au8LinChStatus/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_WakeUp/22 (143434728 (estimated locally),0.13 per call) Lin_CommonCheckingChannel.isra.0/24 (1073741824 (estimated locally),1.00 per call) 
+Lin_SendFrame/12 (Lin_SendFrame) @05c05460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_SendFrame/21 (524845004 (estimated locally),0.49 per call) Lin_ChkParamFuncSendFrame/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Lin_GoToSleepInternal/11 (Lin_GoToSleepInternal) @05c051c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_au8LinChStatus/3 (read)Lin_au8LinChStatus/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_GoToSleepInternal/20 (346397703 (estimated locally),0.32 per call) Lin_CommonCheckingChannel.isra.0/24 (1073741824 (estimated locally),1.00 per call) 
+Lin_GoToSleep/10 (Lin_GoToSleep) @05bfae00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_au8LinChStatus/3 (read)Lin_au8LinChStatus/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_GoToSleep/19 (346397702 (estimated locally),0.32 per call) Lin_CommonCheckingChannel.isra.0/24 (1073741823 (estimated locally),1.00 per call) 
+Lin_GetStatus/9 (Lin_GetStatus) @05bfa8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_au8LinChStatus/3 (read)Lin_au8LinChStatus/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_HardwareGetStatus/18 (124017180 (estimated locally),0.12 per call) Lin_CommonCheckingChannel.isra.0/24 (1073741823 (estimated locally),1.00 per call) 
+Lin_CheckWakeup/8 (Lin_CheckWakeup) @05bfa380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_au8LinChStatus/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_Ipw_CheckWakeup/17 (180710749 (estimated locally),0.17 per call) Lin_CommonCheckingChannel.isra.0/24 (1073741824 (estimated locally),1.00 per call) 
+Lin_Init/7 (Lin_Init) @05bfad20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Lin_PBCfgVariantPredefined/15 (read)Lin_apConfigPtr/0 (write)Lin_au8LinDrvStatus/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Lin_InitImplementation/4 (inlined) (74410308 (estimated locally),0.07 per call) 
+Lin_ChkParamFuncSendFrame/6 (Lin_ChkParamFuncSendFrame) @05bfaa80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Lin_au8LinChStatus/3 (read)
+  Referring: 
+  Function Lin_ChkParamFuncSendFrame/6 is inline copy in Lin_SendFrame/12
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Lin_SendFrame/12 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Lin_CommonCheckingChannel.isra.0/24 (1073741824 (estimated locally),1.00 per call) 
+Lin_InitImplementation/4 (Lin_InitImplementation) @05bfa540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Lin_apConfigPtr/0 (read)Lin_apChannelConfigPtr/1 (write)Lin_au8LinChStatus/3 (write)
+  Referring: 
+  Function Lin_InitImplementation/4 is inline copy in Lin_Init/7
+  Availability: local
+  Function flags: count:74410308 (estimated locally) body local optimize_size
+  Called by: Lin_Init/7 (inlined) (74410308 (estimated locally),0.07 per call) 
+  Calls: Lin_Ipw_InitChannel/16 (47112888 (estimated locally),0.04 per call) 
+Lin_au8LinChStatus/3 (Lin_au8LinChStatus) @05b01630
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Lin_Wakeup/13 (write)Lin_ChkParamFuncSendFrame/6 (read)Lin_GoToSleepInternal/11 (read)Lin_InitImplementation/4 (write)Lin_Wakeup/13 (read)Lin_CheckWakeup/8 (read)Lin_GetStatus/9 (read)Lin_GetStatus/9 (write)Lin_GoToSleepInternal/11 (write)Lin_GoToSleep/10 (read)Lin_GoToSleep/10 (write)Lin_WakeupInternal/14 (read)Lin_WakeupInternal/14 (write)
+  Availability: available
+  Varpool flags:
+Lin_au8LinDrvStatus/2 (Lin_au8LinDrvStatus) @05b015a0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Lin_CommonCheckingChannel.isra.0/24 (read)Lin_Init/7 (write)
+  Availability: available
+  Varpool flags: initialized
+Lin_apChannelConfigPtr/1 (Lin_apChannelConfigPtr) @05b01510
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Lin_InitImplementation/4 (write)Lin_CommonCheckingChannel.isra.0.part.0/25 (read)
+  Availability: available
+  Varpool flags:
+Lin_apConfigPtr/0 (Lin_apConfigPtr) @05b01480
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Lin_InitImplementation/4 (read)Lin_Init/7 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function Lin_CommonCheckingChannel.isra.0 (Lin_CommonCheckingChannel.isra.0, funcdef_no=11, decl_uid=6061, cgraph_uid=20, symbol_order=24)
+
+
+Symbols to be put in SSA form
+{ D.6062 D.6091 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 12
+Number of blocks to update: 11 ( 92%)
+
+
+Removing basic block 4
+Removing basic block 7
+Merging blocks 11 and 6
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;; 2 succs { 8 3 }
+;; 3 succs { 8 4 }
+;; 4 succs { 7 5 }
+;; 5 succs { 7 6 }
+;; 6 succs { 7 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+Lin_CommonCheckingChannel.isra.0 (const uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  Std_ReturnType D.6091;
+  Std_ReturnType TempReturn;
+  unsigned char _1;
+  const struct Lin_ChannelConfigType * _6;
+  _Bool _7;
+  long unsigned int _8;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG FunctionalId s=> FunctionalId
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  _1 = Lin_au8LinDrvStatus[0];
+  if (_1 != 2)
+    goto <bb 8>; [66.00%]
+  else
+    goto <bb 3>; [34.00%]
+
+  <bb 3> [local count: 365072220]:
+  # DEBUG BEGIN_STMT
+  if (Channel_2(D) != 0)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 4> [local count: 182536110]:
+  # DEBUG D#2 => Channel_2(D)
+  # DEBUG INLINE_ENTRY Lin_CommonCheckingChannel
+  # DEBUG D#3 => D#2
+  # DEBUG Channel => D#3
+  # DEBUG BEGIN_STMT
+  _6 = Lin_apChannelConfigPtr[0];
+  _7 = _6->AllocatedPartition;
+  if (_7 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 5> [local count: 91268055]:
+  _8 = _6->ChannelCoreId;
+  if (_8 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 6> [local count: 45634028]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 7> [local count: 182536110]:
+  # TempReturn_9 = PHI <1(4), 1(5), 0(6)>
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  _10 = TempReturn_9;
+  # DEBUG CoreId => NULL
+  # DEBUG TempReturn => NULL
+  # DEBUG FunctionalId => NULL
+  # DEBUG Channel => NULL
+  TempReturn_5 = _10;
+
+  <bb 8> [local count: 1073741824]:
+  # TempReturn_3 = PHI <1(2), 1(3), TempReturn_5(7)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+
+;; Function Lin_Init (Lin_Init, funcdef_no=3, decl_uid=5852, cgraph_uid=4, symbol_order=7)
+
+
+Symbols to be put in SSA form
+{ D.6052 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 18
+Number of blocks to update: 17 ( 94%)
+
+
+Merging blocks 5 and 8
+Removing basic block 10
+Removing basic block 12
+Removing basic block 17
+;; 4 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+;;
+;; Loop 1
+;;  header 9, latch 8
+;;  depth 1, outer 0
+;;  nodes: 9 8 7 6 11 10
+;;
+;; Loop 2
+;;  header 10, latch 7
+;;  depth 2, outer 1
+;;  nodes: 10 7 6 11
+;;
+;; Loop 3
+;;  header 11, latch 6
+;;  depth 3, outer 2
+;;  nodes: 11 6
+;; 2 succs { 13 3 }
+;; 3 succs { 13 4 }
+;; 4 succs { 13 5 }
+;; 5 succs { 9 }
+;; 6 succs { 7 11 }
+;; 7 succs { 8 10 }
+;; 8 succs { 9 }
+;; 9 succs { 10 }
+;; 10 succs { 11 }
+;; 11 succs { 6 12 }
+;; 12 succs { 13 }
+;; 13 succs { 1 }
+Lin_Init (const struct Lin_ConfigType * Config)
+{
+  uint8 Lin_ChLoop;
+  const struct Lin_ConfigType * _1;
+  long unsigned int _2;
+  const struct Lin_ConfigType * _9;
+  const struct Lin_ChannelConfigType * _10;
+  _Bool _11;
+  long unsigned int _12;
+  const struct Lin_HwConfigType * _13;
+
+  <bb 2> [local count: 852176038]:
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  if (Config_4(D) != 0B)
+    goto <bb 13>; [70.00%]
+  else
+    goto <bb 3>; [30.00%]
+
+  <bb 3> [local count: 255652811]:
+  # DEBUG BEGIN_STMT
+  _1 = Lin_PBCfgVariantPredefined[0];
+  if (_1 == 0B)
+    goto <bb 13>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 4> [local count: 178956968]:
+  _2 = _1->PartitionCoreId;
+  if (_2 != 0)
+    goto <bb 13>; [67.00%]
+  else
+    goto <bb 5>; [33.00%]
+
+  <bb 5> [local count: 59055799]:
+  # DEBUG BEGIN_STMT
+  Lin_apConfigPtr[0] = _1;
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Lin_InitImplementation
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG Lin_ChLoop => 0
+  goto <bb 9>; [100.00%]
+
+  <bb 6> [local count: 1014686024]:
+  # DEBUG BEGIN_STMT
+  _9 = Lin_apConfigPtr[0];
+  _10 = _9->Lin_ChannelPtr[0];
+  _11 = _10->AllocatedPartition;
+  if (_11 != 0)
+    goto <bb 7>; [67.00%]
+  else
+    goto <bb 11>; [33.00%]
+
+  <bb 7> [local count: 679839636]:
+  _12 = _10->ChannelCoreId;
+  if (_12 == 0)
+    goto <bb 8>; [5.50%]
+  else
+    goto <bb 10>; [94.50%]
+
+  <bb 8> [local count: 37391180]:
+  # DEBUG BEGIN_STMT
+  Lin_apChannelConfigPtr[0] = _10;
+  # DEBUG BEGIN_STMT
+  _13 = _10->ChannelConfigPtr;
+  Lin_Ipw_InitChannel (0, _13);
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[0] = 2;
+
+  <bb 9> [local count: 96446979]:
+  # Lin_ChLoop_15 = PHI <0(5), 1(8)>
+
+  <bb 10> [local count: 738895437]:
+  # Lin_ChLoop_16 = PHI <1(7), Lin_ChLoop_15(9)>
+
+  <bb 11> [local count: 1073741824]:
+  # Lin_ChLoop_14 = PHI <1(6), Lin_ChLoop_16(10)>
+  # DEBUG Lin_ChLoop => Lin_ChLoop_14
+  # DEBUG BEGIN_STMT
+  if (Lin_ChLoop_14 == 0)
+    goto <bb 6>; [94.50%]
+  else
+    goto <bb 12>; [5.50%]
+
+  <bb 12> [local count: 59055800]:
+  # DEBUG Lin_ChLoop => NULL
+  # DEBUG BEGIN_STMT
+  Lin_au8LinDrvStatus[0] = 2;
+
+  <bb 13> [local count: 852176040]:
+  return;
+
+}
+
+
+
+;; Function Lin_CheckWakeup (Lin_CheckWakeup, funcdef_no=4, decl_uid=5850, cgraph_uid=5, symbol_order=8)
+
+Lin_CheckWakeup (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 10
+  TempReturn_8 = Lin_CommonCheckingChannel.isra.0 (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  if (TempReturn_8 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  _3 = _2 + 255;
+  if (_3 <= 1)
+    goto <bb 4>; [25.50%]
+  else
+    goto <bb 5>; [74.50%]
+
+  <bb 4> [local count: 180710749]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_CheckWakeup (Channel_7(D));
+  # DEBUG BEGIN_STMT
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_4 = PHI <TempReturn_8(2), 0(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return TempReturn_4;
+
+}
+
+
+
+;; Function Lin_GetStatus (Lin_GetStatus, funcdef_no=5, decl_uid=5855, cgraph_uid=6, symbol_order=9)
+
+Lin_GetStatus (uint8 Channel, uint8 * * Lin_SduPtr)
+{
+  uint8 Lin_ChannelState;
+  Lin_StatusType TempReturn;
+  Std_ReturnType CheckChannel;
+  int _1;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 8
+  CheckChannel_6 = Lin_CommonCheckingChannel.isra.0 (Channel_5(D));
+  # DEBUG CheckChannel => CheckChannel_6
+  # DEBUG BEGIN_STMT
+  if (CheckChannel_6 == 1)
+    goto <bb 8>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669604]:
+  # DEBUG BEGIN_STMT
+  if (Lin_SduPtr_7(D) == 0B)
+    goto <bb 8>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 4> [local count: 496068722]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_5(D);
+  Lin_ChannelState_8 = Lin_au8LinChStatus[_1];
+  # DEBUG Lin_ChannelState => Lin_ChannelState_8
+  # DEBUG BEGIN_STMT
+  switch (Lin_ChannelState_8) <default: <L7> [25.00%], case 1: <L5> [25.00%], case 2: <L12> [25.00%], case 3: <L6> [25.00%]>
+
+  <bb 5> [local count: 124017180]:
+<L5>:
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 2;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 10
+  # DEBUG BEGIN_STMT
+  goto <bb 8>; [100.00%]
+
+  <bb 6> [local count: 124017180]:
+<L6>:
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = Lin_Ipw_HardwareGetStatus (Channel_5(D), Lin_SduPtr_7(D));
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  goto <bb 8>; [100.00%]
+
+  <bb 7> [local count: 124017180]:
+<L7>:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+  # DEBUG BEGIN_STMT
+
+  <bb 8> [local count: 1073741824]:
+  # TempReturn_2 = PHI <0(2), 0(3), 10(4), 10(5), TempReturn_10(6), 0(7)>
+<L12>:
+  # DEBUG TempReturn => TempReturn_2
+  # DEBUG BEGIN_STMT
+  return TempReturn_2;
+
+}
+
+
+
+;; Function Lin_GoToSleep (Lin_GoToSleep, funcdef_no=6, decl_uid=5860, cgraph_uid=7, symbol_order=10)
+
+Lin_GoToSleep (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 6
+  TempReturn_8 = Lin_CommonCheckingChannel.isra.0 (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  if (TempReturn_8 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669604]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_7(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 5>; [51.12%]
+  else
+    goto <bb 4>; [48.88%]
+
+  <bb 4> [local count: 346397702]:
+  # DEBUG BEGIN_STMT
+  TempReturn_10 = Lin_Ipw_GoToSleep (Channel_7(D));
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  TempReturn_3 = MIN_EXPR <1, TempReturn_10>;
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 1;
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_4 = PHI <TempReturn_8(2), TempReturn_8(3), TempReturn_3(4)>
+  # DEBUG TempReturn => TempReturn_4
+  # DEBUG BEGIN_STMT
+  return TempReturn_4;
+
+}
+
+
+
+;; Function Lin_GoToSleepInternal (Lin_GoToSleepInternal, funcdef_no=7, decl_uid=5862, cgraph_uid=8, symbol_order=11)
+
+Lin_GoToSleepInternal (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 9
+  TempReturn_7 = Lin_CommonCheckingChannel.isra.0 (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 == 2)
+    goto <bb 6>; [51.12%]
+  else
+    goto <bb 4>; [48.88%]
+
+  <bb 4> [local count: 346397703]:
+  # DEBUG BEGIN_STMT
+  TempReturn_9 = Lin_Ipw_GoToSleepInternal (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_9
+  # DEBUG BEGIN_STMT
+  if (TempReturn_9 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 5> [local count: 173198851]:
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 2;
+
+  <bb 6> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_7(2), TempReturn_7(3), 1(4), 0(5)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+
+;; Function Lin_SendFrame (Lin_SendFrame, funcdef_no=8, decl_uid=5858, cgraph_uid=9, symbol_order=12)
+
+
+Symbols to be put in SSA form
+{ D.6057 D.6110 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 11
+Number of blocks to update: 10 ( 91%)
+
+
+Merging blocks 2 and 6
+Merging blocks 10 and 5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;; 2 succs { 6 3 }
+;; 3 succs { 6 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 8 7 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+Lin_SendFrame (uint8 Channel, const struct Lin_PduType * PduInfoPtr)
+{
+  Std_ReturnType TempReturn;
+  Std_ReturnType D.6110;
+  Std_ReturnType TempReturn;
+  unsigned char _9;
+  int _11;
+  unsigned char _12;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Channel => Channel_4(D)
+  # DEBUG PduInfoPtr => PduInfoPtr_5(D)
+  # DEBUG INLINE_ENTRY Lin_ChkParamFuncSendFrame
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 4
+  TempReturn_10 = Lin_CommonCheckingChannel.isra.0 (Channel_4(D));
+  # DEBUG TempReturn => TempReturn_10
+  # DEBUG BEGIN_STMT
+  if (TempReturn_10 == 1)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  if (PduInfoPtr_5(D) == 0B)
+    goto <bb 6>; [30.00%]
+  else
+    goto <bb 4>; [70.00%]
+
+  <bb 4> [local count: 496068723]:
+  # DEBUG BEGIN_STMT
+  _11 = (int) Channel_4(D);
+  _12 = Lin_au8LinChStatus[_11];
+  if (_12 == 2)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 6>; [66.00%]
+
+  <bb 5> [local count: 168663366]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 1
+
+  <bb 6> [local count: 1073741824]:
+  # TempReturn_13 = PHI <TempReturn_10(2), 1(3), TempReturn_10(4), 1(5)>
+  # DEBUG TempReturn => TempReturn_13
+  # DEBUG BEGIN_STMT
+  _14 = TempReturn_13;
+  # DEBUG Channel => NULL
+  # DEBUG PduInfoPtr => NULL
+  # DEBUG TempReturn => NULL
+  TempReturn_6 = _14;
+  # DEBUG TempReturn => TempReturn_6
+  # DEBUG BEGIN_STMT
+  if (TempReturn_6 == 1)
+    goto <bb 8>; [51.12%]
+  else
+    goto <bb 7>; [48.88%]
+
+  <bb 7> [local count: 524845004]:
+  # DEBUG BEGIN_STMT
+  TempReturn_8 = Lin_Ipw_SendFrame (Channel_4(D), PduInfoPtr_5(D));
+  # DEBUG TempReturn => TempReturn_8
+  # DEBUG BEGIN_STMT
+  _9 = MIN_EXPR <1, TempReturn_8>;
+
+  <bb 8> [local count: 1073741824]:
+  # TempReturn_1 = PHI <TempReturn_6(6), _9(7)>
+  # DEBUG TempReturn => TempReturn_1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return TempReturn_1;
+
+}
+
+
+
+;; Function Lin_Wakeup (Lin_Wakeup, funcdef_no=9, decl_uid=5864, cgraph_uid=10, symbol_order=13)
+
+Lin_Wakeup (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 7
+  TempReturn_7 = Lin_CommonCheckingChannel.isra.0 (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 != 2)
+    goto <bb 5>; [79.76%]
+  else
+    goto <bb 4>; [20.24%]
+
+  <bb 4> [local count: 143434728]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_WakeUp (Channel_6(D));
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 3;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_7(2), 1(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+
+
+;; Function Lin_WakeupInternal (Lin_WakeupInternal, funcdef_no=10, decl_uid=5866, cgraph_uid=11, symbol_order=14)
+
+Lin_WakeupInternal (uint8 Channel)
+{
+  Std_ReturnType TempReturn;
+  int _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 11
+  TempReturn_7 = Lin_CommonCheckingChannel.isra.0 (Channel_6(D));
+  # DEBUG TempReturn => TempReturn_7
+  # DEBUG BEGIN_STMT
+  if (TempReturn_7 == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 3>; [66.00%]
+
+  <bb 3> [local count: 708669605]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Channel_6(D);
+  _2 = Lin_au8LinChStatus[_1];
+  if (_2 != 2)
+    goto <bb 5>; [79.76%]
+  else
+    goto <bb 4>; [20.24%]
+
+  <bb 4> [local count: 143434728]:
+  # DEBUG BEGIN_STMT
+  Lin_Ipw_WakeUpInternal (Channel_6(D));
+  # DEBUG BEGIN_STMT
+  Lin_au8LinChStatus[_1] = 3;
+  # DEBUG BEGIN_STMT
+  # DEBUG TempReturn => 0
+
+  <bb 5> [local count: 1073741824]:
+  # TempReturn_3 = PHI <TempReturn_7(2), 1(3), 0(4)>
+  # DEBUG TempReturn => TempReturn_3
+  # DEBUG BEGIN_STMT
+  return TempReturn_3;
+
+}
+
+

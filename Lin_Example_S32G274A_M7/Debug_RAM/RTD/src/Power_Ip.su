@@ -1,0 +1,5 @@
+Power_Ip.c:367:6:Power_Ip_SetMode	16	static
+Power_Ip.c:532:20:Power_Ip_GetResetReason	0	static
+Power_Ip.c:588:23:Power_Ip_GetResetRawValue	0	static
+Power_Ip.c:608:6:Power_Ip_Init	8	static
+Power_Ip.c:640:6:Power_Ip_InstallNotificationsCallback	0	static

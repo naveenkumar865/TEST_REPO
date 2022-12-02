@@ -1,0 +1,141 @@
+Parsed function:Platform_Ipw_InitNonCore
+Parsed function:Platform_Ipw_Init
+Dump after hash based groups
+Congruence classes: 2 (unique hash values: 2), with total: 2 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 2 classes
+
+
+Dump after WPA based types groups
+Congruence classes: 2 (unique hash values: 2), with total: 2 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 2 classes
+
+
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 2 (unique hash values: 2), with total: 2 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 2 classes
+
+
+Init called for 0 items (0.00%).
+Dump after full equality comparison of groups
+Congruence classes: 2 (unique hash values: 2), with total: 2 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 2 classes
+
+
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 2 (unique hash values: 2), with total: 2 items
+Class size histogram [num of members]: number of classe number of classess
+[1]: 2 classes
+
+
+
+Item count: 2
+Congruent classes before: 2, after: 2
+Average class size before: 1.00, after: 1.00
+Average non-singular class size: 0.00, count: 0
+Equal symbols: 0
+Fraction of visited symbols: 0.00%
+
+Platform_Ipw_InitNonCore (const struct Platform_Ipw_NonCoreConfigType * pConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _1;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _2;
+  long unsigned int _3;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _4;
+  <unnamed type> _5;
+  unsigned char _6;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _7;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _8;
+  const struct IntCtrl_Ip_IrqRouteConfigType * _9;
+  <unnamed type> _10;
+  void (*<T4f8>) (void) _11;
+  const struct IntCtrl_Ip_GlobalRouteConfigType * _12;
+  long unsigned int _13;
+
+  <bb 2> [local count: 168730857]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_18(D)->pIntRouteConfig;
+  if (_1 != 0B)
+    goto <bb 6>; [70.00%]
+  else
+    goto <bb 5>; [30.00%]
+
+  <bb 6> [local count: 118111600]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _2 = _12->aIrqConfig;
+  _3 = irqIdx_14 * 12;
+  _4 = _2 + _3;
+  _5 = _4->eIrqNumber;
+  _6 = _4->u8TargetCores;
+  IntCtrl_Ip_SetTargetCores (_5, _6);
+  # DEBUG BEGIN_STMT
+  _7 = pConfig_18(D)->pIntRouteConfig;
+  _8 = _7->aIrqConfig;
+  _9 = _8 + _3;
+  _10 = _9->eIrqNumber;
+  _11 = _9->pfHandler;
+  IntCtrl_Ip_InstallHandler (_10, _11, 0B);
+  # DEBUG BEGIN_STMT
+  irqIdx_21 = irqIdx_14 + 1;
+  # DEBUG irqIdx => irqIdx_21
+
+  <bb 4> [local count: 1073741824]:
+  # irqIdx_14 = PHI <irqIdx_21(3), 0(6)>
+  # DEBUG irqIdx => irqIdx_14
+  # DEBUG BEGIN_STMT
+  _12 = pConfig_18(D)->pIntRouteConfig;
+  _13 = _12->u32ConfigIrqCount;
+  if (_13 > irqIdx_14)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 168730858]:
+  return;
+
+}
+
+
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  const struct IntCtrl_Ip_CtrlConfigType * _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_4(D)->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 4>; [46.53%]
+
+  <bb 3> [local count: 574129754]:
+  # DEBUG BEGIN_STMT
+  # DEBUG pIntCtrlCtrlConfig => _1
+  # DEBUG INLINE_ENTRY Platform_Ipw_InitIntCtrl
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_Init (_1);
+  # DEBUG BEGIN_STMT
+  # DEBUG pIntCtrlCtrlConfig => NULL
+  # DEBUG ret => 0
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
